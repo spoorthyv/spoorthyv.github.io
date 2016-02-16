@@ -1,6 +1,6 @@
 body {
   background-color: rgb(255, 255, 255);
-  font: 400 1.125em/1.38 Raleway;
+  font: 100 1.125em/1.38 Raleway;
   color: rgb(255, 255, 255);
 }
 
@@ -80,7 +80,7 @@ body {
 }
 
 .element-3 {
-  margin-left: 3.29164%;
+  margin-left: 3.28999%;
 }
 
 .element-3:hover {
@@ -109,6 +109,7 @@ body {
   margin: 134px auto 0;
   font-family: 'Pier Sans';
   font-size: 2.833em;
+  font-weight: 400;
   color: rgb(255, 255, 255);
 }
 
@@ -119,7 +120,6 @@ body {
   min-height: 63px;
   margin-top: 28px;
   font-size: 1em;
-  font-weight: 100;
   color: rgb(255, 255, 255);
 }
 

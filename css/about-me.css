@@ -1,6 +1,6 @@
 body {
   background-color: rgb(255, 255, 255);
-  font: normal 2.5em/1.38 'Uni Sans';
+  font: 400 2.5em/1.38 'Uni Sans';
   color: rgb(0, 0, 0);
 }
 
@@ -13,7 +13,7 @@ body {
   top: 192px;
   left: 0;
   right: 0;
-  z-index: 18;
+  z-index: 17;
   width: 337px;
   height: 125px;
   margin: 0 auto;
@@ -57,8 +57,8 @@ body {
   position: absolute;
   top: 0;
   bottom: 0;
-  right: 68px;
-  z-index: 17;
+  right: 57px;
+  z-index: 16;
   width: 80px;
   height: 80px;
   margin: auto 0;
@@ -71,7 +71,6 @@ body {
   background-position: center center;
   font-family: 'Courier New';
   font-size: 0.4em;
-  font-weight: 400;
   text-align: center;
   color: rgb(0, 0, 0);
 }
@@ -186,13 +185,12 @@ body {
   margin: 47px 0 0 2.96875%;
   font-family: 'Pier Sans';
   font-size: 0.725em;
-  font-weight: 400;
   color: rgb(255, 255, 255);
 }
 
 .text-2 {
   margin: 79px auto 0;
-  font: 0.9em/1 UniSansHeavyCAPS;
+  font: normal 0.9em/1 UniSansHeavyCAPS;
   text-align: center;
   color: rgb(0, 0, 0);
 }
@@ -201,6 +199,7 @@ body {
   margin: 37px auto 0;
   font-family: UniSansThinCAPS;
   font-size: 0.4em;
+  font-weight: normal;
   text-align: center;
   color: rgb(0, 0, 0);
 }
@@ -208,7 +207,6 @@ body {
 .text-4 {
   margin: 94px auto 0;
   font-size: 1em;
-  font-weight: 400;
   text-align: center;
   color: rgb(220, 170, 52);
 }
@@ -216,7 +214,6 @@ body {
 .text-5 {
   margin: 94px auto 0;
   font-size: 1em;
-  font-weight: 400;
   text-align: center;
   color: rgb(216, 154, 55);
 }
@@ -224,7 +221,6 @@ body {
 .text-6 {
   margin: 94px auto 0;
   font-size: 1em;
-  font-weight: 400;
   text-align: center;
   color: rgb(219, 129, 52);
 }
@@ -232,40 +228,36 @@ body {
 .text-7 {
   margin: 94px auto 0;
   font-size: 1em;
-  font-weight: 400;
   text-align: center;
   color: rgb(183, 42, 42);
 }
 
 .text-8 {
   position: absolute;
-  top: 0;
-  bottom: 0;
+  top: 21px;
   left: 0;
-  z-index: 16;
-  height: 80px;
-  margin: auto 0;
-  padding-right: 165px;
+  right: 0;
+  z-index: 18;
+  width: 527px;
+  height: 194px;
+  margin: 0 auto;
   font-family: 'Courier New';
-  font-size: 0.475em;
-  font-weight: 400;
-  text-align: right;
+  font-size: 1.725em;
+  text-align: center;
   color: rgb(220, 220, 220);
 }
 
 .text-9 {
   position: absolute;
   top: 0;
+  bottom: 0;
   left: 0;
-  right: 0;
   z-index: 15;
-  width: 648px;
-  min-height: 124px;
-  margin: 0 auto;
-  padding-right: 69px;
-  padding-left: 69px;
-  font-family: CourierNewPSMT;
-  font-size: 1.75em;
-  text-align: center;
-  color: rgb(255, 255, 255);
+  height: 80px;
+  margin: auto 0;
+  padding-right: 158px;
+  font-family: 'Courier New';
+  font-size: 0.475em;
+  text-align: right;
+  color: rgb(220, 220, 220);
 }

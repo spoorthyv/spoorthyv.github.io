@@ -13,11 +13,6 @@ body {
   -o-transition: all .3s;
   -ms-transition: all .3s;
   transition: all .3s;
-  -webkit-filter: grayscale(80%);
-  -moz-filter: grayscale(80%);
-  -o-filter: grayscale(80%);
-  -ms-filter: grayscale(80%);
-  filter: grayscale(80%);
 }
 
 .container:hover {
@@ -89,42 +84,83 @@ body {
   z-index: 9;
   width: 100%;
   margin-top: -2547px;
+  -webkit-filter: grayscale(80%);
+  -moz-filter: grayscale(80%);
+  -o-filter: grayscale(80%);
+  -ms-filter: grayscale(80%);
+  filter: grayscale(80%);
 }
 
 .container-2 {
   z-index: 7;
   width: 56.2616822429%;
   margin-top: -2019px;
+  -webkit-filter: grayscale(80%);
+  -moz-filter: grayscale(80%);
+  -o-filter: grayscale(80%);
+  -ms-filter: grayscale(80%);
+  filter: grayscale(80%);
 }
 
 .container-3 {
   z-index: 11;
   width: 43.738317757%;
   margin: -2019px 0 0 56.26082%;
+  -webkit-filter: grayscale(80%);
+  -moz-filter: grayscale(80%);
+  -o-filter: grayscale(80%);
+  -ms-filter: grayscale(80%);
+  filter: grayscale(80%);
 }
 
 .container-4 {
   z-index: 5;
   width: 100%;
   margin-top: -1527px;
+  -webkit-filter: grayscale(80%);
+  -moz-filter: grayscale(80%);
+  -o-filter: grayscale(80%);
+  -ms-filter: grayscale(80%);
+  filter: grayscale(80%);
 }
 
 .container-5 {
   z-index: 15;
   width: 43.74%;
   margin-top: -1011px;
+  -webkit-filter: grayscale(80%);
+  -moz-filter: grayscale(80%);
+  -o-filter: grayscale(80%);
+  -ms-filter: grayscale(80%);
+  filter: grayscale(80%);
 }
 
 .container-6 {
   z-index: 17;
   width: 56.24%;
   margin: -1011px 0 0 43.76082%;
+  -webkit-filter: grayscale(80&);
+  -moz-filter: grayscale(80&);
+  -o-filter: grayscale(80&);
+  -ms-filter: grayscale(80&);
+  filter: grayscale(80&);
+}
+
+.container-6:hover,
+.element-4:hover {
+  border-bottom-width: 0;
+  border-bottom-style: none;
 }
 
 .container-7 {
   z-index: 13;
   width: 100%;
   margin-top: -519px;
+  -webkit-filter: grayscale(80%);
+  -moz-filter: grayscale(80%);
+  -o-filter: grayscale(80%);
+  -ms-filter: grayscale(80%);
+  filter: grayscale(80%);
 }
 
 .element-1 {
@@ -170,11 +206,6 @@ body {
   transition: all .3s;
 }
 
-.element-4:hover {
-  border-bottom-width: 0;
-  border-bottom-style: none;
-}
-
 .element-5 {
   height: 478px;
   background-image: url('../images/IMGP7718.jpg');
@@ -203,4 +234,13 @@ body {
   height: 478px;
   background-image: url('../images/Copy%20of%20IMGP7638-Edit-2.jpg');
   background-position: 42% 65%;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -o-transition: all .3s;
+  -ms-transition: all .3s;
+  transition: all .3s;
+}
+
+.element-9:hover {
+  border-bottom: 10px solid rgb(166, 166, 166);
 }
