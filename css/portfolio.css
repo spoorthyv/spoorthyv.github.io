@@ -11,7 +11,7 @@
 
 body {
   background-color: rgb(255, 255, 255);
-  font: normal 3.625em/0.3 PierSans-Bold;
+  font: 700 3.5em/0.3 Montserrat;
   color: rgb(255, 255, 255);
 }
 
@@ -73,7 +73,7 @@ body {
   z-index: 6;
   width: 46.2616822429%;
   height: 499px;
-  margin: 35px 0 0 2.75993%;
+  margin: 35px 0 0 2.7599299065%;
   background: url('../images/2iTunesArtwork@2x.png') rgba(222, 222, 222, 0);
   background-size: contain;
   background-position: 50% 85%;
@@ -95,7 +95,7 @@ body {
   z-index: 4;
   width: 46.2616822429%;
   height: 499px;
-  margin: 35px 0 0 1.82243%;
+  margin: 35px 0 0 1.8224299065%;
   background: url('../images/iTunesArtwork@2x(2).jpg') rgba(222, 222, 222, 0);
   background-size: contain;
   background-position: 50% 85%;
@@ -194,7 +194,7 @@ body {
 
 .text-1 {
   margin: 47px 0 0 2.96875%;
-  font: 400 0.5em/1.38 'Pier Sans';
+  font: 400 0.518em/1.38 'Pier Sans';
 }
 
 .text-2,
