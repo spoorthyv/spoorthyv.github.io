@@ -1,0 +1,237 @@
+body {
+  background-color: rgb(72, 72, 72);
+  font: 100 2.875em/1.38 Raleway;
+  color: rgb(112, 112, 112);
+}
+
+.container {
+  height: 139px;
+  background-color: rgb(255, 255, 255);
+}
+
+.container .text {
+  width: 85.5828220858%;
+  color: rgb(112, 112, 112);
+}
+
+.element {
+  float: left;
+}
+
+.element .text {
+  margin: 47px 0 0 2.96875%;
+  font-family: 'Pier Sans';
+  font-size: 0.63em;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+}
+
+.image {
+  display: block;
+  clear: both;
+  height: auto;
+  box-shadow: 0 0 0 3px rgb(255, 255, 255);
+  overflow: hidden;
+}
+
+.text {
+  float: left;
+}
+
+._element {
+  width: 58px;
+  height: 58px;
+  margin: 33px 0 0 2.42991%;
+  background: url('../images/ic_arrow_back_white_48px.svg') rgba(222, 222, 222, 0);
+  background-repeat: no-repeat;
+  background-size: 48px 48px;
+  background-position: center center;
+}
+
+._element:hover {
+  border: 3px solid rgb(255, 255, 255);
+  border-radius: 58px;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -o-transition: all .3s;
+  -ms-transition: all .3s;
+  transition: all .3s;
+}
+
+.container-1 {
+  position: relative;
+  float: left;
+  z-index: 10;
+  width: 30.6118574766%;
+  margin: 383px 0 0 3.99679%;
+}
+
+.container-2 {
+  position: relative;
+  float: right;
+  clear: both;
+  z-index: 6;
+  width: 30.6352219626%;
+  margin: -350px 4.05958% 0 0;
+}
+
+.container-3 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 3.9967873831%;
+  z-index: 26;
+  width: 30.6323014018%;
+  margin: auto 0;
+  overflow: hidden;
+}
+
+.container-4 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 4.0683411214%;
+  z-index: 22;
+  width: 30.6308411214%;
+  margin: auto 0;
+}
+
+.container-5 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 3.9967873831%;
+  z-index: 18;
+  width: 30.6323014018%;
+  margin: auto 0;
+}
+
+.container-6 {
+  position: relative;
+  float: right;
+  clear: both;
+  z-index: 14;
+  width: 30.6308411214%;
+  margin: -400px 4.06396% 0 0;
+}
+
+.element-1 {
+  position: relative;
+  clear: both;
+  z-index: 2;
+  width: 100%;
+  height: 126px;
+  background: rgb(188, 152, 255);
+  background: -webkit-linear-gradient(291deg, rgb(188, 152, 255) 0%, rgb(255, 137, 233) 100%) rgb(129, 200, 255);
+  background:    -moz-linear-gradient(291deg, rgb(188, 152, 255) 0%, rgb(255, 137, 233) 100%) rgb(129, 200, 255);
+  background:      -o-linear-gradient(291deg, rgb(188, 152, 255) 0%, rgb(255, 137, 233) 100%) rgb(129, 200, 255);
+  background:     -ms-linear-gradient(291deg, rgb(188, 152, 255) 0%, rgb(255, 137, 233) 100%) rgb(129, 200, 255);
+  background:         linear-gradient(159deg, rgb(188, 152, 255) 0%, rgb(255, 137, 233) 100%) rgb(129, 200, 255);
+  box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.44) inset;
+}
+
+.image-1 {
+  position: relative;
+  float: right;
+  z-index: 7;
+  width: 68.5075934579%;
+  margin-right: 2.0838199999%;
+}
+
+.image-2 {
+  position: relative;
+  float: left;
+  z-index: 3;
+  width: 68.5557827102%;
+  margin: 28px 0 0 1.95678%;
+}
+
+.image-3 {
+  float: right;
+  width: 68.5484813084%;
+  margin: 17px 2.02833% 0 0;
+}
+
+.image-3:hover {
+  box-shadow: 0 0 0 3px rgb(255, 255, 255);
+}
+
+.image-4 {
+  position: relative;
+  float: left;
+  z-index: 11;
+  width: 68.5455607476%;
+  margin-left: 1.96262%;
+}
+
+.image-5 {
+  position: relative;
+  float: left;
+  z-index: 19;
+  width: 68.5455607476%;
+  margin: 14px 0 0 1.96262%;
+}
+
+.image-6 {
+  position: relative;
+  float: right;
+  z-index: 15;
+  width: 68.5484813084%;
+  margin: -1px 2.02833% 0 0;
+}
+
+.text-1 {
+  min-height: 64px;
+  margin: 17px 0 0 7.96165%;
+  font-size: 1em;
+}
+
+.text-10,
+.text-6 {
+  min-height: 64px;
+  margin: 17px 0 0 7.96587%;
+  font-size: 1em;
+}
+
+.text-11,
+.text-7 {
+  clear: both;
+  min-height: 44px;
+  margin-left: 7.96587%;
+  font-size: 0.696em;
+}
+
+.text-12,
+.text-8 {
+  min-height: 64px;
+  margin: 17px 0 0 7.96625%;
+  font-size: 1em;
+}
+
+.text-13,
+.text-9 {
+  clear: both;
+  min-height: 44px;
+  margin-left: 7.96625%;
+  font-size: 0.696em;
+}
+
+.text-2 {
+  clear: both;
+  min-height: 44px;
+  margin-left: 7.96165%;
+  font-size: 0.696em;
+}
+
+.text-3 {
+  min-height: 64px;
+  margin: 17px 0 0 7.96511%;
+  font-size: 1em;
+}
+
+.text-4 {
+  clear: both;
+  min-height: 44px;
+  margin-left: 7.96511%;
+  font-size: 0.696em;
+}

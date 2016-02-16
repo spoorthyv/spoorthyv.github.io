@@ -1,0 +1,251 @@
+.text-2:hover {
+  border-bottom-width: 13px;
+  border-bottom-style: solid;
+  background-color: rgba(0, 0, 0, 0);
+  -webkit-transition: all .2s;
+  -moz-transition: all .2s;
+  -o-transition: all .2s;
+  -ms-transition: all .2s;
+  transition: all .2s;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+  font: normal 3.625em/0.3 PierSans-Bold;
+  color: rgb(255, 255, 255);
+}
+
+.element-3 p,
+.element-4 p {
+  margin-bottom: 1em;
+}
+
+.element .element {
+  width: 58px;
+  height: 58px;
+  margin: 33px 0 0 2.42991%;
+  background-image: url('../images/ic_arrow_back_white_48px.svg');
+  background-repeat: no-repeat;
+  background-size: 48px 48px;
+  background-position: center center;
+}
+
+.element .element:hover {
+  border: 3px solid rgb(255, 255, 255);
+  border-radius: 58px;
+}
+
+.text {
+  float: left;
+  color: rgb(255, 255, 255);
+}
+
+._element {
+  float: left;
+  background-color: rgba(222, 222, 222, 0);
+}
+
+._element:hover {
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -o-transition: all .3s;
+  -ms-transition: all .3s;
+  transition: all .3s;
+}
+
+.element-1 {
+  float: left;
+  width: 100%;
+  height: 126px;
+  background: rgb(188, 152, 255);
+  background: -webkit-linear-gradient(291deg, rgb(188, 152, 255) 0%, rgb(255, 137, 233) 100%) rgb(129, 200, 255);
+  background:    -moz-linear-gradient(291deg, rgb(188, 152, 255) 0%, rgb(255, 137, 233) 100%) rgb(129, 200, 255);
+  background:      -o-linear-gradient(291deg, rgb(188, 152, 255) 0%, rgb(255, 137, 233) 100%) rgb(129, 200, 255);
+  background:     -ms-linear-gradient(291deg, rgb(188, 152, 255) 0%, rgb(255, 137, 233) 100%) rgb(129, 200, 255);
+  background:         linear-gradient(159deg, rgb(188, 152, 255) 0%, rgb(255, 137, 233) 100%) rgb(129, 200, 255);
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.27) inset;
+}
+
+.element-3 {
+  position: relative;
+  float: left;
+  clear: both;
+  z-index: 6;
+  width: 46.2616822429%;
+  height: 499px;
+  margin: 35px 0 0 2.75993%;
+  background: url('../images/2iTunesArtwork@2x.png') rgba(222, 222, 222, 0);
+  background-size: contain;
+  background-position: 50% 85%;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -o-transition: all .3s;
+  -ms-transition: all .3s;
+  transition: all .3s;
+  -webkit-filter: grayscale(80%);
+  -moz-filter: grayscale(80%);
+  -o-filter: grayscale(80%);
+  -ms-filter: grayscale(80%);
+  filter: grayscale(80%);
+}
+
+.element-4 {
+  position: relative;
+  float: left;
+  z-index: 4;
+  width: 46.2616822429%;
+  height: 499px;
+  margin: 35px 0 0 1.82243%;
+  background: url('../images/iTunesArtwork@2x(2).jpg') rgba(222, 222, 222, 0);
+  background-size: contain;
+  background-position: 50% 85%;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -o-transition: all .3s;
+  -ms-transition: all .3s;
+  transition: all .3s;
+  -webkit-filter: grayscale(80%);
+  -moz-filter: grayscale(80%);
+  -o-filter: grayscale(80%);
+  -ms-filter: grayscale(80%);
+  filter: grayscale(80%);
+}
+
+.element-3:hover,
+.element-4:hover {
+  background-color: rgba(222, 222, 222, 0);
+  box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -o-transition: all .3s;
+  -ms-transition: all .3s;
+  transition: all .3s;
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  -o-filter: grayscale(0%);
+  -ms-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
+
+.element-5 {
+  width: 94.3925233644%;
+  height: 311px;
+  margin: 681px auto 0;
+  background: url('../images/IMG_0928.JPG') rgba(222, 222, 222, 0);
+  background-size: cover;
+  background-position: center center;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -o-transition: all .3s;
+  -ms-transition: all .3s;
+  transition: all .3s;
+  -webkit-filter: grayscale(80%);
+  -moz-filter: grayscale(80%);
+  -o-filter: grayscale(80%);
+  -ms-filter: grayscale(80%);
+  filter: grayscale(80%);
+}
+
+.element-5:hover {
+  border-bottom-width: 0;
+  border-bottom-style: none;
+  background-color: rgba(222, 222, 222, 0);
+  box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -o-transition: all .3s;
+  -ms-transition: all .3s;
+  transition: all .3s;
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  -o-filter: grayscale(0%);
+  -ms-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
+
+.element-6 {
+  clear: both;
+  width: 100%;
+  height: 40px;
+  -webkit-transition: all .2s;
+  -moz-transition: all .2s;
+  -o-transition: all .2s;
+  -ms-transition: all .2s;
+  transition: all .2s;
+  -webkit-filter: grayscale(80%);
+  -moz-filter: grayscale(80%);
+  -o-filter: grayscale(80%);
+  -ms-filter: grayscale(80%);
+  filter: grayscale(80%);
+}
+
+.element-6:hover {
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  -o-filter: grayscale(0%);
+  -ms-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
+
+.text-1 {
+  margin: 47px 0 0 2.96875%;
+  font: 400 0.5em/1.38 'Pier Sans';
+}
+
+.text-2,
+.text-3 {
+  width: 100%;
+  height: 499px;
+  min-height: 63px;
+  padding-top: 214px;
+  padding-left: 35px;
+  background-color: rgba(0, 0, 0, 0.27);
+  font-size: 1em;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -o-transition: all .3s;
+  -ms-transition: all .3s;
+  transition: all .3s;
+}
+
+.text-3:hover {
+  border-bottom-width: 13px;
+  border-bottom-style: solid;
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(255, 255, 255);
+  -webkit-transition: all .2s;
+  -moz-transition: all .2s;
+  -o-transition: all .2s;
+  -ms-transition: all .2s;
+  transition: all .2s;
+}
+
+.text-4 {
+  width: 100%;
+  height: 311px;
+  min-height: 63px;
+  padding-top: 158px;
+  padding-left: 35px;
+  background-color: rgba(0, 0, 0, 0.27);
+  font-size: 1em;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -o-transition: all .3s;
+  -ms-transition: all .3s;
+  transition: all .3s;
+}
+
+.text-4:hover {
+  border-bottom: 13px solid rgb(255, 255, 255);
+  background-color: rgba(0, 0, 0, 0);
+  -webkit-transition: all .2s;
+  -moz-transition: all .2s;
+  -o-transition: all .2s;
+  -ms-transition: all .2s;
+  transition: all .2s;
+}

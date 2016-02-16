@@ -1,0 +1,362 @@
+.container ._button-4:active {
+  font-size: 20px;
+  font-weight: Bold;
+}
+
+body {
+  height: 100%;
+  background: rgb(166, 214, 239);
+  background: -webkit-linear-gradient(0deg, rgb(166, 214, 239) 0%, rgb(140, 201, 233) 100%) rgb(104, 184, 221);
+  background:    -moz-linear-gradient(0deg, rgb(166, 214, 239) 0%, rgb(140, 201, 233) 100%) rgb(104, 184, 221);
+  background:      -o-linear-gradient(0deg, rgb(166, 214, 239) 0%, rgb(140, 201, 233) 100%) rgb(104, 184, 221);
+  background:     -ms-linear-gradient(0deg, rgb(166, 214, 239) 0%, rgb(140, 201, 233) 100%) rgb(104, 184, 221);
+  background:         linear-gradient(450deg, rgb(166, 214, 239) 0%, rgb(140, 201, 233) 100%) rgb(104, 184, 221);
+  font: normal 1.125em/1.38 Avenir-Book;
+  color: rgb(255, 255, 255);
+}
+
+.container .element {
+  width: 25.0467289719%;
+  height: 512px;
+  background-color: rgb(111, 173, 219);
+  box-shadow: -2px 0 13px rgba(0, 0, 0, 0.36) inset;
+}
+
+.element {
+  float: left;
+}
+
+.element .element {
+  width: 58px;
+  height: 58px;
+  margin: 19px 0 0 2.42991%;
+  background: url('../images/ic_arrow_back_white_48px.svg') rgba(222, 222, 222, 0);
+  background-repeat: no-repeat;
+  background-size: 48px 48px;
+  background-position: center center;
+}
+
+.element .element:hover {
+  border: 3px solid rgb(255, 255, 255);
+  border-radius: 58px;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -o-transition: all .3s;
+  -ms-transition: all .3s;
+  transition: all .3s;
+}
+
+.element .image {
+  width: 150px;
+  margin: 90px auto 0;
+}
+
+.element .text {
+  float: left;
+}
+
+.image {
+  display: block;
+  height: auto;
+  overflow: hidden;
+}
+
+._button {
+  display: block;
+}
+
+.container-1 {
+  position: absolute;
+  top: 152px;
+  left: 0;
+  right: 0;
+  z-index: 22;
+  width: 844px;
+  height: 626px;
+  margin: 0 auto;
+  padding-left: 11px;
+  background-color: rgba(160, 211, 237, 0);
+}
+
+.container-2 {
+  position: relative;
+  float: left;
+  z-index: 15;
+  width: 306px;
+  height: 626px;
+  margin-left: -0.12005%;
+  background-image: url('../images/Product%20Image%20w_%20Shadow.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  overflow: hidden;
+}
+
+.container-3 {
+  position: absolute;
+  top: 77px;
+  left: 20px;
+  z-index: 14;
+  width: 1416px;
+  height: 473px;
+  overflow: visible;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -o-transition: all .3s;
+  -ms-transition: all .3s;
+  transition: all .3s;
+}
+
+.container-4 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 9;
+  width: 447px;
+  height: 446px;
+  margin: auto 0;
+}
+
+.container-5 {
+  float: left;
+  clear: both;
+  width: 13.8055222088%;
+  height: 26px;
+  margin: 5px 0 0 91px;
+}
+
+.container-6 {
+  float: left;
+  clear: both;
+  width: 100%;
+  height: 512px;
+  margin: 776px 0 0 -0.09346%;
+  background-color: rgb(174, 220, 244);
+  box-shadow: 2px 0 13px rgba(0, 0, 0, 0.32) inset;
+}
+
+.container-7 {
+  float: left;
+  width: 74.953271028%;
+  height: 512px;
+}
+
+.container-8 {
+  position: relative;
+  float: left;
+  width: 83.4164588528%;
+  height: 150px;
+  margin: 81px 0 0 8.16319%;
+}
+
+.element-1 {
+  width: 100%;
+  height: 99px;
+  border-bottom: 3px solid rgb(255, 255, 255);
+  background-color: rgba(39, 96, 140, 0.21);
+}
+
+.element-4 {
+  clear: both;
+  width: 100%;
+  height: 28px;
+  background-color: rgba(39, 96, 140, 0.22);
+}
+
+.image-1 {
+  float: left;
+  width: 266px;
+}
+
+.image-2,
+.image-3,
+.image-4 {
+  float: left;
+  width: 266px;
+  margin-left: 23px;
+}
+
+.image-5 {
+  position: relative;
+  float: left;
+  z-index: 8;
+  width: 79px;
+  margin: 7px 0 0 6.92464%;
+}
+
+.image-6 {
+  float: right;
+  width: 150px;
+  margin-right: 77.57848%;
+}
+
+.image-7 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 24;
+  width: 150px;
+  margin: 0 auto;
+}
+
+.image-8 {
+  float: right;
+  clear: both;
+  width: 150px;
+  margin-top: -150px;
+}
+
+.text-1 {
+  margin: 31px 0 0 2.96875%;
+  font-family: 'Pier Sans';
+  font-size: 1.611em;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+}
+
+.text-2 {
+  position: relative;
+  float: left;
+  clear: both;
+  z-index: 3;
+  width: 308px;
+  min-height: 70px;
+  margin: -35px 0 0 139px;
+  font-size: 0.889em;
+  color: rgb(76, 151, 187);
+}
+
+.text-3 {
+  position: absolute;
+  top: 170px;
+  left: 0;
+  right: 0;
+  z-index: 4;
+  width: 447px;
+  min-height: 110px;
+  margin: 0 auto;
+  padding-left: 29px;
+  font: 1em/1.58 Avenir-Medium;
+  color: rgb(255, 255, 255);
+}
+
+.text-4 {
+  float: left;
+  clear: both;
+  width: 100%;
+  min-height: 102px;
+  margin-top: 89px;
+  font-size: 1.444em;
+  text-align: center;
+  color: rgb(81, 151, 206);
+}
+
+.text-5 {
+  clear: both;
+  width: 100%;
+  min-height: 102px;
+  margin-top: 70px;
+  padding-right: 18px;
+  padding-left: 18px;
+  font-size: 1.111em;
+  text-align: center;
+  color: rgb(174, 220, 244);
+}
+
+.container ._button-1 {
+  position: relative;
+  float: left;
+  z-index: 5;
+  width: 307px;
+  height: 90px;
+  margin: 9px 0 0 28px;
+  border-radius: 3px;
+  background-color: rgba(255, 255, 255, 0);
+  font-family: Simplifica;
+  font-size: 3.444em;
+  text-align: left;
+  color: rgb(255, 255, 255);
+}
+
+.container ._button-2 {
+  position: absolute;
+  top: 382px;
+  left: 0;
+  right: 0;
+  z-index: 7;
+  width: 38.0313199105%;
+  height: 53px;
+  margin: 0 auto;
+  border-radius: 8px;
+  background: url('../images/Download_on_the_App_Store_Badge_US-UK_135x40.svg') rgba(255, 255, 255, 0);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  font-family: Avenir;
+  font-size: 0.889em;
+  font-weight: 400;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -o-transition: all .3s;
+  -ms-transition: all .3s;
+  transition: all .3s;
+}
+
+.container ._button-3 {
+  position: absolute;
+  top: 305px;
+  left: 0;
+  right: 0;
+  z-index: 6;
+  width: 170px;
+  height: 51px;
+  margin: 0 auto;
+  border-radius: 8px;
+  background: url('../images/github(2).png') rgba(222, 222, 222, 0);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  font-family: CocoGothic;
+  font-size: 1.222em;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -o-transition: all .3s;
+  -ms-transition: all .3s;
+  transition: all .3s;
+}
+
+.container ._button-2:hover,
+.container ._button-3:hover {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.29);
+}
+
+.container ._button-4,
+.container ._button-5,
+.container ._button-6,
+.container ._button-7,
+.container ._button-8 {
+  float: left;
+  width: 23px;
+  height: 24px;
+  border-radius: 3px;
+  background-color: rgba(222, 222, 222, 0);
+  font-family: PierSans;
+  font-size: 0.889em;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+.container ._button-4:hover,
+.container ._button-5:hover,
+.container ._button-6:hover,
+.container ._button-7:hover,
+.container ._button-8:hover {
+  font-size: 1.111em;
+  font-weight: Bold;
+}
