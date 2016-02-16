@@ -238,7 +238,8 @@ body {
   min-height: 110px;
   margin: 0 auto;
   padding-left: 29px;
-  font: 1em/1.58 Avenir-Medium;
+  font-size: 1em;
+  line-height: 1.58;
   color: rgb(255, 255, 255);
 }
 
