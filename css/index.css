@@ -34,7 +34,7 @@ body {
 .container .text:hover {
   border-bottom-width: 10px;
   border-bottom-style: solid;
-  font-weight: 200;
+  font-weight: 400;
 }
 
 .element {
