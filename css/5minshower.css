@@ -70,7 +70,7 @@ body {
   top: 152px;
   left: 0;
   right: 0;
-  z-index: 22;
+  z-index: 21;
   width: 844px;
   height: 626px;
   margin: 0 auto;
@@ -94,7 +94,7 @@ body {
 
 .container-3 {
   position: absolute;
-  top: 77px;
+  top: 75px;
   left: 20px;
   z-index: 14;
   width: 1416px;
@@ -121,9 +121,9 @@ body {
 .container-5 {
   float: left;
   clear: both;
-  width: 13.8055222088%;
+  width: 11.0444177671%;
   height: 26px;
-  margin: 5px 0 0 91px;
+  margin: 6px 0 0 104px;
 }
 
 .container-6 {
@@ -169,7 +169,12 @@ body {
   width: 266px;
 }
 
-.image-2,
+.image-2 {
+  float: left;
+  width: 266px;
+  margin-left: 22px;
+}
+
 .image-3,
 .image-4 {
   float: left;
@@ -196,7 +201,7 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 24;
+  z-index: 23;
   width: 150px;
   margin: 0 auto;
 }
@@ -340,8 +345,7 @@ body {
 .container ._button-4,
 .container ._button-5,
 .container ._button-6,
-.container ._button-7,
-.container ._button-8 {
+.container ._button-7 {
   float: left;
   width: 23px;
   height: 24px;
@@ -356,8 +360,7 @@ body {
 .container ._button-4:hover,
 .container ._button-5:hover,
 .container ._button-6:hover,
-.container ._button-7:hover,
-.container ._button-8:hover {
+.container ._button-7:hover {
   font-size: 1.111em;
   font-weight: Bold;
 }

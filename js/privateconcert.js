@@ -1,5 +1,4 @@
 (function() {
-  var $button5 = $('.js-button5');
   var $button4 = $('.js-button4');
   var $button3 = $('.js-button3');
   var $button2 = $('.js-button2');

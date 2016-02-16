@@ -9,13 +9,12 @@ body {
   color: rgb(162, 162, 162);
 }
 
-.container .image {
-  float: left;
-}
-
-.container .text {
-  font-family: Avenir-Book;
-  font-weight: normal;
+.container .element {
+  width: 22.9994158878%;
+  min-height: 442px;
+  margin-top: 25px;
+  padding-bottom: 57px;
+  background-color: #323232;
 }
 
 .element {
@@ -62,7 +61,7 @@ body {
   top: 149px;
   left: 0;
   right: 0;
-  z-index: 22;
+  z-index: 21;
   width: 876px;
   height: 626px;
   margin: 0 auto;
@@ -112,19 +111,17 @@ body {
 .container-5 {
   float: left;
   clear: both;
-  width: 13.4818288393%;
+  width: 10.7854630715%;
   height: 26px;
-  margin: 4px 0 0 96px;
+  margin: 4px 0 0 107px;
 }
 
 .container-6 {
-  position: relative;
   float: left;
   clear: both;
-  z-index: 23;
   width: 100%;
-  height: 518px;
   margin-top: 771px;
+  padding-bottom: 25px;
   background-color: #434343;
   box-shadow: 0 0 17px rgba(0, 0, 0, 0.5) inset;
 }
@@ -137,61 +134,44 @@ body {
 }
 
 .element-3 {
-  position: relative;
-  clear: both;
-  z-index: 27;
-  width: 23%;
-  height: 469px;
-  margin: -493px 0 0 1.6472%;
-  background-color: #323232;
+  margin-left: 1.6471962616%;
 }
 
 .element-4 {
-  position: relative;
-  z-index: 30;
-  width: 23%;
-  height: 469px;
-  margin: -493px 0 0 26.28651%;
-  background-color: #323232;
+  margin-left: 1.6384345794%;
 }
 
 .element-5 {
-  position: relative;
-  z-index: 33;
-  width: 23%;
-  height: 469px;
-  margin: -493px 0 0 50.78563%;
-  background-color: #323232;
+  margin-left: 1.4997079439%;
 }
 
 .element-6 {
-  position: relative;
-  z-index: 36;
-  width: 23%;
-  height: 469px;
-  margin: -493px 0 0 75.4337%;
-  background-color: #323232;
+  margin-left: 1.648656542%;
 }
 
 .element-7 {
+  clear: both;
   width: 100%;
   height: 40px;
   background-color: rgb(84, 164, 205);
 }
 
 .image-1 {
+  float: left;
   width: 266px;
 }
 
 .image-2,
 .image-3,
 .image-4 {
+  float: left;
   width: 266px;
   margin-left: 23px;
 }
 
 .image-5 {
   position: relative;
+  float: left;
   z-index: 9;
   width: 164px;
   margin-left: 5.33669%;
@@ -223,7 +203,9 @@ body {
   width: 308px;
   min-height: 70px;
   margin: -63px 0 0 146px;
+  font-family: Avenir-Book;
   font-size: 1em;
+  font-weight: normal;
   color: rgb(184, 232, 255);
 }
 
@@ -236,15 +218,13 @@ body {
   width: 417px;
   min-height: 110px;
   margin: 0 auto;
-  font-size: 1.125em;
-  line-height: 1.58;
+  font: normal 1.125em/1.58 Avenir-Book;
   text-align: center;
   color: rgb(255, 255, 255);
 }
 
 .text-4 {
   width: 75.5809523809%;
-  min-height: 186px;
   margin: 57px auto 0;
   font-size: 1em;
   text-align: center;
@@ -255,8 +235,7 @@ body {
   float: left;
   clear: both;
   width: 75.5809523809%;
-  min-height: 186px;
-  margin: 58px 0 0 12.19683%;
+  margin: 58px 0 0 12.1968253968%;
   font-size: 1em;
   text-align: center;
   color: rgb(162, 162, 162);
@@ -264,7 +243,6 @@ body {
 
 .text-6 {
   width: 75.5809523809%;
-  min-height: 186px;
   margin: 61px auto 0;
   font-size: 1em;
   text-align: center;
@@ -273,7 +251,6 @@ body {
 
 .text-7 {
   width: 75.5809523809%;
-  min-height: 186px;
   margin: 56px auto 0;
   font-size: 1em;
   text-align: center;
@@ -329,7 +306,7 @@ body {
   float: left;
   width: 170px;
   height: 51px;
-  margin: 261px 0 0 32.5865580448%;
+  margin: 261px 0 0 32.58656%;
   border-radius: 5px;
   background-color: rgb(50, 50, 50);
   font-family: SFUIDisplay-Thin;
@@ -341,8 +318,7 @@ body {
 .container ._button-4,
 .container ._button-5,
 .container ._button-6,
-.container ._button-7,
-.container ._button-8 {
+.container ._button-7 {
   float: left;
   width: 23px;
   height: 24px;
@@ -357,8 +333,7 @@ body {
 .container ._button-4:hover,
 .container ._button-5:hover,
 .container ._button-6:hover,
-.container ._button-7:hover,
-.container ._button-8:hover {
+.container ._button-7:hover {
   font-size: 1.25em;
   font-weight: Bold;
 }
