@@ -182,4 +182,9 @@ body {
     clear: both;
     margin-top: 20px;
   }
+
+  .element .text-2 {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
 }

@@ -70,7 +70,7 @@ body {
   position: relative;
   float: left;
   clear: both;
-  z-index: 6;
+  z-index: 8;
   width: 46.2616822429%;
   height: 499px;
   margin: 35px 0 0 2.75993%;
@@ -92,7 +92,7 @@ body {
 .element-4 {
   position: relative;
   float: left;
-  z-index: 4;
+  z-index: 6;
   width: 46.2616822429%;
   height: 499px;
   margin: 35px 0 0 1.82243%;
@@ -248,4 +248,66 @@ body {
   -o-transition: all .2s;
   -ms-transition: all .2s;
   transition: all .2s;
+}
+
+@media(max-width: 923px) {
+  .element .element {
+    margin-left: 2.42924%;
+  }
+
+  ._element {
+    margin-top: -517px;
+  }
+
+  .element .text-1 {
+    margin-left: 2.96757%;
+  }
+
+  .element .text-4 {
+    position: absolute;
+    float: none;
+    top: 0;
+    bottom: 0;
+    height: 75px;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-top: 23px;
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  .element-3 {
+    position: relative;
+    float: none;
+    clear: none;
+    z-index: 8;
+    width: 94.39%;
+    margin-top: 150px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .element-4 {
+    position: relative;
+    clear: both;
+    z-index: 6;
+    width: 94.39%;
+    margin-top: 24px;
+    margin-left: 2.70856%;
+  }
+
+  .element-5 {
+    position: relative;
+    float: left;
+    clear: both;
+    z-index: 4;
+    height: 499px;
+    margin-top: 26px;
+    margin-right: 0;
+    margin-left: 2.80336%;
+  }
+
+  .element-6 {
+    position: relative;
+    z-index: 9;
+  }
 }
