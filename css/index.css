@@ -1,3 +1,11 @@
+.element-3:hover {
+  border-color: rgb(215, 123, 255);
+  border-top-style: solid;
+  border-right-style: solid;
+  border-left-style: solid;
+  background-color: rgb(222, 222, 222);
+}
+
 body {
   background-color: rgb(255, 255, 255);
   font: 100 1.125em/1.38 Raleway;
@@ -8,9 +16,11 @@ body {
   width: 947px;
   height: 294px;
   margin: 423px auto 0;
+  overflow: auto;
 }
 
 .container .element {
+  float: left;
   width: 294px;
   height: 294px;
   -webkit-transition: all .2s;
@@ -38,7 +48,6 @@ body {
 }
 
 .element {
-  float: left;
   background-color: rgb(222, 222, 222);
 }
 
@@ -47,6 +56,10 @@ body {
 }
 
 .element-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9;
   width: 100%;
   height: 367px;
   background-image: -webkit-linear-gradient(349deg, rgb(132, 222, 142) 0%, rgb(222, 228, 141) 100%);
@@ -73,24 +86,13 @@ body {
   border-top-width: 0;
   border-right-width: 0;
   border-left-width: 0;
-  border-bottom-color: rgb(248, 213, 141);
+  border-bottom-color: rgb(255, 206, 34);
   border-top-style: none;
   border-right-style: none;
   border-left-style: none;
 }
 
-.element-3 {
-  margin-left: 3.28669%;
-}
-
-.element-3:hover {
-  border-color: rgb(215, 123, 255);
-  border-top-style: solid;
-  border-right-style: solid;
-  border-left-style: solid;
-  background-color: rgb(222, 222, 222);
-}
-
+.element-3,
 .element-4 {
   margin-left: 3.2801%;
 }
@@ -128,7 +130,7 @@ body {
   padding-top: 81px;
   padding-bottom: 70px;
   font-size: 2.667em;
-  color: rgb(251, 197, 22);
+  color: rgb(255, 176, 0);
 }
 
 .text-3:hover {
@@ -161,4 +163,23 @@ body {
 .text-5:hover {
   border-bottom-color: rgb(129, 200, 255);
   font-style: normal;
+}
+
+@media(max-width: 945px) {
+  .container {
+    width: 294px;
+    height: 1032px;
+    margin-top: 383px;
+    overflow: scroll;
+  }
+
+  .container .element {
+    margin-left: 0;
+  }
+
+  .container .element-3,
+  .container .element-4 {
+    clear: both;
+    margin-top: 20px;
+  }
 }

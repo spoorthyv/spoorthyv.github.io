@@ -310,11 +310,6 @@ body {
 }
 
 @media(max-width: 600px) {
-  body {
-    height: 100%;
-    background-image: none;
-  }
-
   .element .element-10 {
     display: none;
     position: relative;
