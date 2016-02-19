@@ -16,6 +16,7 @@ body {
 }
 
 .container .element {
+  position: relative;
   width: 25.0467289719%;
   height: 512px;
   background-color: rgb(111, 173, 219);
@@ -131,7 +132,7 @@ body {
   clear: both;
   width: 100%;
   height: 512px;
-  margin: 776px 0 0 -0.09346%;
+  margin: 776px 0 0 -0.093457944%;
   background-color: rgb(174, 220, 244);
   box-shadow: 2px 0 13px rgba(0, 0, 0, 0.32) inset;
 }
@@ -144,10 +145,9 @@ body {
 
 .container-8 {
   position: relative;
-  float: left;
-  width: 83.4164588528%;
+  width: 75%;
   height: 150px;
-  margin: 81px 0 0 8.16319%;
+  margin: 81px auto 0;
 }
 
 .element-1 {
@@ -187,16 +187,10 @@ body {
   float: left;
   z-index: 8;
   width: 79px;
-  margin: 7px 0 0 6.92464%;
+  margin: 5px 0 0 6.92464%;
 }
 
 .image-6 {
-  float: right;
-  width: 150px;
-  margin-right: 77.57848%;
-}
-
-.image-7 {
   position: absolute;
   top: 0;
   left: 0;
@@ -206,11 +200,16 @@ body {
   margin: 0 auto;
 }
 
-.image-8 {
+.image-7 {
+  position: relative;
   float: right;
-  clear: both;
+  z-index: 24;
   width: 150px;
-  margin-top: -150px;
+}
+
+.image-8 {
+  float: left;
+  width: 150px;
 }
 
 .text-1 {
@@ -228,7 +227,7 @@ body {
   z-index: 3;
   width: 308px;
   min-height: 70px;
-  margin: -35px 0 0 139px;
+  margin: -30px 0 0 139px;
   font-size: 0.889em;
   color: rgb(76, 151, 187);
 }
@@ -277,7 +276,7 @@ body {
   z-index: 5;
   width: 307px;
   height: 90px;
-  margin: 9px 0 0 28px;
+  margin: 11px 0 0 28px;
   border-radius: 3px;
   background-color: rgba(255, 255, 255, 0);
   font-family: Simplifica;

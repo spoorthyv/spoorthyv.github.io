@@ -9,14 +9,6 @@ body {
   color: rgb(162, 162, 162);
 }
 
-.container .element {
-  width: 22.9994158878%;
-  min-height: 442px;
-  margin-top: 25px;
-  padding-bottom: 57px;
-  background-color: #323232;
-}
-
 .element {
   float: left;
 }
@@ -54,6 +46,18 @@ body {
 ._button {
   display: block;
   font-weight: normal;
+}
+
+.container ._element {
+  position: relative;
+  z-index: 9;
+  width: 164px;
+  height: 164px;
+  margin: 17px 0 0 34px;
+  background: url('../images/iTunesArtwork@2x.jpg') rgb(222, 222, 222);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
 }
 
 .container-1 {
@@ -120,7 +124,7 @@ body {
   float: left;
   clear: both;
   width: 100%;
-  margin-top: 771px;
+  margin-top: 783px;
   padding-bottom: 25px;
   background-color: #434343;
   box-shadow: 0 0 17px rgba(0, 0, 0, 0.5) inset;
@@ -133,23 +137,39 @@ body {
   background-color: rgba(0, 78, 139, 0.18);
 }
 
-.element-3 {
-  margin-left: 1.6471962616%;
-}
-
 .element-4 {
-  margin-left: 1.6384345794%;
+  width: 22.9994158878%;
+  min-height: 442px;
+  margin: 25px 0 0 1.6471962616%;
+  padding-bottom: 57px;
+  background-color: #323232;
 }
 
 .element-5 {
-  margin-left: 1.4997079439%;
+  width: 22.9994158878%;
+  min-height: 442px;
+  margin: 25px 0 0 1.63113%;
+  padding-bottom: 57px;
+  background-color: #323232;
 }
 
 .element-6 {
-  margin-left: 1.648656542%;
+  width: 22.9994158878%;
+  min-height: 442px;
+  margin: 25px 0 0 1.49971%;
+  padding-bottom: 57px;
+  background-color: #323232;
 }
 
 .element-7 {
+  width: 22.9994158878%;
+  min-height: 442px;
+  margin: 25px 0 0 1.64866%;
+  padding-bottom: 57px;
+  background-color: #323232;
+}
+
+.element-8 {
   clear: both;
   width: 100%;
   height: 40px;
@@ -169,21 +189,13 @@ body {
   margin-left: 23px;
 }
 
-.image-5 {
-  position: relative;
-  float: left;
-  z-index: 9;
-  width: 164px;
-  margin-left: 5.33669%;
+.image-6 {
+  width: 60px;
 }
 
-.image-7 {
-  width: 61px;
-}
-
-.image-6,
-.image-8,
-.image-9 {
+.image-5,
+.image-7,
+.image-8 {
   width: 135px;
 }
 
@@ -202,7 +214,7 @@ body {
   z-index: 10;
   width: 308px;
   min-height: 70px;
-  margin: -63px 0 0 146px;
+  margin: -44px 0 0 161px;
   font-family: Avenir-Book;
   font-size: 1em;
   font-weight: normal;
@@ -211,7 +223,7 @@ body {
 
 .text-3 {
   position: absolute;
-  top: 171px;
+  top: 187px;
   left: 0;
   right: 0;
   z-index: 11;
@@ -235,7 +247,7 @@ body {
   float: left;
   clear: both;
   width: 75.5809523809%;
-  margin: 58px 0 0 12.1968253968%;
+  margin: 58px 0 0 12.19683%;
   font-size: 1em;
   text-align: center;
   color: rgb(162, 162, 162);
@@ -261,10 +273,10 @@ body {
   position: relative;
   float: left;
   clear: both;
-  z-index: 13;
+  z-index: 14;
   width: 308px;
   height: 90px;
-  margin: -148px 0 0 157px;
+  margin: -139px 0 0 161px;
   border-radius: 3px;
   background-color: rgba(255, 255, 255, 0);
   font-family: PierSans;
@@ -278,7 +290,7 @@ body {
   top: 354px;
   left: 0;
   right: 0;
-  z-index: 12;
+  z-index: 13;
   width: 170px;
   height: 51px;
   margin: 0 auto;
@@ -306,7 +318,7 @@ body {
   float: left;
   width: 170px;
   height: 51px;
-  margin: 261px 0 0 32.58656%;
+  margin: 223px 0 0 32.58656%;
   border-radius: 5px;
   background-color: rgb(50, 50, 50);
   font-family: SFUIDisplay-Thin;
