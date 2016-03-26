@@ -1,56 +1,51 @@
-.text-2:hover {
-  border-bottom-width: 13px;
-  border-bottom-style: solid;
-  background-color: rgba(0, 0, 0, 0);
-  -webkit-transition: all .2s;
-  -moz-transition: all .2s;
-  -o-transition: all .2s;
-  -ms-transition: all .2s;
-  transition: all .2s;
-}
-
 body {
   background-color: rgb(255, 255, 255);
-  font: 700 3.5em/0.3 Montserrat;
-  color: rgb(255, 255, 255);
+  font: normal 1.188em/1.38 Avenir-Medium;
+  color: rgb(221, 244, 255);
 }
 
-.element-3 p,
-.element-4 p {
-  margin-bottom: 1em;
+.container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 3.6345776031%;
+  margin: auto 0;
 }
 
-.element .element {
-  width: 58px;
-  height: 58px;
-  margin: 33px 0 0 2.42991%;
-  background-image: url('../images/ic_arrow_back_white_48px.svg');
-  background-repeat: no-repeat;
-  background-size: 48px 48px;
-  background-position: center center;
-}
-
-.element .element:hover {
-  border: 3px solid rgb(255, 255, 255);
-  border-radius: 58px;
+.container .text {
+  width: 100%;
 }
 
 .text {
   float: left;
-  color: rgb(255, 255, 255);
 }
 
 ._element {
-  float: left;
   background-color: rgba(222, 222, 222, 0);
 }
 
-._element:hover {
-  -webkit-transition: all .3s;
-  -moz-transition: all .3s;
-  -o-transition: all .3s;
-  -ms-transition: all .3s;
-  transition: all .3s;
+.container-1 {
+  z-index: 6;
+  width: 381px;
+  height: 83px;
+}
+
+.container-2 {
+  z-index: 12;
+  width: 348px;
+  height: 83px;
+}
+
+.container-3 {
+  z-index: 18;
+  width: 405px;
+  height: 83px;
+}
+
+.container-4 {
+  z-index: 22;
+  width: 40.4715127701%;
+  height: 53px;
 }
 
 .element-1 {
@@ -66,117 +61,194 @@ body {
   box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.27) inset;
 }
 
-.element-3 {
-  position: relative;
-  float: left;
-  clear: both;
-  z-index: 8;
-  width: 46.2616822429%;
-  height: 499px;
-  margin: 35px 0 0 2.75993%;
-  background: url('../images/2iTunesArtwork@2x.png') rgba(222, 222, 222, 0);
-  background-size: contain;
-  background-position: 50% 85%;
+.element-10 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 19;
+  width: 100%;
+  height: 222px;
   -webkit-transition: all .3s;
   -moz-transition: all .3s;
   -o-transition: all .3s;
   -ms-transition: all .3s;
   transition: all .3s;
-  -webkit-filter: grayscale(80%);
-  -moz-filter: grayscale(80%);
-  -o-filter: grayscale(80%);
-  -ms-filter: grayscale(80%);
-  filter: grayscale(80%);
+}
+
+.element-10:hover {
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  border-bottom: 10px solid rgb(238, 255, 239);
+  background-color: rgba(222, 222, 222, 0);
+}
+
+.element-11 {
+  position: relative;
+  float: right;
+  z-index: 15;
+  width: 222px;
+  height: 222px;
+  margin-right: 1.28443%;
+  border: 16px solid rgba(3, 3, 3, 0);
+  background-image: url('../images/flat_old_computer_wallpaper_green_by_microfreaks-d89kzb8-305x289.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+.element-12 {
+  position: relative;
+  width: 93%;
+  height: 222px;
+  margin: 21px auto 0;
+  background: url('../images/kina.png') rgb(100, 186, 80);
+  background-size: cover;
+  background-position: 29% 32%;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -o-transition: all .3s;
+  -ms-transition: all .3s;
+  transition: all .3s;
+}
+
+.element-12:hover,
+.element-9:hover {
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  background-color: rgb(100, 186, 80);
+  box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -o-transition: all .3s;
+  -ms-transition: all .3s;
+  transition: all .3s;
+}
+
+.element-13 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 23;
+  width: 100%;
+  height: 222px;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -o-transition: all .3s;
+  -ms-transition: all .3s;
+  transition: all .3s;
+}
+
+.element-13:hover {
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  border-bottom: 10px solid rgb(255, 238, 253);
+  background-color: rgba(222, 222, 222, 0);
+}
+
+.element-14 {
+  float: left;
+  clear: both;
+  width: 100%;
+  height: 31px;
+}
+
+.element-2 {
+  float: left;
+  width: 58px;
+  height: 58px;
+  margin: 33px 0 0 2.42991%;
+  background-image: url('../images/ic_arrow_back_white_48px.svg');
+  background-repeat: no-repeat;
+  background-size: 48px 48px;
+  background-position: center center;
+}
+
+.element-2:hover {
+  border: 3px solid rgb(255, 255, 255);
+  border-radius: 58px;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -o-transition: all .3s;
+  -ms-transition: all .3s;
+  transition: all .3s;
+}
+
+.element-3 {
+  position: relative;
+  width: 93%;
+  height: 222px;
+  margin: 157px auto 0;
+  background-color: rgb(104, 184, 221);
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -o-transition: all .3s;
+  -ms-transition: all .3s;
+  transition: all .3s;
+}
+
+.element-3:hover {
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  background-color: rgb(104, 184, 221);
+  box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -o-transition: all .3s;
+  -ms-transition: all .3s;
+  transition: all .3s;
 }
 
 .element-4 {
-  position: relative;
-  float: left;
-  z-index: 6;
-  width: 46.2616822429%;
-  height: 499px;
-  margin: 35px 0 0 1.82243%;
-  background: url('../images/iTunesArtwork@2x(2).jpg') rgba(222, 222, 222, 0);
-  background-size: contain;
-  background-position: 50% 85%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 7;
+  width: 100%;
+  height: 222px;
   -webkit-transition: all .3s;
   -moz-transition: all .3s;
   -o-transition: all .3s;
   -ms-transition: all .3s;
   transition: all .3s;
-  -webkit-filter: grayscale(80%);
-  -moz-filter: grayscale(80%);
-  -o-filter: grayscale(80%);
-  -ms-filter: grayscale(80%);
-  filter: grayscale(80%);
 }
 
-.element-3:hover,
 .element-4:hover {
+  border-bottom: 10px solid rgb(238, 249, 255);
   background-color: rgba(222, 222, 222, 0);
-  box-shadow: 0 0 5px rgba(0, 0, 0, .5);
-  -webkit-transition: all .3s;
-  -moz-transition: all .3s;
-  -o-transition: all .3s;
-  -ms-transition: all .3s;
-  transition: all .3s;
-  -webkit-filter: grayscale(0%);
-  -moz-filter: grayscale(0%);
-  -o-filter: grayscale(0%);
-  -ms-filter: grayscale(0%);
-  filter: grayscale(0%);
 }
 
 .element-5 {
-  width: 94.3925233644%;
-  height: 311px;
-  margin: 681px auto 0;
-  background: url('../images/IMG_0928.JPG') rgba(222, 222, 222, 0);
-  background-size: cover;
+  position: relative;
+  float: right;
+  z-index: 3;
+  width: 222px;
+  height: 222px;
+  margin-right: 12px;
+  background-image: url('../images/iTunesArtwork@2x.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
   background-position: center center;
-  -webkit-transition: all .3s;
-  -moz-transition: all .3s;
-  -o-transition: all .3s;
-  -ms-transition: all .3s;
-  transition: all .3s;
-  -webkit-filter: grayscale(80%);
-  -moz-filter: grayscale(80%);
-  -o-filter: grayscale(80%);
-  -ms-filter: grayscale(80%);
-  filter: grayscale(80%);
-}
-
-.element-5:hover {
-  border-bottom-width: 0;
-  border-bottom-style: none;
-  background-color: rgba(222, 222, 222, 0);
-  box-shadow: 0 0 5px rgba(0, 0, 0, .5);
-  -webkit-transition: all .3s;
-  -moz-transition: all .3s;
-  -o-transition: all .3s;
-  -ms-transition: all .3s;
-  transition: all .3s;
-  -webkit-filter: grayscale(0%);
-  -moz-filter: grayscale(0%);
-  -o-filter: grayscale(0%);
-  -ms-filter: grayscale(0%);
-  filter: grayscale(0%);
 }
 
 .element-6 {
-  clear: both;
-  width: 100%;
-  height: 40px;
-  -webkit-transition: all .2s;
-  -moz-transition: all .2s;
-  -o-transition: all .2s;
-  -ms-transition: all .2s;
-  transition: all .2s;
-  -webkit-filter: grayscale(80%);
-  -moz-filter: grayscale(80%);
-  -o-filter: grayscale(80%);
-  -ms-filter: grayscale(80%);
-  filter: grayscale(80%);
+  position: relative;
+  width: 93%;
+  height: 222px;
+  margin: 21px auto 0;
+  background-color: rgb(156, 202, 233);
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -o-transition: all .3s;
+  -ms-transition: all .3s;
+  transition: all .3s;
 }
 
 .element-6:hover {
@@ -184,130 +256,223 @@ body {
   padding-right: 0;
   padding-bottom: 0;
   padding-left: 0;
+  background-color: rgb(156, 202, 233);
   box-shadow: 0 0 5px rgba(0, 0, 0, .5);
-  -webkit-filter: grayscale(0%);
-  -moz-filter: grayscale(0%);
-  -o-filter: grayscale(0%);
-  -ms-filter: grayscale(0%);
-  filter: grayscale(0%);
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -o-transition: all .3s;
+  -ms-transition: all .3s;
+  transition: all .3s;
+}
+
+.element-7 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 13;
+  width: 100%;
+  height: 222px;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -o-transition: all .3s;
+  -ms-transition: all .3s;
+  transition: all .3s;
+}
+
+.element-7:hover {
+  border-bottom: 10px solid rgb(238, 247, 255);
+  background-color: rgba(222, 222, 222, 0);
+}
+
+.element-8 {
+  position: relative;
+  float: right;
+  z-index: 9;
+  width: 222px;
+  height: 222px;
+  margin-right: 1.28443%;
+  border: 40px solid rgba(71, 71, 71, 0);
+  background-image: url('../images/DROPICON.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+.element-9 {
+  position: relative;
+  width: 93%;
+  height: 222px;
+  margin: 21px auto 0;
+  background-color: rgb(100, 186, 80);
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -o-transition: all .3s;
+  -ms-transition: all .3s;
+  transition: all .3s;
 }
 
 .text-1 {
   margin: 47px 0 0 2.96875%;
-  font: 400 0.518em/1.38 'Pier Sans';
+  font-family: 'Pier Sans';
+  font-size: 1.526em;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
 }
 
 .text-2,
-.text-3 {
-  width: 100%;
-  height: 499px;
-  min-height: 63px;
-  padding-top: 214px;
-  padding-left: 35px;
-  background-color: rgba(0, 0, 0, 0.27);
-  font-size: 1em;
-  -webkit-transition: all .3s;
-  -moz-transition: all .3s;
-  -o-transition: all .3s;
-  -ms-transition: all .3s;
-  transition: all .3s;
-}
-
-.text-3:hover {
-  border-bottom-width: 13px;
-  border-bottom-style: solid;
-  background-color: rgba(0, 0, 0, 0);
-  color: rgb(255, 255, 255);
-  -webkit-transition: all .2s;
-  -moz-transition: all .2s;
-  -o-transition: all .2s;
-  -ms-transition: all .2s;
-  transition: all .2s;
-}
-
 .text-4 {
-  width: 100%;
-  height: 311px;
-  min-height: 63px;
-  padding-top: 158px;
-  padding-left: 35px;
-  background-color: rgba(0, 0, 0, 0.27);
+  font-family: PierSans;
+  font-size: 1.947em;
+  color: rgb(238, 249, 255);
+}
+
+.text-3,
+.text-5 {
+  clear: both;
+  margin-top: 6px;
   font-size: 1em;
-  -webkit-transition: all .3s;
-  -moz-transition: all .3s;
-  -o-transition: all .3s;
-  -ms-transition: all .3s;
-  transition: all .3s;
+  color: rgb(221, 244, 255);
 }
 
-.text-4:hover {
-  border-bottom: 13px solid rgb(255, 255, 255);
-  background-color: rgba(0, 0, 0, 0);
-  -webkit-transition: all .2s;
-  -moz-transition: all .2s;
-  -o-transition: all .2s;
-  -ms-transition: all .2s;
-  transition: all .2s;
+.text-6 {
+  font-family: PierSans;
+  font-size: 1.947em;
+  color: rgb(238, 255, 242);
 }
 
-@media(max-width: 923px) {
-  .element .element {
-    margin-left: 2.42924%;
+.text-7 {
+  clear: both;
+  margin-top: 6px;
+  font-size: 1em;
+  color: rgb(221, 255, 227);
+}
+
+.text-8 {
+  font-family: PierSans;
+  font-size: 1.947em;
+  color: rgb(255, 255, 255);
+}
+
+@media(max-width: 676px) {
+  .element .container {
+    top: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
   }
 
-  ._element {
-    margin-top: -517px;
+  .container .text-3,
+  .container .text-5,
+  .container .text-7 {
+    visibility: hidden;
+  }
+
+  .element .container-1 {
+    width: 269px;
+    height: 95px;
+  }
+
+  .element .container-2 {
+    width: 296px;
+    height: 92px;
+  }
+
+  .element .container-3 {
+    width: 388px;
+    height: 92px;
+  }
+
+  .element .element-11 {
+    position: relative;
+    z-index: 15;
+    margin-right: 1.28247%;
+  }
+
+  .element .element-2 {
+    margin-left: 2.4269599999%;
+  }
+
+  .element .element-5 {
+    position: relative;
+    z-index: 3;
+  }
+
+  .element .element-8 {
+    position: relative;
+    z-index: 9;
+    margin-right: 1.28247%;
   }
 
   .element .text-1 {
-    margin-left: 2.96757%;
+    margin-left: 2.96783%;
+  }
+}
+
+@media(max-width: 461px) {
+  body {
+    font-size: 1.188em;
   }
 
-  .element .text-4 {
-    position: absolute;
-    float: none;
+  .element .container {
     top: 0;
     bottom: 0;
-    height: 75px;
     margin-top: auto;
     margin-bottom: auto;
-    padding-top: 23px;
-    background-color: rgba(0, 0, 0, 0);
   }
 
-  .element-3 {
+  .container .text-2,
+  .container .text-4,
+  .container .text-6,
+  .container .text-8 {
+    font-size: 1.526em;
+  }
+
+  .element .container-1 {
+    width: 115px;
+    height: 73px;
+  }
+
+  .element .container-2 {
+    width: 128px;
+    height: 71px;
+  }
+
+  .element .container-3 {
+    left: 3.6992492164%;
+    width: 198px;
+    height: 74px;
+  }
+
+  .element .container-4 {
+    height: 39px;
+  }
+
+  .element .element-11 {
     position: relative;
-    float: none;
-    clear: none;
-    z-index: 8;
-    width: 94.39%;
-    margin-top: 150px;
-    margin-right: auto;
-    margin-left: auto;
+    z-index: 15;
+    margin-right: 1.27925%;
   }
 
-  .element-4 {
+  .element .element-2 {
+    margin-left: 2.42679%;
+  }
+
+  .element .element-5 {
     position: relative;
-    clear: both;
-    z-index: 6;
-    width: 94.39%;
-    margin-top: 24px;
-    margin-left: 2.70856%;
+    z-index: 3;
   }
 
-  .element-5 {
-    position: relative;
-    float: left;
-    clear: both;
-    z-index: 4;
-    height: 499px;
-    margin-top: 26px;
-    margin-right: 0;
-    margin-left: 2.80336%;
-  }
-
-  .element-6 {
+  .element .element-8 {
     position: relative;
     z-index: 9;
+    margin-right: 1.27925%;
+  }
+
+  .element .text-1 {
+    margin-left: 2.9657%;
+  }
+
+  .element-12 {
+    background-color: rgb(154, 80, 186);
   }
 }

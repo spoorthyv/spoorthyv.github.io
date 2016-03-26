@@ -352,7 +352,7 @@ body {
 
 @media(max-width: 843px) {
   .element .element {
-    margin-left: 2.42623%;
+    margin-left: 2.42438%;
   }
 
   .container .image-1,
@@ -485,9 +485,18 @@ body {
     float: none;
     clear: none;
     z-index: 20;
-    margin-top: 33px;
+    margin-top: 47px;
     margin-right: auto;
     margin-left: auto;
+  }
+
+  .container .container-5 {
+    left: 0;
+    right: 0;
+    width: 92px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0;
   }
 
   .container .element-4 {
@@ -544,7 +553,6 @@ body {
   }
 
   .container ._button-2,
-  .container .container-5,
   .container .text-3,
   .container-1 {
     left: 0;

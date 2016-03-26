@@ -38,7 +38,7 @@ body {
 .element-10 {
   float: left;
   width: 21.71%;
-  background-color: rgb(157, 238, 144);
+  background-color: rgb(168, 240, 157);
 }
 
 .element-11 {
@@ -134,13 +134,13 @@ body {
 .element-4 {
   float: left;
   width: 21.7085427135%;
-  background-color: rgb(188, 152, 255);
+  background-color: rgb(197, 166, 255);
 }
 
 .element-5 {
   float: right;
   width: 76.6834170854%;
-  background-color: rgb(236, 236, 236);
+  background-color: rgb(172, 128, 254);
   -webkit-transition: all .3s;
   -moz-transition: all .3s;
   -o-transition: all .3s;
@@ -170,13 +170,13 @@ body {
 .element-7 {
   float: left;
   width: 21.71%;
-  background-color: rgb(255, 152, 152);
+  background-color: rgb(255, 168, 168);
 }
 
 .element-8 {
   float: right;
   width: 76.68%;
-  background-color: rgb(236, 236, 236);
+  background-color: rgb(255, 137, 137);
   -webkit-transition: all .3s;
   -moz-transition: all .3s;
   -o-transition: all .3s;
@@ -226,10 +226,6 @@ body {
   height: 187px;
   font: 1.333em/4.48 Avenir-Light;
   text-align: center;
-  color: rgb(188, 152, 255);
-}
-
-.text-3:hover {
   color: rgb(246, 242, 255);
 }
 
@@ -238,11 +234,12 @@ body {
   margin: 0 auto;
   font: 1.333em/4.38 Avenir-Light;
   text-align: center;
-  color: rgb(255, 152, 152);
+  color: rgb(255, 242, 242);
 }
 
+.text-3:hover,
 .text-5:hover {
-  color: rgb(255, 242, 242);
+  color: rgb(255, 255, 255);
 }
 
 .text-4,
@@ -281,4 +278,68 @@ body {
   word-break: normal;
   word-wrap: normal;
   white-space: normal;
+}
+
+@media(max-width: 702px) {
+  .container {
+    margin-top: 159px;
+  }
+
+  .element .element-10 {
+    visibility: hidden;
+    position: relative;
+    z-index: 14;
+  }
+
+  .element .element-11 {
+    position: relative;
+    clear: both;
+    z-index: 16;
+    width: 49%;
+    margin-top: -187px;
+    margin-left: 0;
+  }
+
+  .element .element-13 {
+    float: right;
+    width: 49%;
+    margin-top: -187px;
+    margin-left: 0;
+  }
+
+  .element .element-2 {
+    margin-left: 2.42833%;
+  }
+
+  .element .element-4 {
+    visibility: hidden;
+    position: relative;
+    z-index: 6;
+  }
+
+  .element .element-5 {
+    position: relative;
+    clear: both;
+    z-index: 4;
+    width: 100%;
+    margin-top: -187px;
+  }
+
+  .element .element-7 {
+    visibility: hidden;
+    position: relative;
+    z-index: 11;
+  }
+
+  .element .element-8 {
+    position: relative;
+    clear: both;
+    z-index: 9;
+    width: 100%;
+    margin-top: -187px;
+  }
+
+  .element .text-1 {
+    margin-left: 2.96697%;
+  }
 }
