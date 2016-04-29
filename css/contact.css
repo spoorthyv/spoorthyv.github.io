@@ -343,3 +343,113 @@ body {
     margin-left: 2.96697%;
   }
 }
+
+@media(max-width: 480px) {
+  body {
+    font-size: 1.875em;
+  }
+
+  .container {
+    position: relative;
+    z-index: 20;
+    height: 0;
+    margin-top: 0;
+  }
+
+  .element .element-10 {
+    position: relative;
+    z-index: 14;
+  }
+
+  .element .element-11 {
+    position: relative;
+    z-index: 16;
+    width: 50%;
+  }
+
+  .element .element-13 {
+    width: 50%;
+  }
+
+  .element .element-2 {
+    margin-left: 2.42188%;
+  }
+
+  .element .element-4 {
+    position: relative;
+    z-index: 6;
+  }
+
+  .element .element-5 {
+    position: relative;
+    z-index: 4;
+  }
+
+  .element .element-7 {
+    position: relative;
+    z-index: 11;
+  }
+
+  .element .element-8 {
+    position: relative;
+    z-index: 9;
+  }
+
+  .element .text-1 {
+    margin-left: 2.96224%;
+  }
+
+  .element .text-3 {
+    position: absolute;
+    float: none;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 39px;
+    margin: auto;
+    font-size: 1.167em;
+    line-height: 1;
+  }
+
+  .element .text-5 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 33px;
+    margin: auto;
+    font-size: 1.167em;
+    line-height: 1;
+  }
+
+  .element-1 {
+    position: fixed;
+  }
+
+  .element-3 {
+    position: relative;
+    z-index: 7;
+    width: 100%;
+    margin-top: 126px;
+  }
+
+  .element-6 {
+    position: relative;
+    z-index: 12;
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .element-9 {
+    position: relative;
+    float: left;
+    clear: both;
+    z-index: 19;
+    width: 100%;
+    margin-top: 0;
+    margin-right: 0;
+    margin-left: 0;
+  }
+}

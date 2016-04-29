@@ -3,7 +3,6 @@
   var $button3 = $('.js-button3');
   var $button2 = $('.js-button2');
   var $button1 = $('.js-button1');
-  var $title = $('.js-title');
   var $pics = $('.js-pics');
 
 
