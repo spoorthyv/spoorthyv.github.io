@@ -155,7 +155,6 @@ body {
 
 .text-4 {
   float: left;
-  width: 294px;
   height: 283px;
   padding-top: 119px;
   padding-bottom: 109px;
@@ -180,33 +179,41 @@ body {
 @media(max-width: 945px) {
   .container {
     position: relative;
-    float: left;
-    z-index: 6;
-    width: 294px;
-    height: 929px;
+    width: 608px;
+    height: 630px;
     margin-top: 238px;
-    margin-right: 0;
-    margin-left: 34.44279%;
-  }
-
-  .container .element {
-    margin-left: 0;
   }
 
   ._element {
-    position: relative;
     float: left;
     clear: both;
-    z-index: 10;
-    margin-top: -450px;
+    margin-top: 299px;
     margin-right: 0;
-    margin-left: 43.26885%;
+    margin-left: 43.57474%;
   }
 
-  .container .element-3,
+  .container .element-2 {
+    position: relative;
+    z-index: 5;
+    margin-left: 0;
+  }
+
+  .container .element-3 {
+    position: relative;
+    float: right;
+    z-index: 3;
+    margin-right: 0.0025699999%;
+    margin-left: 0;
+  }
+
   .container .element-4 {
-    clear: both;
-    margin-top: 20px;
+    position: absolute;
+    float: none;
+    top: 313px;
+    left: 0;
+    right: 0;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   .element .text-1 {
@@ -220,28 +227,128 @@ body {
     padding-left: 15px;
   }
 
+  .element .text-4 {
+    float: none;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
   .element-1 {
     height: auto;
     padding-bottom: 18px;
   }
 }
 
-@media(max-width: 546px) {
+@media(max-width: 647px) {
   body {
     font-size: 1.125em;
   }
 
   .container {
+    float: left;
+    width: 100%;
+    height: 922px;
+    margin-top: 206px;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .container .element {
+    width: 100%;
+  }
+
+  ._element {
+    margin-top: 39px;
+    margin-left: 43.57371%;
+  }
+
+  .container .element-2 {
+    position: relative;
+    z-index: 5;
+  }
+
+  .container .element-3 {
+    position: relative;
+    float: left;
+    clear: both;
+    z-index: 3;
+    margin-right: 0;
+  }
+
+  .container .element-4 {
+    position: static;
+    float: left;
+    clear: both;
+    top: auto;
+    left: auto;
+    right: auto;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .element .text-1 {
+    width: 90%;
+    margin-top: 45px;
+    padding-right: 6px;
+    padding-left: 6px;
+    font-size: 2.556em;
+  }
+
+  .element .text-2 {
+    min-height: 0;
+    margin-top: 10px;
+    padding-bottom: 7px;
+  }
+
+  .element .text-4 {
+    float: left;
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .element .text-5 {
+    float: none;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .element-1 {
+    height: 206px;
+  }
+}
+
+@media(max-width: 564px) {
+  .container {
     position: relative;
     z-index: 6;
-    margin-top: 307px;
-    margin-left: 23.0712%;
+    margin-top: 259px;
   }
 
   ._element {
     position: relative;
     z-index: 10;
-    margin-top: -519px;
-    margin-left: 43.26923%;
+    margin-top: -14px;
+    margin-left: 43.5727%;
+  }
+
+  .container .element-2 {
+    position: relative;
+    z-index: 5;
+  }
+
+  .container .element-3 {
+    position: relative;
+    z-index: 3;
+  }
+
+  .element .text-4 {
+    float: none;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .element-1 {
+    height: 259px;
   }
 }
