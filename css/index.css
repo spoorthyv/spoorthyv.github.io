@@ -180,9 +180,9 @@ body {
   .container {
     position: relative;
     z-index: 9;
-    width: 608px;
-    height: 630px;
-    margin-top: 238px;
+    width: 609px;
+    height: 608px;
+    margin-top: 311px;
   }
 
   ._element {
@@ -191,7 +191,7 @@ body {
     clear: both;
     z-index: 10;
     margin-right: 0;
-    margin-left: 44.84458%;
+    margin-left: 44.84127%;
   }
 
   .container .element-2 {
@@ -219,7 +219,7 @@ body {
   }
 
   .element .text-1 {
-    width: 90px;
+    width: 278px;
     margin-top: 46px;
     font-size: 2.556em;
   }
@@ -236,7 +236,11 @@ body {
   }
 
   .element-1 {
+    left: 0;
+    right: 0;
     height: auto;
+    margin-right: auto;
+    margin-left: auto;
     padding-bottom: 18px;
   }
 }
@@ -318,7 +322,11 @@ body {
   }
 
   .element-1 {
+    left: 0;
+    right: 0;
     height: 294px;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 
@@ -374,6 +382,10 @@ body {
 
   .element-1 {
     position: fixed;
+    left: 0;
+    right: 0;
     height: 301px;
+    margin-right: auto;
+    margin-left: auto;
   }
 }

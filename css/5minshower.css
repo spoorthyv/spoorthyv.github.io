@@ -6,11 +6,11 @@
 body {
   height: 100%;
   background: rgb(166, 214, 239);
-  background: -webkit-linear-gradient(0deg, rgb(166, 214, 239) 0%, rgb(140, 201, 233) 100%) rgb(104, 184, 221);
-  background:    -moz-linear-gradient(0deg, rgb(166, 214, 239) 0%, rgb(140, 201, 233) 100%) rgb(104, 184, 221);
-  background:      -o-linear-gradient(0deg, rgb(166, 214, 239) 0%, rgb(140, 201, 233) 100%) rgb(104, 184, 221);
-  background:     -ms-linear-gradient(0deg, rgb(166, 214, 239) 0%, rgb(140, 201, 233) 100%) rgb(104, 184, 221);
-  background:         linear-gradient(450deg, rgb(166, 214, 239) 0%, rgb(140, 201, 233) 100%) rgb(104, 184, 221);
+  background: -webkit-linear-gradient(0deg, rgb(166, 214, 239) 0%, rgb(140, 201, 233) 100%) rgb(146, 204, 234);
+  background:    -moz-linear-gradient(0deg, rgb(166, 214, 239) 0%, rgb(140, 201, 233) 100%) rgb(146, 204, 234);
+  background:      -o-linear-gradient(0deg, rgb(166, 214, 239) 0%, rgb(140, 201, 233) 100%) rgb(146, 204, 234);
+  background:     -ms-linear-gradient(0deg, rgb(166, 214, 239) 0%, rgb(140, 201, 233) 100%) rgb(146, 204, 234);
+  background:         linear-gradient(450deg, rgb(166, 214, 239) 0%, rgb(140, 201, 233) 100%) rgb(146, 204, 234);
   font: normal 1.125em/1.38 Avenir-Book;
   color: rgb(255, 255, 255);
 }
@@ -20,7 +20,6 @@ body {
   width: 25.0467289719%;
   height: 512px;
   background-color: rgb(111, 173, 219);
-  box-shadow: -2px 0 13px rgba(0, 0, 0, 0.36) inset;
 }
 
 .element {
@@ -128,19 +127,22 @@ body {
 }
 
 .container-6 {
+  position: relative;
   float: left;
   clear: both;
+  z-index: 31;
   width: 100%;
   height: 512px;
-  margin: 776px 0 0 -0.09346%;
+  margin-top: 776px;
   background-color: rgb(174, 220, 244);
-  box-shadow: 2px 0 13px rgba(0, 0, 0, 0.32) inset;
+  box-shadow: 2px 0 13px rgb(0, 0, 0) inset;
 }
 
 .container-7 {
   float: left;
   width: 74.953271028%;
   height: 512px;
+  background-color: rgb(174, 220, 244);
 }
 
 .container-8 {
@@ -148,6 +150,18 @@ body {
   width: 75%;
   height: 150px;
   margin: 81px auto 0;
+}
+
+.container-9 {
+  position: relative;
+  float: left;
+  clear: both;
+  z-index: 33;
+  width: 100%;
+  height: 512px;
+  margin-top: -512px;
+  background-color: rgba(174, 220, 244, 0);
+  box-shadow: 0 0 13px rgba(0, 0, 0, 0.36) inset;
 }
 
 .element-1 {
@@ -158,7 +172,6 @@ body {
 }
 
 .element-4 {
-  clear: both;
   width: 100%;
   height: 28px;
   background-color: rgba(39, 96, 140, 0.22);
@@ -200,7 +213,7 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 23;
+  z-index: 26;
   width: 150px;
   margin: 0 auto;
 }
