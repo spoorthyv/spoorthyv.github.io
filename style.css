@@ -1,16 +1,14 @@
 @font-face {
 	font-family: 'AvenirLight';
-	src: url(fonts/AvenirLTStd-Book.woff) format('woff');
+	src: url('fonts/AvenirLTStd-Book.woff') format('woff');
 }
 @font-face {
 	font-family: 'AvenirBold';
-	src: url(fonts/AvenirLTStd-Heavy.woff) format('woff');
+	src: url('fonts/AvenirLTStd-Heavy.woff') format('woff');
 }
 @font-face {
 	font-family: 'TypoGrotesk';
-	src: url(fonts/typo_grotesk_bold_demo-webfont.woff) format('woff');
-}
-
+	src: url('fonts/typo_grotesk_bold_demo-webfont.woff') format('woff');
 }
 html, body {
     min-height: 100%;
@@ -22,7 +20,7 @@ html, body, ul, div, img, h1, a, li {
 	padding:0;
 	margin:0;
 }
-/*HEADER*/
+/*---HEADER---*/
 .header {
     background-color: white;
     display: block;
@@ -38,7 +36,7 @@ html, body, ul, div, img, h1, a, li {
 	list-style-type: none;
 	display: inline-block;
 	margin-right: 67px;
-	padding-bottom: 4px;
+	padding-bottom: 6px;
 }
 .header a {
 	font-family: "TypoGrotesk";
@@ -47,41 +45,7 @@ html, body, ul, div, img, h1, a, li {
 	color: #A9A9A9;
 }
 
-/* Underline From Center */
-.hvr-underline-from-center {
-	display: inline-block;
-	vertical-align: middle;
-	-webkit-transform: translateZ(0);
-	transform: translateZ(0);
-	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
-	-moz-osx-font-smoothing: grayscale;
-	position: relative;
-	overflow: hidden;
-}
-.hvr-underline-from-center:before {
-	content: "";
-	position: absolute;
-	z-index: -1;
-	left: 50%;
-	right: 50%;
-	bottom: 0;
-	background: #A9A9A9;
-	height: 3px;
-	-webkit-transition-property: left, right;
-	transition-property: left, right;
-	-webkit-transition-duration: 0.25s;
-	transition-duration: 0.25s;
-	-webkit-transition-timing-function: ease-out;
-	transition-timing-function: ease-out;
-}
-.hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
-	left: 0;
-	right: 0;
-}
-
-/*BODY*/
+/*---BODY---*/
 .body {
 	font-family: 'AvenirLight';
 }
@@ -137,7 +101,7 @@ html, body, ul, div, img, h1, a, li {
 	animation: fadein 3.5s;
 }
 
-/*ANIMATIONS*/
+/*---ANIMATIONS---*/
 @keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
@@ -183,4 +147,38 @@ html, body, ul, div, img, h1, a, li {
     0%{background-position:0% 27%}
     50%{background-position:100% 74%}
     100%{background-position:0% 27%}
+}
+
+/* Underline From Center */
+.hvr-underline-from-center {
+	display: inline-block;
+	vertical-align: middle;
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-moz-osx-font-smoothing: grayscale;
+	position: relative;
+	overflow: hidden;
+}
+.hvr-underline-from-center:before {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	left: 50%;
+	right: 50%;
+	bottom: 0;
+	background: #A9A9A9;
+	height: 3px;
+	-webkit-transition-property: left, right;
+	transition-property: left, right;
+	-webkit-transition-duration: 0.25s;
+	transition-duration: 0.25s;
+	-webkit-transition-timing-function: ease-out;
+	transition-timing-function: ease-out;
+}
+.hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
+	left: 0;
+	right: 0;
 }
