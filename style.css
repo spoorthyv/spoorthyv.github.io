@@ -136,6 +136,7 @@ html, body, ul, div, img, h1, a, li {
  	-o-animation: fadein 3.5s;
 	animation: fadein 3.5s;
 }
+
 /*ANIMATIONS*/
 @keyframes fadein {
     from { opacity: 0; }
