@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'AvenirLight';
-	src: url('fonts/AvenirLTStd-Book.woff') format('woff');
+	src: url('../fonts/AvenirLTStd-Book.woff') format('woff');
 }
 @font-face {
 	font-family: 'AvenirBold';
-	src: url('fonts/AvenirLTStd-Heavy.woff') format('woff');
+	src: url('../fonts/AvenirLTStd-Heavy.woff') format('woff');
 }
 @font-face {
 	font-family: 'TypoGroteskBold';
@@ -17,10 +17,11 @@ html, body {
     font-family: 'AvenirLight';
     font-weight: 200;
 }
-html, body, ul, div, img, h1, a, li {
+html, body, ul, div, img, h1, h2, h3, a, li {
 	padding:0;
 	margin:0;
 }
+
 /*---HEADER---*/
 .header {
     background-color: white;
@@ -30,8 +31,8 @@ html, body, ul, div, img, h1, a, li {
     top:0;
 }
 .header img {
-	padding:14px 0 14px 40px;
-    height: 100px;
+	padding:16px 0 16px 40px;
+    height: 80px;
     width: auto;
 }
 .header ul {
@@ -48,15 +49,62 @@ html, body, ul, div, img, h1, a, li {
 .header a {
 	font-size: 25px;
 	text-decoration: none;
-	color: #A9A9A9;
+	color: #6C6C6C;
 }
 
+/*---BODY---*/
+.body {
+    margin: 132px auto 50px auto;
+    width: 90%;
+    max-width: 1200px;
+}
+ul {
+    list-style: none;
+}
+.body > ul > li {
+    width: 100%;
+    height: 188px;
+    color: white;
+    margin-bottom: 25px;
+}
+.body > ul > li > div {
+    width: calc(100% - 245px);
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 40px;
+}
+.body h1 {
+    margin-bottom: 10px;
+    font-family: 'AvenirBold';
+    font-size: 32px;
+}
+.body h2 {
+    font-family: 'AvenirBold';
+    margin: 210px 0 30px 0;
+    color: #505050;
+}
+.body img {
+    height: 188px;
+    display: inline-block;
+    vertical-align: middle;
 
-
-/*---HEADER---*/
+}
+#private-concert {
+    background-color: #68B8DD;
+}
+#five-min-shower {
+    background-color: #9CCAE9;
+}
+#net-neutrality {
+    background-color: #64BA50;
+}
+#photography {
+    background-image: url('../images/kinacolor.jpg');
+    background-size: cover;
+    background-position: 20%;
+}
 
 /*---ANIMATIONS---*/
-/* Underline From Center */
 .hvr-underline-from-center {
 	display: inline-block;
 	vertical-align: middle;
