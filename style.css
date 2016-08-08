@@ -1,0 +1,136 @@
+@font-face {
+	font-family: 'Avenir Light';
+	src: url(fonts/AvenirLTStd-Light.woff) format('woff');
+}
+@font-face {
+	font-family: 'Typo Grotesk';
+	src: url(fonts/typo_grotesk_bold_demo-webfont.woff) format('woff');
+	src: url(fonts/typo_grotesk_bold_demo-webfont.woff2) format('woff2');
+}
+
+}
+html, body {
+    min-height: 100%;
+    height: 100%;
+    font-family: 'Avenir Light';
+    font-weight: 200;
+}
+html, body, ul, div, img, h1, a, li {
+  padding:0;
+  margin:0;
+}
+/*HEADER*/
+.header {
+    background-color: white;
+    display: block;
+}
+.header img {
+  padding:18px 0 18px 40px;
+}
+.header ul {
+  float:right;
+  margin-top:46px;
+}
+.header li {
+  list-style-type: none;
+  display: inline-block;
+  margin-right: 67px;
+  padding-bottom: 4px;
+}
+.header a {
+  font-family: "Typo Grotesk";
+  font-size: 27px;
+  text-decoration: none;
+  color: #A9A9A9;
+}
+
+/* Underline From Center */
+.hvr-underline-from-center {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  overflow: hidden;
+}
+.hvr-underline-from-center:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  background: #A9A9A9;
+  height: 3px;
+  -webkit-transition-property: left, right;
+  transition-property: left, right;
+  -webkit-transition-duration: 0.25s;
+  transition-duration: 0.25s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
+  left: 0;
+  right: 0;
+}
+
+/*BODY*/
+.body {
+  font-family: 'Avenir-Light';
+}
+.body .body-content {
+  width:640px;
+  margin: 120px auto 0 auto;
+}
+.body .body-content div{
+  background: linear-gradient(300deg, #9bdcf7, #f7d19b, #f79b9b, #d29bf7);
+  background-size: 800% 800%;
+
+  -webkit-animation: GradientMotion 8s ease infinite;
+  -moz-animation: GradientMotion 8s ease infinite;
+  -o-animation: GradientMotion 8s ease infinite;
+  animation: GradientMotion 8s ease infinite;
+}
+
+@-webkit-keyframes GradientMotion {
+    0%{background-position:0% 27%}
+    50%{background-position:100% 74%}
+    100%{background-position:0% 27%}
+}
+@-moz-keyframes GradientMotion {
+    0%{background-position:0% 27%}
+    50%{background-position:100% 74%}
+    100%{background-position:0% 27%}
+}
+@-o-keyframes GradientMotion {
+    0%{background-position:0% 27%}
+    50%{background-position:100% 74%}
+    100%{background-position:0% 27%}
+}
+@keyframes GradientMotion { 
+    0%{background-position:0% 27%}
+    50%{background-position:100% 74%}
+    100%{background-position:0% 27%}
+}
+
+.body h1 {
+  margin-left: 12px;
+  font-size: 70px;
+  color: rgba(255,255,255,.85);
+}
+.body ul {
+  margin-top: 20px;
+}
+.body li {
+  list-style-type: none;
+  margin-left: 12px;
+  font-size: 28px;
+  line-height: 60px;
+  color: #A4A3A3;
+}
+
+
