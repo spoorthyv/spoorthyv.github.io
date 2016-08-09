@@ -79,8 +79,12 @@ html, body, ul, div, img, h1, h2, h3, a, li {
 .body h2 {
     font-family: 'AvenirBold89';
     font-size: 25px;
-    margin: 220px 0 30px 0;
-    color: #6C6C6C;
+    margin: 105px 0 25px 0;
+    color: white;
+    display: inline-block;
+    background-color: #6C6C6C;
+    padding: 15px 20px 15px 20px;
+
 }
 .body h3 {
     font-size: 18px;
@@ -99,7 +103,7 @@ html, body, ul, div, img, h1, h2, h3, a, li {
     background-color: #9CCAE9;
 }
 #five-min-shower > img {
-    margin: 24px 55px 0 0;
+    margin: 24px 60px 0 0;
     height: 140px;
 }
 #net-neutrality {
@@ -117,6 +121,14 @@ html, body, ul, div, img, h1, h2, h3, a, li {
 #photography > div {
     margin-top: 74px;
 }
+
+.list-item {
+    transition: box-shadow 0.4s ease;
+    box-shadow: 0px 1px 7px rgba(0,0,0,0);
+}
+ .list-item:hover {
+     box-shadow: 0px 1px 7px rgba(0,0,0,.7);
+ }
 
 /*---ANIMATIONS---*/
 .hvr-underline-from-center {
