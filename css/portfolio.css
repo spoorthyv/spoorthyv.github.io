@@ -122,7 +122,7 @@ html, body, ul, div, img, h1, h2, h3, a, li {
 #photography {
     background-image: url('../images/kinacolor.jpg');
     background-size: cover;
-    background-position: 20%;
+    background-position: 0% 30%;
 }
 #photography > div {
     margin-top: 74px;
