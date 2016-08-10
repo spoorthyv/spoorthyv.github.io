@@ -1,240 +1,55 @@
 <!doctype html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="initial-scale=1.0">
-  <title>Contact Info</title>
-  <link rel="stylesheet" href="css/standardize.css">
-  <link rel="stylesheet" href="css/contact-grid.css">
-  <link rel="stylesheet" href="css/contact.css">
-	<link rel="icon" href="http://spoorthyv.github.io/favicon.ico">
-  <style>
-  @font-face {
-    font-family: 'Pier Sans';
-    src: url('/fonts/pier-regular-webfont.eot');
-    src: url('/fonts/pier-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/fonts/pier-regular-webfont.woff2') format('woff2'),
-         url('/fonts/pier-regular-webfont.woff') format('woff'),
-         url('/fonts/pier-regular-webfont.ttf') format('truetype'),
-         url('/fonts/pier-regular-webfont.svg#pier_sansregular') format('svg');
-}
-      @font-face {
-    font-family: 1.875em/1.38 'Pier Sans';
-    src: url('/fonts/pier-regular-webfont.eot');
-    src: url('/fonts/pier-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/fonts/pier-regular-webfont.woff2') format('woff2'),
-         url('/fonts/pier-regular-webfont.woff') format('woff'),
-         url('/fonts/pier-regular-webfont.ttf') format('truetype'),
-         url('/fonts/pier-regular-webfont.svg#pier_sansregular') format('svg');
-}
-      @font-face {
-    font-family: PierSans;
-    src: url('/fonts/pier-regular-webfont.eot');
-    src: url('/fonts/pier-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/fonts/pier-regular-webfont.woff2') format('woff2'),
-         url('/fonts/pier-regular-webfont.woff') format('woff'),
-         url('/fonts/pier-regular-webfont.ttf') format('truetype'),
-         url('/fonts/pier-regular-webfont.svg#pier_sansregular') format('svg');
-}
-    @font-face {
-    font-family: PierSans-Bold;
-    src: url('/fonts/pier-bold-webfont.eot');
-    src: url('/fonts/pier-bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/fonts/pier-bold-webfont.woff2') format('woff2'),
-         url('/fonts/pier-bold-webfont.woff') format('woff'),
-         url('/fonts/pier-bold-webfont.ttf') format('truetype'),
-         url('/fonts/pier-bold-webfont.svg#pier_sansbold') format('svg');
+    <head>
+        <!--FAVICON-->
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+        <link rel="manifest" href="/manifest.json">
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="theme-color" content="#ffffff">
 
-}
-    
-@font-face {
-    font-family: 400 1.125em/1.38 Raleway;
-    src: url('/fonts/raleway_thin-webfont.eot');
-    src: url('/fonts/raleway_thin-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/fonts/raleway_thin-webfont.woff2') format('woff2'),
-         url('/fonts/raleway_thin-webfont.woff') format('woff'),
-         url('/fonts/raleway_thin-webfont.ttf') format('truetype'),
-         url('/fonts/raleway_thin-webfont.svg#ralewaythin') format('svg');
-
-
-}
-
-
-
-
-@font-face {
-    font-family: 'Courier New';
-    src: url('/fonts/courier_new-webfont.eot');
-    src: url('/fonts/courier_new-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/fonts/courier_new-webfont.woff2') format('woff2'),
-         url('/fonts/courier_new-webfont.woff') format('woff'),
-         url('/fonts/courier_new-webfont.ttf') format('truetype'),
-         url('/fonts/courier_new-webfont.svg#courier_newregular') format('svg');
-
-
-}
-
-
-
-
-@font-face {
-    font-family: SFUIDisplay-Thin;
-    src: url('/fonts/sf-ui-display-thin-webfont.eot');
-    src: url('/fonts/sf-ui-display-thin-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/fonts/sf-ui-display-thin-webfont.woff2') format('woff2'),
-         url('/fonts/sf-ui-display-thin-webfont.woff') format('woff'),
-         url('/fonts/sf-ui-display-thin-webfont.ttf') format('truetype'),
-         url('/fonts/sf-ui-display-thin-webfont.svg#sf_ui_displaythin') format('svg');
-
-}
-
-
-
-
-@font-face {
-    font-family: Simplifica;
-    src: url('/fonts/simplifica_typeface-webfont.eot');
-    src: url('/fonts/simplifica_typeface-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/fonts/simplifica_typeface-webfont.woff2') format('woff2'),
-         url('/fonts/simplifica_typeface-webfont.woff') format('woff'),
-         url('/fonts/simplifica_typeface-webfont.ttf') format('truetype'),
-         url('/fonts/simplifica_typeface-webfont.svg#simplificasimplifica') format('svg');
-
-
-}
-
-
-
-
-@font-face {
-    font-family: 0.9em/1 UniSansHeavyCAPS;
-    src: url('/fonts/uni_sans_heavy-webfont.eot');
-    src: url('/fonts/uni_sans_heavy-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/fonts/uni_sans_heavy-webfont.woff2') format('woff2'),
-         url('/fonts/uni_sans_heavy-webfont.woff') format('woff'),
-         url('/fonts/uni_sans_heavy-webfont.ttf') format('truetype'),
-         url('/fonts/uni_sans_heavy-webfont.svg#uni_sansheavy_caps') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-
-
-@font-face {
-    font-family: UniSansThinCAPS;
-    src: url('/fonts/uni_sans_thin-webfont.eot');
-    src: url('/fonts/uni_sans_thin-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/fonts/uni_sans_thin-webfont.woff2') format('woff2'),
-         url('/fonts/uni_sans_thin-webfont.woff') format('woff'),
-         url('/fonts/uni_sans_thin-webfont.ttf') format('truetype'),
-         url('/fonts/uni_sans_thin-webfont.svg#uni_sansthin_caps') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-    @font-face {
-    font-family: Avenir;
-    src: url('/fonts/SofiaProLight-webfont.eot');
-    src: url('/fonts/SofiaProLight-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/fonts/SofiaProLight-webfont.woff2') format('woff2'),
-         url('/fonts/SofiaProLight-webfont.woff') format('woff'),
-         url('/fonts/SofiaProLight-webfont.ttf') format('truetype'),
-         url('/fonts/SofiaProLight-webfont.svg#sofia_prolight') format('svg');
-
-}
-
-@font-face {
-    font-family: 400 1em/1.38 Avenir;
-    src: url('/fonts/SofiaProLight-webfont.eot');
-    src: url('/fonts/SofiaProLight-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/fonts/SofiaProLight-webfont.woff2') format('woff2'),
-         url('/fonts/SofiaProLight-webfont.woff') format('woff'),
-         url('/fonts/SofiaProLight-webfont.ttf') format('truetype'),
-         url('/fonts/SofiaProLight-webfont.svg#sofia_prolight') format('svg');
-
-}
-
-@font-face {
-    font-family: Avenir-Book;
-    src: url('/fonts/SofiaProLight-webfont.eot');
-    src: url('/fonts/SofiaProLight-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/fonts/SofiaProLight-webfont.woff2') format('woff2'),
-         url('/fonts/SofiaProLight-webfont.woff') format('woff'),
-         url('/fonts/SofiaProLight-webfont.ttf') format('truetype'),
-         url('/fonts/SofiaProLight-webfont.svg#sofia_prolight') format('svg');
-
-}
-
-@font-face {
-    font-family: normal 1.125em/1.38 Avenir-Book;
-    src: url('/fonts/SofiaProLight-webfont.eot');
-    src: url('/fonts/SofiaProLight-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/fonts/SofiaProLight-webfont.woff2') format('woff2'),
-         url('/fonts/SofiaProLight-webfont.woff') format('woff'),
-         url('/fonts/SofiaProLight-webfont.ttf') format('truetype'),
-         url('/fonts/SofiaProLight-webfont.svg#sofia_prolight') format('svg');
-
-}
-
-@font-face {
-    font-family: 1.333em/4.48 Avenir-Light;
-    src: url('/fonts/SofiaProLight-webfont.eot');
-    src: url('/fonts/SofiaProLight-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/fonts/SofiaProLight-webfont.woff2') format('woff2'),
-         url('/fonts/SofiaProLight-webfont.woff') format('woff'),
-         url('/fonts/SofiaProLight-webfont.ttf') format('truetype'),
-         url('/fonts/SofiaProLight-webfont.svg#sofia_prolight') format('svg');
-
-}
-
-@font-face {
-    font-family: 1.333em/4.38 Avenir-Light;
-    src: url('/fonts/SofiaProLight-webfont.eot');
-    src: url('/fonts/SofiaProLight-webfont.eot?#iefix') format('embedded-opentype'),
-         url('/fonts/SofiaProLight-webfont.woff2') format('woff2'),
-         url('/fonts/SofiaProLight-webfont.woff') format('woff'),
-         url('/fonts/SofiaProLight-webfont.ttf') format('truetype'),
-         url('/fonts/SofiaProLight-webfont.svg#sofia_prolight') format('svg');
-
-}
-</style>
-</head>
-<body class="body page-contact clearfix">
-  <div class="element _container element-1 clearfix">
-    <div onClick="window.location='index.html';" class="element _element element-2"></div>
-    <p class="text text-1">CONTACT&nbsp;</p>
-  </div>
-  <div class="element _container element-3 clearfix">
-    <div class="element _container element-4 clearfix">
-      <p class="text text-2">EMAIL</p>
-    </div>
-    <div class="element _container element-5">
-      <p class="text text-3">svemula@calpoly.edu<br></p>
-    </div>
-  </div>
-  <div class="element _container element-6 clearfix">
-    <div class="element _container element-7 clearfix">
-      <p class="text text-4">Phone</p>
-    </div>
-    <div class="element _container element-8">
-      <p class="text text-5">(510) 709 8909</p>
-    </div>
-  </div>
-  <div class="element _container element-9 clearfix">
-    <div class="element _container element-10 clearfix">
-      <p class="text text-6">Social</p>
-    </div>
-    <div onClick="window.location='https://www.facebook.com/spoorthy.vemula';" class="element _container element-11 clearfix">
-      <div class="element _element element-12"></div>
-    </div>
-    <div onClick="window.location='https://www.linkedin.com/in/spoorthy-vemula-7412b5a7';" class="element _container element-13 clearfix">
-      <div class="element _element element-14"></div>
-    </div>
-  </div>
-  <div class="container _container"></div>
-
-  <script src="js/jquery-min.js"></script>
-</body>
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="css/contact.css">
+    </head>
+    <body>
+        <div class="header">
+            <a href='index.html'>
+                <img class='logo' src='images/logo.svg'>
+            </a>
+            <ul>
+                <li class="hvr-underline-from-center">
+                    <a href='about-me.html'>About</a>
+                </li>
+                <li class="hvr-underline-from-center">
+                    <a href='portfolio.html'>Portfolio</a>
+                </li>
+                <li>
+                    <a href='contact.html'>Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="body">
+            <div id="content">
+                <div id="hicontainer">
+                    <h1>Come Say Hi!</h1>
+                </div>
+                <div id="info">
+                    <h1>(510) 709 8909</h1>
+                    <h1>svemula@calpoly.edu</h1>1
+                    <div id="images">
+                        <a href='https://www.facebook.com/spoorthy.vemula'>
+                            <img src='images/facebook.svg'>
+                        </a>
+                        <a href="https://www.linkedin.com/in/spoorthy-vemula-7412b5a7">
+                            <img src='images/linkedin.svg'>
+                        </a>
+                        <a href="https://github.com/spoorthyv">
+                            <img src='images/github.svg'>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
