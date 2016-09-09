@@ -33,21 +33,20 @@ html, body, ul, div, img, h1, a, li {
 .header {
     background-color: rgba(255,255,255, 1);
     display: block;
-	width: 100%;
+	width: calc(100% - 120px);
 	position: fixed;
-	top:0;
+	top: 0;
+	padding: 20px 60px;
 }
-.logo {
-	padding:16px 0 16px 40px;
-}
+
 .header ul {
 	float:right;
-	margin-top:44px;
+	margin-top:29px;
 }
 .header li {
 	list-style-type: none;
 	display: inline-block;
-	margin-right: 67px;
+	margin-left: 67px;
 	padding-bottom: 6px;
 }
 .header a {
@@ -55,6 +54,8 @@ html, body, ul, div, img, h1, a, li {
 	font-size: 25px;
 	text-decoration: none;
 	color: #6C6C6C;
+	display: inline-block;
+	margin-bottom: -10px;
 }
 
 /*---MOBILE-MENU---*/
@@ -71,14 +72,14 @@ html, body, ul, div, img, h1, a, li {
 	 width: 19px;
 	 height: 3px;
 	 margin: 4px 0;
-	 background: #949494;
+	 background: #6f787b;
 	 z-index: 99;
 }
 
 .mobile-menu {
 	position: fixed;
 	width: 100%;
-	background-color: #6CCFF5;
+	background-color: #6f787b;
 	opacity: 1;
 	animation: menu-down .25s ease-out;
 	top: 92px;
@@ -112,36 +113,38 @@ html, body, ul, div, img, h1, a, li {
 }
 
 
-@media screen and (max-width: 660px) {
+@media screen and (max-width: 700px) {
 	/*---HEADER---*/
+	.header {
+		padding: 16px 30px;
+		width: calc(100% - 60px);
+	}
 	.logo {
-		padding:16px 0 16px 30px;
 	  	height: 60px;
-	  	width: auto;
 		vertical-align: bottom;
 	}
 
 	.header > ul {
-		margin-top: 36px;
+		margin-top: 21px;
 	}
 
 	.header li {
 		list-style-type: none;
 		display: inline-block;
-		margin-right: 40px;
+		margin-left: 40px;
 		padding-bottom: 6px;
 	}
 	.header a {
-		font-family: "TypoGrotesk";
 		font-size: 20px;
 		text-decoration: none;
 		color: #6C6C6C;
+		margin-bottom: 0;
 	}
 
 }
 @media screen and (max-width: 480px) {
-	.logo {
-		padding-left: 20px;
+	.header {
+		padding: 16px 30px;
 	}
 	.header > ul {
 		display: none;
