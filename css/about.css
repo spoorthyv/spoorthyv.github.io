@@ -65,7 +65,7 @@ p {
 	font-size: 20px;
 	line-height: 170%;
 	color: #f3f3f3;
-	margin: 0 0 25px 65px;
+	margin: 0 0 25px 67px;
 	width: 400px;
 }
 #content {
@@ -89,7 +89,7 @@ p {
 	border-color: #f3f3f3;
 	height: 45px;
 	width: 236px;
-	margin-left: 65px;
+	margin-left: 67px;
 	transition: all .2s ease-out;
 }
 #resume:hover {

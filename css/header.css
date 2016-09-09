@@ -56,6 +56,7 @@ html, body, ul, div, img, h1, a, li {
 	color: #6C6C6C;
 	display: inline-block;
 	margin-bottom: -10px;
+	padding-bottom: 5px;
 }
 
 /*---MOBILE-MENU---*/
