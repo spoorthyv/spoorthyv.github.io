@@ -9,16 +9,27 @@
         <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
         <meta name="theme-color" content="#ffffff">
 
-        <title>About Me</title>
+        <link rel="stylesheet" href="css/header.css">
         <link rel="stylesheet" href="css/about.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="js/header.js"></script>
+
+        <title>About Me</title>
     </head>
     <body>
+        <!--HEADER-->
+        <div class="mobile-menu">
+            <a href='about-me.html'>About</a>
+            <a href='portfolio.html'>Portfolio</a>
+            <a href='contact.html'>Contact</a>
+        </div>
         <div class="header">
-            <a href='index.html'>
+            <a href="index.html">
                 <img class='logo' src='images/logowhite.svg'>
             </a>
             <ul>
-                <li>
+                <li class="hvr-underline-from-center">
                     <a href='about-me.html'>About</a>
                 </li>
                 <li class="hvr-underline-from-center">
@@ -28,7 +39,14 @@
                     <a href='contact.html'>Contact</a>
                 </li>
             </ul>
+            <div class="menu-btn" id="menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
+
+        <!--BODY-->
         <div class="body">
             <div id="content">
                 <p>My name is <b>Spoorthy Vemula</b>. I am a UI/UX Designer and Software Engineer and I make products people want to use.</p>

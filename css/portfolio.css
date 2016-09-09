@@ -23,42 +23,6 @@ html, body, ul, div, img, h1, h2, h3, a, li {
 	margin:0;
 }
 
-/*---HEADER---*/
-.header {
-    background-color: rgba(255,255,255, 0.9);
-    display: block;
-    width: 100%;
-    position: fixed;
-    top:0;
-}
-.header img {
-	padding:16px 0 16px 40px;
-    height: 80px;
-    width: auto;
-	vertical-align: bottom;
-}
-.header ul {
-	float:right;
-	margin-top:44px;
-}
-.header li {
-    font-family: 'TypoGroteskBold';
-	list-style-type: none;
-	display: inline-block;
-	margin-right: 67px;
-	padding-bottom: 6px;
-}
-.header a {
-	font-size: 25px;
-	text-decoration: none;
-	color: #6C6C6C;
-}
-.header li:nth-child(2) {
-	padding-bottom: 3px;
-	border-bottom: 3px solid #A9A9A9;
-	vertical-align: middle;
-}
-
 /*---BODY---*/
 .body {
     margin: 132px auto 50px auto;

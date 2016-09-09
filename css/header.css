@@ -1,0 +1,157 @@
+@font-face {
+	font-family: 'AvenirLight';
+	src: url('../fonts/AvenirLTStd-Book.woff') format('woff');
+}
+@font-face {
+	font-family: 'AvenirBold';
+	src: url('../fonts/AvenirLTStd-Heavy.woff') format('woff');
+}
+@font-face {
+	font-family: 'TypoGrotesk';
+	src: url('../fonts/typo_grotesk_bold_demo-webfont.woff') format('woff');
+}
+html, body {
+    font-family: 'AvenirLight';
+    font-weight: 200;
+}
+html, body, ul, div, img, h1, a, li {
+	padding:0;
+	margin:0;
+}
+
+
+/*---HEADER---*/
+.logo {
+	height: 73px;
+}
+
+.mobile-menu {
+	display: none;
+	transition: all 1s;
+	opacity: 0;
+}
+.header {
+    background-color: rgba(255,255,255, 1);
+    display: block;
+	width: 100%;
+	position: fixed;
+	top:0;
+}
+.logo {
+	padding:16px 0 16px 40px;
+}
+.header ul {
+	float:right;
+	margin-top:44px;
+}
+.header li {
+	list-style-type: none;
+	display: inline-block;
+	margin-right: 67px;
+	padding-bottom: 6px;
+}
+.header a {
+	font-family: "AvenirBold";
+	font-size: 25px;
+	text-decoration: none;
+	color: #6C6C6C;
+}
+
+/*---MOBILE-MENU---*/
+.menu-btn {
+	display: none;
+	position: fixed;
+	right: 20px;
+	top: 33px;	
+	cursor: pointer;
+}
+
+.menu-btn span {
+	 display: block;
+	 width: 19px;
+	 height: 3px;
+	 margin: 4px 0;
+	 background: #949494;
+	 z-index: 99;
+}
+
+.mobile-menu {
+	position: fixed;
+	width: 100%;
+	background-color: #6CCFF5;
+	opacity: 1;
+	animation: menu-down .25s ease-out;
+	top: 92px;
+	display: none;
+	padding: 5px 0;
+}
+
+.mobile-menu a {
+	display: block;
+	color: white;
+	text-align: right;
+	padding: 20px;
+	font-family: "AvenirBold";
+	font-size: 22px;
+	text-decoration: none;
+
+}
+
+.expand {
+	display: block;
+}
+
+/*---MOBILE---*/
+@keyframes menu-down {
+    from {
+        transform:translateY(-272px);
+    }
+    to {
+        transform: translateY(0px);
+    }
+}
+
+
+@media screen and (max-width: 660px) {
+	/*---HEADER---*/
+	.logo {
+		padding:16px 0 16px 30px;
+	  	height: 60px;
+	  	width: auto;
+		vertical-align: bottom;
+	}
+
+	.header > ul {
+		margin-top: 36px;
+	}
+
+	.header li {
+		list-style-type: none;
+		display: inline-block;
+		margin-right: 40px;
+		padding-bottom: 6px;
+	}
+	.header a {
+		font-family: "TypoGrotesk";
+		font-size: 20px;
+		text-decoration: none;
+		color: #6C6C6C;
+	}
+
+}
+@media screen and (max-width: 480px) {
+	.logo {
+		padding-left: 20px;
+	}
+	.header > ul {
+		display: none;
+	}
+	.menu-btn {
+		display: inline-block;
+	}
+}
+@media screen and (min-width: 480px) {
+	.expand {
+		display: none;
+	}
+}

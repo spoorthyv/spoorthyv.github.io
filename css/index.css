@@ -19,35 +19,6 @@ html, body, ul, div, img, h1, a, li {
 	margin:0;
 }
 
-/*---HEADER---*/
-.header {
-    background-color: rgba(255,255,255, 0.9);
-    display: block;
-	width: 100%;
-	position: fixed;
-	top:0;
-}
-.header img {
-	padding:16px 0 16px 40px;
-}
-.header ul {
-	float:right;
-	margin-top:44px;
-}
-.header li {
-	list-style-type: none;
-	display: inline-block;
-	margin-right: 67px;
-	padding-bottom: 6px;
-}
-.header a {
-	font-family: "TypoGrotesk";
-	font-size: 25px;
-	text-decoration: none;
-	color: #6C6C6C;
-}
-
-/*---BODY---*/
 .body {
 	font-family: 'AvenirLight';
 }

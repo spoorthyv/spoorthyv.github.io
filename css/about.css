@@ -3,7 +3,7 @@
 	src: url('../fonts/AvenirLTStd-Book.woff') format('woff');
 }
 @font-face {
-	font-family: 'AvenirBold89';
+	font-family: 'AvenirBold';
 	src: url('../fonts/AvenirLTStd-Heavy.woff') format('woff');
 }
 @font-face {
@@ -22,7 +22,7 @@ html, body, ul, div, img, h1, h2, h3, a, li {
 	margin:0;
 }
 b {
-	font-family: 'AvenirBold89';
+	font-family: 'AvenirBold';
 }
 body {
 	background-image: url(../images/spoopicture.jpg);
@@ -35,39 +35,23 @@ body {
 
 /*---HEADER---*/
 .header {
-    background-color: rgba(255,255,255, 0);
-    display: block;
-    width: 100%;
-    position: fixed;
-    top:0;
+	background-color: transparent;
 }
-.header img {
-	padding:16px 0 16px 40px;
-    height: 80px;
-    width: auto;
-	vertical-align: bottom;
-}
-.header ul {
-	float:right;
-	margin-top:44px;
-}
-.header li {
-    font-family: 'TypoGroteskBold';
-	list-style-type: none;
-	display: inline-block;
-	margin-right: 67px;
-	padding-bottom: 6px;
-}
-.header li:nth-child(1) {
-	padding-bottom: 3px;
-	border-bottom: 3px solid white;
-	vertical-align: middle;
-}
+
 .header a {
-	font-size: 22px;
-	text-decoration: none;
-	color: #f3f3f3;
+	color: #e4e4e4;
 }
+
+.menu-btn span {
+	background-color: #e4e4e4;
+}
+
+@media screen and (max-width: 480px) {
+	.header {
+		background-color: #272727;
+	}
+}
+
 
 /*---BODY---*/
 .body {

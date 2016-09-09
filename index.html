@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -10,15 +9,26 @@
 		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
 		<meta name="theme-color" content="#ffffff">
 
+		<link rel="stylesheet" href="css/header.css" type="text/css" />
 		<link rel="stylesheet" href="css/index.css" type="text/css" />
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<script src="js/header.js"></script>
+
 		<title>Spoorthy Vemula</title>
 	</head>
 	<body>
+		<!--HEADER-->
+		<div class="mobile-menu">
+			<a href='about-me.html'>About</a>
+			<a href='portfolio.html'>Portfolio</a>
+			<a href='contact.html'>Contact</a>
+		</div>
 		<div class="header">
 			<a href="index.html">
 		    	<img class='logo' src='images/logo.svg'>
 			</a>
-	        <ul>
+	    	<ul>
 				<li class="hvr-underline-from-center">
 					<a href='about-me.html'>About</a>
 				</li>
@@ -28,9 +38,16 @@
 				<li class="hvr-underline-from-center">
 					<a href='contact.html'>Contact</a>
 				</li>
-	        </ul>
-	    </div>
-	  	<div class='body'>
+	    	</ul>
+			<div class="menu-btn" id="menu-btn">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+
+		<!--BODY-->
+		<div class='body'>
 	  		<div>
 	     		<h1>Spoorthy Vemula</h1>
 	     	</div>
