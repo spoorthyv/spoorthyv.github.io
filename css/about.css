@@ -65,7 +65,7 @@ p {
 	font-size: 20px;
 	line-height: 170%;
 	color: #f3f3f3;
-	margin: 0 0 25px 65px;
+	margin: 0 0 25px 67px;
 	width: 400px;
 }
 #content {
@@ -78,18 +78,19 @@ p {
 	display: inline-block;;
 	font-size: 20px;
 	text-decoration: none;
-	width: 280px;
-	margin: 11px 0 0 15px;
+	width: auto;
+	margin: 11px 15px;
 	top:0;
 }
 #resume {
+	display: inline-block;
 	background-color: transparent;
 	border-width: 2px;
 	border-style: solid;
 	border-color: #f3f3f3;
 	height: 45px;
-	width: 236px;
-	margin-left: 65px;
+	width: auto;
+	margin-left: 67px;
 	transition: all .2s ease-out;
 }
 #resume:hover {
@@ -99,37 +100,3 @@ p {
 	color: black;
 }
 
-/*---ANIMATIONS---*/
-/* Underline From Center */
-.hvr-underline-from-center {
-	display: inline-block;
-	vertical-align: middle;
-	-webkit-transform: translateZ(0);
-	transform: translateZ(0);
-	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
-	-moz-osx-font-smoothing: grayscale;
-	position: relative;
-	overflow: hidden;
-}
-.hvr-underline-from-center:before {
-	content: "";
-	position: absolute;
-	z-index: -1;
-	left: 50%;
-	right: 50%;
-	bottom: 0;
-	background: #A9A9A9;
-	height: 3px;
-	-webkit-transition-property: left, right;
-	transition-property: left, right;
-	-webkit-transition-duration: 0.25s;
-	transition-duration: 0.25s;
-	-webkit-transition-timing-function: ease-out;
-	transition-timing-function: ease-out;
-}
-.hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
-	left: 0;
-	right: 0;
-}

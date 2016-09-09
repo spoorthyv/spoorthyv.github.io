@@ -56,6 +56,7 @@ html, body, ul, div, img, h1, a, li {
 	color: #6C6C6C;
 	display: inline-block;
 	margin-bottom: -10px;
+	padding-bottom: 5px;
 }
 
 /*---MOBILE-MENU---*/
@@ -157,4 +158,45 @@ html, body, ul, div, img, h1, a, li {
 	.expand {
 		display: none;
 	}
+}
+
+.underline {
+	box-shadow: 0 3px #A9A9A9;
+	display: inline-block;
+	z-index: -1;
+	vertical-align: middle;
+	transform: translateZ(0);
+}
+
+.hvr-underline-from-center {
+	display: inline-block;
+	vertical-align: middle;
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-moz-osx-font-smoothing: grayscale;
+	position: relative;
+	overflow: hidden;
+}
+.hvr-underline-from-center:before {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	left: 50%;
+	right: 50%;
+	bottom: 0;
+	background: #A9A9A9;
+	height: 3px;
+	-webkit-transition-property: left, right;
+	transition-property: left, right;
+	-webkit-transition-duration: 0.25s;
+	transition-duration: 0.25s;
+	-webkit-transition-timing-function: ease-out;
+	transition-timing-function: ease-out;
+}
+.hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
+	left: 0;
+	right: 0;
 }
