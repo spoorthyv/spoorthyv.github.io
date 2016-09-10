@@ -25,48 +25,75 @@ html, body, ul, div, img, h1, h2, h3, a, li {
 
 /*---BODY---*/
 .body {
-	height: calc(100% - 112px);
-	margin-top: 112px;
+	height: calc(100% - 118px);
+	margin-top: 118px;
     width: 100%;
+    max-width: 768px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.body > * {
+	vertical-align: top;
 }
 div {
     display: inline-block;
 }
-#hicontainer h1 {
-    font-size: 50px;
-    color: white;
-    margin: 60px 40px;
-    text-align: center;
+h1 {
+	font-size: 38px;
 }
-#hicontainer {
-    background-color: #6C6C6C;
-    width: 228px;
+h2 {
+	font-size: 27px;
 }
-#info {
-    float: right;
-    margin-top: 31.5px;
+
+#contact-info {
+	margin: 80px 0 0 80px;
 }
-#content {
-    margin: 100px auto 0 auto;
-    display: block;
-    width: 700px;
+#contact-info > * {
+	margin-bottom: 30px;
+	text-align: center;
 }
 #images img {
     width: 65px;
-    margin-right: 40px;
     transition: all 0.2s ease-out;
+    margin-right: 40px;
 }
-#info h1 {
-    margin-bottom: 38px;
-    font-weight: 'AvenirBold';
-    font-size: 40px;
-    color: #6C6C6C;
-    display: block;
+#images .last {
+	margin-right: 0px;
 }
 #images img:hover {
     box-shadow: 0 0 5px rgba(0,0,0,0.5);
     border-radius: 200px;
 }
+a.svg:after {
+  content: ""; 
+  position: absolute; 
+  top: 0; 
+  right: 0; 
+  bottom: 0; 
+  left: 0;
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+}
+
+/*---MOBILE---*/
+@media screen and (max-width: 888px) {
+	.body {
+		width: 413px;
+		text-align: center;
+	}
+	#contact-info {
+		margin-left: 0;
+	}
+}
+@media screen and (max-width: 473px) {
+	.body {
+		width: 300px;
+	}
+	.body > img {
+		width: 100%;
+	}
+}
+
 
 /*---ANIMATIONS---*/
 /* Underline From Center */
