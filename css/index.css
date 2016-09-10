@@ -23,7 +23,7 @@ html, body, ul, div, img, h1, a, li {
 	font-family: 'AvenirLight';
 }
 .body {
-	width:611px;
+	width: 611px;
 	margin: 230px auto 0 auto;
 }
 .body div{
@@ -73,6 +73,27 @@ html, body, ul, div, img, h1, a, li {
  	-o-animation: fadein 3.25s;
 	animation: fadein 3.25s;
 }
+
+/*---MOBILE---*/
+
+@media screen and (max-width: 640px) {
+	.body {
+		width: calc(100% - 40px);
+		margin: 153px 20px 20px 20px;
+	}
+	.body h1 {
+		font-size: 50px;
+	}
+	.body li {
+		font-size: 23px;
+		line-height: 54px;
+	}
+}
+
+
+
+
+
 
 /*---ANIMATIONS---*/
 @keyframes fadein {

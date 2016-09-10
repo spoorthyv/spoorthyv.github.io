@@ -25,9 +25,12 @@ html, body, ul, div, img, h1, h2, h3, a, li {
 
 /*---BODY---*/
 .body {
-    margin: 132px auto 50px auto;
+    margin-top: 132px;
     width: calc(90% - 80px);
     max-width: 1200px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 .body a {
     width: 100%;
@@ -94,12 +97,90 @@ html, body, ul, div, img, h1, h2, h3, a, li {
 
 .list-item {
     transition: box-shadow 0.4s ease;
-    box-shadow: 0px 1px 7px rgba(0,0,0,0);
+    box-shadow: 0px 1px 13px rgba(0,0,0,0);
 }
  .list-item:hover {
-     box-shadow: 0px 1px 7px rgba(0,0,0,.7);
-	 border-radius: 3px;
+     box-shadow: 0px 1px 13px rgba(0,0,0,.4);
  }
+
+
+/*---MOBILE---*/
+
+@media screen and (max-width: 760px) {
+    .body {
+        width: calc(100% - 60px); 
+    }
+}
+
+@media screen and (max-width: 645px) {
+    h3 {
+        display: none;
+    }
+    .body a {
+        height: 150px;
+    }
+    .body img {
+        height: 150px;
+        margin: 0;
+    }
+
+    #five-min-shower > img {
+        height: 110px;
+        margin: 20px 35px;
+    }
+    #net-neutrality > img {
+        height: 130px;
+        margin: 10px;
+    }
+    #photography > div {
+        margin-top: 55px;
+    }
+    .body > div > a > div {
+        width: 216px;
+        margin-top: 39px;
+    }
+
+    .body h2 {
+        margin-top: 30px
+    }
+}
+
+@media screen and (max-width: 478px) {
+    .body {
+        width: calc(100% - 40px);
+    }
+    .body h2 {
+        margin-top: 0;
+        margin-bottom: 33px;
+    }
+    .body > div > a > div {
+        width: 169px;
+        margin-top: 37px;
+        padding-left: 20px;
+    }
+    .body h1 {
+        font-size: 25px;
+    }
+    .body a {
+        height: 130px;
+        margin-bottom: 15px
+    }
+    .body img {
+        height: 130px;
+    }
+    #five-min-shower > img {
+        height: 90px;
+        margin: 20px 35px;
+    }
+    #net-neutrality > img {
+        height: 110px;
+        margin: 10px;
+    }
+    .body > div > a > div {
+        position: fixed;
+    }
+}
+
 
 /*---ANIMATIONS---*/
 /* Underline From Center */
