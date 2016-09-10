@@ -3,7 +3,7 @@
 	src: url('../fonts/AvenirLTStd-Book.woff') format('woff');
 }
 @font-face {
-	font-family: 'AvenirBold89';
+	font-family: 'AvenirBold';
 	src: url('../fonts/AvenirLTStd-Heavy.woff') format('woff');
 }
 @font-face {
@@ -46,11 +46,11 @@ html, body, ul, div, img, h1, h2, h3, a, li {
 }
 .body h1 {
     margin-bottom: 10px;
-    font-family: 'AvenirBold89';
+    font-family: 'AvenirBold';
     font-size: 32px;
 }
 .body h2 {
-    font-family: 'AvenirBold89';
+    font-family: 'AvenirBold';
     font-size: 25px;
     margin: 105px 0 25px 0;
     color: white;
