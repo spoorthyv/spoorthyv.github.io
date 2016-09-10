@@ -23,8 +23,8 @@ html, body, ul, div, img, h1, a, li {
 	font-family: 'AvenirLight';
 }
 .body {
-	width:611px;
-	padding: 230px auto 0 auto;
+	width: 611px;
+	margin: 230px auto 0 auto;
 }
 .body div{
 	padding: 10px 0 6px 17px;
@@ -79,7 +79,7 @@ html, body, ul, div, img, h1, a, li {
 @media screen and (max-width: 640px) {
 	.body {
 		width: calc(100% - 40px);
-		padding: 153px 20px 20px 20px;
+		margin: 153px 20px 20px 20px;
 	}
 	.body h1 {
 		font-size: 50px;
