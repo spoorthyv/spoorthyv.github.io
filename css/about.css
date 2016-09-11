@@ -30,7 +30,10 @@ body {
 	background-repeat: no-repeat;
 	background-position: right;
 	background-color: black;
-	height: calc(100% - 112px);
+}
+.body {
+	height: 100vh;
+	width: 100vw;
 }
 
 /*---HEADER---*/
@@ -46,32 +49,20 @@ body {
 	background-color: #e4e4e4;
 }
 
-@media screen and (max-width: 480px) {
-	.header {
-		background-color: black;
-	}
-	.mobile-menu {
-		background-color: #1b1b1b;
-	}
-}
-
-
 /*---BODY---*/
-.body {
-	height: calc(100% - 112px);
-	margin-top: 112px;
-}
 p {
 	font-size: 20px;
 	line-height: 170%;
 	color: #f3f3f3;
-	margin: 0 0 25px 67px;
-	width: 400px;
+	margin: 0 0 25px 0;
 }
 #content {
-	position: relative;
+	position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    width: calc(100% - 100px);
+    max-width: 400px;
+    margin: 0 50px;
 }
 #resume a {
 	color: #f3f3f3;
@@ -90,7 +81,6 @@ p {
 	border-color: #f3f3f3;
 	height: 45px;
 	width: auto;
-	margin-left: 67px;
 	transition: all .2s ease-out;
 }
 #resume:hover {
@@ -100,3 +90,19 @@ p {
 	color: black;
 }
 
+/*---MOBILE---*/
+@media screen and (max-width: 680px) {
+	.header {
+		background-color: rgba(0,0,0,0.7);
+	}
+	.mobile-menu {
+		background-color: #1b1b1b;
+	}
+	#content {
+		margin: 0 30px;
+		width: calc(100% - 60px);
+	}
+	.body {
+		background-color: rgba(0,0,0,0.5);
+	}
+}
