@@ -26,35 +26,36 @@ html, body, ul, div, img, h1, h2, h3, a, li {
 /*---BODY---*/
 .body {
 	height: calc(100% - 118px);
-	margin-top: 118px;
-    width: 100%;
-    max-width: 768px;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
+	margin: 118px 40px 0 40px;
+  width: calc(100% - 80px);
+  max-width: 550px;
+  position: relative;
+  left: calc(50% - 40px);
+  transform: translateX(-50%);
+	text-align: center;
 }
 .body > * {
 	vertical-align: top;
 }
 div {
-    display: inline-block;
+  display: inline-block;
 }
 h1 {
-	font-size: 38px;
-}
-h2 {
-	font-size: 27px;
+	font-size: 25px;
+	font-family: 'AvenirLight';
+	color: #575f62;
 }
 
 #contact-info {
-	margin: 80px 0 0 80px;
+	margin: 80px 0 0 0;
 }
 #contact-info > * {
 	margin-bottom: 30px;
 	text-align: center;
 }
+
 #images img {
-    width: 65px;
+    width: 50px;
     transition: all 0.2s ease-out;
     margin-right: 40px;
 }
@@ -62,37 +63,60 @@ h2 {
 	margin-right: 0px;
 }
 #images img:hover {
-    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    box-shadow: 0 0 7px rgba(0,0,0,0.4);
     border-radius: 200px;
 }
+svg {
+	width: 100%;
+	height: auto;
+}
 a.svg:after {
-  content: ""; 
-  position: absolute; 
-  top: 0; 
-  right: 0; 
-  bottom: 0; 
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
   left: 0;
   box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
 }
 
-/*---MOBILE---*/
-@media screen and (max-width: 888px) {
-	.body {
-		width: 413px;
-		text-align: center;
-	}
-	#contact-info {
-		margin-left: 0;
-	}
+path:hover {
+	transition: all 0.3s;
+	cursor: pointer;
 }
-@media screen and (max-width: 473px) {
-	.body {
-		width: 300px;
-	}
-	.body > img {
-		width: 100%;
-	}
+
+circle:hover {
+	cursor: pointer;
+	transition: all 0.3s;
 }
+
+#LinkedIn > path:hover {
+	fill: #16a3ed;
+}
+
+#Facebook> path:hover {
+	fill: #3c72e1;
+}
+
+#GitHub> path:hover {
+	fill: #9e6be9;
+}
+
+#LinkedIn > circle:hover + path {
+	fill: #16a3ed;
+	transition: all 0.3s;
+}
+
+#Facebook > circle:hover + path {
+	fill: #3c72e1;
+	transition: all 0.3s;
+}
+
+#GitHub > circle:hover + path {
+	fill: #9e6be9;
+	transition: all 0.3s;
+}
+
 
 
 /*---ANIMATIONS---*/
