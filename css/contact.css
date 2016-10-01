@@ -26,7 +26,7 @@ html, body, ul, div, img, h1, h2, h3, a, li {
 /*---BODY---*/
 .body {
 	height: calc(100% - 118px);
-	margin: 118px 40px 0 40px;
+	margin: 130px 40px 0 40px;
   width: calc(100% - 80px);
   max-width: 550px;
   position: relative;
@@ -80,7 +80,7 @@ a.svg:after {
   box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
 }
 
-path:hover {
+#Combined-Shape:hover {
 	transition: all 0.3s;
 	cursor: pointer;
 }
@@ -99,7 +99,7 @@ circle:hover {
 }
 
 #GitHub> path:hover {
-	fill: #9e6be9;
+	fill: #af79ff;
 }
 
 #LinkedIn > circle:hover + path {
@@ -113,7 +113,7 @@ circle:hover {
 }
 
 #GitHub > circle:hover + path {
-	fill: #9e6be9;
+	fill: #af79ff;
 	transition: all 0.3s;
 }
 
