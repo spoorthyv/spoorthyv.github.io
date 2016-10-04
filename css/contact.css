@@ -26,11 +26,11 @@ html, body, ul, div, img, h1, h2, h3, a, li {
 /*---BODY---*/
 .body {
 	height: calc(100% - 118px);
-	margin: 130px 40px 0 40px;
-  width: calc(100% - 80px);
+	margin: 130px 30px 0 30px;
+  width: calc(100% - 60px);
   max-width: 550px;
   position: relative;
-  left: calc(50% - 40px);
+  left: calc(50% - 30px);
   transform: translateX(-50%);
 	text-align: center;
 }
@@ -42,16 +42,29 @@ div {
 }
 h1 {
 	font-size: 25px;
-	font-family: 'AvenirLight';
+	font-family: 'AvenirBold';
 	color: #575f62;
+}
+h2 {
+	font-size: 17px;
+	font-family: 'AvenirLight';
+	color: #9c9c9c;
+	letter-spacing: 6px;
 }
 
 #contact-info {
 	margin: 80px 0 0 0;
 }
-#contact-info > * {
+#contact-info > h1 {
 	margin-bottom: 30px;
-	text-align: center;
+	text-align: left;
+}
+#contact-info > h2 {
+	margin-bottom: 11px;
+	text-align: left;
+}
+#contact-info > #email {
+	margin-bottom: 5px;
 }
 
 #images img {
@@ -81,13 +94,13 @@ a.svg:after {
 }
 
 #Combined-Shape:hover {
-	transition: all 0.3s;
+	transition: all 0.4s;
 	cursor: pointer;
 }
 
 circle:hover {
 	cursor: pointer;
-	transition: all 0.3s;
+	transition: all 0.4s;
 }
 
 #LinkedIn > path:hover {
@@ -95,7 +108,7 @@ circle:hover {
 }
 
 #Facebook> path:hover {
-	fill: #3c72e1;
+	fill: #4480e6;
 }
 
 #GitHub> path:hover {
@@ -108,7 +121,7 @@ circle:hover {
 }
 
 #Facebook > circle:hover + path {
-	fill: #3c72e1;
+	fill: #4480e6;
 	transition: all 0.3s;
 }
 
@@ -117,6 +130,15 @@ circle:hover {
 	transition: all 0.3s;
 }
 
+/*---MOBILE---*/
+@media screen and (max-width: 480px) {
+	h1 {
+		font-size: 22px;
+	}
+	h2 {
+		font-size: 14px;
+	}
+}
 
 
 /*---ANIMATIONS---*/
