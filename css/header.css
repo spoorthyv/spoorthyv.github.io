@@ -21,7 +21,7 @@ html, body, ul, div, img, h1, a, li {
 
 
 /*---HEADER---*/
-.header * {
+* {
 	transition: all 0.2s;
 }
 .logo {
