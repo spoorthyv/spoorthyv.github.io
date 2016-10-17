@@ -21,6 +21,9 @@ html, body, ul, div, img, h1, a, li {
 
 
 /*---HEADER---*/
+.header * {
+	transition: all 0.2s;
+}
 .logo {
 	height: 73px;
 }
@@ -57,6 +60,26 @@ html, body, ul, div, img, h1, a, li {
 	display: inline-block;
 	margin-bottom: -10px;
 	padding-bottom: 5px;
+}
+
+/*---SCROLL---*/
+.scroll .logo{
+	height: 50px;
+}
+
+.scroll{
+	padding: 12px 50px;
+	width: calc(100% - 100px);
+	border-bottom: solid 2px #cfdde6;
+}
+
+.scroll > ul {
+	margin-top: 16px;
+}
+
+.scroll a {
+	font-size: 20px;
+
 }
 
 /*---MOBILE-MENU---*/
