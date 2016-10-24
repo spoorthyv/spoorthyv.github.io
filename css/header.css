@@ -34,6 +34,7 @@ html, body, ul, div, img, h1, a, li {
 	opacity: 0;
 }
 .header {
+	border-bottom: solid 2px white;
   background-color: rgba(255,255,255, 1);
   display: block;
 	width: calc(100% - 120px);
@@ -70,7 +71,7 @@ html, body, ul, div, img, h1, a, li {
 .scroll{
 	padding: 12px 50px;
 	width: calc(100% - 100px);
-	border-bottom: solid 2px #cfdde6;
+	border-bottom: solid 2px #ebf5fb;
 }
 
 .scroll > ul {
@@ -79,7 +80,14 @@ html, body, ul, div, img, h1, a, li {
 
 .scroll a {
 	font-size: 20px;
+}
 
+.scroll .header li {
+	margin-left: 52px;
+}
+
+.scroll .underline {
+	box-shadow: 0 2px #A9A9A9;
 }
 
 /*---MOBILE-MENU---*/
