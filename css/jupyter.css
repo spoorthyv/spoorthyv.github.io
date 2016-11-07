@@ -6,10 +6,6 @@
 	font-family: 'AvenirBold';
 	src: url('../fonts/AvenirLTStd-Heavy.woff') format('woff');
 }
-@font-face {
-	font-family: 'TypoGroteskBold';
-	src: url('../fonts/typo_grotesk_bold_demo-webfont.woff') format('woff');
-}
 
 html, body {
     min-height: 100%;
@@ -17,7 +13,7 @@ html, body {
     font-family: 'AvenirLight';
     font-weight: 200;
     font-size: 0px;
-    background-color: #ff872e;
+    background-color: #ff9445;
 }
 html, body, ul, div, img, h1, h2, h3, a, li {
 	padding:0;
@@ -30,7 +26,7 @@ html, body, ul, div, img, h1, h2, h3, a, li {
 }
 /*---BODY---*/
 .body {
-    margin-top: 132px;
+    margin-top: 115px;
     width: calc(90% - 80px);
     max-width: 1200px;
     position: absolute;
@@ -40,9 +36,22 @@ html, body, ul, div, img, h1, h2, h3, a, li {
 .body h2 {
     font-family: 'AvenirBold';
     font-size: 25px;
-    margin: 0 0 25px 0;
+    margin: 50px 0 0 0;
     color: #ff6d00;
     display: inline-block;
     background-color: white;
-    padding: 15px 20px 15px 20px;
+    padding: 15px 20px 14px 20px;
+}
+
+#jupyterLogo {
+	height: 95px;
+	display: block;
+	margin: 0 0 32px 0;
+}
+p {
+	font-size: 20px;
+	color: white;
+	padding: 30px 45px;
+	background-color: rgba(255,255,255,0.07);
+	line-height: 155%;
 }

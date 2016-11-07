@@ -6,10 +6,6 @@
 	font-family: 'AvenirBold';
 	src: url('../fonts/AvenirLTStd-Heavy.woff') format('woff');
 }
-@font-face {
-	font-family: 'TypoGrotesk';
-	src: url('../fonts/typo_grotesk_bold_demo-webfont.woff') format('woff');
-}
 html, body {
     font-family: 'AvenirLight';
     font-weight: 200;
