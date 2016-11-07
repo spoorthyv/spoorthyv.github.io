@@ -6,10 +6,6 @@
 	font-family: 'AvenirBold';
 	src: url('../fonts/AvenirLTStd-Heavy.woff') format('woff');
 }
-@font-face {
-	font-family: 'TypoGrotesk';
-	src: url('../fonts/typo_grotesk_bold_demo-webfont.woff') format('woff');
-}
 html, body {
     font-family: 'AvenirLight';
     font-weight: 200;
@@ -21,6 +17,9 @@ html, body, ul, div, img, h1, a, li {
 
 
 /*---HEADER---*/
+* {
+	transition: all 0.2s;
+}
 .logo {
 	height: 73px;
 }
@@ -31,8 +30,9 @@ html, body, ul, div, img, h1, a, li {
 	opacity: 0;
 }
 .header {
-    background-color: rgba(255,255,255, 1);
-    display: block;
+	border-bottom: solid 2px white;
+  background-color: rgba(255,255,255, 1);
+  display: block;
 	width: calc(100% - 120px);
 	position: fixed;
 	top: 0;
@@ -59,12 +59,39 @@ html, body, ul, div, img, h1, a, li {
 	padding-bottom: 5px;
 }
 
+/*---SCROLL---*/
+.scroll .logo{
+	height: 50px;
+}
+
+.scroll{
+	padding: 12px 50px;
+	width: calc(100% - 100px);
+	border-bottom: solid 2px #ebf5fb;
+}
+
+.scroll > ul {
+	margin-top: 16px;
+}
+
+.scroll a {
+	font-size: 20px;
+}
+
+.scroll .header li {
+	margin-left: 52px;
+}
+
+.scroll .underline {
+	box-shadow: 0 2px #A9A9A9;
+}
+
 /*---MOBILE-MENU---*/
 .menu-btn {
 	display: none;
 	position: fixed;
 	right: 20px;
-	top: 33px;	
+	top: 33px;
 	cursor: pointer;
 }
 
@@ -121,7 +148,7 @@ html, body, ul, div, img, h1, a, li {
 		width: calc(100% - 60px);
 	}
 	.logo {
-	  	height: 60px;
+	  height: 60px;
 		vertical-align: bottom;
 	}
 

@@ -4,9 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="initial-scale=1.0">
   <title>privateconcert</title>
+  <link rel="stylesheet" href="css/header.css" type="text/css" />
+  <link rel="stylesheet" href="css/header-portfolio.css" type="text/css" />
   <link rel="stylesheet" href="css/standardize.css">
   <link rel="stylesheet" href="css/privateconcert-grid.css">
   <link rel="stylesheet" href="css/privateconcert.css">
+
 	<link rel="icon" href="http://spoorthyv.github.io/favicon.ico">
   <style>
   @font-face {
@@ -46,7 +49,7 @@
          url('/fonts/pier-bold-webfont.svg#pier_sansbold') format('svg');
 
 }
-    
+
 @font-face {
     font-family: 400 1.125em/1.38 Raleway;
     src: url('/fonts/raleway_thin-webfont.eot');
@@ -202,9 +205,26 @@
 </style>
 </head>
 <body class="body page-privateconcert clearfix">
-  <div class="element element-1 clearfix">
-    <div onClick="window.location='portfolio.html';" class="element _element element-2"></div>
-    <p class="text text-1">Private Concert</p>
+  <div class="header">
+      <a href="index.html">
+          <img class='logo' src='images/logowhite.svg'>
+      </a>
+      <ul>
+          <li class="hvr-underline-from-center">
+              <a href='about-me.html'>About</a>
+          </li>
+          <li class="hvr-underline-from-center">
+              <a href='portfolio.html'>Portfolio</a>
+          </li>
+          <li class="hvr-underline-from-center">
+              <a href='contact.html'>Contact</a>
+          </li>
+      </ul>
+      <div class="menu-btn" id="menu-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+      </div>
   </div>
   <div class="container container-1 clearfix">
     <div class="container container-2 clearfix">
@@ -250,6 +270,11 @@
     </div>
   </div>
   <div class="element _element element-11"></div>
+  <div class="mobile-menu">
+      <a href='about-me.html'>About</a>
+      <a href='portfolio.html'>Portfolio</a>
+      <a href='contact.html'>Contact</a>
+  </div>
 
   <script src="js/jquery-min.js"></script>
   <script src="js/privateconcert.js"></script>
