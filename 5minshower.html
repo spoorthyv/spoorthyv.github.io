@@ -4,6 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="initial-scale=1.0">
   <title>5minshower</title>
+  <link rel="stylesheet" href="css/header.css" type="text/css" />
+  <link rel="stylesheet" href="css/header-portfolio.css" type="text/css" />
   <link rel="stylesheet" href="css/standardize.css">
   <link rel="stylesheet" href="css/5minshower-grid.css">
   <link rel="stylesheet" href="css/5minshower.css">
@@ -202,9 +204,31 @@
 </style>
 </head>
 <body class="body page-5minshower clearfix">
-  <div class="element element-1 clearfix">
-    <div onClick="window.location='portfolio.html';" class="element"></div>
-    <p class="text text-1">5minShower</p>
+  <div class="mobile-menu">
+      <a href='about-me.html'>About</a>
+      <a href='portfolio.html'>Portfolio</a>
+      <a href='contact.html'>Contact</a>
+  </div>
+  <div class="header">
+      <a href="index.html">
+          <img class='logo' src='images/logowhite.svg'>
+      </a>
+      <ul>
+          <li class="hvr-underline-from-center">
+              <a href='about-me.html'>About</a>
+          </li>
+          <li class="hvr-underline-from-center">
+              <a href='portfolio.html'>Portfolio</a>
+          </li>
+          <li class="hvr-underline-from-center">
+              <a href='contact.html'>Contact</a>
+          </li>
+      </ul>
+      <div class="menu-btn" id="menu-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+      </div>
   </div>
   <div class="container container-1 clearfix">
     <div class="container container-2">
@@ -251,5 +275,7 @@
   <script src="js/jquery-min.js"></script>
   <script src="js/5minshower.js"></script>
   <script src="js/rimages.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="js/header.js"></script>
 </body>
 </html>
