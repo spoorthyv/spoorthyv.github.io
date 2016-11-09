@@ -20,13 +20,12 @@ html, body, ul, div, img, h1, h2, h3, a, li {
 	margin:0;
 }
 
-.header {
-  width: calc(100% - 60px);
-  background-color: rgba(0, 0, 0, 0.08);
+* {
+	transition: all 0.2s;
 }
 /*---BODY---*/
 .body {
-    margin-top: 115px;
+    margin-top: 180px;
     width: calc(90% - 80px);
     max-width: 1200px;
     position: absolute;
@@ -36,7 +35,7 @@ html, body, ul, div, img, h1, h2, h3, a, li {
 .body h2 {
     font-family: 'AvenirBold';
     font-size: 25px;
-    margin: 50px 0 0 0;
+    margin: 50px 0 50px 0;
     color: #ff6d00;
     display: inline-block;
     background-color: white;

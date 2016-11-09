@@ -22,6 +22,7 @@ html, body, ul, div, img, h1, a, li {
 }
 .logo {
 	height: 73px;
+	width: auto;
 }
 
 .mobile-menu {
@@ -30,13 +31,14 @@ html, body, ul, div, img, h1, a, li {
 	opacity: 0;
 }
 .header {
-	border-bottom: solid 2px white;
+	z-index: 100;
   background-color: rgba(255,255,255, 1);
   display: block;
-	width: calc(100% - 120px);
+	width: calc(100%);
 	position: fixed;
 	top: 0;
-	padding: 20px 60px;
+	padding: 20px 36px;
+	box-sizing: border-box;
 }
 
 .header ul {
@@ -56,7 +58,6 @@ html, body, ul, div, img, h1, a, li {
 	color: #6C6C6C;
 	display: inline-block;
 	margin-bottom: -10px;
-	padding-bottom: 5px;
 }
 
 /*---SCROLL---*/
@@ -65,8 +66,8 @@ html, body, ul, div, img, h1, a, li {
 }
 
 .scroll{
-	padding: 12px 50px;
-	width: calc(100% - 100px);
+	padding: 12px 33px;
+	width: calc(100%);
 	border-bottom: solid 2px #ebf5fb;
 }
 
@@ -78,8 +79,8 @@ html, body, ul, div, img, h1, a, li {
 	font-size: 20px;
 }
 
-.scroll .header li {
-	margin-left: 52px;
+.scroll li {
+	margin-left: 55px;
 }
 
 .scroll .underline {
@@ -89,10 +90,10 @@ html, body, ul, div, img, h1, a, li {
 /*---MOBILE-MENU---*/
 .menu-btn {
 	display: none;
-	position: fixed;
-	right: 20px;
-	top: 33px;
+	position: static;
+	margin: 14px 0 0 0;
 	cursor: pointer;
+	float: right;
 }
 
 .menu-btn span {
@@ -105,12 +106,13 @@ html, body, ul, div, img, h1, a, li {
 }
 
 .mobile-menu {
+	z-index: 99;
 	position: fixed;
 	width: 100%;
 	background-color: #6f787b;
 	opacity: 1;
 	animation: menu-down .25s ease-out;
-	top: 92px;
+	top: 78px;
 	display: none;
 	padding: 5px 0;
 }
@@ -131,24 +133,14 @@ html, body, ul, div, img, h1, a, li {
 }
 
 /*---MOBILE---*/
-@keyframes menu-down {
-    from {
-        transform:translateY(-272px);
-    }
-    to {
-        transform: translateY(0px);
-    }
-}
-
-
 @media screen and (max-width: 700px) {
 	/*---HEADER---*/
 	.header {
 		padding: 16px 30px;
-		width: calc(100% - 60px);
+		width: calc(100%);
 	}
 	.logo {
-	  height: 60px;
+	  height: 50px;
 		vertical-align: bottom;
 	}
 
@@ -172,7 +164,7 @@ html, body, ul, div, img, h1, a, li {
 }
 @media screen and (max-width: 480px) {
 	.header {
-		padding: 16px 30px;
+		padding: 13px 20px;
 	}
 	.header > ul {
 		display: none;
@@ -185,6 +177,15 @@ html, body, ul, div, img, h1, a, li {
 	.expand {
 		display: none;
 	}
+}
+
+@keyframes menu-down {
+    from {
+        transform:translateY(-272px);
+    }
+    to {
+        transform: translateY(0px);
+    }
 }
 
 .underline {

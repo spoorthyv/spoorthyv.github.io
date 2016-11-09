@@ -9,6 +9,9 @@ body {
   color: rgb(162, 162, 162);
 }
 
+.header {
+  background-color: #60aacc;
+}
 .container .text {
   text-align: center;
 }
@@ -647,7 +650,7 @@ body {
     float: left;
     clear: both;
     height: 663px;
-    margin-top: 39px;
+    margin-top: 135px;
     margin-right: 0;
     margin-left: 0;
   }
