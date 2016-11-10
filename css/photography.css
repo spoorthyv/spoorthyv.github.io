@@ -1,246 +1,74 @@
+* {
+	transition: all 0.2s;
+}
+
 body {
-  background-color: rgb(72, 72, 72);
-  font: 400 1.813em/1.38 'Pier Sans';
-  color: rgb(255, 255, 255);
+  background-color: #1c1c1c;
 }
 
-.container {
+.body {
+  margin-top: 88px;
+}
+.body h2 {
   position: relative;
-  float: left;
-  padding: 7px;
-  -webkit-transition: all .3s;
-  -moz-transition: all .3s;
-  -o-transition: all .3s;
-  -ms-transition: all .3s;
-  transition: all .3s;
-}
-
-.container:hover {
-  -webkit-filter: grayscale(0%);
-  -moz-filter: grayscale(0%);
-  -o-filter: grayscale(0%);
-  -ms-filter: grayscale(0%);
-  filter: grayscale(0%);
-}
-
-.container .element {
+  top: calc(50% - 60px);
+  display: inline-block;
   width: 100%;
-  background-size: cover;
-  background-color: rgb(222, 222, 222);
+  font-size: 21px;
+  letter-spacing: 5px;
+  cursor: pointer;
+}
+.header {
+  background-color: #313131;
 }
 
-.element .element {
-  width: 58px;
-  height: 58px;
-  margin: 33px 0 0 2.42909%;
-  background: url('../images/ic_arrow_back_white_48px.svg') rgba(222, 222, 222, 0);
-  background-repeat: no-repeat;
-  background-size: 48px 48px;
-  background-position: center center;
-}
-
-.element .element:hover {
-  border: 3px solid rgb(255, 255, 255);
-  border-radius: 58px;
-  -webkit-transition: all .3s;
-  -moz-transition: all .3s;
-  -o-transition: all .3s;
-  -ms-transition: all .3s;
-  transition: all .3s;
-}
-
-.text {
-  float: left;
-  margin: 47px 0 0 2.96875%;
-  font-size: 1em;
-  color: rgb(255, 255, 255);
-}
-
-._button {
-  display: block;
-  position: fixed;
-  bottom: 35px;
-  right: 38px;
-  z-index: 18;
-  width: 88px;
-  height: 88px;
-  padding-top: 5px;
-  border-radius: 66px;
-  background-color: rgb(227, 133, 225);
-  box-shadow: 1px 2px 5px rgba(0, 0, 0, .5);
-  font-family: PierSans;
-  font-size: 0.655em;
-  font-weight: normal;
+#sidebar {
+  display: table-cell;
+  min-width: 300px;
+  height: calc(100vh - 88px);
+  background-color: #202020;
   text-align: center;
-  color: rgb(255, 255, 255);
+  vertical-align:top;
 }
 
-._element {
-  float: left;
-}
-
-.container-1 {
-  clear: both;
-  z-index: 9;
-  width: 100%;
-  margin-top: -2547px;
-  -webkit-filter: grayscale(80%);
-  -moz-filter: grayscale(80%);
-  -o-filter: grayscale(80%);
-  -ms-filter: grayscale(80%);
-  filter: grayscale(80%);
-}
-
-.container-2 {
-  z-index: 7;
-  width: 56.2616822429%;
-  margin-top: -2019px;
-  -webkit-filter: grayscale(80%);
-  -moz-filter: grayscale(80%);
-  -o-filter: grayscale(80%);
-  -ms-filter: grayscale(80%);
-  filter: grayscale(80%);
-}
-
-.container-3 {
-  z-index: 11;
-  width: 43.738317757%;
-  margin: -2019px 0 0 56.26082%;
-  -webkit-filter: grayscale(80%);
-  -moz-filter: grayscale(80%);
-  -o-filter: grayscale(80%);
-  -ms-filter: grayscale(80%);
-  filter: grayscale(80%);
-}
-
-.container-4 {
-  z-index: 5;
-  width: 100%;
-  margin-top: -1527px;
-  -webkit-filter: grayscale(80%);
-  -moz-filter: grayscale(80%);
-  -o-filter: grayscale(80%);
-  -ms-filter: grayscale(80%);
-  filter: grayscale(80%);
-}
-
-.container-5 {
-  z-index: 15;
-  width: 43.74%;
-  margin-top: -1011px;
-  -webkit-filter: grayscale(80%);
-  -moz-filter: grayscale(80%);
-  -o-filter: grayscale(80%);
-  -ms-filter: grayscale(80%);
-  filter: grayscale(80%);
-}
-
-.container-6 {
-  z-index: 17;
-  width: 56.24%;
-  margin: -1011px 0 0 43.76082%;
-  -webkit-filter: grayscale(80&);
-  -moz-filter: grayscale(80&);
-  -o-filter: grayscale(80&);
-  -ms-filter: grayscale(80&);
-  filter: grayscale(80&);
-}
-
-.container-6:hover,
-.element-4:hover {
-  border-bottom-width: 0;
-  border-bottom-style: none;
-}
-
-.container-7 {
-  z-index: 13;
-  width: 100%;
-  margin-top: -519px;
-  -webkit-filter: grayscale(80%);
-  -moz-filter: grayscale(80%);
-  -o-filter: grayscale(80%);
-  -ms-filter: grayscale(80%);
-  filter: grayscale(80%);
-}
-
-.element-1 {
+#labels {
+  color: #6e6e6e;
+  height: calc(100vh - 88px);
+  vertical-align: middle;
   position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 2;
+  width: 300px;
+}
+
+#content {
+  display: table-cell;
   width: 100%;
-  height: 126px;
-  background: rgb(188, 152, 255);
-  background: -webkit-linear-gradient(291deg, rgb(188, 152, 255) 0%, rgb(255, 137, 233) 100%) rgb(129, 200, 255);
-  background:    -moz-linear-gradient(291deg, rgb(188, 152, 255) 0%, rgb(255, 137, 233) 100%) rgb(129, 200, 255);
-  background:      -o-linear-gradient(291deg, rgb(188, 152, 255) 0%, rgb(255, 137, 233) 100%) rgb(129, 200, 255);
-  background:     -ms-linear-gradient(291deg, rgb(188, 152, 255) 0%, rgb(255, 137, 233) 100%) rgb(129, 200, 255);
-  background:         linear-gradient(159deg, rgb(188, 152, 255) 0%, rgb(255, 137, 233) 100%) rgb(129, 200, 255);
+  vertical-align: top;
+  text-align: center;
+  padding: 30px 0;
 }
 
-.element-10 {
-  height: 502px;
-  background-image: url('../images/Copy%20of%20MtDiabloHDR2.png');
-  background-repeat: no-repeat;
-  background-position: 50% 43%;
+#content > img {
+  max-width: 1000px;
+  max-height: 1000px;
+  width: 90%;
+  display: inline-block;
+  margin: 75px 0;
+  filter: grayscale(100%);
+  transition: all 0.3s;
 }
 
-.element-3 {
-  position: relative;
-  z-index: 3;
-  width: 100%;
-  height: 2551px;
-  margin-top: 126px;
-  background-color: rgb(77, 77, 77);
-  box-shadow: 0 0 7px 2px rgba(0, 0, 0, .5);
+iframe {
+  width: 90%;
+  max-width: 1000px;
+
+  display: inline-block;
+  margin: 50px 0;
 }
 
-.element-4 {
-  height: 513px;
-  background-image: url('../images/Copy%20of%20IMGP7621-Edit.jpg');
-  background-position: 50% 40%;
-  -webkit-transition: all .3s;
-  -moz-transition: all .3s;
-  -o-transition: all .3s;
-  -ms-transition: all .3s;
-  transition: all .3s;
-}
 
-.element-5 {
-  height: 478px;
-  background-image: url('../images/IMGP7718.jpg');
-  background-position: 57% 59%;
+.currentLabel {
+  color: #afafaf;
 }
-
-.element-6 {
-  height: 478px;
-  background-image: url('../images/IMGP7651.jpg');
-  background-position: 42% 65%;
-}
-
-.element-7 {
-  height: 502px;
-  background-image: url('../images/IMGP6915-1405412511-O.jpg');
-  background-position: 50% 66%;
-}
-
-.element-8 {
-  height: 478px;
-  background-image: url('../images/Copy%20of%20IMGP8069.jpg');
-  background-position: 57% 59%;
-}
-
-.element-9 {
-  height: 478px;
-  background-image: url('../images/Copy%20of%20IMGP7638-Edit-2.jpg');
-  background-position: 42% 65%;
-  -webkit-transition: all .3s;
-  -moz-transition: all .3s;
-  -o-transition: all .3s;
-  -ms-transition: all .3s;
-  transition: all .3s;
-}
-
-.element-9:hover {
-  border-bottom: 10px solid rgb(166, 166, 166);
+.currentPic {
+  filter: grayscale(0%) !important;
 }
