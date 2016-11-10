@@ -3,7 +3,7 @@
 }
 
 body {
-  background-color: #1c1c1c;
+  background-color: #191919;
 }
 
 .body {
@@ -65,10 +65,32 @@ iframe {
   margin: 50px 0;
 }
 
-
 .currentLabel {
   color: #afafaf;
 }
+
 .currentPic {
   filter: grayscale(0%) !important;
+}
+
+/*---MOBILE---*/
+@media screen and (max-width: 850px) {
+    #sidebar {
+      min-width: 200px;
+    }
+    #labels {
+      width: 200px;
+    }
+    .body h2 {
+      font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    #sidebar {
+      display: none;
+    }
+    #labels {
+      display: none;
+    }
 }

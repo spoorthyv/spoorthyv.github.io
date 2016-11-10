@@ -50,7 +50,7 @@ html, body, ul, div, img, h1, a, li {
 	list-style-type: none;
 	display: inline-block;
 	margin-left: 67px;
-	padding-bottom: 6px;
+	padding-bottom: 10px;
 }
 .header a {
 	font-family: "AvenirBold";
@@ -113,7 +113,7 @@ html, body, ul, div, img, h1, a, li {
 	background-color: #6f787b;
 	opacity: 1;
 	animation: menu-down .25s ease-out;
-	top: 78px;
+	top: 75px;
 	display: none;
 	padding: 5px 0;
 }
