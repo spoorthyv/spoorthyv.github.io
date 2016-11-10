@@ -113,7 +113,6 @@ html, body, ul, div, img, h1, h2, h3, a, li {
 
 
 /*---MOBILE---*/
-
 @media screen and (max-width: 800px) {
     .body {
         width: calc(100% - 60px);
