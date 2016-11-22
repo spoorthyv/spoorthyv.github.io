@@ -18,6 +18,10 @@ body {
   letter-spacing: 5px;
   cursor: pointer;
 }
+.body h2:hover {
+  color: #dfdfdf;
+}
+
 .header {
   background-color: #313131;
 }
@@ -37,11 +41,11 @@ body {
   left: 0;
   width: 264px;
   background-color: rgba(0,0,0,0.1);
-  padding: 21px 18px 18px 18px
+  padding: 15px 18px 13px 18px
 }
 #moreWrapper > h3{
   color: #afafaf;
-  font-size: 16px;
+  font-size: 14px;
   letter-spacing: 4px;
   display: inline-block;
   vertical-align: bottom;
@@ -60,8 +64,8 @@ body {
 
 #flickr {
   background-image: url(../images/flickr.svg);
-  height: 17px;
-  width: 17px;
+  height: 15px;
+  width: 15px;
   margin-bottom: 3px;
 }
 
@@ -83,7 +87,6 @@ body {
 
 #content > img {
   max-width: 1080px;
-  max-height: 1080px;
   width: 90%;
   display: inline-block;
   margin: 75px 0;

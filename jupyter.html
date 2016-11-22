@@ -3,8 +3,8 @@
     <head>
         <!--FAVICON-->
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-        <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
-        <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+        <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
         <link rel="manifest" href="/manifest.json">
         <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
 
@@ -13,24 +13,60 @@
 
         <link rel="stylesheet" href="css/header.css" type="text/css" />
         <link rel="stylesheet" href="css/header-portfolio.css" type="text/css" />
-        <link rel="stylesheet" href="css/jupyter.css">
+        <link rel="stylesheet" href="css/jupyter.css" type="text/css">
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
         <script src="js/header.js"></script>
+        <script src="galleria/galleria-1.4.7.js"></script>
 
         <title>Jupyter</title>
     </head>
     <body>
         <!--BODY-->
         <div class="body">
-            <img id='jupyterLogo' src='images/fulllogo-whitetext-whitebody-whitemoons.svg'>
-            <p>
-              Jupyter is a open source company that creates an interactive scientific computing platform used by over 30 million people.<br/><br/>
-              At Jupyter I worked on a computing environment called JupyterLab. JupyterLab is a multi-window wep app that helps developers run Jupyter Notebooks. I worked as both a software engineer and as a UI/UX Designer on the project. I was involved in the entire software process from finding problems with the app, coming up with solutions, getting community feedback, implementing the final solution, and user testing to see if our solution worked as intended.<br/><br/>
-              I also worked on our website and tried to improve site navigation by redoing the navbar (those changes arent live yet).<br /><br />
-              Finally I created official brand guidelines for the project that specified correct usage of our logo and unified or brand usage across over 10 repositories.
-            </p>
-            <h2>This page is still under construction. More info coming soon!</h2>
+            <div class="content-wrapper" id="intro" >
+                <img id='jupyterLogo' src='images/fulllogo-whitetext-whitebody-whitemoons.svg'>
+                <p>
+                  Jupyter is a open source company that creates an interactive scientific computing platform used by over 30 million people.<br/><br/>
+                  At Jupyter I worked on a computing environment called JupyterLab. JupyterLab is a multi-window wep app that helps developers run Jupyter Notebooks. I worked as both a software engineer and as a UI/UX Designer on the project. I was involved in the entire software process from finding problems with the app, coming up with solutions, getting community feedback, implementing the final solution, and user testing to see if our solution worked as intended.<br/><br/>
+                  I also worked on our website and tried to improve site navigation by redoing the navbar (those changes arent live yet).<br/><br/>
+                  Finally I created official brand guidelines for the project that specified correct usage of our logo and unified or brand usage across over 10 repositories.
+                </p>
+            </div>
+            <div id="jupyterLab">
+
+                <div class="content-wrapper">
+                    <h1 class="section-header">Jupyter Lab</h1>
+                    <div class="galleria">
+                       <img src="images/jl-old.png" data-title="My title" >
+                       <img src="images/jl-curr.png" >
+                       <img src="images/jl-future.png">
+                    </div>
+                    <script>
+                       Galleria.loadTheme('galleria/themes/classic/galleria.classic.min.js');
+                       Galleria.run('.galleria');
+                    </script>
+                    <h2>About JupyterLab</h2>
+                    <p>
+                        JupyterLab is a multi-window wep app that helps scientists run Jupyter Notebooks.
+                        Most of my work on the product was done in either Typescript (a flavor of Javascript) or CSS.
+                        JupyterLab is extensible which means most of its functionality comes from community-built extensions called "widgets".
+                    </p>
+                    <h2>My Work</h2>
+                    <p>
+                        Over the summer, I redid the Image Widget, made an FAQ Page widget, and redesigned the application's command pallete.
+                        <br/><br/>
+                        Our team also started working on a future design of JupyterLab. Our design (see 3rd picture) simplified naviagtion by only using one sidepanel instead of two, and simplified the visual hierarchies by modernizing our color palette. We went from a plethora of differnet shades of greys, to 2 greys and white. We also made a bolder navbar to help distinguish our navbar from your web browsers.
+                        <br/><br/>
+                        <a href="https://github.com/jupyterlab/jupyterlab" id="githubButton">Download on GitHub</a>
+                     </p>
+                </div>
+            </div>
+            <div id="navBar">
+            </div>
+            <div id="brandGuide">
+            </div>
+
         </div>
         <!--HEADER-->
         <div class="mobile-menu">
