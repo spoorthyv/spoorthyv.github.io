@@ -124,7 +124,7 @@ h2 {
 }
 /*---MOBILE---*/
 @media screen and (max-width: 842px) {
-		.body h3 {
+		#info {
       display: none;
     }
 }
@@ -139,13 +139,23 @@ h2 {
 @media screen and (max-width: 480px) {
 		#jupyterLogo {
 				height: 70px;
+        margin-left: 40px;
 		}
-
 		.content-wrapper {
       width: calc(100% - 50px);
-      padding: 35px 0;
+      padding: 20px 0;
     }
     #introduction .content-wrapper {
       width: calc(100%);
+      padding: 0;
+    }
+    #introduction {
+      padding: 0;
+    }
+    #intro p {
+      margin-bottom: 0;
+    }
+    .headerUnderline {
+      transform: translateY(95px);
     }
 }
