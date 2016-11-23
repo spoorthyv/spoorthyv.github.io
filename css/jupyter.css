@@ -18,23 +18,26 @@ a {
 h2 {
   margin: 0;
 }
-a:hover {
-  color: #0078d9;
-}
+
 
 /*---BODY---*/
 .body {
   display: block;
-  margin-top: 180px;
+  margin-top: 130px;
   position: absolute;
   text-align: center;
   width: 100%;
-  padding-bottom: 40px;
 }
 .body h2 {
   display: inline-block;
   width: 100%;
   margin: 10px 0;
+}
+.body a:hover {
+  color: #0078d9;
+}
+#introduction {
+  padding: 35px 0;
 }
 
 #intro {
@@ -54,16 +57,19 @@ a:hover {
 }
 .section-header {
   display: block;
-  border-bottom: solid 2px #cfcfcf;
   padding: 10px 0 10px 0;
   color: #ff9445;
   margin-bottom: 25px;
 }
-
+.headerUnderline {
+  width: 100%;
+  height: 2px;
+  background-color: #cfcfcf;
+  transform: translateY(95px);
+}
 #jupyterLogo {
 	height: 95px;
-	display: block;
-	margin: 0 0 32px 0;
+	display: inline-block;;
 }
 
 .galleria {
@@ -94,29 +100,52 @@ a:hover {
   width: 100%;
   margin-bottom: 15px;
 }
-
 #brandGuide {
   background-color: white;
 }
+
+#info {
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 16px;
+  margin: 17px 0 0 25px;
+  border-left: solid 2px white;
+}
+#info h3 {
+  margin: 0;
+  line-height: 28px;
+  color: white;
+  font-size: 16px;
+}
+#footer {
+  display: block;
+  height: 30px;
+  background-color: #f8f8f8;
+}
 /*---MOBILE---*/
+@media screen and (max-width: 842px) {
+		.body h3 {
+      display: none;
+    }
+}
 @media screen and (max-width: 700px) {
 		#jupyterLogo {
 				height: 85px;
 		}
+    #introduction .content-wrapper {
+      width: calc(90% - 10px);
+    }
 }
 @media screen and (max-width: 480px) {
-    .body {
-				margin-top: 155px;
-		}
 		#jupyterLogo {
 				height: 70px;
 		}
-		p {
-			font-size: 17px;
-			padding: 20px 30px;
-			line-height: 160%;
-		}
-		.body h2 {
-		    margin: 20px 0 50px 0;
-		}
+
+		.content-wrapper {
+      width: calc(100% - 50px);
+      padding: 35px 0;
+    }
+    #introduction .content-wrapper {
+      width: calc(100%);
+    }
 }
