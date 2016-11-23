@@ -29,7 +29,14 @@ a:hover {
   position: absolute;
   text-align: center;
   width: 100%;
+  padding-bottom: 40px;
 }
+.body h2 {
+  display: inline-block;
+  width: 100%;
+  margin: 10px 0;
+}
+
 #intro {
   text-align: left;
 }
@@ -81,7 +88,11 @@ a:hover {
 }
 
 #navbar {
-  background-color: #fafafa;
+  background-color: #f8f8f8;
+}
+#navbar img {
+  width: 100%;
+  margin-bottom: 15px;
 }
 
 #brandGuide {
