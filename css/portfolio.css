@@ -108,7 +108,7 @@ html, body, ul, div, img, h1, h2, h3, a, li {
 }
  .list-item:hover {
      box-shadow: 0px 10px 20px rgba(0,0,0,.19);
-		 transform: translateY(-4px);
+		 transform: translateY(-5px);
  }
 
 
