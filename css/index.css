@@ -6,35 +6,38 @@
 	font-family: 'AvenirBold';
 	src: url('../fonts/AvenirLTStd-Heavy.woff') format('woff');
 }
-@font-face {
-	font-family: 'TypoGrotesk';
-	src: url('../fonts/typo_grotesk_bold_demo-webfont.woff') format('woff');
-}
 html, body {
     font-family: 'AvenirLight';
-    font-weight: 200;
 }
 html, body, ul, div, img, h1, a, li {
 	padding:0;
 	margin:0;
+}
+b {
+	font-family: 'AvenirBold';
 }
 
 .body {
 	font-family: 'AvenirLight';
 }
 .body {
-	width: 611px;
-	margin: 230px auto 0 auto;
+	width: 623px;
+	margin: 225px auto 0 auto;
+	position: absolute;
+	left: 0;
+	right: 0;
 }
-.body div{
-	padding: 10px 0 6px 17px;
 
+#title {
+	padding: 12px 0 9px 32px;
+}
+.gradientBackground{
 	background: linear-gradient(300deg, #9bdcf7, #f7d19b, #f79b9b, #d29bf7);
 	background-size: 800% 800%;
-	-webkit-animation: GradientMotion 8s ease infinite;
-	-moz-animation: GradientMotion 8s ease infinite;
-	-o-animation: GradientMotion 8s ease infinite;
-	animation: GradientMotion 8s ease infinite;
+	-webkit-animation: GradientMotion 6s ease infinite;
+	-moz-animation: GradientMotion 6s ease infinite;
+	-o-animation: GradientMotion 6s ease infinite;
+	animation: GradientMotion 6s ease infinite;
 }
 
 .body h1 {
@@ -42,64 +45,31 @@ html, body, ul, div, img, h1, a, li {
 	font-size: 70px;
 	color: rgba(255,255,255,.85);
 }
-.body ul {
-	margin-top: 20px;
+
+h2 {
+	font-size: 36px;
+	margin: 0 0 17px 0;
+	color: #636363;
 }
-.body li {
-	list-style-type: none;
-	margin-left: 17px;
-	font-size: 28px;
-	line-height: 60px;
-	color: #A3A3A3;
+p {
+	font-size: 30px;
+	color: #636363;
+}
+#workButton {
+	position: absolute;
+	right: 0;
+	text-decoration: none;
+	font-size: 26px;
+	color: white;
+	padding: 10px 20px 7px 20px;
+	background-color: #636363;
+	margin-top: 4px;
+}
+#workButton:hover {
+	box-shadow: 0px 5px 16px rgba(0,0,0,0.19);
+	transform: translateY(-5px);
 }
 
-.body li:nth-child(3) {
-	color: #dadada;
-}
-
-.body li:nth-child(4) {
-	color: #f0f0f0;
-}
-
-.body li:nth-child(5) {
-	color: #f7f7f7;
-}
-
-.body li:nth-child(1) {
-	-webkit-animation: fadein 1.5s;
-	-moz-animation: fadein 1.5s;
-	-ms-animation: fadein 1.5s;
- 	-o-animation: fadein 1.5s;
-	animation: fadein 1.5s;
-}
-.body li:nth-child(2) {
-	-webkit-animation: fadein 2s;
-	-moz-animation: fadein 2s;
-	-ms-animation: fadein 2s;
- 	-o-animation: fadein 2s;
-	animation: fadein 2s;
-}
-.body li:nth-child(3) {
-	-webkit-animation: fadein 3.25s;
-	-moz-animation: fadein 3.25s;
-	-ms-animation: fadein 3.25s;
- 	-o-animation: fadein 3.25s;
-	animation: fadein 3.25s;
-}
-.body li:nth-child(4) {
-	-webkit-animation: fadein 3.5s;
-	-moz-animation: fadein 3.5s;
-	-ms-animation: fadein 3.5s;
- 	-o-animation: fadein 3.5s;
-	animation: fadein 3.5s;
-}
-.body li:nth-child(5) {
-	-webkit-animation: fadein 3.6s;
-	-moz-animation: fadein 3.6s;
-	-ms-animation: fadein 3.6s;
- 	-o-animation: fadein 3.6s;
-	animation: fadein 3.6s;
-}
 
 /*---MOBILE---*/
 
@@ -117,6 +87,31 @@ html, body, ul, div, img, h1, a, li {
 	}
 }
 
+/*---FONT---*/
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
 
 
 

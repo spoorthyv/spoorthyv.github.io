@@ -63,7 +63,7 @@ html, body, ul, div, img, h1, a, li {
 
 /*---SCROLL---*/
 .scroll .logo{
-	height: 50px;
+	height: 45px;
 }
 
 .scroll{
@@ -73,7 +73,7 @@ html, body, ul, div, img, h1, a, li {
 }
 
 .scroll > ul {
-	margin-top: 16px;
+	margin-top: 14px;
 }
 
 .scroll a {
