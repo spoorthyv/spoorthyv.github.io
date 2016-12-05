@@ -87,14 +87,17 @@ p {
 	}
 	.body h2 {
 		font-size: 27px;
-		margin: 0 0 10px 0;
+		margin: 0 0 8px 0;
 	}
 	.body p {
-		font-size: 17px;
-		margin: 22px 0;
+		font-size: 27px;
+		margin: 14px 0 10px 0;
+		line-height: 137%;
+		text-align: right;
 	}
 	#workButton {
 		font-size: 22px;
+		margin-top: 0;
 	}
 }
 
