@@ -19,6 +19,8 @@ html, body, ul, div, img, h1, a, li {
 /*---HEADER---*/
 * {
 	transition: all 0.2s;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 .logo {
 	height: 68px;

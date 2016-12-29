@@ -5,10 +5,12 @@ html, body {
 	transition: all 0.2s;
 }
 p {
-	font-size: 18px;
+	font-size: 16px;
 	color: white;
-	line-height: 155%;
-  color: #222222;
+	line-height: 1.8em;
+  color: #616161;
+  -webkit-font-smoothing: auto;
+;
 }
 a {
   text-decoration: none;
@@ -31,7 +33,9 @@ h2 {
 .body h2 {
   display: inline-block;
   width: 100%;
-  margin: 10px 0;
+  font-size: 1.25em;
+  line-height: 1.4em;
+  color: #757575;
 }
 .body a:hover {
   color: #0078d9;
@@ -52,7 +56,7 @@ h2 {
   text-align: left;
   display: inline-block;
   width: calc(90% - 80px);
-  max-width: 1100px;
+  max-width: 900px;
   padding: 35px 40px;
 }
 .section-header {
@@ -60,6 +64,7 @@ h2 {
   padding: 10px 0 10px 0;
   color: #ff9445;
   margin-bottom: 25px;
+  text-align: center;
 }
 .headerUnderline {
   width: 100%;
@@ -88,8 +93,8 @@ h2 {
   background-color: white;
 }
 #jupyterLab p {
-  color: #222222;
-  display: block;;
+  display: block;
+  margin-bottom: 32px;
   float: left;
 }
 
