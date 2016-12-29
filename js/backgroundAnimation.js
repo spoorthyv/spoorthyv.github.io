@@ -16,8 +16,8 @@ var canvasDots = function() {
     };
 
     var dots = {
-        nb: 700,
-        distance: 50,
+        nb: 250,
+        distance: 70,
         d_radius: 110,
         array: []
     };
