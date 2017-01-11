@@ -70,6 +70,20 @@ html, body, ul, div, img, h1, h2, h3, a, li {
 #none {
 	display: none;
 }
+#hail {
+    background-color: #6F49FF;
+}
+#hail > img {
+    margin: 47px 61px 0 0;
+    height: 94px;
+}
+#closet {
+    background-color: #97b8b6;
+}
+#closet > img {
+    margin: 47px 61px 0 0;
+    height: 94px;
+}
 #jupyter {
     background-color: #ff9445;
 }
@@ -77,6 +91,7 @@ html, body, ul, div, img, h1, h2, h3, a, li {
 	padding: 20px;
 	height: 148px;
 	opacity: 0.95;
+	margin-right: 27px;
 }
 #private-concert {
     background-color: #68B8DD;
@@ -139,8 +154,17 @@ html, body, ul, div, img, h1, h2, h3, a, li {
         height: 150px;
         margin: 0;
     }
+		#hail > img {
+			height: 90px;
+			margin: 30px 31px 0 0;
+		}
+		#closet > img{
+			height: 90px;
+			margin: 30px 28px 0 0;
+		}
 		#jupyter > img{
 			height: 115px;
+			margin-right: 9px;
 		}
     #five-min-shower > img {
         height: 110px;
@@ -150,11 +174,7 @@ html, body, ul, div, img, h1, h2, h3, a, li {
         height: 130px;
         margin: 10px;
     }
-    #photography > div {
-        margin-top: 55px;
-    }
 		#polyplanner > div {
-				margin-top: 55px;
 				width: 179px;
 		}
 		#polyplanner > img{
@@ -164,7 +184,9 @@ html, body, ul, div, img, h1, h2, h3, a, li {
         width: 216px;
         margin-top: 39px;
     }
-
+		#hail > div, #closet > div, #polyplanner > div, #photography > div {
+			margin-top: 56px;
+		}
     .body h2 {
         margin-top: 30px;
     }
@@ -194,6 +216,14 @@ html, body, ul, div, img, h1, h2, h3, a, li {
     .body img {
         height: 130px;
     }
+		#hail > img {
+			height: 72px;
+			margin: 29px 30px 0 0;
+		}
+		#closet > img {
+			height: 78px;
+			margin: 26px 28px 0 0;
+		}
 		#jupyter > img{
 			height: 96px;
 		}
@@ -209,6 +239,9 @@ html, body, ul, div, img, h1, h2, h3, a, li {
         height: 110px;
         margin: 10px;
     }
+		#hail > div, #closet > div, #polyplanner > div, #photography > div {
+			margin-top: 53px;
+		}
     .body > div > a > div {
         position: fixed;
     }
