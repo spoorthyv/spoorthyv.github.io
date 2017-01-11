@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="373px" height="386px" viewBox="0 0 373 386" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>Logo</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="2.39158163%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FFFFFF" stop-opacity="0.69" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Wallpaper" transform="translate(-1094.000000, -607.000000)" fill="url(#linearGradient-1)">
+            <g id="icon-+-text" transform="translate(1094.000000, 607.000000)">
+                <g id="Logo">
+                    <g id="Rectangle-5">
+                        <path d="M124.850414,0 L247.252681,0 C247.252681,0 247.252681,84.0281303 280.960706,162.646406 C314.668731,241.264681 372.712315,299.271141 372.712315,299.271141 L286.386802,385.882359 C286.386802,385.882359 216.015208,320.973857 170.192913,213.247058 C124.370618,105.520258 124.850414,0 124.850414,0 Z"></path>
+                        <path d="M247.363054,1.13686838e-13 L125.065086,1.13686838e-13 C125.065086,1.13686838e-13 125.169028,84.0281303 91.5749213,162.646406 C57.9691615,241.264681 -4.8316906e-13,299.271141 -4.8316906e-13,299.271141 L86.4084415,385.882359 C86.4084415,385.882359 156.695028,320.973857 202.359106,213.247058 C248.001478,105.520258 247.363054,1.13686838e-13 247.363054,1.13686838e-13 Z"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
