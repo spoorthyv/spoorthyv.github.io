@@ -1,9 +1,6 @@
-@font-face {
-	font-family: 'SF';
-	src: url('../fonts/SF-UI-Display-Medium.woff') format('woff');
-}
+
 .header {
-  background-color: #584b83;
+  background-color: #c2bf98;
 }
 body {
   background-color: #F6F6F6;
@@ -18,13 +15,12 @@ body {
   transform: translateX(-50%) translateY(-50%);
 }
 p {
-  font-family: "SF";
   letter-spacing: 1.15px;
   font-size: 16px;
   color: #777777;
 }
 img {
-  width: 130px;
+  width: 490px;
   margin: 0 auto 0 auto;
   display: block;
 }
@@ -33,21 +29,22 @@ img {
   margin-top: 60px;
   border: solid 1.5px;
   padding: 10px 15px;
-  color: #584b83;
-
+  color: #c2bf98;
+	font-family: "AvenirBold";
 }
 #message {
-  width: 486px;
+  width: 700px;
   margin-top: 57px;
   font-size: 18px;
+	line-height: 175%;
 }
 
 /*---MOBILE---*/
-@media screen and (max-width: 510px) {
+@media screen and (max-width: 710px) {
     .body {
-        width: calc(100% - 60px);
+      width: calc(100% - 60px);
     }
     #message {
-      width: 100%
+      width: 100%;
     }
 }

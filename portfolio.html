@@ -20,28 +20,32 @@
     <body>
         <!--BODY-->
         <div class="body">
-            <h2>Here are some of the things I've been working on</h2>
-            <div>
+            <h2 id="currentLabel">Here is what I'm currently working on</h2>
+            <div id="current">
+              <a id="hail" href="hail.html" class="list-item">
+                  <h1>Hail</h1>
+                  <img src='images/hail.svg'>
+                  <h3>A beautiful web-app for long distance ridesharing</h3>
+              </a>
+              <a id="golden" href="tge.html" class="list-item middle">
+                  <h1>TGE</h1>
+
+                  <h3>A social network for underprivleged students</h3>
+              </a>
+              <a id="closet" href="closet.html" class="list-item">
+                  <h1>Closet</h1>
+                  <img src='images/closet.svg'>
+                  <h3>All your favorite clothing stores in one place</h3>
+              </a>
+            </div>
+            <h2>Past Work</h2>
+            <div id="past">
                 <a id="jupyter" href="jupyter.html" class="list-item">
                     <div>
                         <h1>Project Jupyter</h1>
                         <h3>My work as a UI/UX Designer and Software Engineer</h3>
                     </div>
                     <img src='images/jupyter-white.svg'>
-                </a>
-                <a id="hail" href="hail.html" class="list-item">
-                    <div>
-                        <h1>Hail</h1>
-                        <h3>A beautiful web-app for long distance ridesharing</h3>
-                    </div>
-                    <img src='images/hail.svg'>
-                </a>
-                <a id="closet" href="closet.html" class="list-item">
-                    <div>
-                        <h1>Closet</h1>
-                        <h3>All your favorite clothing stores in one place</h3>
-                    </div>
-                    <img src='images/closet.svg'>
                 </a>
                 <a id="private-concert" href="privateconcert.html" class="list-item">
                     <div>
@@ -109,6 +113,7 @@
         <!--JS-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
         <script async src="js/header.js"></script>
+        <script async src="js/portfolio.js"></script>
         <!--Analytics-->
         <script>
           (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
