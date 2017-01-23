@@ -21,11 +21,52 @@ html, body {
 html, body, ul, div, img, h1, h2, h3, a, li {
 	padding:0;
 	margin:0;
+	text-decoration: none;
+}
+
+#current {
+	display: flex;
+	flex-wrap: wrap;
+
+}
+#current > a {
+	flex-grow: 1;
+	width: auto;
+	height: 105px;
+	padding: 36px 34px;
+	flex-basis: 0;
+	overflow-x: auto;
+	margin-bottom: 10px;
+}
+#current img {
+	height: 43px;
+	margin: 0;
+}
+#current h1 {
+	display: inline-block;
+	margin: 6px 0 15px 0;
+}
+
+.middle {
+	margin: 0 10px;
+}
+
+#hail {
+    background-color: #6F49FF;
+		min-width: 123px;
+}
+#closet {
+    background-color: #97b8b6;
+		min-width: 160px;
+}
+#golden {
+		background-color: #c2bf98;
+		min-width: 120px;
 }
 
 /*---BODY---*/
 .body {
-    margin-top: 132px;
+    margin-top: 200px;
     width: calc(90% - 80px);
     max-width: 1200px;
     position: absolute;
@@ -51,12 +92,12 @@ html, body, ul, div, img, h1, h2, h3, a, li {
 }
 .body h2 {
     font-family: 'AvenirBold';
-    font-size: 25px;
-    margin: 105px 0 25px 0;
+    font-size: 22px;
+    margin: 46px 0 25px 0;
     color: white;
     display: inline-block;
     background-color: #6C6C6C;
-    padding: 15px 20px 15px 20px;
+    padding: 13px 18px;
 }
 .body h3 {
     font-size: 18px;
@@ -69,20 +110,6 @@ html, body, ul, div, img, h1, h2, h3, a, li {
 }
 #none {
 	display: none;
-}
-#hail {
-    background-color: #6F49FF;
-}
-#hail > img {
-    margin: 47px 61px 0 0;
-    height: 94px;
-}
-#closet {
-    background-color: #97b8b6;
-}
-#closet > img {
-    margin: 47px 61px 0 0;
-    height: 94px;
 }
 #jupyter {
     background-color: #ff9445;
@@ -127,16 +154,28 @@ html, body, ul, div, img, h1, h2, h3, a, li {
 }
 
 .list-item {
-    transition: all 0.3s ease;
-    box-shadow: 0px 7px 20px rgba(0,0,0,0);
+	transition: all 0.3s ease;
+	box-shadow: 0px 7px 20px rgba(0,0,0,0);
 }
  .list-item:hover {
-     box-shadow: 0px 10px 20px rgba(0,0,0,.19);
-		 transform: translateY(-5px);
+	box-shadow: 0px 10px 20px rgba(0,0,0,.19);
+	transform: translateY(-5px);
  }
 
 
 /*---MOBILE---*/
+@media screen and (max-width: 1030px) {
+    #current h3 {
+			display: none;
+		}
+		#current a {
+			height: auto;
+		}
+		#current h1 {
+			margin-bottom: 0;
+		}
+}
+
 @media screen and (max-width: 900px) {
     .body {
         width: calc(100% - 60px);
@@ -147,21 +186,13 @@ html, body, ul, div, img, h1, h2, h3, a, li {
     h3 {
         display: none;
     }
-    .body a {
+    #past a {
         height: 150px;
     }
-    .body img {
+    #past img {
         height: 150px;
         margin: 0;
     }
-		#hail > img {
-			height: 90px;
-			margin: 30px 31px 0 0;
-		}
-		#closet > img{
-			height: 90px;
-			margin: 30px 28px 0 0;
-		}
 		#jupyter > img{
 			height: 115px;
 			margin-right: 9px;
@@ -180,50 +211,53 @@ html, body, ul, div, img, h1, h2, h3, a, li {
 		#polyplanner > img{
 				margin-top: 24px;
 		}
-    .body > div > a > div {
+    #past > a > div {
         width: 216px;
         margin-top: 39px;
     }
-		#hail > div, #closet > div, #polyplanner > div, #photography > div {
+		#polyplanner > div, #photography > div {
 			margin-top: 56px;
 		}
-    .body h2 {
+    #past h2 {
         margin-top: 30px;
     }
+}
+
+@media screen and (max-width: 691px) {
+		.middle {
+			margin-right: 0;
+		}
 }
 
 @media screen and (max-width: 478px) {
     .body {
         width: calc(100% - 40px);
+				margin-top: 120px;
     }
     .body h2 {
-        margin-top: 0;
+        margin-top: 26px;
         margin-bottom: 12px;
 				font-size: 20px;
     }
-    .body > div > a > div {
+    #past > a > div {
         width: 169px;
         margin-top: 37px;
         padding-left: 20px;
+				position: fixed;
     }
     .body h1 {
         font-size: 25px;
     }
-    .body a {
+		#current h1 {
+			margin-top: 8px;
+		}
+    #past a {
         height: 130px;
         margin-bottom: 15px
     }
-    .body img {
+    #past img {
         height: 130px;
     }
-		#hail > img {
-			height: 72px;
-			margin: 29px 30px 0 0;
-		}
-		#closet > img {
-			height: 78px;
-			margin: 26px 28px 0 0;
-		}
 		#jupyter > img{
 			height: 96px;
 		}
@@ -239,12 +273,14 @@ html, body, ul, div, img, h1, h2, h3, a, li {
         height: 110px;
         margin: 10px;
     }
-		#hail > div, #closet > div, #polyplanner > div, #photography > div {
+		#polyplanner > div, #photography > div {
 			margin-top: 53px;
 		}
-    .body > div > a > div {
-        position: fixed;
-    }
+}
+@media screen and (max-width: 433px) {
+		.middle {
+			margin-left: 0;
+		}
 }
 
 
