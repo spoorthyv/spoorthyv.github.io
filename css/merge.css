@@ -1,6 +1,9 @@
-
+@font-face {
+	font-family: 'SF';
+	src: url('../fonts/SF-UI-Display-Medium.woff') format('woff');
+}
 .header {
-  background-color: #c2bf98;
+  background-color: #584595;
 }
 body {
   background-color: #F6F6F6;
@@ -11,16 +14,18 @@ body {
   display: inline-block;
   position: absolute;
   left: 50%;
-  top: calc(50% + 46px);
+  top: calc(50% + 30px);
   transform: translateX(-50%) translateY(-50%);
 }
 p {
+  font-family: "SF";
   letter-spacing: 1.15px;
+  line-height: 165%;
   font-size: 16px;
   color: #777777;
 }
 img {
-  width: 490px;
+  width: 130px;
   margin: 0 auto 0 auto;
   display: block;
 }
@@ -29,27 +34,21 @@ img {
   margin-top: 60px;
   border: solid 1.5px;
   padding: 10px 15px;
-  color: #c2bf98;
-	font-family: "AvenirBold";
+  color: #734dff;
+
 }
 #message {
-  width: 700px;
-  margin-top: 57px;
+  width: 600px;
+  margin-top: 60px;
   font-size: 18px;
-	line-height: 175%;
 }
 
 /*---MOBILE---*/
-@media screen and (max-width: 710px) {
+@media screen and (max-width: 510px) {
     .body {
-      width: calc(100% - 60px);
+        width: calc(100% - 60px);
     }
     #message {
-      width: 100%;
+      width: 100%
     }
-}
-@media screen and (max-width: 550px) {
-    img {
-			width: 100%;
-		}
 }
