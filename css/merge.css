@@ -46,7 +46,8 @@ img {
 /*---MOBILE---*/
 @media screen and (max-width: 510px) {
     .body {
-        width: calc(100% - 60px);
+        width: calc(100% - 70px);
+		  top:373px;
     }
     #message {
       width: 100%
