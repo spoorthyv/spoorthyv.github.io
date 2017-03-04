@@ -24,6 +24,11 @@ p {
   font-size: 16px;
   color: #777777;
 }
+a {
+	font-family: "SF";
+   letter-spacing: 1.15px;
+	text-decoration: none;
+}
 img {
   width: 130px;
   margin: 0 auto 0 auto;
@@ -32,10 +37,13 @@ img {
 #soon {
   display: inline-block;
   margin-top: 60px;
-  border: solid 1.5px;
+  border: solid 1.75px;
   padding: 10px 15px;
   color: #734dff;
-
+}
+#soon:hover {
+	background-color: #734dff;
+	color: white;
 }
 #message {
   width: 600px;

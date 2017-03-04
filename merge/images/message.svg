@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>Messenger_Mark</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="UI" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Search-Results" transform="translate(-310.000000, -576.000000)" fill="#616161">
+            <g id="Card-Expanded" transform="translate(270.000000, 194.000000)">
+                <g id="messengerIcon" transform="translate(40.000000, 382.000000)">
+                    <g id="Messenger_Mark">
+                        <path d="M13.8303008,0 C6.19203696,0 0,5.79487296 0,12.9432553 C0,17.0097711 2.00397575,20.6382189 5.13801856,23.0110692 L5.13801856,27.9646742 L9.85782222,25.3445082 C11.1160565,25.6970264 12.44953,25.8865107 13.8303008,25.8865107 C21.4685646,25.8865107 27.6606015,20.0916025 27.6606015,12.9432201 C27.6606015,5.79483774 21.4685646,0 13.8303008,0 Z M15.2869091,17.3566541 L11.7099118,13.6376201 L4.82129573,17.4503044 L12.3736924,9.42923774 L15.9507249,13.1482717 L22.8393058,9.33558742 L15.2869091,17.3566541 Z" id="Bubble_Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

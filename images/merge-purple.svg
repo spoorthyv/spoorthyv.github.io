@@ -8,9 +8,9 @@
             <stop stop-color="#4A249B" offset="0%"></stop>
             <stop stop-color="#6F49FF" offset="100%"></stop>
         </linearGradient>
-        <linearGradient x1="90.0623514%" y1="39.8846465%" x2="11.7045218%" y2="29.2549231%" id="linearGradient-2">
-            <stop stop-color="#6F49FF" offset="0%"></stop>
-            <stop stop-color="#A38FEF" offset="100%"></stop>
+        <linearGradient x1="84.3133335%" y1="51.7979881%" x2="11.7045218%" y2="29.2549231%" id="linearGradient-2">
+            <stop stop-color="#7B58FC" offset="0%"></stop>
+            <stop stop-color="#B6A4FA" offset="100%"></stop>
         </linearGradient>
     </defs>
     <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
