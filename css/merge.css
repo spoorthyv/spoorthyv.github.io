@@ -37,13 +37,13 @@ img {
 #soon {
   display: inline-block;
   margin-top: 60px;
-  border: solid 1.75px;
+  border: solid 1.5px;
   padding: 10px 15px;
   color: #734dff;
 }
 #soon:hover {
 	background-color: #734dff;
-	color: white;
+	color: #f6f6f6;
 }
 #message {
   width: 600px;
