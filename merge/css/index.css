@@ -110,7 +110,7 @@ input:focus::-webkit-input-placeholder {
 }
 #body {
 	margin: 75px 0 125px 0;
-	width: calc(90% - 80px);
+	width: calc(90vw - 80px);
 	max-width: 1200px;
 	position: absolute;
 	left: 50%;
@@ -148,14 +148,23 @@ input:focus::-webkit-input-placeholder {
 	float: right;
 	margin-top: 15px;
 }
-
 #card-wrapper {
 	margin-top: 100px;
 	display: block;
+	width: calc(90vw - 40px);
+	overflow-x: auto;
+	white-space: nowrap;
+	height: 222px;
+	padding-top: 15px;
+}
+#card-wrapper::-webkit-scrollbar {
+	display: none;
 }
 
 .card {
 	display: inline-block;
+	position: relative;
+	white-space: normal;
 	height: 219px;
 	width: 186px;
 	margin-right: 28px;
@@ -206,6 +215,9 @@ input:focus::-webkit-input-placeholder {
 	input[type="submit"] {
 		flex: 1 1 97px;
 	}
+	#card-wrapper {
+		width: calc(100vw - 81px);
+	}
 }
 @media screen and (max-width: 606px) {
 	#body {
@@ -219,5 +231,16 @@ input:focus::-webkit-input-placeholder {
 	input {
 		flex: 1 1 auto !important;
 		min-width: 0px ;
+	}
+	#header {
+		padding: 35px;
+	}
+	h3 {
+		font-size: 24px;
+		margin-bottom: 7px;
+	}
+	#card-wrapper {
+		margin-top: 80px;
+		width: calc(100vw - 35px);
 	}
 }

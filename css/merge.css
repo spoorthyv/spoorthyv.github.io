@@ -1,6 +1,6 @@
 @font-face {
 	font-family: 'SF';
-	src: url('../fonts/SF-UI-Display-Medium.woff') format('woff');
+	src: url('http://www.spoorthyv.com/fonts/SF-UI-Display-Medium.woff') format('woff');
 }
 .header {
   background-color: #584595;
