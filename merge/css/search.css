@@ -78,7 +78,7 @@ h4 {
   width: 450px;
   height: 450px;
   float: right;
-  background-image: url("../Images/map.png");
+  background-image: url("../images/map.png");
   background-size: contain;
 }
 .info {
