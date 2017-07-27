@@ -54,11 +54,11 @@ html, body, ul, div, img, h1, h2, h3, a, li {
 
 #merge {
 	background-color: #6F49FF;
-	min-width: 123px;
+	min-width: 147px;
 }
-#closet {
-	background-color: #97b8b6;
-	min-width: 160px;
+#elliemae {
+	background-color: #0065AE;
+	min-width: 190px;
 }
 #zoom {
 	background-color: #0071af;
@@ -112,6 +112,11 @@ html, body, ul, div, img, h1, h2, h3, a, li {
 }
 #none {
 	display: none;
+}
+#elliemae > img {
+	float: none;
+	display: block;
+	margin-bottom: 15px;
 }
 #zoom > img {
 	height: 35px;
@@ -172,14 +177,18 @@ html, body, ul, div, img, h1, h2, h3, a, li {
 /*---MOBILE---*/
 @media screen and (max-width: 1030px) {
     #current h3 {
-			display: none;
-		}
-		#current a {
-			height: auto;
-		}
-		#current h1 {
-			margin-bottom: 0;
-		}
+		display: none;
+	}
+	#current a {
+		height: auto;
+	}
+	#current h1 {
+		margin-bottom: 0;
+	}
+	#elliemae > img {
+		margin: 0;
+		content:url("../images/elliemaemobile.png");
+	}
 }
 
 @media screen and (max-width: 900px) {
@@ -199,10 +208,10 @@ html, body, ul, div, img, h1, h2, h3, a, li {
         height: 150px;
         margin: 0;
     }
-		#jupyter > img{
-			height: 115px;
-			margin-right: 9px;
-		}
+	#jupyter > img{
+		height: 115px;
+		margin-right: 9px;
+	}
     #five-min-shower > img {
         height: 110px;
         margin: 20px 35px;
@@ -211,33 +220,27 @@ html, body, ul, div, img, h1, h2, h3, a, li {
         height: 130px;
         margin: 10px;
     }
-		#polyplanner > div {
-				max-width: 179px;
-		}
-		#past > #polyplanner > img{
-				margin-top: 24px;
-		}
+	#polyplanner > div {
+			max-width: 179px;
+	}
+	#past > #polyplanner > img{
+			margin-top: 24px;
+	}
     #past > a > div {
         max-width: 216px;
         margin-top: 39px;
     }
-		#past > #polyplanner > div, #past > #photography > div {
-			margin-top: 56px;
-		}
+	#past > #polyplanner > div, #past > #photography > div {
+		margin-top: 56px;
+	}
     #past h2 {
         margin-top: 30px;
     }
 }
 
-@media screen and (max-width: 691px) {
-		.middle {
-			margin-right: 0;
-		}
-}
-
 @media screen and (max-width: 520px) {
     .body {
-        width: calc(100% - 60px);
+        width: calc(100% - 36px);
 				margin-top: 120px;
     }
     .body h2 {

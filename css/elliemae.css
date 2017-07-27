@@ -1,0 +1,57 @@
+@font-face {
+	font-family: 'SF';
+	src: url('../fonts/SF-UI-Display-Medium.woff') format('woff');
+}
+.header {
+  background-color: #175a8b;
+}
+body {
+  background-color: #F6F6F6;
+}
+.body {
+  text-align: center;
+  width: auto;
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  top: calc(50% + 32px);
+  transform: translateX(-50%) translateY(-50%);
+}
+p {
+  letter-spacing: 1.15px;
+  font-size: 16px;
+  color: #777777;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 500;
+}
+img {
+  width: 300px;
+  margin: 0 auto 0 auto;
+  display: block;
+}
+#soon {
+  display: inline-block;
+  margin-top: 20px;
+  border: solid 1.5px;
+  padding: 10px 15px;
+  color: #0065AE;
+	font-family: Helvetica, Arial, sans-serif;
+  font-weight: 500;
+}
+#message {
+  width: 700px;
+  margin-top: 57px;
+  font-size: 18px;
+	line-height: 175%;
+}
+
+/*---MOBILE---*/
+@media screen and (max-width: 710px) {
+    .body {
+      width: calc(100% - 70px);
+		  top: 373px;
+    }
+    #message {
+      width: 100%;
+    }
+}
