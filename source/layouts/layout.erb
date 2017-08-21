@@ -1,0 +1,14 @@
+<!doctype html>
+<html>
+  <head>
+    <%= partial "head" %>
+  </head>
+ 
+  <body class="<%= page_classes %>">
+    <%= partial "navbar" %>
+    <div id="body">
+      <%= yield %>
+    </div>
+    <script src="./javascripts/site.js"></script>
+  </body>
+</html>

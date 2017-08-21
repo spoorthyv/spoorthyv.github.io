@@ -1,0 +1,72 @@
+#navbar {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(0,0,0,0.028);
+  #navSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px;
+    height: calc(100vh - 130px);
+    #navWrapper {
+      display: flex;
+      flex-direction: column;
+      h1 {
+        color: #6B6B6B;
+        margin: 10px 0 19px 7px;
+      }
+      h2 {
+        color: #939393;
+        margin: 0 0 0 7px;
+      }
+      a {
+        margin-top: 30px;
+        margin-right: auto;
+        color: #939393;
+        text-decoration: none; 
+        padding: 5px 7px;
+        transition: color 0.2s;    
+      }
+      a:hover {
+        color: black;
+      }
+      a:hover.active {
+        color: white;
+      }
+      :nth-child(4) {
+        margin-top: 45px;
+      }
+      .active {
+        color: white;
+        font-weight: 500;
+      }
+    }
+  }
+
+  #logoWrapper {
+    display: block;
+    padding: 30px;
+    #logo {
+      background-image: url('../images/logo.svg');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: 50%;
+      height: 50px;
+      width: 50px;
+      display: inline-block;
+    }
+  }
+}
+.index .active {
+  background-color: #FF6D6D !important;
+}
+
+.contact .active {
+  background-color: #6cdfb5 !important;
+}
+
+.resume .active {
+  background-color: #8A6DFF !important;
+}

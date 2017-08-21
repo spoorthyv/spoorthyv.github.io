@@ -1,0 +1,117 @@
+$breakLarge: 1641px;
+$breakMedium: 1320px;
+$breakSmall: 839px;
+
+#portfolioBody {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 120px auto 39px auto;
+  width: 961px;
+  padding-right: 39px;
+  >h2 {
+    width: 100%;
+    margin-left: 39px;
+    margin-bottom: 29px;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    width: 281px;
+    height: 325px;
+    margin: 0 0 30px 39px;
+    border-radius: 4px;
+    box-shadow: 0px 7px 11px 0px rgba(0,0,0,0);
+    transition: box-shadow 0.3s, transform 0.3s;
+    cursor: pointer;
+    text-decoration: none;
+    .imageWrapper {
+      display: flex;
+      justify-content: center;
+      flex: 1;
+      padding: 60px 40px 40px 40px;
+      img {
+        max-width: 100px;
+        max-height: 100px;
+        align-self: center;
+      }
+    }
+    .textWrapper {
+      display: block;
+      background-color: rgba(0,0,0,0.05);
+      padding: 16px 24px;
+      h3 {
+        margin: 0;
+        color: white;
+      }
+      p {
+        line-height: 20px;
+        font-size: 14px;
+        color: white;
+        margin: 5px 0 0 0;
+      }
+    }
+  }
+  .card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0px 7px 11px 0px rgba(0,0,0,.27);
+  }
+  #photography {
+    background-image: url("../images/kina.jpg");
+    background-size: cover;
+    background-position-x: 53%;
+    .textWrapper {
+      background-color: rgba(0,0,0,0.15);
+    }
+  }
+  #elliemae {
+    .imageWrapper {
+      img {
+        max-width: 200px;  
+      }
+    }
+  }
+  #jupyter {
+    .imageWrapper {
+      img {
+        max-width: 120px;
+        max-height: 120px;
+        width: 120px;  
+      }
+    }
+  }
+  #privateConcert {
+    .imageWrapper {
+      img {
+        max-width: 200px;
+        max-height: 200px;
+      }
+    }
+  }
+  #fiveMinShower {
+    .imageWrapper {
+      img {
+        max-height: 150px;
+      }
+    }
+  }
+  #polyplanner {
+    .imageWrapper {
+      img {
+        max-width: 252px;
+        max-height: 112px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $breakLarge) {
+  #portfolioBody {
+    width: 640px;
+  }
+}
+
+@media screen and (max-width: $breakMedium) {
+  #portfolioBody {
+    width: 320px;
+  }
+}
