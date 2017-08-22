@@ -2,6 +2,7 @@
   max-width: 550px;
   width: calc(100% - 60px);
   margin: 100px auto 0 auto;
+  text-align: center;
   div {
     display: inline-block;
   }
@@ -9,6 +10,7 @@
     font-size: 25px;
     font-family: 'AvenirBold';
     color: #575f62;
+    margin: 0;
   }
   h2 {
     font-size: 17px;
@@ -18,7 +20,7 @@
   }
   
   #contact-info {
-    margin: 80px 0 0 0;
+    margin: 60px 0 0 0;
   }
   #contact-info > h1 {
     margin-bottom: 30px;

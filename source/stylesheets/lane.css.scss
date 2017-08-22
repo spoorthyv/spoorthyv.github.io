@@ -1,0 +1,40 @@
+.lane {
+   #wrapper {
+      .innerWrapper {
+         text-align: center;
+         max-width: 800px;
+         padding: 100px;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         position: relative;
+         top: 50%;
+         transform: translateY(-50%);
+         margin: auto;
+         img {
+           width: 130px;
+         }
+         #message {
+            width: 600px;
+            margin-top: 60px;
+            font-size: 18px;
+            text-align: center;
+            line-height: 1.5;
+            color: #6b6b6b;
+         }
+         #soon {
+           display: inline-block;
+           margin-top: 60px;
+           border: solid 1.5px;
+           padding: 10px 15px;
+           color: #734dff;
+           letter-spacing: 1.15px;
+           text-decoration: none;
+         }
+         #soon:hover {
+            background-color: #734dff;
+            color: #f6f6f6;
+         }
+      }
+   }
+}

@@ -21,7 +21,7 @@ $breakSmall: 839px;
     margin: 0 0 30px 39px;
     border-radius: 4px;
     box-shadow: 0px 7px 11px 0px rgba(0,0,0,0);
-    transition: box-shadow 0.3s, transform 0.3s;
+    transition: box-shadow 0.3s, transform 0.3s, filter 0.3s;
     cursor: pointer;
     text-decoration: none;
     .imageWrapper {
