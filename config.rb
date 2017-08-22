@@ -37,6 +37,8 @@ activate :directory_indexes
 
 activate :livereload
 
+activate :sprockets
+
 helpers do
   def nav_active(page)
     puts current_page.url
