@@ -3,10 +3,9 @@
   <head>
     <%= partial "head" %>
   </head>
-  <%= partial "navbar" %>
   <body class="<%= page_classes %>">
-    
-    <div id="body">
+    <%= partial "navbar" %>
+    <div id="wrapper" class="animated">
       <%= yield %>
     </div>
   </body>

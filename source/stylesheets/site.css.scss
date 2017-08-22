@@ -46,8 +46,69 @@ body {
   width: $navbarWidth;
 }
 
-#body {
+#wrapper {
   flex: 1;
   margin-left: $navbarWidth;
 }
 
+.turbolinks-progress-bar::before {
+  background-color: red !important;
+  height: 5px !important;
+}
+
+// Animations
+.animated {
+  -webkit-animation-duration: 0.8s;
+  animation-duration: 0.8s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}
+.fadeOutUp {
+  -webkit-animation-name: fadeOutUp;
+  animation-name: fadeOutUp;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+
+  }
+  to {
+    opacity: 1;
+
+  }
+}
+@-webkit-keyframes fadeInDown {
+  from {
+    opacity: 0;
+
+  }
+  to {
+    opacity: 1;
+
+  }
+}
+@keyframes fadeOutUp {
+  from {
+    opacity: 1;
+
+  }
+  to {
+    opacity: 0;
+
+  }
+}
+@-webkit-keyframes fadeOutUp {
+  from {
+    opacity: 1;
+
+  }
+  to {
+    opacity: 0;
+
+  }
+}
