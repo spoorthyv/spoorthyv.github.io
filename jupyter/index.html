@@ -32,7 +32,7 @@
 <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
 
 <!-- Use title if it’s in the page YAML front matter -->
-<title>lane</title>
+<title>jupyter</title>
 
 <link href="/stylesheets/site.css" rel="stylesheet" />
 <script src="/javascripts/application.js"></script>
@@ -45,7 +45,7 @@
 <script src="javascripts/lg-fullscreen.min.js"></script>
  -->
   </head>
-  <body class="lane lane_index">
+  <body class="jupyter jupyter_index">
     <div id="navbar">
    <div id="navSection">
       <div id="navWrapper">
@@ -70,11 +70,42 @@
       </svg>
 </a>
 <div class="innerWrapper">
-      <img src='images/lane-purple.svg'>
-      <p id="message"> Lane is a beautiful React-Native iOS app for long range ride sharing. I am working as the lead designer on the team and helping build the React-Native frontend.</p>
-      <a id="soon" href="https://sketch.cloud/s/eKbDq" target="_blank"> See Our Preliminary Mocks</a>
+      <img src='images/jupyterfull.svg'>
+      <h3>My Role</h3>
+      <p>Jupyter is an open source organization that builds an interactive data science IDE used by over 30 million people around the world. I worked there as a hybrid <b>UI/UX Designer and Front-end Engineer</b> for 9 months.</p>
+      <h2>JupyterLab</h2>
+      <h3>The Project</h3>
+      <p>
+            My main job at Jupyter was to help build the next generation JupyterLab web application. The existing Jupyter Notebooks that all our users knew and loved allowed users to wirte and run code inline in an extremely visual and interactive way. JupyterLab builds around the notebook by adding commonly used developer tools (e.g. a terminal, file browser, text editor, etc.) in a multiwindow interface. Our team’s job was to research, design, and develop these tools (called widgets) into JupyterLab as well as try to improve the overall interface. The entire app was built with javascript using a custom framework called Phosphor.JS.<br><br>
+            Widgets and parts of Jupyterlab I worked on: <br>
+            - Top navigation bar <br>
+            - Terminal <br>
+            - Image Viewer <br>
+            - Redid File Browser <br>
+            - Notebook widget toolbar <br>
+      </p>
+      <div id="lightgallery">
+            <a href="images/jupyter/old.png">
+                  <img src="images/jupyter/old.png">
+            </a>
+            <a href="images/jupyter/new.png">
+                  <img src="images/jupyter/new.png">
+            </a>
+            <a href="images/jupyter/image.png">
+                  <img src="images/jupyter/image.png">
+            </a>
+      </div>
+      <script>
+            lightGallery(document.getElementById('lightgallery'));
+      </script>
 </div>
 
+
+<script src="js/lightgallery.min.js"></script>
+
+<!-- lightgallery plugins -->
+<script src="js/lg-thumbnail.min.js"></script>
+<script src="js/lg-fullscreen.min.js"></script>
     </div>
   </body>
 </html>
