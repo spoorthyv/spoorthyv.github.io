@@ -4,6 +4,10 @@
 @import "contact.css.scss";
 @import "resume.css.scss";
 @import "lane.css.scss";
+@import "zoomforth.css.scss";
+@import "elliemae.css.scss";
+@import "photography.css.scss";
+@import "jupyter.css.scss";
 
 $navbarWidth: 480px;
 
@@ -52,6 +56,18 @@ body {
 #wrapper {
   flex: 1;
   margin-left: $navbarWidth;
+}
+
+.backArrow {
+  background-image: url('../images/backArrow.svg');
+  display: inline-block;
+  position: relative;
+  top: 50px;
+  left: 50px;
+  svg {
+    height: 50px;
+    width: 50px;
+  }
 }
 
 // Animations

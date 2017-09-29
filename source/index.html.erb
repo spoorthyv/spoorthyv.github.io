@@ -9,7 +9,15 @@ title: Portfolio
   <%= partial(:card, :locals => { :cardColor => "#FF9445", :title => "Project Jupyter", :description => "My work as a UI/UX Designer and Software Engineer", :imageFile => "jupyter.svg", :tag => "jupyter" }) %>
   <%= partial(:card, :locals => { :cardColor => "#68B8DD", :title => "Private Concert", :description => "Share your voice with the world: Fearlessly", :imageFile => "PCicon.jpg", :tag => "privateConcert" }) %>
   <%= partial(:card, :locals => { :cardColor => "#9CCAE9", :title => "5 Min Shower", :description => "A musical shower timer with an attitude", :imageFile => "ShowerIcon.png", :tag => "fiveMinShower" }) %>
-  <%= partial(:card, :locals => { :cardColor => "#035642", :title => "PolyPlanner", :description => "Reimagining CalPoly's course planning software", :imageFile => "polyplanner.png", :tag => "polyplanner" }) %>
+  <a class="card" href="https://paper.dropbox.com/doc/PolyPlanner-Recommendation-Report-c3PHw57sr9kc5pFSA7jWQ" id="polyplanner" style="background-color: #035642;" target="_blank">
+    <div class="imageWrapper">
+        <img class="cardImage" src="<%= "./images/polyplanner.png" %>" >
+    </div>
+    <div class="textWrapper">
+        <h3>PolyPlanner</h3>
+        <p>Reimagining CalPoly's course planning software</p>
+    </div>
+  </a>
   <%= partial(:card, :locals => { :cardColor => "#b01398", :title => "Photography", :description => "", :imageFile => "", :tag => "photography" }) %>
 </div>
 

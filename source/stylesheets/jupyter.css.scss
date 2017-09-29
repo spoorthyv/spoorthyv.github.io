@@ -1,0 +1,23 @@
+.jupyter {
+  .backArrow {
+    svg {
+        fill: #734dff;
+        filter: grayscale(1) brightness(1.2);
+        transition: filter 0.2s;
+    }
+    svg:hover {
+      filter: grayscale(0) brightness(1);
+    }
+  }
+  .innerWrapper {
+      max-width: 800px;
+      padding: 100px;
+      display: flex;
+      flex-direction: column;
+      .galleria { 
+        width: 100%; 
+        min-height: 400px; 
+        background: #000 
+      }
+  }
+}

@@ -1,0 +1,43 @@
+.photography {
+  background-color: #181818;
+  #navbar {
+    background-color: rgba(0,0,0,0.1);
+    #navSection {
+      #navWrapper {
+        a:hover {
+          color: white;
+        }
+      }
+    }
+    
+    #logoWrapper {
+      #logo {
+        filter: grayscale(1) brightness(3);
+        transition: none;
+      }
+      #logo:hover {
+        filter: grayscale(1) brightness(6);
+      }
+    }
+    
+  }
+  #photography {
+    text-align: center;
+    padding-bottom: 75px;
+    img {
+      filter: grayscale(100%);
+      transition: filter 0.55s;
+    }
+    * {    
+      max-width: calc(100% - 150px);
+      max-height: calc(100vh - 150px);
+      padding: 75px 75px 0 75px;
+    }
+    iframe {
+      width: 100%;
+    }
+    .currentPic {
+      filter: grayscale(0%) !important;
+    }
+  } 
+}

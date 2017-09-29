@@ -57,7 +57,7 @@
       width: 50px;
       display: inline-block;
       filter: grayscale(0.8);
-      transition: filter 0.3s;
+      transition: all 0.3s;
     }
     #logo:hover {
       filter: grayscale(0);
