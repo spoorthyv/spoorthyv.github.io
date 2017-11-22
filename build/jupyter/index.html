@@ -36,14 +36,11 @@
 
 <link href="/stylesheets/site.css" rel="stylesheet" />
 <script src="/javascripts/application.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/galleria/1.5.7/galleria.min.js"></script>
+<script src="javascripts/galleria.twelve.js"></script>
 
-<link rel="stylesheet" href="css/lightgallery.css">
-<!--
-<link type="text/css" rel="stylesheet" href="stylesheets/lightgallery.min.css"/>
-<script src="javascripts/lightgallery.min.js"></script>
-<script src="javascripts/lg-thumbnail.min.js"></script>
-<script src="javascripts/lg-fullscreen.min.js"></script>
- -->
+
+
   </head>
   <body class="jupyter jupyter_index">
     <div id="navbar">
@@ -84,28 +81,22 @@
             - Redid File Browser <br>
             - Notebook widget toolbar <br>
       </p>
-      <div id="lightgallery">
-            <a href="images/jupyter/old.png">
-                  <img src="images/jupyter/old.png">
-            </a>
-            <a href="images/jupyter/new.png">
-                  <img src="images/jupyter/new.png">
-            </a>
-            <a href="images/jupyter/image.png">
-                  <img src="images/jupyter/image.png">
-            </a>
+      <div class="galleria">
+            <img src="images/jupyter/old.png">
+            <img src="images/jupyter/new.png">
+            <img src="images/jupyter/image.png">
       </div>
       <script>
-            lightGallery(document.getElementById('lightgallery'));
+            (function() { 
+                  Galleria.loadTheme('galleria/themes/twelve/galleria.twelve.min.js');
+                  Galleria.run('.galleria', {
+                        transition: 'fade',
+                        imageCrop: false
+                  });
+            }());
       </script>
 </div>
 
-
-<script src="js/lightgallery.min.js"></script>
-
-<!-- lightgallery plugins -->
-<script src="js/lg-thumbnail.min.js"></script>
-<script src="js/lg-fullscreen.min.js"></script>
     </div>
   </body>
 </html>

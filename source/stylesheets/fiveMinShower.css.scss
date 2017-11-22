@@ -1,0 +1,62 @@
+.fiveMinShower {
+  //overflow-x: hidden;
+   .backArrow {
+      svg {
+         fill: #d8edf7;
+         filter: brightness(1);
+         transition: filter 0.2s;
+      }
+      svg:hover {
+        filter: brightness(1.4);
+      }
+   }
+   #wrapper {
+      overflow-x: hidden;
+      .innerWrapper {
+        #header {
+          height: 325px;
+          background: radial-gradient(circle farthest-side at 50% 50%,#DAEEF8, #A8D6ED);
+          
+          .headerImage {
+            background-repeat: no-repeat;
+            background-position: 50% 0%;
+            background-image: url('../images/fiveMinShower/headerImage.svg');
+            height: 100%;
+            width: 100%;
+            margin-top: -55px;
+          }
+        }
+        h1 {
+          color: #5F8DA5;
+        }
+        p {
+          line-height: 26px;
+          margin-bottom: 40px;
+        }
+        h3 {
+          color: #5F8DA5;
+          margin: 0;
+        }
+        
+        .sectionContent {
+          padding: 50px 120px 0 120px;
+          margin: auto;
+          max-width: 900px;
+          .galleryHeader {
+            margin-bottom: 0;
+          }
+        }
+      }
+      .mockImage {
+        display: block;
+        width: 100%;
+      }
+      .mockDescription {
+        h3 {
+          font-size: 30px;
+          color: #666c79;
+        }
+        background-color: #F0F2F8;
+      }
+   }
+}

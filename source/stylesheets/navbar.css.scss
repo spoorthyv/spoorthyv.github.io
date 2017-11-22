@@ -1,3 +1,18 @@
+.smallNav {
+  #navbar {
+    width: 170px;
+    #titles {
+      display: none;
+    }
+  }
+  // #logoWrapper {
+  //   padding: 40px;
+  // }
+  #wrapper {
+    margin-left: 170px;
+  }
+}
+
 #navbar {
   display: flex;
   height: 100vh;
@@ -8,19 +23,23 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 60px;
+    padding: 45px;
     height: calc(100vh - 130px);
     #navWrapper {
       display: flex;
       flex-direction: column;
-      h1 {
-        color: #6B6B6B;
-        margin: 10px 0 19px 7px;
-      }
-      h2 {
-        color: #939393;
-        margin: 0 0 0 7px;
-      }
+      #titles {
+        margin-bottom: 10px;
+        h1 {
+          color: #6B6B6B;
+          margin: 14px 0 19px 7px;
+        }
+        h2 {
+          color: #939393;
+          margin: 0 0 0 7px;
+          line-height: 1.4;
+        }
+      }   
       a {
         margin-top: 30px;
         margin-right: auto;
@@ -35,9 +54,6 @@
       a:hover.active {
         color: white;
       }
-      :nth-child(4) {
-        margin-top: 45px;
-      }
       .active {
         color: white;
         font-weight: 500;
@@ -47,7 +63,7 @@
 
   #logoWrapper {
     display: block;
-    padding: 30px;
+    padding: 30px 40px;
     #logo {
       background-image: url('../images/logo.svg');
       background-size: contain;
@@ -75,3 +91,4 @@
 .resume .active {
   background-color: #8A6DFF !important;
 }
+

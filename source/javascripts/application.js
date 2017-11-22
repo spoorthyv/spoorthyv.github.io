@@ -24,8 +24,20 @@ if ( 'querySelector' in document && 'addEventListener' in window ) {
 }
 
 
-jQuery(function($){
-  if($('#photography').length > 0 ){
+$(document).on('turbolinks:load', function () {
+  if($('.lane').length > 0 ){
+    $('.horizGallery img').on('click', function(e) {
+      console.log("image");
+      $target = $(e.target);
+      $target.parent().parent().addClass('fullScreen');
+      e.preventDefault();
+    });
+    $('.close').on('click', function(e) {
+      $('.horizGallery').removeClass("fullScreen"); //you can list several class names 
+      e.preventDefault();
+    });
+  }
+  if($('.photography').length > 0 ) {
     window.addEventListener('scroll', function(){
       for (var i = 1; i < 7; i++) {
         if (isElementInViewport($("img:nth-child(" + i + ")"))) {
@@ -37,10 +49,17 @@ jQuery(function($){
       }
     });
   }
-})
+
+  if( !(($('.index').length > 0) || ($('.contact').length > 0) || ($('.resume').length > 0)) ) {
+    $('body').addClass("smallNav");
+  } else {
+    $('body').removeClass("smallNav");
+  }
+});
+
 
 function isElementInViewport (el) {
-
+  console.log("isElement");
   if (typeof jQuery === "function" && el instanceof jQuery) {
       el = el[0];
   }

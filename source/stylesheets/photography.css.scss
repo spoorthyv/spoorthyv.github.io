@@ -4,6 +4,9 @@
     background-color: rgba(0,0,0,0.1);
     #navSection {
       #navWrapper {
+        h1 {
+          color: #cecece;
+        }
         a:hover {
           color: white;
         }
@@ -13,10 +16,10 @@
     #logoWrapper {
       #logo {
         filter: grayscale(1) brightness(3);
-        transition: none;
+        transition: 0.3s filter;
       }
       #logo:hover {
-        filter: grayscale(1) brightness(6);
+        filter: grayscale(1) brightness(9);
       }
     }
     

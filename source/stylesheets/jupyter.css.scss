@@ -1,23 +1,130 @@
 .jupyter {
+  overflow-x: hidden;
   .backArrow {
     svg {
-        fill: #734dff;
+        fill: #f37727;
         filter: grayscale(1) brightness(1.2);
-        transition: filter 0.2s;
+        transition: filter 0.25s;
     }
     svg:hover {
       filter: grayscale(0) brightness(1);
     }
   }
   .innerWrapper {
-      max-width: 800px;
-      padding: 100px;
+      padding: 75px 0;
       display: flex;
       flex-direction: column;
+      margin: 0;
+
+      .section { 
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      .section:nth-child(2n) {
+        background-color: #f8f8f8;
+      }
+
+      .sectionContent {
+        padding: 0 150px 40px 150px;
+        margin: auto;
+        max-width: 900px;
+      }
+
+      h2 {
+        line-height: 1.5;
+        margin: 40px 0 5px 0;
+        color: #f37727;
+        font-weight: 500;
+        font-size: 29px;
+      }
+      h3 {
+        line-height: 2;
+        margin: 10px 0 0 0;
+      }
+      p {
+        line-height: 26px;;
+        margin: 5px 0 0 0;
+      }
+      b {
+        font-weight: 500;
+      }
+      ol {
+        margin: 5px 0 0 0;
+        padding-left: 17px;
+      }
+      li {
+        line-height: 1.5;
+      }
+      object {
+        margin-top: 20px;
+      }
+
+      > img {
+        max-width: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+
+      #header {
+        display: flex;
+        padding-top: 30px;
+        margin-bottom: 50px;
+        img {
+          width: initial;
+          margin: 14px 0 10px 0;
+          height: 75px;
+        }   
+        #headerDetails {
+          display: flex;
+          flex-direction: column;
+          h5 {
+            line-height: 2;
+            margin-left: 32px;
+            color: #2a2a2a;
+            border-left: 2px solid #f37727;
+            padding-left: 30px;
+            padding-top: 2px;
+          }
+        }
+      }
+
+      #navbarImg {
+        background-color: #f3f3f3;
+        padding: 5px;
+        margin: 20px 0;
+        img {
+          width: 100%;
+        }
+      }
+
       .galleria { 
         width: 100%; 
-        min-height: 400px; 
-        background: #000 
-      }
+        height: 480px; 
+        margin: 20px 0;
+        .galleria-theme-twelve .galleria-stage {
+          background-color: #f3f3f3;
+        }
+        .galleria-theme-twelve .galleria-bar {
+          background-color: #313131;
+        }
+      }         
+  }
+  .galleria-lightbox-box {
+    .galleria-lightbox-content {
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      background-color: #000;
+    }
+    .galleria-lightbox-info {
+      color: #fff;
+    }
+    .galleria-lightbox-close {
+      border-radius: 20px;
+      top: 3px;
+      right: 3px;
+    }
   }
 }

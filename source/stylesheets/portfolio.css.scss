@@ -1,16 +1,15 @@
-$breakLarge: 1641px;
-$breakMedium: 1320px;
-$breakSmall: 839px;
+$breakLarge: 1435px;
+$breakMedium: 1150px;
 
 #portfolioBody {
   display: flex;
   flex-wrap: wrap;
   margin: 120px auto 39px auto;
   width: 961px;
-  padding-right: 39px;
+  padding-right: 35px;
   >h2 {
     width: 100%;
-    margin-left: 39px;
+    margin-left: 35px;
     margin-bottom: 29px;
   }
   .card {
@@ -18,9 +17,9 @@ $breakSmall: 839px;
     flex-direction: column;
     width: 281px;
     height: 325px;
-    margin: 0 0 30px 39px;
+    margin: 0 0 30px 35px;
     border-radius: 4px;
-    box-shadow: 0px 7px 11px 0px rgba(0,0,0,0);
+    box-shadow: 0px 7px 0px 0px rgba(255,255,255,0);
     transition: box-shadow 0.3s, transform 0.3s;
     cursor: pointer;
     text-decoration: none;
@@ -53,7 +52,31 @@ $breakSmall: 839px;
   }
   .card:hover {
     transform: translateY(-7px);
-    box-shadow: 0px 7px 11px 0px rgba(0,0,0,.27);
+    box-shadow: 0px 7px 37px 0px rgba(0,0,0,.27);
+  }
+  #lane:hover {
+    box-shadow: 0px 7px 37px 0px rgba(111, 73, 255, 0.5);
+  }
+  #zoomforth:hover {
+    box-shadow: 0px 7px 37px rgba(0, 112, 175, 0.5);
+  }
+  #elliemae:hover {
+    box-shadow: 0px 7px 37px 0px rgba(2, 101, 174,0.5);
+  }
+  #jupyter:hover {
+    box-shadow: 0px 7px 37px 0px rgba(255, 148, 70, 0.65);
+  }
+  #privateConcert:hover {
+    box-shadow: 0px 7px 37px 0px rgba(104, 184, 221, 0.65);
+  }
+  #fiveMinShower:hover {
+    box-shadow: 0px 7px 37px 0px rgba(155, 203, 234, 0.9);
+  }
+  #polyplanner:hover {
+    box-shadow: 0px 7px 37px 0px rgba(4, 86, 67, 0.5);
+  }
+  #photography:hover {
+    box-shadow: 0px 7px 37px 0px rgba(128, 54, 116, 0.5);
   }
   #photography {
     background-image: url("../images/kina.jpg");
@@ -70,6 +93,7 @@ $breakSmall: 839px;
       }
     }
   }
+  
   #jupyter {
     .imageWrapper {
       img {
