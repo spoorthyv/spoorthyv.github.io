@@ -2,12 +2,10 @@
   #navbar {
     #navSection {
       #navWrapper {
-        transform: translateY(-90px);
-        #titles {
-          opacity: 0;
-        }
-        :nth-child(2) {
-          color: black;
+        a:nth-child(2) {
+          background-color: #FF6D6D !important;
+          color: white;
+          font-weight: 500;
         }
       }
     }
@@ -23,10 +21,6 @@
   flex-direction: column;
   justify-content: center;
   background-color: rgba(0,0,0,0.028);
-  -webkit-animation-duration: 0.3s;
-  animation-duration: 0.3s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
   #navSection {
     display: flex;
     flex-direction: column;
@@ -108,12 +102,25 @@
 }
 
 // Animations
+
 .expandNav {
-  -webkit-animation-name: expandNav;
+  animation-name: expandNav;
+  #navWrapper {
+    animation-name: moveLinksDown;
+  }
+  #titles {
+    animation-name: showTitles;
+  }
   animation-name: expandNav;
 }
 .shrinkNav {
-  -webkit-animation-name: shrinkNav;
+  animation-name: shrinkNav;
+  #navWrapper {
+    animation-name: moveLinksUp;
+  }
+  #titles {
+    animation-name: hideTitles;
+  }
   animation-name: shrinkNav;
 }
 
@@ -134,19 +141,36 @@
   }
 }
 
-@-webkit-keyframes expandNav {
+@keyframes hideTitles {
   from {
-    width: 170px;
+    opacity: 1;
   }
   to {
-    width: 415px;
+    opacity: 0;
   }
 }
-@-webkit-keyframes shrinkNav {
+@keyframes showTitles {
   from {
-    width: 415px;
+    opacity: 0;
   }
   to {
-    width: 170px;
+    opacity: 1;
+  }
+}
+
+@keyframes moveLinksUp {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-90px);
+  }
+}
+@keyframes moveLinksDown {
+  from {
+    transform: translateY(-90px);
+  }
+  to {
+    transform: translateY(0px);
   }
 }
