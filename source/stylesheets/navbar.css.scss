@@ -1,11 +1,13 @@
 .smallNav {
   #navbar {
-    width: 170px;
     #navSection {
       #navWrapper {
         transform: translateY(-90px);
         #titles {
           opacity: 0;
+        }
+        :nth-child(2) {
+          color: black;
         }
       }
     }
@@ -21,7 +23,10 @@
   flex-direction: column;
   justify-content: center;
   background-color: rgba(0,0,0,0.028);
-  transition: all 0.3s;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
   #navSection {
     display: flex;
     flex-direction: column;
@@ -34,10 +39,8 @@
       width: 325px;
       display: flex;
       flex-direction: column;
-      transition: all 0.3s;
       #titles {
         opacity: 1;
-        transition: all 0.3s;
         margin-bottom: 10px;
         h1 {
           font-size: 37px;
@@ -105,17 +108,11 @@
 }
 
 // Animations
-.animated {
-  -webkit-animation-duration: 0.8s;
-  animation-duration: 0.8s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
 .expandNav {
   -webkit-animation-name: expandNav;
   animation-name: expandNav;
 }
-.fadeOutUp {
+.shrinkNav {
   -webkit-animation-name: shrinkNav;
   animation-name: shrinkNav;
 }
@@ -129,6 +126,23 @@
   }
 }
 @keyframes shrinkNav {
+  from {
+    width: 415px;
+  }
+  to {
+    width: 170px;
+  }
+}
+
+@-webkit-keyframes expandNav {
+  from {
+    width: 170px;
+  }
+  to {
+    width: 415px;
+  }
+}
+@-webkit-keyframes shrinkNav {
   from {
     width: 415px;
   }

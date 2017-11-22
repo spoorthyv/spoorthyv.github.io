@@ -105,6 +105,7 @@ $breakMedium: 1150px;
   }
   #privateConcert {
     .imageWrapper {
+      padding: 14px 40px;
       img {
         max-width: 200px;
         max-height: 200px;
@@ -114,7 +115,7 @@ $breakMedium: 1150px;
   #fiveMinShower {
     .imageWrapper {
       img {
-        max-height: 150px;
+        max-height: 128px;
       }
     }
   }
