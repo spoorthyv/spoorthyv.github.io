@@ -1,5 +1,6 @@
 @import "fonts.css.scss";
 @import "navbar.css.scss";
+@import "index.css.scss";
 @import "portfolio.css.scss";
 @import "contact.css.scss";
 @import "resume.css.scss";
@@ -20,13 +21,12 @@ $navbarWidth: 415px;
 }
 
 h1 {
-  font-size: 36px;
-  font-weight: 500;
-  margin: 24px 0;
+  font-size: 44px;
+  margin: 26px 0;
 }
 
 h2 {
-  font-size: 25px;
+  font-size: 33px;
   margin: 24px 0;
 }
 
@@ -48,6 +48,10 @@ a {
 
 a:hover {
   color: #0085ff;
+}
+
+b {
+  font-weight: 500;
 }
 
 body {
@@ -81,10 +85,29 @@ body {
   }
 }
 
+.githubButton {
+  height: 51px;
+  width: 170px;
+  background-image: url('../images/githubButton.png');
+  background-size: cover;
+  display: inline-block;
+  border-radius: 4px;
+  transition: all 0.25s;
+  box-shadow: 0px 0px 0px #8a5085;
+}
+.githubButton:hover {
+  box-shadow: 0px 4px 0px #8a5085;
+  transform: translateY(-4px);
+}
+.githubButton:active {
+  box-shadow: 0px 0px 0px #8a5085;
+  transform: translateY(0);
+}
+
 // Animations
 .animated {
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
+  -webkit-animation-duration: 0.6s;
+  animation-duration: 0.6s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
@@ -98,15 +121,30 @@ body {
 }
 
 @keyframes fadeInDown {
-  from {
+  0% {
     opacity: 0;
 
   }
-  to {
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeOutUp {
+  0% {
     opacity: 1;
 
   }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
 }
+
 @-webkit-keyframes fadeInDown {
   from {
     opacity: 0;
@@ -114,16 +152,6 @@ body {
   }
   to {
     opacity: 1;
-
-  }
-}
-@keyframes fadeOutUp {
-  from {
-    opacity: 1;
-
-  }
-  to {
-    opacity: 0;
 
   }
 }

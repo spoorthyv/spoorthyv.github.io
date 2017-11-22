@@ -1,13 +1,15 @@
 .smallNav {
   #navbar {
     width: 170px;
-    #titles {
-      display: none;
+    #navSection {
+      #navWrapper {
+        transform: translateY(-90px);
+        #titles {
+          opacity: 0;
+        }
+      }
     }
   }
-  // #logoWrapper {
-  //   padding: 40px;
-  // }
   #wrapper {
     margin-left: 170px;
   }
@@ -19,6 +21,7 @@
   flex-direction: column;
   justify-content: center;
   background-color: rgba(0,0,0,0.028);
+  transition: all 0.3s;
   #navSection {
     display: flex;
     flex-direction: column;
@@ -26,15 +29,24 @@
     padding: 45px;
     height: calc(100vh - 130px);
     #navWrapper {
+      transform: translateY(0px);
+      position: absolute;
+      width: 325px;
       display: flex;
       flex-direction: column;
+      transition: all 0.3s;
       #titles {
+        opacity: 1;
+        transition: all 0.3s;
         margin-bottom: 10px;
         h1 {
+          font-size: 37px;
+          font-weight: 500;
           color: #6B6B6B;
           margin: 14px 0 19px 7px;
         }
         h2 {
+          font-size: 25px;
           color: #939393;
           margin: 0 0 0 7px;
           line-height: 1.4;
@@ -92,3 +104,35 @@
   background-color: #8A6DFF !important;
 }
 
+// Animations
+.animated {
+  -webkit-animation-duration: 0.8s;
+  animation-duration: 0.8s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.expandNav {
+  -webkit-animation-name: expandNav;
+  animation-name: expandNav;
+}
+.fadeOutUp {
+  -webkit-animation-name: shrinkNav;
+  animation-name: shrinkNav;
+}
+
+@keyframes expandNav {
+  from {
+    width: 170px;
+  }
+  to {
+    width: 415px;
+  }
+}
+@keyframes shrinkNav {
+  from {
+    width: 415px;
+  }
+  to {
+    width: 170px;
+  }
+}

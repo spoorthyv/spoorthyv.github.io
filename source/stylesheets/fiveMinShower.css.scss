@@ -13,6 +13,7 @@
    #wrapper {
       overflow-x: hidden;
       .innerWrapper {
+        padding-bottom: 90px;
         #header {
           height: 325px;
           background: radial-gradient(circle farthest-side at 50% 50%,#DAEEF8, #A8D6ED);
@@ -44,6 +45,12 @@
           max-width: 900px;
           .galleryHeader {
             margin-bottom: 0;
+          }
+        }
+
+        #finalProduct {
+          p {
+            margin-bottom: 28px;
           }
         }
       }

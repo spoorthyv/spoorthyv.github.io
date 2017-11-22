@@ -8,6 +8,10 @@ if ( 'querySelector' in document && 'addEventListener' in window ) {
     var wrapper = $('#wrapper');
     wrapper.removeClass('fadeInDown');
     wrapper.addClass('fadeOutUp');
+
+    var navbar = $('.navbar');
+    navbar.removeClass('fadeInDown');
+    navbar.addClass('fadeOutUp');
   }, false);
 
   document.addEventListener("turbolinks:load", function(e) {
@@ -51,8 +55,10 @@ $(document).on('turbolinks:load', function () {
   }
 
   if( !(($('.index').length > 0) || ($('.contact').length > 0) || ($('.resume').length > 0)) ) {
+    console.log("add small");
     $('body').addClass("smallNav");
   } else {
+    console.log("remove small");
     $('body').removeClass("smallNav");
   }
 });
