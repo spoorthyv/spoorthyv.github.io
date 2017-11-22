@@ -1,3 +1,5 @@
+$navbarWidth: 488px;
+
 .smallNav {
   #navbar {
     #navSection {
@@ -30,7 +32,7 @@
     #navWrapper {
       transform: translateY(0px);
       position: absolute;
-      width: 325px;
+      width: $navbarWidth - 90px;
       display: flex;
       flex-direction: column;
       #titles {
@@ -129,12 +131,12 @@
     width: 170px;
   }
   to {
-    width: 415px;
+    width: $navbarWidth;
   }
 }
 @keyframes shrinkNav {
   from {
-    width: 415px;
+    width: $navbarWidth;
   }
   to {
     width: 170px;
@@ -163,12 +165,12 @@
     transform: translateY(0px);
   }
   to {
-    transform: translateY(-90px);
+    transform: translateY(-65px);
   }
 }
 @keyframes moveLinksDown {
   from {
-    transform: translateY(-90px);
+    transform: translateY(-65px);
   }
   to {
     transform: translateY(0px);
