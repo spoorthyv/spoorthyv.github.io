@@ -2,23 +2,15 @@
 <html>
   <head>
     <!--FAVICON-->
-<link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
-<link rel="icon" type="image/png" sizes="192x192"  href="images/favicon/android-icon-192x192.png">
+<link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
 <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
 <link rel="manifest" href="images/favicon/manifest.json">
-<meta name="msapplication-TileColor" content="#ffffff">
-<meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
-<meta name="theme-color" content="#5bbad5">
+<link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="images/favicon/favicon.ico">
+<meta name="msapplication-config" content="images/favicon/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+
 <meta prefix="og: http://ogp.me/ns#" property="og:title" content="Spoorthy Vemula"/>
 <meta prefix="og: http://ogp.me/ns#" property="og:image" content="http://www.spoorthyv.com/images/metaimage.jpg"/>
 <meta prefix="og: http://ogp.me/ns#" property="og:description" content="UI/UX Designer & Software Engineer"/>
@@ -36,19 +28,21 @@
 
 <link href="/stylesheets/site.css" rel="stylesheet" />
 <script src="/javascripts/application.js"></script>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/galleria/1.5.7/galleria.min.js"></script>
 <script src="javascripts/galleria.twelve.js"></script>
 
-
-
+<meta name="turbolinks-cache-control" content="no-preview">
   </head>
   <body class="index">
-    <div id="navbar">
+    <div id="navbar" class="animated">
    <div id="navSection">
-      <div id="navWrapper">
-         <h2>Hi, I'm</h2>
-         <h1>Spoorthy Vemula</h1>
-         <h2>I'm a designer and developer</h2>
+      <div id="navWrapper" class="animated">
+         <div id="titles" class="animated">
+            <h2>Hi, I'm</h2>
+            <h1>Spoorthy Vemula</h1>
+            <h2>I'm a UI/UX Designer & Developer</h2>
+         </div>
          <a href="/" class="active">Portfolio</a>
          <a href="/contact">Contact</a>
          <a href="/resume">Resume</a>
@@ -62,13 +56,13 @@
     <div id="wrapper" class="animated">
       <div id="portfolioBody">
   <h2>Here's what I've been working on.</h2>
-  <a class="card" style="background-color:#6F49FF;" id="lane" href="./lane">
+  <a class="card" style="background-color:#FF9445;" id="jupyter" href="./jupyter">
    <div class="imageWrapper">
-      <img class="cardImage" src="./images/lane.svg" >
+      <img class="cardImage" src="./images/jupyter.svg" >
    </div>
    <div class="textWrapper">
-      <h3>Lane</h3>
-      <p>A beautiful React Native app for long distance ridesharing</p>
+      <h3>Project Jupyter</h3>
+      <p>My work as a UI/UX Designer and Software Engineer</p>
    </div>
 </a>
 
@@ -88,27 +82,7 @@
    </div>
    <div class="textWrapper">
       <h3>Ellie Mae</h3>
-      <p>UI Engineering Intership with Angular.JS</p>
-   </div>
-</a>
-
-  <a class="card" style="background-color:#FF9445;" id="jupyter" href="./jupyter">
-   <div class="imageWrapper">
-      <img class="cardImage" src="./images/jupyter.svg" >
-   </div>
-   <div class="textWrapper">
-      <h3>Project Jupyter</h3>
-      <p>My work as a UI/UX Designer and Software Engineer</p>
-   </div>
-</a>
-
-  <a class="card" style="background-color:#68B8DD;" id="privateConcert" href="./privateConcert">
-   <div class="imageWrapper">
-      <img class="cardImage" src="./images/PCicon.jpg" >
-   </div>
-   <div class="textWrapper">
-      <h3>Private Concert</h3>
-      <p>Share your voice with the world: Fearlessly</p>
+      <p>UI Engineering Intership with Angular JS</p>
    </div>
 </a>
 
@@ -122,6 +96,27 @@
    </div>
 </a>
 
+  <a class="card" style="background-color:#6F49FF;" id="lane" href="./lane">
+   <div class="imageWrapper">
+      <img class="cardImage" src="./images/lane.svg" >
+   </div>
+   <div class="textWrapper">
+      <h3>Lane</h3>
+      <p>A beautiful React Native app for long distance ridesharing</p>
+   </div>
+</a>
+
+  <!--<a class="card" style="background-color:#68B8DD;" id="privateConcert" href="./privateConcert">
+   <div class="imageWrapper">
+      <img class="cardImage" src="./images/PCicon.jpg" >
+   </div>
+   <div class="textWrapper">
+      <h3>Private Concert</h3>
+      <p>Share your voice with the world: Fearlessly</p>
+   </div>
+</a>
+-->
+  
   <a class="card" href="https://paper.dropbox.com/doc/PolyPlanner-Recommendation-Report-c3PHw57sr9kc5pFSA7jWQ" id="polyplanner" style="background-color: #035642;" target="_blank">
     <div class="imageWrapper">
         <img class="cardImage" src="./images/polyplanner.png" >
@@ -133,7 +128,7 @@
   </a>
   <a class="card" style="background-color:#b01398;" id="photography" href="./photography">
    <div class="imageWrapper">
-      <img class="cardImage" src="./images/" >
+      <img class="cardImage" src="./images/blank.png" >
    </div>
    <div class="textWrapper">
       <h3>Photography</h3>
