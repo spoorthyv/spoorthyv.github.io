@@ -2,23 +2,15 @@
 <html>
   <head>
     <!--FAVICON-->
-<link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
-<link rel="icon" type="image/png" sizes="192x192"  href="images/favicon/android-icon-192x192.png">
+<link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
 <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
 <link rel="manifest" href="images/favicon/manifest.json">
-<meta name="msapplication-TileColor" content="#ffffff">
-<meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
-<meta name="theme-color" content="#5bbad5">
+<link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="images/favicon/favicon.ico">
+<meta name="msapplication-config" content="images/favicon/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+
 <meta prefix="og: http://ogp.me/ns#" property="og:title" content="Spoorthy Vemula"/>
 <meta prefix="og: http://ogp.me/ns#" property="og:image" content="http://www.spoorthyv.com/images/metaimage.jpg"/>
 <meta prefix="og: http://ogp.me/ns#" property="og:description" content="UI/UX Designer & Software Engineer"/>
@@ -36,19 +28,21 @@
 
 <link href="/stylesheets/site.css" rel="stylesheet" />
 <script src="/javascripts/application.js"></script>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/galleria/1.5.7/galleria.min.js"></script>
 <script src="javascripts/galleria.twelve.js"></script>
 
-
-
+<meta name="turbolinks-cache-control" content="no-preview">
   </head>
   <body class="jupyter jupyter_index">
-    <div id="navbar">
+    <div id="navbar" class="animated">
    <div id="navSection">
-      <div id="navWrapper">
-         <h2>Hi, I'm</h2>
-         <h1>Spoorthy Vemula</h1>
-         <h2>I'm a designer and developer</h2>
+      <div id="navWrapper" class="animated">
+         <div id="titles" class="animated">
+            <h2>Hi, I'm</h2>
+            <h1>Spoorthy Vemula</h1>
+            <h2>I'm a UI/UX Designer & Developer</h2>
+         </div>
          <a href="/">Portfolio</a>
          <a href="/contact">Contact</a>
          <a href="/resume">Resume</a>
@@ -67,34 +61,110 @@
       </svg>
 </a>
 <div class="innerWrapper">
-      <img src='images/jupyterfull.svg'>
-      <h3>My Role</h3>
-      <p>Jupyter is an open source organization that builds an interactive data science IDE used by over 30 million people around the world. I worked there as a hybrid <b>UI/UX Designer and Front-end Engineer</b> for 9 months.</p>
-      <h2>JupyterLab</h2>
-      <h3>The Project</h3>
-      <p>
-            My main job at Jupyter was to help build the next generation JupyterLab web application. The existing Jupyter Notebooks that all our users knew and loved allowed users to wirte and run code inline in an extremely visual and interactive way. JupyterLab builds around the notebook by adding commonly used developer tools (e.g. a terminal, file browser, text editor, etc.) in a multiwindow interface. Our team’s job was to research, design, and develop these tools (called widgets) into JupyterLab as well as try to improve the overall interface. The entire app was built with javascript using a custom framework called Phosphor.JS.<br><br>
-            Widgets and parts of Jupyterlab I worked on: <br>
-            - Top navigation bar <br>
-            - Terminal <br>
-            - Image Viewer <br>
-            - Redid File Browser <br>
-            - Notebook widget toolbar <br>
-      </p>
-      <div class="galleria">
-            <img src="images/jupyter/old.png">
-            <img src="images/jupyter/new.png">
-            <img src="images/jupyter/image.png">
+      <div class="section">
+            <div class="sectionContent">
+                  <div id="header">
+                        <img  src='images/jupyterfull.svg'>
+                        <div id="headerDetails">
+                              <h5> 
+                                    UI/UX Designer and Software Engineer <br>
+                                    Mar 2016 - Dec 2016 
+                              </h5>
+                        </div>
+                  </div>
+                  <h3>The Company</h3>
+                  <p> 
+                        Jupyter is an open source organization that builds an interactive data science IDE used by over 30 million people around the world.
+                  </p>
+                  <h3>My Role</h3>
+                  <p> 
+                        I worked at Jupyter as a hybrid UI/UX Designer and Front-end Engineer for 9 months.
+                        I was part of a team of 4 designers and engineers and together we were tasked with designing and implementing solutions for all different Jupyter products.
+                  </p>
+            </div>
       </div>
+      <img src= "images/jupyterTeam.jpg">
+      <div class="section">
+            <div class="sectionContent">
+                  <h2>JupyterLab</h2>
+                  <h3>The Project</h3>
+                  <p>
+                        My main job at Jupyter was to help build the next generation JupyterLab web application. The existing Jupyter Notebooks that all our users knew and loved allowed users to wirte and run code inline in an extremely visual and interactive way. JupyterLab builds around the notebook by adding commonly used developer tools (e.g. a terminal, file browser, text editor, etc.) in a multiwindow interface.<br><br>
+                        Our team’s job was to research, design, and develop overall interface improvement as well as JupyterLab's builtin plugins. The entire app was built with javascript using a custom framework called Phosphor.JS.<br><br>
+                        Widgets and parts of Jupyterlab I worked on: <br>
+                        - Top navigation bar <br>
+                        - Terminal <br>
+                        - Image Viewer <br>
+                        - Redid File Browser <br>
+                        - Notebook widget toolbar <br>
+                  </p>
+                  <div class="galleria">
+                        <img src="images/jupyter/old.png">
+                        <img src="images/jupyter/new.png">
+                        <img src="images/jupyter/nbtoolbar.png">
+                        <img src="images/jupyter/top_navbar.png">
+                        <img src="images/jupyter/files.png">
+                        <img src="images/jupyter/image.png">
+                        <img src="images/jupyter/terminal.png">
+                  </div>
+            </div>
+      </div>
+      <div class="section">
+            <div class="sectionContent">
+                  <h2>Navbar</h2>
+                  <h3>The Project</h3>
+                  <p> Redesign the navbar to the project's website at <a href="www.jupyter.org">www.jupyter.org</a> </p>
+                  <h3>Our Process</h3>
+                  <ol>
+                        <li> Gather info from Google Analytics  to learn what pages were important and which ones were getting ignored</li>
+                        <li> Talk to community  to understand which pages were important to them</li>
+                        <li> Organize data  and  create options  in excel</li>
+                        <li> Pick 3 favorite options </li>
+                        <li> Create high-fidelity prototypes  using sketch and invision</li>
+                        <li> Usertest  favorite options</li>
+                        <li> Refine  design</li>
+                        <li> Usertest  new design</li>
+                        <li> Implement  design</li>
+                  </ol>
+                  <div id="navbarImg">
+                        <img src="images/jupyter/navbars.png">
+                  </div>
+            </div>
+      </div>
+
+      <div class="section">
+            <div class="sectionContent">
+                  <h2>Brand Guidelines</h2>
+                  <h3>The Problem</h3>
+                  <p>
+                        The project was suffering from a lack of consistent brand messaging. 
+                        Everytime a Jupyter developer needed to create Jupyter branded content they had no clue where to get design assets.
+                        This resulted in dozens of wierd logos for different products, random color choices, and overall unproffesional branding.
+                  </p>
+
+                  <h3>Our Solution</h3>
+                  <p>
+                        First we created a new version of the logo that consolidated the best parts of all the logos in circulation. Then we created the brand book below that lays out rules for the entire project on how to use the brand and logo in an official and beautiful document. Finally, I went through all our projects assets and fixed violations of these guidelines across all of Jupyter's products.
+                  </p>
+                  <object data="files/jupyter_brand_guide.pdf" type="application/pdf" width="100%" height="460px" internalinstanceid="3" title="">
+                      <p id="none"></p>
+                  </object>
+            </div>
+      </div>
+
       <script>
             (function() { 
                   Galleria.loadTheme('galleria/themes/twelve/galleria.twelve.min.js');
                   Galleria.run('.galleria', {
-                        transition: 'fade',
-                        imageCrop: false
+                        transition: 'fadeslide',
+                        imageCrop: false,
+                        lightbox: true,
+                        idleMode: false,
+                        carousel: false
                   });
             }());
       </script>
+
 </div>
 
     </div>
