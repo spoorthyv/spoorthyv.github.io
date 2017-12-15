@@ -35,13 +35,13 @@ $(document).on('turbolinks:load', function () {
       e.preventDefault();
     });
     $('.close').on('click', function(e) {
-      $('.horizGallery').removeClass("fullScreen"); //you can list several class names 
+      $('.horizGallery').removeClass("fullScreen");
       e.preventDefault();
     });
   }
   if($('.photography').length > 0 ) {
     window.addEventListener('scroll', function(){
-      for (var i = 1; i < 7; i++) {
+      for (var i = 1; i < 8; i++) {
         if (isElementInViewport($("img:nth-child(" + i + ")"))) {
             $("*:nth-child(" + i + ")").addClass("currentPic");
             
