@@ -1,0 +1,81 @@
+.uber {
+   .backArrow {
+      svg {
+         fill: #e8feff;
+         filter: brightness(1);
+         transition: filter 0.2s;
+      }
+      svg:hover {
+        filter: brightness(1.4);
+      }
+   }
+   #wrapper {
+      overflow-x: hidden;
+      .innerWrapper {
+        padding-bottom: 90px;
+        #header {
+          height: 338px;
+          background-color: #0A2F3C;
+          
+          .headerImage {
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            background-image: url('/images/uber/uberBackgroundGraphic.svg');
+            height: 100%;
+            width: 100%;
+            margin-top: -55px;
+          }
+        }
+        h1 {
+          color: #1D3839;
+        }
+        h2 {
+          margin: 40px 0 30px 0;
+        }
+        p {
+          line-height: 26px;
+          margin-bottom: 30px;
+        }
+        h3 {
+          color: #1D3839;
+          margin: 0;
+        }
+        .horizGallery {
+          background-color: #f7fafb;
+        }
+        .sectionContent {
+          padding: 50px 120px 0 120px;
+          margin: auto;
+          max-width: 800px;
+          .galleryHeader {
+            margin-bottom: 0;
+          }
+          img {
+            width: calc(100%);
+            margin-bottom: 40px;
+          }
+          .highlightedText {
+            background-color: #F1F5F7;
+            padding: 21px 33px;
+            width: calc(100% + 66px);
+            transform: translateX(-33px);
+            border-radius: 6px;
+            color: #0A2F3C;
+            font-style: italic;
+            margin: 33px 0;
+            box-sizing: border-box;
+          }
+
+          #dragDown {
+            .col:nth-child(1) {
+              padding-right: 75px;
+            }
+            img {
+              width: 260px;
+              margin-top: 40px;
+            }
+          }
+        }
+      }
+   }
+}

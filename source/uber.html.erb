@@ -1,0 +1,74 @@
+<div class="innerWrapper">
+      <div class="section" id="header">
+            <a class="backArrow" href="/">
+                  <svg fill="#939393" height="24" viewBox="0 0 24 24" width="24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/>
+                  </svg>
+            </a>
+            <div class="headerImage">
+            </div>
+      </div>
+      <div class="section" id="main">
+            <div class="sectionContent">
+                  <h1>Uber: Navigating with the Map</h1>
+                  <p class="highlightedText">My friend Kevin calls me. “What are you up to right now? You should come over!”. I agree, pull out my phone, and open up the Uber app. <b>Ugh, whats his address again</b>, I thought? Ive been there a thousand times but I just can’t remember his address.</p>
+                  <h3 class="galleryHeader">My Idea</h3>
+                  <p>Sometimes you know where you want to go but you dont know the address. My solution to this problem was to be able to just pick a point on the map where you want to go and be able to get an Uber there.</p>
+                  <h2>Problems with Current Design</h2>
+                  <h3 class="galleryHeader">Usertesting</h3>
+                  <p>
+                        The first thing I did when takling this issue was run usertests on the current app. Usertesting alows you to get a sense of what user’s insticts are and what they intuitivley want to do when presented with a task.
+                        <br><br>
+                        All I did was ask users the following prompt:<br>
+                        “Suppose you forgot the address to your own house. Try to navigate there using Uber.”
+                  </p>
+                  <div class="row" id="dragDown">
+                        <div class="col">
+                              <h3 class="galleryHeader">Discoverability</h3>
+                              <p>
+                                    Going into this redesign I was under the impression that you couldn’t uber to a point on the map. This is because the current method to do this is super hidden. 
+                                    <br><br>
+                                    First you click the search bar, then you are provided with a normal looking search page. You are supposed to drag down to reveal a map where you can then place a pin for your destination. 
+                                    <br><br>
+                                    During usertesting no one was able to find this feature.
+                              </p>
+                              <h3 class="galleryHeader">Too Many Steps</h3>
+                              <p>
+                                    The other main issue with the current approach was how many steps it took to do this simple task. 
+                                    <br><br>
+                                    Assuming the user knows how to use this feature it would take a click, a swipe down, a drag, and then another click just to pick a spot on the map.
+                              </p>
+                        </div>
+                        <div class="col">
+                              <img src='images/uber/uber1.gif'>
+                        </div>
+                  </div>
+                  <h2>Designing a New Interaction</h2>
+                  <p>Through usertesting, I realized that a most people’s instict was to just try clicking a spot on the map to navigate there. This made a ton of sense to me and became the premise of my redesign.</p>
+                  <h3 class="galleryHeader">Step 1: “Wireframe” basic flow</h3>
+                  <p>Normally I would NEVER wireframe the entire flow this early. However, after usertesting, this basic flow felt very obvious and there was no point in putting this off.</p>
+                  <img src='images/uber/uberFlowDiagram.png'>
+                  <h3 class="galleryHeader">Step 2: Explore Options</h3>
+                  <p>Because I didnt want to redesign the entire app, most of the design work happened on the second screen. I created a bunch of low fidelity mocks and analyzed the pros and cons of each. These were the designs that stood out:</p>
+            </div>      
+                  
+            <div class="horizGallery">
+                  <div class="imgWrapper">
+                        <img src="/images/uber/option1.png">
+                        <img src="/images/uber/option2.png">
+                        <img src="/images/uber/option3.png">
+                        <img src="/images/uber/option4.png">
+                  </div>
+                  <div class="close">x</div>
+            </div>
+
+            <div class="sectionContent">
+                  <p>I ended up picking option 3 for a couple reasons. The main reason was that it was able to hide all the elements that didnt serve a purpose when you are scrolling around the map. It kept the question of “Where to?” on the screen and it kept the advertising card while hiding everything else.</p>
+                  <h3 class="galleryHeader">Step 3: High-Fidelity Mockups</h3>
+                  <p>The next step was just to recreate the Uber app in sketch. I remade all the UI elements from scratch and designed all the screens. This step was all about getting the details right.</p>
+                  <h3 class="galleryHeader">Step 4: Create Interactive Prototype with Principle</h3>
+                  <p>Finally I used principle to create the final prototype. Here is the final product:</p>
+            </div>
+      </div>
+</div>

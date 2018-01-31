@@ -9,6 +9,7 @@ addEventListeners();
 $(document).on('turbolinks:load', function () {
   index()
   lane();
+  uber();
   photography();
   toggleNav();
 });
@@ -16,6 +17,21 @@ $(document).on('turbolinks:load', function () {
 
 function lane() {
   if($('.lane').length > 0 ){
+    $('.horizGallery img').on('click', function(e) {
+      console.log("image");
+      $target = $(e.target);
+      $target.parent().parent().addClass('fullScreen');
+      e.preventDefault();
+    });
+    $('.close').on('click', function(e) {
+      $('.horizGallery').removeClass("fullScreen");
+      e.preventDefault();
+    });
+  }
+}
+
+function uber() {
+  if($('.uber').length > 0 ){
     $('.horizGallery img').on('click', function(e) {
       console.log("image");
       $target = $(e.target);
@@ -44,7 +60,7 @@ function index() {
     miscLabel.addClass("misc");
 
     internLabel.prependTo("#jupyter, #zoomforth, #elliemae");
-    projectLabel.prependTo("#polyplanner, #lane, #fiveMinShower");
+    projectLabel.prependTo("#polyplanner, #lane, #fiveMinShower, #uber");
     miscLabel.prependTo("#photography");
   }
 }
