@@ -12,7 +12,6 @@
    #wrapper {
       overflow-x: hidden;
       .innerWrapper {
-        padding-bottom: 90px;
         #header {
           height: 338px;
           background-color: #0A2F3C;
@@ -43,6 +42,54 @@
         .horizGallery {
           background-color: #f7fafb;
         }
+        #uberFooter {
+          background-color: #F2F3F3;
+          display: flex;
+          justify-content: center;
+          > div {
+            display: flex;
+            align-items: center;
+            padding: 32px;
+            overflow-x: scroll;
+            * {
+              white-space: nowrap;
+            }
+            a {
+              margin-left: 30px;
+              padding: 23px 38px;
+              color: #fff;
+              border-radius: 100px;
+              transition: all 0.25s;
+              box-shadow: 0px 6px 0px #ffffff00;
+            }
+            a:hover {
+              transform: translateY(-6px);
+              cursor: pointer;
+            }
+            a:active {
+              transform: translateY(0px);
+              cursor: pointer;
+            }
+            #principleUber {
+              background-color: #44DEC0;
+            }
+            #principleUber:hover {
+              box-shadow: 0px 6px 26px #44dec075;
+            }
+            #macUber {
+              background-color: #654BDB;
+            }
+            #macUber:hover {
+              box-shadow: 0px 6px 26px #654BDB75;
+            }
+            #movieUber {
+              background-color: #F86D6D;
+            }
+            #movieUber:hover {
+              box-shadow: 0px 6px 26px #F86D6D75;
+            }
+          }
+        }
         .sectionContent {
           padding: 50px 120px 0 120px;
           margin: auto;
@@ -70,10 +117,17 @@
             .col:nth-child(1) {
               padding-right: 75px;
             }
-            img {
+            #oldUber {
               width: 260px;
               margin-top: 40px;
             }
+          }
+
+          #uberPrototype {
+            height: 696px;
+            width: 100%;
+            margin: 30px 0 35px 0;
+            transform: translateX(-10px);
           }
         }
       }
