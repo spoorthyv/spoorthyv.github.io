@@ -32,16 +32,39 @@ function lane() {
 
 function uber() {
   if($('.uber').length > 0 ){
+    //var prot = $("#uberPrototype")[0];
+    var prot = $(".video");
+    for (var i = 0; i < prot.length; i++) {
+      if (isElementPartiallyInViewportVertically(prot[i])) {
+        prot[i].play();  
+      } else {
+        prot[i].pause();
+      }
+    }
+    $("#wrapper").scroll(function(){
+      for (var i = 0; i < prot.length; i++) {
+        if (isElementPartiallyInViewportVertically(prot[i])) {
+          prot[i].play();  
+        } else {
+          prot[i].pause();
+        }
+      }
+    });
+
     $('.horizGallery img').on('click', function(e) {
       console.log("image");
       $target = $(e.target);
       $target.parent().parent().addClass('fullScreen');
       e.preventDefault();
     });
+
     $('.close').on('click', function(e) {
       $('.horizGallery').removeClass("fullScreen");
       e.preventDefault();
     });
+
+
+
   }
 }
 
@@ -68,12 +91,13 @@ function index() {
 function photography() {
   if($('.photography').length > 0 ) {
     window.addEventListener('scroll', function(){
-      for (var i = 1; i < 8; i++) {
-        if (isElementInViewport($("img:nth-child(" + i + ")"))) {
-            $("*:nth-child(" + i + ")").addClass("currentPic");
-            
+      var images = $("img");
+      console.log();
+      for (var i = 0; i < images.length; i++) {
+        if (photoIsInViewport(images[i])) {
+          $(images[i]).addClass("currentPic");    
         } else {
-            $("*:nth-child(" + i + ")").removeClass("currentPic");
+          $(images[i]).removeClass("currentPic");
         }
       }
     });
@@ -116,7 +140,7 @@ function toggleNav() {
   }
 }
 
-function isElementInViewport (el) {
+function photoIsInViewport(el) {
   if (typeof jQuery === "function" && el instanceof jQuery) {
       el = el[0];
   }
@@ -129,6 +153,14 @@ function isElementInViewport (el) {
       rect.bottom - 300<= (window.innerHeight || document.documentElement.clientHeight) && 
       rect.right <= (window.innerWidth || document.documentElement.clientWidth)
   );
+}
+function isElementPartiallyInViewportVertically(el) {
+  if (typeof jQuery === "function" && el instanceof jQuery) {
+      el = el[0];
+  }
+
+  var rect = el.getBoundingClientRect();
+  return !((rect.bottom < 0) || (rect.top > window.innerHeight));
 }
 
 function addEventListeners() {
