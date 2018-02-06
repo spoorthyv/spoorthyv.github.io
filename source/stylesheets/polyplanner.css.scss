@@ -1,0 +1,102 @@
+.polyplanner {
+   .backArrow {
+      position: static;
+      width: 54px;
+      margin-left: 50px;
+      svg {
+         fill: #fff3e7;
+         filter: brightness(1);
+         transition: filter 0.2s;
+      }
+      svg:hover {
+        filter: brightness(1.4);
+      }
+   }
+   #wrapper {
+      overflow-x: hidden;
+      .innerWrapper {
+        #header {
+          padding: 44px 0 130px 0;
+          background-repeat: no-repeat;
+          background-position: 50% 50%;
+          background-image: url(/images/polyplannerBannerBackground.svg);
+          background-size: cover;
+          text-align: center;
+          display: flex;
+          flex-direction: column;
+          img {
+            height: 180px;
+            max-width: 80%;
+            margin: 50px auto 0 auto;
+          }
+        }
+        h1 {
+          color: #1D3839;
+        }
+        h2 {
+          font-size: 30px;
+          margin: 30px 0 30px 0;
+          line-height: 51px;
+        }
+        p {
+          line-height: 26px;
+          margin-bottom: 30px;
+          font-size: 21px;
+        }
+        h3 {
+          color: #1D3839;
+          margin: 0;
+        }
+        .button {
+          font-size: 21px;
+          padding: 24px 39px;
+          background-color: #438ef3;
+          color: #ffffff;
+          font-weight: 500;
+          display: inline-block;
+          border-radius: 5px;
+          margin-top: 20px;
+          transition: all 0.3s;
+        }
+        .button:hover {
+          box-shadow: 0px 5px #265fab;
+          transform: translateY(-5px);
+        }
+        .button:active {
+          box-shadow: 0px 2px;
+          transform: translateY(-2px);
+        }
+        .sectionContent {
+          padding: 145px 120px;
+          margin: auto;
+          max-width: 860px;
+          .galleryHeader {
+            margin-bottom: 0;
+          }
+          img {
+            width: calc(100%);
+            margin-bottom: 40px;
+          }
+          .highlightedText {
+            background-color: #F1F5F7;
+            padding: 21px 33px;
+            width: calc(100% + 66px);
+            transform: translateX(-33px);
+            border-radius: 6px;
+            color: #0A2F3C;
+            font-style: italic;
+            margin: 33px 0;
+            box-sizing: border-box;
+          }
+        }
+        .greenSection {
+          background-color: #EDFAF4;
+          color: #00381C;
+        }
+        .redSection {
+          background-color: #FFF8F1;
+          color: #321900;
+        }
+      }
+   }
+}

@@ -11,6 +11,7 @@
 @import "jupyter.css.scss";
 @import "fiveMinShower.css.scss";
 @import "uber.css.scss";
+@import "polyplanner.css.scss";
 
 $navbarWidth: 488px;
 
@@ -36,7 +37,7 @@ h3 {
   font-weight: 500;
   margin: 18px 0;
 }
-
+ 
 p {
   font-size: 16px;
   color: #191919;
