@@ -104,7 +104,7 @@ $breakMedium: 1200px;
     box-shadow: 0px 7px 37px 0px rgba(155, 203, 234, 0.9);
   }
   #polyplanner:hover {
-    box-shadow: 0px 7px 37px 0px rgba(4, 86, 67, 0.5);
+    box-shadow: 0px 7px 37px 0px rgba(255, 191, 125, 0.42);
   }
   #photography:hover {
     box-shadow: 0px 7px 37px 0px rgba(128, 54, 116, 0.5);
@@ -153,9 +153,16 @@ $breakMedium: 1200px;
   #polyplanner {
     .imageWrapper {
       img {
-        max-width: 252px;
-        max-height: 112px;
+        max-height: inherit;
+        max-width: inherit;
+        transform: translateX(-47px) translateY(-32px);
       }
+    }
+    .textWrapper {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      box-sizing: border-box;
     }
   }
 }
