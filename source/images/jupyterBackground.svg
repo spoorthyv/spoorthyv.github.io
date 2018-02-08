@@ -1,12 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="960px" height="660px" viewBox="0 0 960 660" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="1290px" height="1290px" viewBox="0 0 1290 1290" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
-    <title>Group 6</title>
+    <title>Group</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
-    <g id="Desktop-HD-Copy" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-480.000000, 0.000000)">
-        <g id="Group-6" transform="translate(501.000000, -300.000000)">
-            <g id="jupyter" transform="translate(404.000000, 384.000000)" fill="#FFFFFF" fill-rule="nonzero">
+    <g id="Artboard-6" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-305.000000, -209.000000)">
+        <g id="Group" transform="translate(326.000000, 230.000000)">
+            <g id="Group-5" stroke="#FFFFFF" stroke-opacity="0.66686481">
+                <circle id="Oval" stroke-width="42" cx="603" cy="605" r="390"></circle>
+                <circle id="Oval" stroke-width="42" cx="625" cy="585" r="338"></circle>
+                <circle id="Oval" stroke-width="49" cx="625" cy="617" r="294"></circle>
+                <circle id="Oval" stroke-width="42" cx="600.5" cy="654.5" r="439.5"></circle>
+                <circle id="Oval" stroke-width="42" cx="607.5" cy="621.5" r="476.5"></circle>
+                <circle id="Oval" stroke-width="42" cx="630" cy="583" r="512"></circle>
+                <circle id="Oval" stroke-width="25" cx="640" cy="627" r="549"></circle>
+                <path d="M624,1248 C968.625684,1248 1248,968.625684 1248,624 C1248,279.374316 968.625684,0 624,0 C279.374316,0 0,279.374316 0,624 C0,968.625684 279.374316,1248 624,1248 Z" id="Oval" stroke-width="42"></path>
+            </g>
+            <g id="jupyter" transform="translate(559.000000, 538.000000)" fill="#FFFFFF" fill-rule="nonzero">
                 <g id="path" transform="translate(105.000000, 0.000000)">
                     <g id="path7-fill">
                         <g id="path0_fill-link" transform="translate(0.497895, 0.029223)">
@@ -42,16 +52,6 @@
                         </g>
                     </g>
                 </g>
-            </g>
-            <g id="Group-5" stroke="#FFFFFF" stroke-opacity="0.66686481">
-                <circle id="Oval" stroke-width="42" cx="453.5" cy="454.5" r="293.5"></circle>
-                <circle id="Oval" stroke-width="42" cx="470.5" cy="440.5" r="254.5"></circle>
-                <circle id="Oval" stroke-width="49" cx="470.5" cy="465.5" r="221.5"></circle>
-                <circle id="Oval" stroke-width="42" cx="451.5" cy="491.5" r="330.5"></circle>
-                <circle id="Oval" stroke-width="42" cx="457.5" cy="467.5" r="358.5"></circle>
-                <circle id="Oval" stroke-width="42" cx="474.5" cy="438.5" r="385.5"></circle>
-                <circle id="Oval" stroke-width="25" cx="482" cy="472" r="413"></circle>
-                <path d="M469.5,939 C728.79769,939 939,728.79769 939,469.5 C939,210.20231 728.79769,0 469.5,0 C210.20231,0 0,210.20231 0,469.5 C0,728.79769 210.20231,939 469.5,939 Z" id="Oval" stroke-width="42"></path>
             </g>
         </g>
     </g>
