@@ -24,7 +24,7 @@
 <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
 
 <!-- Use title if it’s in the page YAML front matter -->
-<title>jupyter</title>
+<title>Spoorthy Vemula</title>
 
 <link href="/stylesheets/site.css" rel="stylesheet" />
 <script src="/javascripts/application.js"></script>
@@ -54,24 +54,20 @@
    </div>
 </div>
     <div id="wrapper" class="animated">
-      <a class="backArrow" href="/">
-      <svg fill="#939393" height="24" viewBox="0 0 24 24" width="24">
-            <path d="M0 0h24v24H0z" fill="none"/>
-            <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/>
-      </svg>
-</a>
-<div class="innerWrapper">
+      <div class="innerWrapper">
+      <div class="section" id="header">
+            <a class="backArrow" href="/">
+                  <svg fill="#939393" height="24" viewBox="0 0 24 24" width="24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/>
+                  </svg>
+            </a>
+            <div class="headerImage">
+            </div>
+      </div>
       <div class="section">
             <div class="sectionContent">
-                  <div id="header">
-                        <img  src='images/jupyterfull.svg'>
-                        <div id="headerDetails">
-                              <h5> 
-                                    UI/UX Designer and Software Engineer <br>
-                                    Mar 2016 - Dec 2016 
-                              </h5>
-                        </div>
-                  </div>
+                  <h1>Project Jupyter</h1>
                   <h3>The Company</h3>
                   <p> 
                         Jupyter is an open source organization that builds an interactive data science IDE used by over 30 million people around the world.
@@ -83,7 +79,7 @@
                   </p>
             </div>
       </div>
-      <img src= "images/jupyterTeam.jpg">
+      <img src= "/images/jupyterTeam.jpg">
       <div class="section">
             <div class="sectionContent">
                   <h2>JupyterLab</h2>
@@ -99,35 +95,13 @@
                         - Notebook widget toolbar <br>
                   </p>
                   <div class="galleria">
-                        <img src="images/jupyter/old.png">
-                        <img src="images/jupyter/new.png">
-                        <img src="images/jupyter/nbtoolbar.png">
-                        <img src="images/jupyter/top_navbar.png">
-                        <img src="images/jupyter/files.png">
-                        <img src="images/jupyter/image.png">
-                        <img src="images/jupyter/terminal.png">
-                  </div>
-            </div>
-      </div>
-      <div class="section">
-            <div class="sectionContent">
-                  <h2>Navbar</h2>
-                  <h3>The Project</h3>
-                  <p> Redesign the navbar to the project's website at <a href="www.jupyter.org">www.jupyter.org</a> </p>
-                  <h3>Our Process</h3>
-                  <ol>
-                        <li> Gather info from Google Analytics  to learn what pages were important and which ones were getting ignored</li>
-                        <li> Talk to community  to understand which pages were important to them</li>
-                        <li> Organize data  and  create options  in excel</li>
-                        <li> Pick 3 favorite options </li>
-                        <li> Create high-fidelity prototypes  using sketch and invision</li>
-                        <li> Usertest  favorite options</li>
-                        <li> Refine  design</li>
-                        <li> Usertest  new design</li>
-                        <li> Implement  design</li>
-                  </ol>
-                  <div id="navbarImg">
-                        <img src="images/jupyter/navbars.png">
+                        <img src="/images/jupyter/old.png">
+                        <img src="/images/jupyter/new.png">
+                        <img src="/images/jupyter/nbtoolbar.png">
+                        <img src="/images/jupyter/top_navbar.png">
+                        <img src="/images/jupyter/files.png">
+                        <img src="/images/jupyter/image.png">
+                        <img src="/images/jupyter/terminal.png">
                   </div>
             </div>
       </div>
@@ -146,15 +120,38 @@
                   <p>
                         First we created a new version of the logo that consolidated the best parts of all the logos in circulation. Then we created the brand book below that lays out rules for the entire project on how to use the brand and logo in an official and beautiful document. Finally, I went through all our projects assets and fixed violations of these guidelines across all of Jupyter's products.
                   </p>
-                  <object data="files/jupyter_brand_guide.pdf" type="application/pdf" width="100%" height="460px" internalinstanceid="3" title="">
+                  <object data="/files/jupyter_brand_guide.pdf" type="application/pdf" width="100%" height="460px" internalinstanceid="3" title="">
                       <p id="none"></p>
                   </object>
             </div>
       </div>
 
+      <div class="section">
+            <div class="sectionContent">
+                  <h2>Navbar</h2>
+                  <h3>The Project</h3>
+                  <p> Redesign the navbar to the project's website at <a href="www.jupyter.org">www.jupyter.org</a> </p>
+                  <h3>Our Process</h3>
+                  <ol>
+                        <li> Gather info from Google Analytics  to learn what pages were important and which ones were getting ignored</li>
+                        <li> Talk to community  to understand which pages were important to them</li>
+                        <li> Organize data  and  create options  in excel</li>
+                        <li> Pick 3 favorite options </li>
+                        <li> Create high-fidelity prototypes  using sketch and invision</li>
+                        <li> Usertest  favorite options</li>
+                        <li> Refine  design</li>
+                        <li> Usertest  new design</li>
+                        <li> Implement  design</li>
+                  </ol>
+                  <div id="navbarImg">
+                        <img src="/images/jupyter/navbars.png">
+                  </div>
+            </div>
+      </div>
+
       <script>
             (function() { 
-                  Galleria.loadTheme('galleria/themes/twelve/galleria.twelve.min.js');
+                  Galleria.loadTheme('/galleria/themes/twelve/galleria.twelve.min.js');
                   Galleria.run('.galleria', {
                         transition: 'fadeslide',
                         imageCrop: false,
