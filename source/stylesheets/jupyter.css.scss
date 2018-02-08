@@ -39,7 +39,9 @@
         margin: auto;
         max-width: 900px;
       }
-
+      h1 {
+        color: #f37727;
+      }
       h2 {
         line-height: 1.5;
         margin: 10px 0 5px 0;
@@ -96,6 +98,10 @@
         }
       }
 
+      .horizGallery {
+        background-color: #f7fafb;
+      }
+      
       #navbarImg {
         background-color: #f3f3f3;
         padding: 5px;

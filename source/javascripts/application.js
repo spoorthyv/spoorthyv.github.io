@@ -12,6 +12,7 @@ $(document).on('turbolinks:load', function () {
   uber();
   photography();
   toggleNav();
+  jupyter()
 });
 
 
@@ -32,7 +33,6 @@ function lane() {
 
 function uber() {
   if($('.uber').length > 0 ){
-    //var prot = $("#uberPrototype")[0];
     var prot = $(".video");
     for (var i = 0; i < prot.length; i++) {
       if (isElementPartiallyInViewportVertically(prot[i])) {
@@ -63,8 +63,22 @@ function uber() {
       e.preventDefault();
     });
 
+  }
+}
 
+function jupyter() {
+  if($('.jupyter').length > 0 ){
+    $('.horizGallery img').on('click', function(e) {
+      console.log("image");
+      $target = $(e.target);
+      $target.parent().parent().addClass('fullScreen');
+      e.preventDefault();
+    });
 
+    $('.close').on('click', function(e) {
+      $('.horizGallery').removeClass("fullScreen");
+      e.preventDefault();
+    });
   }
 }
 
