@@ -109,6 +109,9 @@ $breakMedium: 1200px;
   #photography:hover {
     box-shadow: 0px 7px 37px 0px rgba(128, 54, 116, 0.5);
   }
+  #dribbble:hover {
+    box-shadow: 0px 7px 37px 0px rgba(238, 86, 145, 0.6);
+  }
   #photography {
     background-image: url("../images/kina.jpg");
     background-size: cover;
@@ -147,6 +150,14 @@ $breakMedium: 1200px;
     .imageWrapper {
       img {
         max-height: 128px;
+      }
+    }
+  }
+  #dribbble {
+    .imageWrapper {
+      img {
+        max-height: 120px;
+        max-width: 120px;
       }
     }
   }
