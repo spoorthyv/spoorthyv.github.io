@@ -97,7 +97,7 @@ function index() {
     miscLabel.addClass("misc");
 
     internLabel.prependTo("#jupyter, #zoomforth, #elliemae");
-    projectLabel.prependTo("#polyplanner, #lane, #fiveMinShower, #uber");
+    projectLabel.prependTo("#polyplanner, #lane, #fiveMinShower, #uber, #dribbble");
     miscLabel.prependTo("#photography");
   }
 }
