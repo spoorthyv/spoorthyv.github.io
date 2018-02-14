@@ -100,8 +100,50 @@ $navbarWidth: 488px;
   background-color: #8A6DFF !important;
 }
 
-// Animations
 
+@media screen and (max-width: 500px) {
+  body {
+    height: initial !important;
+    width: initial !important;
+    flex-direction: column;
+    #navbar {
+      width: 100%;
+      height: 100px;
+      flex-direction: row;
+      animation-name: initial;
+      #navSection {
+        flex-direction: row;
+        height: initial;
+        padding: 0;
+        width: 100%;
+        margin-top: 7px;
+        #navWrapper {
+          flex-direction: row;
+          width: 278px;
+          #titles {
+            display: none;
+          }
+          :nth-child(4) {
+            margin-right: 0;
+          }
+        }
+      }
+      #logoWrapper {
+        display: none;
+      }
+    }
+    #wrapper {
+      #portfolioBody {
+        margin-top: 80px;
+      }
+    }
+  }
+}
+
+
+
+
+// Animations
 .expandNav {
   animation-name: expandNav;
   #navWrapper {
