@@ -189,6 +189,28 @@ body {
   }     
 }
 
+@media screen and (max-width: 500px) {
+  body {
+    #wrapper {
+      .sectionContent {
+        padding: 32px !important;
+      }
+      h1 {
+        font-size: 34px;
+      }
+      h3 {
+        font-size: 15px;
+      }
+      p {
+        font-size: 14px;
+      }
+      .backArrow {
+        display: none;
+      }
+    }
+  }
+}
+
 // Animations
 .animated {
   -webkit-animation-duration: 0.6s;

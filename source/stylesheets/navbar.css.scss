@@ -120,6 +120,7 @@ $navbarWidth: 488px;
         #navWrapper {
           flex-direction: row;
           width: 278px;
+          animation-name: initial;
           #titles {
             display: none;
           }
@@ -139,8 +140,6 @@ $navbarWidth: 488px;
     }
   }
 }
-
-
 
 
 // Animations
