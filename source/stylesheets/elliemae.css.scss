@@ -45,9 +45,6 @@
         line-height: 26px;;
         margin: 5px 0 0 0;
       }
-      b {
-        font-weight: 500;
-      }
       ol {
         margin: 5px 0 0 0;
         padding-left: 17px;
@@ -107,7 +104,7 @@
     #wrapper .innerWrapper #header {
       display: block;
       width: 100%;
-      height: auto;
+      height: auto !important;
       margin-bottom: 50px;
       img {
         width: 100%;

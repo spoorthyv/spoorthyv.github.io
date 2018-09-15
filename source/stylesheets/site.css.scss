@@ -1,7 +1,7 @@
 $navbarWidth: 488px;
 $breakLarge: 1580px;
 $breakMedium: 1200px;
-$breakSmall: 600px;
+$breakSmall: 830px;
 
 @import "fonts.css.scss";
 @import "navbar.css.scss";
@@ -21,7 +21,6 @@ $breakSmall: 600px;
 
 
 * {
-  font-family: 'Graphik';
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -46,8 +45,12 @@ h3 {
   margin: 18px 0;
   color: #242424;
 }
+h5 {
+  font-family: 'Graphik';
+}
  
 p {
+  font-family: 'Graphik';
   font-size: 16px;
   color: #191919;
 }
@@ -63,7 +66,7 @@ a:hover {
 }
 
 b {
-  font-weight: 500;
+  font-weight: 600;
 }
 
 body {
