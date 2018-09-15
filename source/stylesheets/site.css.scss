@@ -1,3 +1,8 @@
+$navbarWidth: 488px;
+$breakLarge: 1580px;
+$breakMedium: 1200px;
+$breakSmall: 830px;
+
 @import "fonts.css.scss";
 @import "navbar.css.scss";
 @import "index.css.scss";
@@ -13,37 +18,45 @@
 @import "uber.css.scss";
 @import "polyplanner.css.scss";
 
-$navbarWidth: 488px;
+
 
 * {
-  font-family: 'Graphik';
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 h1 {
+  font-family: 'ProductSans';
   font-size: 44px;
   margin: 26px 0;
 }
 
 h2 {
+  font-family: 'ProductSans';
   font-size: 33px;
   margin: 24px 0;
 }
 
 h3 {
+  font-family: 'ProductSans';
   font-size: 18px;
-  font-weight: 500;
+  font-weight: bold;
   margin: 18px 0;
+  color: #242424;
+}
+h5 {
+  font-family: 'Graphik';
 }
  
 p {
+  font-family: 'Graphik';
   font-size: 16px;
   color: #191919;
 }
 
 a {
+  font-family: 'ProductSans';
   text-decoration: none;
   color: #448ed2;
 }
@@ -53,7 +66,7 @@ a:hover {
 }
 
 b {
-  font-weight: 500;
+  font-weight: 600;
 }
 
 body {
@@ -66,13 +79,13 @@ body {
 }
 
 #navbar {
-  position: fixed;
   width: $navbarWidth;
 }
 
 #wrapper {
   flex: 1;
-  margin-left: $navbarWidth;
+  height: 100%;
+  overflow-y: auto;
 }
 
 .backArrow {
@@ -187,6 +200,48 @@ body {
   .close {
     display: block;
   }     
+}
+
+@media screen and (max-width: $breakSmall) {
+  html body #wrapper .innerWrapper #header .headerImage {
+    margin-top: 0 !important;
+    background-size: 300%;
+  }
+  #wrapper .innerWrapper #header {
+    height: 272px !important;
+  }
+  .horizGallery .imgWrapper img:nth-child(1) {
+    margin-left: 0;
+  }
+  .horizGallery .imgWrapper img {
+    height: 386px;
+  }
+  body {
+    #wrapper {
+      .sectionContent {
+        padding: 32px !important;
+      }
+      h1 {
+        font-size: 34px;
+      }
+      h3 {
+        font-size: 15px;
+      }
+      p {
+        font-size: 14px;
+      }
+      .backArrow {
+        display: none;
+      }
+    }
+  }
+
+  .row {
+    display: block;
+  }
+  .col {
+    padding-right: 0 !important;
+  }
 }
 
 // Animations

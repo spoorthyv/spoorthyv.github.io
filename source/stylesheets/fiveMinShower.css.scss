@@ -66,4 +66,9 @@
         background-color: #F0F2F8;
       }
    }
+   @media screen and (max-width: $breakSmall) {
+    #wrapper .innerWrapper #header .headerImage {
+      background-size: 200%;
+    }
+  }
 }

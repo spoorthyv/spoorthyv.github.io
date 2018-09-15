@@ -45,9 +45,6 @@
         line-height: 26px;;
         margin: 5px 0 0 0;
       }
-      b {
-        font-weight: 500;
-      }
       ol {
         margin: 5px 0 0 0;
         padding-left: 17px;
@@ -95,5 +92,34 @@
           width: 100%;
         }
       }   
+  }
+  @media screen and (max-width: $breakSmall) {
+    #contact-info h1 {
+      font-size: 24px;
+    }
+    #contact-info h2 {
+      font-size: 14px;
+    }
+
+    #wrapper .innerWrapper #header {
+      display: block;
+      width: 100%;
+      height: auto !important;
+      margin-bottom: 50px;
+      img {
+        width: 100%;
+        margin: 0;
+        height: auto;
+      }
+    }
+    .innerWrapper #header #headerDetails h5 {
+      padding: 10px 0 17px 0;
+      border-left: none;
+      border-bottom: 2px solid #0070af;
+      margin: 10px 0;
+    }
+    .innerWrapper {
+      padding: 0 0 75px 0;
+    }
   }
 }

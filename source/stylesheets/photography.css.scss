@@ -43,4 +43,12 @@
       filter: grayscale(0%) !important;
     }
   } 
+  @media screen and (max-width: $breakSmall) {
+    #photography * {
+      max-width: initial;
+      max-height: initial;
+      padding: 10px;
+      width: calc(100% - 20px);
+    }
+  }
 }
