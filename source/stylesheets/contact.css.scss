@@ -97,11 +97,11 @@
   }
   
   /*---MOBILE---*/
-  @media screen and (max-width: 480px) {
-    h1 {
-      font-size: 22px;
+  @media screen and (max-width: $breakSmall) {
+    #contact-info h1 {
+      font-size: 24px;
     }
-    h2 {
+    #contact-info h2 {
       font-size: 14px;
     }
   }

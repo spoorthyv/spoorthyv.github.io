@@ -136,4 +136,10 @@
         }
       }
    }
+   @media screen and (max-width: $breakSmall) {
+    #wrapper .innerWrapper .sectionContent #uberPrototype {
+      height: initial;
+      margin: 0;
+    }
+  }
 }

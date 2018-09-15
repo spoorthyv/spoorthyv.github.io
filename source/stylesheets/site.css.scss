@@ -1,3 +1,8 @@
+$navbarWidth: 488px;
+$breakLarge: 1580px;
+$breakMedium: 1200px;
+$breakSmall: 600px;
+
 @import "fonts.css.scss";
 @import "navbar.css.scss";
 @import "index.css.scss";
@@ -13,7 +18,7 @@
 @import "uber.css.scss";
 @import "polyplanner.css.scss";
 
-$navbarWidth: 488px;
+
 
 * {
   font-family: 'Graphik';
@@ -194,7 +199,20 @@ body {
   }     
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: $breakSmall) {
+  #wrapper .innerWrapper #header .headerImage {
+    margin-top: 0;
+    background-size: 300%;
+  }
+  #wrapper .innerWrapper #header {
+    height: 272px;
+  }
+  .horizGallery .imgWrapper img:nth-child(1) {
+    margin-left: 0;
+  }
+  .horizGallery .imgWrapper img {
+    height: 386px;
+  }
   body {
     #wrapper {
       .sectionContent {
@@ -213,6 +231,13 @@ body {
         display: none;
       }
     }
+  }
+
+  .row {
+    display: block;
+  }
+  .col {
+    padding-right: 0 !important;
   }
 }
 
