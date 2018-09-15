@@ -106,4 +106,23 @@
         }
       }
    }
+   @media screen and (max-width: $breakSmall) {
+    #wrapper .innerWrapper #header {
+      padding: 0 0 12px 0;
+    }
+    #wrapper .innerWrapper .button {
+      padding: 14px 20px;
+      font-size: 18px;
+    }
+    #wrapper .innerWrapper h2 {
+      font-size: 23px;
+      margin: 28px 0 28px 0;
+      line-height: 45px;
+    }
+    #wrapper .innerWrapper p {
+      line-height: 28px;
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+  }
 }

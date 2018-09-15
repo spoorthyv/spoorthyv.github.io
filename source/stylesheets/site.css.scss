@@ -200,12 +200,12 @@ body {
 }
 
 @media screen and (max-width: $breakSmall) {
-  #wrapper .innerWrapper #header .headerImage {
-    margin-top: 0;
+  html body #wrapper .innerWrapper #header .headerImage {
+    margin-top: 0 !important;
     background-size: 300%;
   }
   #wrapper .innerWrapper #header {
-    height: 272px;
+    height: 272px !important;
   }
   .horizGallery .imgWrapper img:nth-child(1) {
     margin-left: 0;
