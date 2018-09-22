@@ -6,10 +6,10 @@
   margin: 120px auto 39px auto;
   width: 961px;
   padding-right: 35px;
-  >h2 {
+  h2 {
     width: 100%;
-    margin-left: 35px;
-    margin-bottom: 29px;
+    font-size: 25px;
+    margin: 28px 35px;
   }
   .card {
     display: flex;
@@ -62,6 +62,7 @@
       transition: 0.4s all;
       padding: 5px 6px 4px 6px;
       margin: 0;
+      z-index: 2;
     }
     .internship {
       
