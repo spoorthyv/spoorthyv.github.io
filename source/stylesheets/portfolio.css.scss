@@ -65,7 +65,6 @@
       z-index: 2;
     }
     .internship {
-      
       color: rgb(60, 100, 211);
     }
     .project {
@@ -77,7 +76,7 @@
   }
   .card:hover {
     transform: translateY(-7px);
-    box-shadow: 0px 7px 37px 0px rgba(0,0,0,.27);
+    box-shadow: 0px 7px 37px 0px rgba(0,0,0,.20);
     .label {
       opacity: 1;
     }
@@ -85,33 +84,7 @@
   .card:active {
     transform: translateY(-4px);
   }
-  #lane:hover {
-    box-shadow: 0px 7px 37px 0px rgba(111, 73, 255, 0.5);
-  }
-  #zoomforth:hover {
-    box-shadow: 0px 7px 37px rgba(0, 112, 175, 0.5);
-  }
-  #elliemae:hover {
-    box-shadow: 0px 7px 37px 0px rgba(2, 101, 174,0.5);
-  }
-  #jupyter:hover {
-    box-shadow: 0px 7px 37px 0px rgba(255, 148, 70, 0.65);
-  }
-  #privateConcert:hover {
-    box-shadow: 0px 7px 37px 0px rgba(104, 184, 221, 0.65);
-  }
-  #fiveMinShower:hover {
-    box-shadow: 0px 7px 37px 0px rgba(155, 203, 234, 0.9);
-  }
-  #polyplanner:hover {
-    box-shadow: 0px 7px 37px 0px rgba(255, 191, 125, 0.42);
-  }
-  #photography:hover {
-    box-shadow: 0px 7px 37px 0px rgba(128, 54, 116, 0.5);
-  }
-  #dribbble:hover {
-    box-shadow: 0px 7px 37px 0px rgba(238, 86, 145, 0.6);
-  }
+
   #photography {
     background-image: url("../images/kina.jpg");
     background-size: cover;
