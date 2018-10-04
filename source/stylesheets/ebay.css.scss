@@ -1,53 +1,44 @@
 @import "variables.scss";
 
-.jupyter {
+.ebay {
   overflow-x: hidden;
   .backArrow {
     svg {
-        fill: #fff4ec;
+        fill: #C8FFE7;
         filter: brightness(1);
         transition: filter 0.25s;
     }
     svg:hover {
-      filter: brightness(1.5);
+      filter: brightness(1.3);
     }
   }
   .innerWrapper {
       #header {
-        height: 370px;
-        background-color: #FF9445;
+        height: 438px;
+        background-color: #0081F8;
         background-repeat: no-repeat;
-        background-position: 50% 49%;
-        background-image: url('/images/jupyterBackground.svg');
+        background-position: 50% 50%;
+        background-image: url('/images/ebayBanner.svg');
+        background-size: 260px 104px;
       }
 
       .section { 
         margin: 0;
         box-sizing: border-box;
       }
-
-      .section:nth-child(2n+1) {
-        background-color: #f8f8f8;
-      }
-
       .sectionContent {
-        padding: 52px 150px 68px 150px;
+        padding: 60px 150px 60px 150px;
         margin: auto;
-        max-width: 900px;
+        max-width: 800px;
+      }
+      * {
+        margin: 0;
       }
       h1 {
-        color: #f37727;
-        padding: 24px 0 16px 0;
+        color: #0065C2;
       }
       h2 {
-        line-height: 1.5;
-        color: #f37727;
-      }
-      h3 {
-        line-height: 2;
-      }
-      p {
-        line-height: 26px;;
+        color: #0065C2;
       }
       b {
         font-weight: 500;
@@ -61,10 +52,6 @@
       }
       object {
         margin-top: 20px;
-      }
-
-      > img {
-        max-width: 100%;
       }
 
       #headerImage {
@@ -83,7 +70,7 @@
             line-height: 2;
             margin-left: 32px;
             color: #2a2a2a;
-            border-left: 2px solid #f37727;
+            border-left: 2px solid #0065C2;
             padding-left: 30px;
             padding-top: 2px;
           }

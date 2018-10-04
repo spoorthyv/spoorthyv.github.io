@@ -30,10 +30,11 @@
         }
         h1 {
           color: #5F8DA5;
+          padding-bottom: 0;
         }
         p {
           line-height: 26px;
-          margin-bottom: 40px;
+          margin-bottom: 4px;
         }
         h3 {
           color: #5F8DA5;
@@ -60,8 +61,8 @@
         width: 100%;
       }
       .mockDescription {
+        margin-top: 40px;
         h3 {
-          font-size: 30px;
           color: #666c79;
         }
         background-color: #F0F2F8;

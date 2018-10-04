@@ -15,6 +15,26 @@ $(document).on('turbolinks:load', function () {
   jupyter()
 });
 
+function index() {
+  if($('.index').length > 0 ){
+    var internLabel = $("<p></p>").text("Internship"); 
+    internLabel.addClass("label");
+    internLabel.addClass("internship");
+
+    var projectLabel = $("<p></p>").text("Project"); 
+    projectLabel.addClass("label");
+    projectLabel.addClass("project");
+
+    var miscLabel = $("<p></p>").text("Misc"); 
+    miscLabel.addClass("label");
+    miscLabel.addClass("misc");
+
+    internLabel.prependTo("#jupyter, #zoomforth, #elliemae, #ebay");
+    projectLabel.prependTo("#polyplanner, #lane, #fiveMinShower, #uber");
+    miscLabel.prependTo("#photography, #dribbble");
+  }
+}
+
 
 function lane() {
   if($('.lane').length > 0 ){
@@ -79,26 +99,6 @@ function jupyter() {
       $('.horizGallery').removeClass("fullScreen");
       e.preventDefault();
     });
-  }
-}
-
-function index() {
-  if($('.index').length > 0 ){
-    var internLabel = $("<p></p>").text("Internship"); 
-    internLabel.addClass("label");
-    internLabel.addClass("internship");
-
-    var projectLabel = $("<p></p>").text("Project"); 
-    projectLabel.addClass("label");
-    projectLabel.addClass("project");
-
-    var miscLabel = $("<p></p>").text("Misc"); 
-    miscLabel.addClass("label");
-    miscLabel.addClass("misc");
-
-    internLabel.prependTo("#jupyter, #zoomforth, #elliemae");
-    projectLabel.prependTo("#polyplanner, #lane, #fiveMinShower, #uber");
-    miscLabel.prependTo("#photography, #dribbble");
   }
 }
 

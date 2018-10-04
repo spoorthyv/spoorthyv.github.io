@@ -9,7 +9,7 @@
   h2 {
     width: 100%;
     font-size: 25px;
-    margin: 28px 35px;
+    margin: 12px 36px;
   }
   .card {
     display: flex;
@@ -38,16 +38,16 @@
     .textWrapper {
       display: block;
       background-color: rgba(0,0,0,0.05);
-      padding: 16px 24px;
-      h3 {
-        margin: 0;
+      padding: 14px 24px 16px 24px;
+      h4 {
+        padding: 0;
         color: white;
       }
       p {
         line-height: 20px;
         font-size: 14px;
         color: white;
-        margin: 5px 0 0 0;
+        padding: 0;
       }
     }
     .label { 
@@ -60,7 +60,7 @@
       border-radius: 2px;
       opacity: 0;
       transition: 0.4s all;
-      padding: 5px 6px 4px 6px;
+      padding: 2px 8px 1px 8px;
       margin: 0;
       z-index: 2;
     }
@@ -127,7 +127,13 @@
       }
     }
   }
-  
+  #ebay {
+    .imageWrapper {
+      img {
+        max-width: 158px;  
+      }
+    }
+  }
   #jupyter {
     .imageWrapper {
       img {

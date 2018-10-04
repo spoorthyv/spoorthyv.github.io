@@ -1,7 +1,8 @@
 <div id="portfolioBody">
   <h2>Here's what I've been working on:</h2>
-  
-  <%= partial( :card, :locals => { :cardColor => "#FF9445", :title => "Project Jupyter", :description  => "My work as a UI/UX Designer and Software Engineer", :imageFile => "jupyter.svg", :tag => "jupyter", :howdy => "hello"})%>
+
+  <%= partial( :card, :locals => { :cardColor => "#0081F8", :title => "Ebay", :description  => "My work as a UX Design Systems Intern", :imageFile => "ebay.svg", :tag => "ebay"})%>
+  <%= partial( :card, :locals => { :cardColor => "#FF9445", :title => "Project Jupyter", :description  => "My work as a UI/UX Designer and Software Engineer", :imageFile => "jupyter.svg", :tag => "jupyter"})%>
   <%= partial(:card, :locals => { :cardColor => "#0A2F3C", :title => "Uber Feature Design", :description => "Find your destination with the map", :imageFile => "uberWhite.svg", :tag => "uber", :label => "Project" }) %>
   <%= partial(:card, :locals => { :cardColor => "#0071af", :title => "Zoomforth", :description => "UX and Visual Design internship", :imageFile => "zoomforth.svg", :tag => "zoomforth", :label => "Internship" }) %>
   <%= partial(:card, :locals => { :cardColor => "#0065AE", :title => "Ellie Mae", :description => "UI Engineering Intership with Angular JS", :imageFile => "elliemae.png", :tag => "elliemae", :label => "Internship" }) %>
@@ -9,12 +10,13 @@
   <%= partial(:card, :locals => { :cardColor => "#9CCAE9", :title => "5 Min Shower", :description => "A musical shower timer with an attitude", :imageFile => "ShowerIcon.png", :tag => "fiveMinShower", :label => "Project" }) %>
   <%= partial(:card, :locals => { :cardColor => "#6F49FF", :title => "Lane", :description => "A beautiful React Native app for long distance ridesharing", :imageFile => "lane.svg", :tag => "lane", :label => "Project" }) %>
   <%= partial(:card, :locals => { :cardColor => "#b01398", :title => "Photography", :description => "", :imageFile => "blank.png", :tag => "photography", :label => "Hobby" }) %>
+  
   <a class="card" href="https://dribbble.com/spoorthyv" id="dribbble" style="background-color: #EE5691;" target="_blank">
     <div class="imageWrapper">
         <img class="cardImage" src="<%= "./images/dribbble.svg" %>" >
     </div>
     <div class="textWrapper">
-        <h3>Dribbble</h3>
+        <h4>Dribbble</h4>
         <p>Take a look at some beautiful stuff I've made.</p>
     </div>
   </a>
