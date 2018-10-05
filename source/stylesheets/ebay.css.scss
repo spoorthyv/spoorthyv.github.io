@@ -13,9 +13,8 @@
     }
   }
   .innerWrapper {
-
       #lightbulbBanner {
-        background-color: #FFFBE7;
+        background-color: #fffbe9;
         display: flex;
         flex-direction: row;
         padding: 4px 28px 3px 0;
@@ -128,6 +127,7 @@
       }
 
       #dlButton {
+        display: inline-block;
         color: white;
         background-color: #0d71ff;
         padding: 14px 20px;
@@ -163,13 +163,31 @@
       .horizGallery {
         background-color: #f7fafb;
       }
-      
       #navbarImg {
         background-color: #f3f3f3;
         padding: 5px;
         margin: 20px 0;
         img {
           width: 100%;
+        }
+      }
+
+
+      #finalSSF {
+        background-color: #F3FAFF;
+        #final {
+          justify-content: center;
+        }
+        video {
+          max-height: 505px;
+          min-width: 99px;
+          padding: 0px 40px;
+        }
+        p {
+          color: #0f3652;
+        }
+        h4 {
+          color: #0f3652;
         }
       }
 
