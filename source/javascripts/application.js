@@ -53,23 +53,23 @@ function lane() {
 
 function uber() {
   if($('.uber').length > 0 ){
-    var prot = $(".video");
-    for (var i = 0; i < prot.length; i++) {
-      if (isElementPartiallyInViewportVertically(prot[i])) {
-        prot[i].play();  
-      } else {
-        prot[i].pause();
-      }
-    }
-    $("#wrapper").scroll(function(){
-      for (var i = 0; i < prot.length; i++) {
-        if (isElementPartiallyInViewportVertically(prot[i])) {
-          prot[i].play();  
-        } else {
-          prot[i].pause();
-        }
-      }
-    });
+    // var prot = $(".video");
+    // for (var i = 0; i < prot.length; i++) {
+    //   if (isElementPartiallyInViewportVertically(prot[i])) {
+    //     prot[i].play();  
+    //   } else {
+    //     prot[i].pause();
+    //   }
+    // }
+    // $("#wrapper").scroll(function(){
+    //   for (var i = 0; i < prot.length; i++) {
+    //     if (isElementPartiallyInViewportVertically(prot[i])) {
+    //       prot[i].play();  
+    //     } else {
+    //       prot[i].pause();
+    //     }
+    //   }
+    // });
 
     $('.horizGallery img').on('click', function(e) {
       console.log("image");
