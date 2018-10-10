@@ -4,10 +4,10 @@
   #navBackground {
     height: 100vh;
     width: $navbarWidth;
-    background-color: rgba(0,0,0,0.027);
+    background-color: #f8f8f8;
   }
   #titles {
-    top: calc(50% - 182px - 16px);
+    top: calc(50% - 182px - 24px);
     position: fixed;
     left: 32px;
     h2 {
