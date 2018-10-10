@@ -10,6 +10,7 @@ $(document).on('turbolinks:load', function () {
   index()
   lane();
   uber();
+  ebay();
   photography();
   toggleNav();
   jupyter()
@@ -57,16 +58,20 @@ function uber() {
     for (var i = 0; i < prot.length; i++) {
       if (isElementPartiallyInViewportVertically(prot[i])) {
         prot[i].play();  
+        console.log("play");
       } else {
         prot[i].pause();
+        console.log("pause");
       }
     }
     $("#wrapper").scroll(function(){
       for (var i = 0; i < prot.length; i++) {
         if (isElementPartiallyInViewportVertically(prot[i])) {
           prot[i].play();  
+          console.log("play2");
         } else {
           prot[i].pause();
+          console.log("pause2");
         }
       }
     });
@@ -83,6 +88,32 @@ function uber() {
       e.preventDefault();
     });
 
+  }
+}
+
+function ebay() {
+  if($('.ebay').length > 0 ){
+    var prot = $("video");
+    for (var i = 0; i < prot.length; i++) {
+      if (isElementPartiallyInViewportVertically(prot[i])) {
+        prot[i].play();  
+        console.log("play");
+      } else {
+        prot[i].pause();
+        console.log("pause");
+      }
+    }
+    $("#wrapper").scroll(function(){
+      for (var i = 0; i < prot.length; i++) {
+        if (isElementPartiallyInViewportVertically(prot[i])) {
+          prot[i].play();  
+          console.log("play2");
+        } else {
+          prot[i].pause();
+          console.log("pause2");
+        }
+      }
+    });
   }
 }
 
