@@ -53,23 +53,23 @@ function lane() {
 
 function uber() {
   if($('.uber').length > 0 ){
-    // var prot = $(".video");
-    // for (var i = 0; i < prot.length; i++) {
-    //   if (isElementPartiallyInViewportVertically(prot[i])) {
-    //     prot[i].play();  
-    //   } else {
-    //     prot[i].pause();
-    //   }
-    // }
-    // $("#wrapper").scroll(function(){
-    //   for (var i = 0; i < prot.length; i++) {
-    //     if (isElementPartiallyInViewportVertically(prot[i])) {
-    //       prot[i].play();  
-    //     } else {
-    //       prot[i].pause();
-    //     }
-    //   }
-    // });
+    var prot = $("video");
+    for (var i = 0; i < prot.length; i++) {
+      if (isElementPartiallyInViewportVertically(prot[i])) {
+        prot[i].play();  
+      } else {
+        prot[i].pause();
+      }
+    }
+    $("#wrapper").scroll(function(){
+      for (var i = 0; i < prot.length; i++) {
+        if (isElementPartiallyInViewportVertically(prot[i])) {
+          prot[i].play();  
+        } else {
+          prot[i].pause();
+        }
+      }
+    });
 
     $('.horizGallery img').on('click', function(e) {
       console.log("image");
@@ -123,6 +123,7 @@ function toggleNav() {
 
   if( !loadedMain ) {
     $('body').addClass("smallNav");
+    $("a:first").addClass("active");
   } else {
     $('body').removeClass("smallNav");
   }
@@ -181,20 +182,20 @@ function addEventListeners() {
   if ( 'querySelector' in document && 'addEventListener' in window ) {
     document.addEventListener("turbolinks:click", function(e) {
       var wrapper = $('#wrapper');
-      wrapper.removeClass('fadeInDown');
-      wrapper.addClass('fadeOutUp');
+      wrapper.removeClass('fadeIn');
+      wrapper.addClass('fadeOut');
     }, false);
   
     document.addEventListener("turbolinks:load", function(e) {
       var wrapper = $('#wrapper');
-      wrapper.removeClass('fadeOutUp');
-      wrapper.addClass('fadeInDown');
+      wrapper.removeClass('fadeOut');
+      wrapper.addClass('fadeIn');
     }, false);
   
     document.addEventListener("turbolinks:before-cache", function() {
       var wrapper = $('#wrapper');
-      wrapper.removeClass('fadeOutUp');
-      wrapper.addClass('fadeInDown');
+      wrapper.removeClass('fadeOut');
+      wrapper.addClass('fadeIn');
     }, false);
   }
 }
