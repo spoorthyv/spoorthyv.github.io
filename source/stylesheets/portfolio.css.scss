@@ -3,7 +3,7 @@
 #portfolioBody {
   display: flex;
   flex-wrap: wrap;
-  margin: 120px auto 40px auto;
+  margin: 120px auto 60px auto;
   width: 961px;
   padding-right: 35px;
   h2 {
@@ -153,6 +153,42 @@
       bottom: 0;
       width: 100%;
       box-sizing: border-box;
+    }
+  }
+}
+
+#footer {
+  transition: 0.2s all;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  border-top: 2px solid #f4f4f4;
+  h4 {
+    transition: 0.2s all;
+    font-size: 16px;
+    line-height: 16px;
+    display: inline-block;
+    padding: 0;
+    color: #939393
+  }
+  svg {
+    padding-bottom: 4px;
+    padding-left: 4px;
+    #heart {
+      transition: 0.2s all;
+      fill: #939393;
+    }
+  }
+}
+#footer:hover {
+  cursor: default;
+  h4 {
+    color: rgb(109, 109, 109);
+  }
+  svg {
+    #heart {
+      fill: #6F73FF;
     }
   }
 }

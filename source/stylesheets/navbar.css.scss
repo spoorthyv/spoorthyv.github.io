@@ -7,7 +7,7 @@
     background-color: rgba(0,0,0,0.027);
   }
   #titles {
-    top: calc(50% - 182px - 12px);
+    top: calc(50% - 182px - 16px);
     position: fixed;
     left: 32px;
     h2 {
@@ -34,7 +34,16 @@
       border: 1px solid #00000000;
       margin-bottom: 16px;
     }
+    a:hover {
+      color: #474747;
+      background-color: rgb(238, 238, 238);
+    }
     .active {
+      color: #fff;
+      font-weight: 600;
+      background-color: #6F73FF;
+    }
+    .active:hover {
       color: #fff;
       font-weight: 600;
       background-color: #6F73FF;
