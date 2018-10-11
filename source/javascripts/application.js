@@ -5,6 +5,7 @@ Turbolinks.start();
 
 var isMain = "first";
 addEventListeners();
+var filterState = [false, false, false];
 
 $(document).on('turbolinks:load', function () {
   index()
@@ -33,6 +34,47 @@ function index() {
     internLabel.prependTo("#jupyter, #zoomforth, #elliemae, #ebay");
     projectLabel.prependTo("#polyplanner, #lane, #fiveMinShower, #uber");
     miscLabel.prependTo("#photography, #dribbble");
+
+    var filters = $(".filter");
+    filters.click(function() {
+      if(this == filters[0]) {
+        filterState = [!filterState[0], false, false];
+      } else if(this == filters[1]) {
+        filterState = [false, !filterState[1], false];
+      } else if(this == filters[2]) {
+        filterState = [false, false, !filterState[2]];
+      }
+      console.log(filterState);
+      if (filterState[0]){ 
+        $(".card").has(".internship").show();
+        $(".card").has(".project").hide();
+        $(".card").has(".misc").hide();
+        $(filters[0]).addClass("filterSelected");
+        $(filters[1]).removeClass("filterSelected");
+        $(filters[2]).removeClass("filterSelected");
+      } else if (filterState[1]){ 
+        $(".card").has(".internship").hide();
+        $(".card").has(".project").show();
+        $(".card").has(".misc").hide();
+        $(filters[0]).removeClass("filterSelected");
+        $(filters[1]).addClass("filterSelected");
+        $(filters[2]).removeClass("filterSelected");
+      } else if (filterState[2]){ 
+        $(".card").has(".internship").hide();
+        $(".card").has(".project").hide();
+        $(".card").has(".misc").show();
+        $(filters[0]).removeClass("filterSelected");
+        $(filters[1]).removeClass("filterSelected");
+        $(filters[2]).addClass("filterSelected");
+      } else {
+        $(".card").has(".internship").show();
+        $(".card").has(".project").show();
+        $(".card").has(".misc").show();
+        $(filters[0]).removeClass("filterSelected");
+        $(filters[1]).removeClass("filterSelected");
+        $(filters[2]).removeClass("filterSelected");
+      }
+    });
   }
 }
 

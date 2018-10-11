@@ -12,9 +12,62 @@
     margin: 12px 36px;
   }
   h3 {
-    padding: 24px 36px;
+    padding: 16px 36px;
     width: 100%;
     font-weight: 400;
+  }
+
+  #filterContainer {
+    display: flex;
+    margin-bottom: 20px;
+    margin-left: 36px;
+    width: 100%;
+    .filter {
+      border: 1px solid #EBEBEB;
+      font-family: "ProductSans";
+      padding: 12px 20px;
+      line-height: 1;
+      border-radius: 52px;
+      margin-right: 12px;
+      color: #717080;
+      transition: 0.3s all;
+      &:hover {
+        cursor: pointer;
+        &:nth-child(1) {
+          color: #4272f7;
+          background-color: #f1f5fb;
+          border: 1px solid #dbe5ff;
+        }
+        &:nth-child(2) {
+          color: #049a3d;
+          background-color: #ecf9f0;
+          border: 1px solid #c8f1d8;
+        }
+        &:nth-child(3) {
+          color: #f78f40;
+          background-color: #fff6f1;
+          border: 1px solid #ffeada;
+        }
+      }
+      &.filterSelected {
+        &:nth-child(1) {
+          background-color: #4272f7;
+          color: #fff;
+          border: 1px solid #4272f7;
+        }
+        &:nth-child(2) {
+          background-color: #049a3d;
+          color: #fff;
+          border: 1px solid #049a3d;
+        }
+        &:nth-child(3) {
+          background-color: #f78f40;
+          color: #fff;
+          border: 1px solid #f78f40;
+        }
+      }
+    }
+    
   }
   .card {
     display: flex;
@@ -70,13 +123,13 @@
       z-index: 2;
     }
     .internship {
-      color: rgb(60, 100, 211);
+      color: #4272f7;
     }
     .project {
-      color: rgb(233, 91, 103);
+      color: #049a3d;
     }
     .misc {
-      color: rgb(18, 145, 66);
+      color: #f78f40;
     }
   }
   .card:hover {

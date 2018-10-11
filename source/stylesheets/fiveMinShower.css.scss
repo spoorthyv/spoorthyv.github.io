@@ -55,6 +55,25 @@
             margin-bottom: 28px;
           }
         }
+
+        .githubButton {
+          height: 51px;
+          width: 170px;
+          background-image: url('../images/githubButton.png');
+          background-size: cover;
+          display: inline-block;
+          border-radius: 4px;
+          transition: all 0.25s;
+          box-shadow: 0px 0px 0px #8a5085;
+        }
+        .githubButton:hover {
+          box-shadow: 0px 4px 0px #8a5085;
+          transform: translateY(-4px);
+        }
+        .githubButton:active {
+          box-shadow: 0px 0px 0px #8a5085;
+          transform: translateY(0);
+        }
       }
       .mockImage {
         display: block;
