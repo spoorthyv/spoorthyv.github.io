@@ -27,9 +27,9 @@ function index() {
     projectLabel.addClass("label");
     projectLabel.addClass("project");
 
-    var miscLabel = $("<p></p>").text("Misc"); 
+    var miscLabel = $("<p></p>").text("Other"); 
     miscLabel.addClass("label");
-    miscLabel.addClass("misc");
+    miscLabel.addClass("other");
 
     internLabel.prependTo("#jupyter, #zoomforth, #elliemae, #ebay");
     projectLabel.prependTo("#polyplanner, #lane, #fiveMinShower, #uber");
@@ -48,28 +48,28 @@ function index() {
       if (filterState[0]){ 
         $(".card").has(".internship").show();
         $(".card").has(".project").hide();
-        $(".card").has(".misc").hide();
+        $(".card").has(".other").hide();
         $(filters[0]).addClass("filterSelected");
         $(filters[1]).removeClass("filterSelected");
         $(filters[2]).removeClass("filterSelected");
       } else if (filterState[1]){ 
         $(".card").has(".internship").hide();
         $(".card").has(".project").show();
-        $(".card").has(".misc").hide();
+        $(".card").has(".other").hide();
         $(filters[0]).removeClass("filterSelected");
         $(filters[1]).addClass("filterSelected");
         $(filters[2]).removeClass("filterSelected");
       } else if (filterState[2]){ 
         $(".card").has(".internship").hide();
         $(".card").has(".project").hide();
-        $(".card").has(".misc").show();
+        $(".card").has(".other").show();
         $(filters[0]).removeClass("filterSelected");
         $(filters[1]).removeClass("filterSelected");
         $(filters[2]).addClass("filterSelected");
       } else {
         $(".card").has(".internship").show();
         $(".card").has(".project").show();
-        $(".card").has(".misc").show();
+        $(".card").has(".other").show();
         $(filters[0]).removeClass("filterSelected");
         $(filters[1]).removeClass("filterSelected");
         $(filters[2]).removeClass("filterSelected");

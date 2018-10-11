@@ -3,18 +3,15 @@
 .photography {
   background-color: #181818;
   #navbar {
-    background-color: rgba(0,0,0,0.1);
-    #navSection {
-      #navWrapper {
-        h1 {
-          color: #cecece;
-        }
-        a:hover {
-          color: white;
-        }
-      }
+    #navBackground {
+      background-color: rgba(0,0,0,0.2);
     }
-    
+    #linkWrapper {
+      a:hover {
+        background-color: rgba(255,255,255,0.1);
+        color: white;
+      }
+    }   
     #logoWrapper {
       #logo {
         filter: grayscale(1) brightness(3);
