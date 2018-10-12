@@ -1,11 +1,6 @@
 //= require jquery
 //= require turbolinks
 
-var host = "www.spoorthyv.com"
-if (window.location.host == host && window.location.protocol != "https:") {
-  window.location.protocol = "https:"
-}
-
 Turbolinks.start();
 
 var isMain = "first";
