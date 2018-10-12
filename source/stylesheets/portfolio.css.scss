@@ -33,18 +33,18 @@
       &:hover {
         cursor: pointer;
         &:nth-child(1) {
-          color: #4272f7;
-          background-color: #f1f5fb;
-          border: 1px solid #dbe5ff;
+          color: #4676fd;
+          background-color: #f7f9ff;
+          border: 1px solid #dbe4ff;
         }
         &:nth-child(2) {
-          color: #049a3d;
-          background-color: #ecf9f0;
-          border: 1px solid #c8f1d8;
+          color: #20b376;
+          background-color: #f6fffb;
+          border: 1px solid #cdf5e4;
         }
         &:nth-child(3) {
           color: #f78f40;
-          background-color: #fff6f1;
+          background-color: #fffaf7;
           border: 1px solid #ffeada;
         }
       }
@@ -52,12 +52,12 @@
         font-weight: 600;
         color: #fff;
         &:nth-child(1) {
-          background-color: #4272f7;
-          border: 1px solid #4272f7;
+          background-color: #4676fd;
+          border: 1px solid #4676fd;
         }
         &:nth-child(2) {
-          background-color: #049a3d;
-          border: 1px solid #049a3d;
+          background-color: #20b376;
+          border: 1px solid #20b376;
         }
         &:nth-child(3) {
           background-color: #f78f40;
@@ -126,10 +126,10 @@
       z-index: 2;
     }
     .internship {
-      color: #4272f7;
+      color: #4676fd;
     }
     .project {
-      color: #049a3d;
+      color: #20b376;
     }
     .other {
       color: #f78f40;
