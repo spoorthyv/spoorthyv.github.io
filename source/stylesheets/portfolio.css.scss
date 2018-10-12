@@ -3,7 +3,7 @@
 #portfolioBody {
   display: flex;
   flex-wrap: wrap;
-  margin: 120px auto 68px auto;
+  margin: 116px auto 68px auto;
   width: 961px;
   padding-right: 35px;
   h2 {
@@ -267,5 +267,12 @@
   #portfolioBody {
     width: 285px;
     margin-top: 40px;
+  }
+}
+@media screen and (max-width: $breakSmall) {
+  #portfolioBody {
+    #filterContainer {
+      display: none;
+    }
   }
 }
