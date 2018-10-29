@@ -22,46 +22,40 @@
     margin-left: 35px;
     width: 100%;
     .filter {
-      border: 1px solid #EBEBEB;
       font-family: "ProductSans";
       padding: 12px 20px;
       line-height: 1;
       border-radius: 52px;
       margin-right: 12px;
-      color: #717080;
+      background-color: #f8f8f8;
+      color: #9998a0;
       transition: 0.3s all;
+      font-weight: 600;
       &:hover {
         cursor: pointer;
         &:nth-child(1) {
           color: #4676fd;
-          background-color: #f7f9ff;
-          border: 1px solid #dbe4ff;
+          background-color: #f1f5ff;
         }
         &:nth-child(2) {
           color: #20b376;
-          background-color: #f6fffb;
-          border: 1px solid #cdf5e4;
+          background-color: #eaf9f2;
         }
         &:nth-child(3) {
           color: #f78f40;
-          background-color: #fffaf7;
-          border: 1px solid #ffeada;
+          background-color: #fff6f0;
         }
       }
       &.filterSelected {
-        font-weight: 600;
         color: #fff;
         &:nth-child(1) {
           background-color: #4676fd;
-          border: 1px solid #4676fd;
         }
         &:nth-child(2) {
           background-color: #20b376;
-          border: 1px solid #20b376;
         }
         &:nth-child(3) {
           background-color: #f78f40;
-          border: 1px solid #f78f40;
         }
         &:hover {
           color: #fff;
