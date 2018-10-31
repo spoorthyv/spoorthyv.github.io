@@ -39,13 +39,6 @@ activate :livereload
 
 activate :sprockets
 
-helpers do
-  def nav_active(page)
-    puts current_page.url
-    current_page.url.eql?(page) ? { class: 'active' } : {}
-  end
-end
-
 # Build-specific configuration
 # https://middlemanapp.com/advanced/configuration/#environment-specific-settings
 

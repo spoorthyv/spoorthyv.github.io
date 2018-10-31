@@ -27,23 +27,23 @@
       line-height: 1;
       border-radius: 52px;
       margin-right: 12px;
-      background-color: #f8f8f8;
-      color: #9998a0;
+      background-color: #f7f7f7;
+      color: #919196;
       transition: 0.3s all;
       font-weight: 600;
       &:hover {
         cursor: pointer;
         &:nth-child(1) {
           color: #4676fd;
-          background-color: #f1f5ff;
+          background-color: #eef3ff;
         }
         &:nth-child(2) {
-          color: #20b376;
-          background-color: #eaf9f2;
+          color: #1ea96f;
+          background-color: #e8f9f0;
         }
         &:nth-child(3) {
-          color: #f78f40;
-          background-color: #fff6f0;
+          color: #ef8739;
+          background-color: #fff3eb;
         }
       }
       &.filterSelected {
@@ -221,17 +221,18 @@
   border-top: 2px solid #f8f8f8;
   h4 {
     transition: 0.2s all;
-    font-size: 16px;
-    line-height: 16px;
+    font-size: 15px;
+    line-height: 15px;
+    letter-spacing: 0.5px;
     display: inline-block;
     padding: 0;
     color: #a5a5a5;
     font-weight: 400;
   }
   svg {
-    width: 19px;
+    width: 18px;
     padding-bottom: 3px;
-    padding-left: 4px;
+    padding-left: 4.5px;
     #heart {
       transition: 0.2s all;
       fill: #a5a5a5;

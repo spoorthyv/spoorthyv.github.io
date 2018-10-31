@@ -177,9 +177,8 @@ function jupyter() {
 
 function photography() {
   if($('.photography').length > 0 ) {
-    window.addEventListener('scroll', function(){
+    $("#wrapper").on( 'scroll', function(){
       var images = $("img");
-      console.log();
       for (var i = 0; i < images.length; i++) {
         if (photoIsInViewport(images[i])) {
           $(images[i]).addClass("currentPic");    
@@ -187,13 +186,26 @@ function photography() {
           $(images[i]).removeClass("currentPic");
         }
       }
-    });
+   });
   }
 }
 
 function toggleNav() {
   var loadedMain = (($('.index').length > 0) || ($('.contact').length > 0) || ($('.resume').length > 0));
 
+  if (window.location.pathname == "/resume") {
+    $("#contactLink").removeClass("active");
+    $("#portfolioLink").removeClass("active");
+    $("#resumeLink").addClass("active");
+  } else if (window.location.pathname == "/contact") {
+    $("#portfolioLink").removeClass("active");
+    $("#resumeLink").removeClass("active");
+    $("#contactLink").addClass("active");
+  } else {
+    $("#resumeLink").removeClass("active");
+    $("#contactLink").removeClass("active");
+    $("#portfolioLink").addClass("active");
+  }
   if( !loadedMain ) {
     $('body').addClass("smallNav");
     $("a:first").addClass("active");

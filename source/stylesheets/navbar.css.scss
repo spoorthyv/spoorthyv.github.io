@@ -7,13 +7,14 @@
     background-color: #f8f8f8;
   }
   #titles {
-    top: calc(50% - 182px - 24px);
+    top: calc(50% - 182px - 28px);
     position: fixed;
     left: 32px;
     h2 {
       font-weight: 500;
       color: #5a5a5a;
-      padding: 16px 0;
+      padding: 12px 0;
+      font-size: 37.2px;
     }
     h3 {
       color: #939393;
@@ -23,7 +24,7 @@
   }
   #linkWrapper {
     position: fixed;
-    top: calc(50% + 12px);
+    top: calc(50% + 8px);
     display: flex;
     flex-direction: column;
     left: 32px;
