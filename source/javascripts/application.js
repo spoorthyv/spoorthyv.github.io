@@ -2,9 +2,9 @@
 //= require turbolinks
 
 Turbolinks.start();
+addEventListeners();
 
 var isMain = "first";
-addEventListeners();
 var filterState = [false, false, false];
 
 $(document).on('turbolinks:load', function () {
@@ -77,7 +77,6 @@ function index() {
     });
   }
 }
-
 
 function lane() {
   if($('.lane').length > 0 ){
@@ -262,7 +261,6 @@ function isElementPartiallyInViewportVertically(el) {
   var rect = el.getBoundingClientRect();
   return !((rect.bottom < 0) || (rect.top > window.innerHeight));
 }
-
 function addEventListeners() {
   if ( 'querySelector' in document && 'addEventListener' in window ) {
     document.addEventListener("turbolinks:click", function(e) {
