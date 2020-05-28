@@ -162,6 +162,14 @@
       }
     }
   }
+  #squid {
+    .imageWrapper {
+      img {
+        max-height: 120px; 
+        max-width: 120px;  
+      }
+    }
+  }
   #jupyter {
     .imageWrapper {
       img {
