@@ -13,6 +13,37 @@
     }
   }
   .innerWrapper {
+     h1 {
+        color: #0065C2;
+     }
+     h2 {
+        color: #0065C2;
+     }
+     b {
+        font-weight: 500;
+     }
+     ol {
+        margin: 5px 0 0 0;
+        padding-left: 17px;
+     }
+     li {
+        line-height: 1.5;
+     }
+     object {
+        margin-top: 20px;
+     }
+
+
+     // .section {
+     //   margin: 0;
+     //   box-sizing: border-box;
+     // }
+     // .sectionContent {
+     //   padding: 60px 150px 60px 150px;
+     //   margin: auto;
+     //   max-width: 800px;
+     // }
+
       #ebayFooter {
         padding: 24px 0;
         background-color: #e3edf5;
@@ -73,38 +104,6 @@
         background-position: 50% 50%;
         background-image: url('/images/ebay/ebayBanner.svg');
         background-size: 260px 104px;
-      }
-
-      .section {
-        margin: 0;
-        box-sizing: border-box;
-      }
-      .sectionContent {
-        padding: 60px 150px 60px 150px;
-        margin: auto;
-        max-width: 800px;
-      }
-      * {
-        margin: 0;
-      }
-      h1 {
-        color: #0065C2;
-      }
-      h2 {
-        color: #0065C2;
-      }
-      b {
-        font-weight: 500;
-      }
-      ol {
-        margin: 5px 0 0 0;
-        padding-left: 17px;
-      }
-      li {
-        line-height: 1.5;
-      }
-      object {
-        margin-top: 20px;
       }
 
       #headerImage {
@@ -194,36 +193,7 @@
           color: #0f3652;
         }
       }
-
-      .galleria {
-        width: 100%;
-        height: 480px;
-        margin: 20px 0;
-        .galleria-theme-twelve .galleria-stage {
-          background-color: #f3f3f3;
-        }
-        .galleria-theme-twelve .galleria-bar {
-          background-color: #313131;
-        }
-      }
-  }
-  .galleria-lightbox-box {
-    .galleria-lightbox-content {
-      top: 0;
-      right: 0;
-      left: 0;
-      bottom: 0;
-      background-color: #000;
-    }
-    .galleria-lightbox-info {
-      color: #fff;
-    }
-    .galleria-lightbox-close {
-      border-radius: 20px;
-      top: 3px;
-      right: 3px;
-    }
-  }
+   }
 }
 
 @media screen and (max-width: $breakMedium) {

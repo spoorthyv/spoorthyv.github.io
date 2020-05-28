@@ -2,17 +2,33 @@
 
 .squid {
   overflow-x: hidden;
-  .backArrow {
-    svg {
-        fill: #b2f3ff;
-        filter: brightness(1);
-        transition: filter 0.25s;
-    }
-    svg:hover {
-      filter: brightness(1.3);
-    }
-  }
+
   .innerWrapper {
+
+      .caption {
+         color: #4b4b4b;
+         font-size: 14px;
+      }
+
+      #header {
+         height: 438px;
+         background-color: #00abcc;
+         background-repeat: no-repeat;
+         background-position: 50% 50%;
+         background-image: url('/images/squid/squidbigbanner.svg');
+
+         .backArrow {
+            svg {
+               fill: #b2f3ff;
+               filter: brightness(1);
+               transition: filter 0.25s;
+            }
+            svg:hover {
+               filter: brightness(1.3);
+            }
+         }
+      }
+
       #summary {
         .col {
           margin-right: 64px;
@@ -30,73 +46,21 @@
           padding: 10px 0 0 0;
           line-height: 2;
         }
-      }
-
-      #proconChart {
-        padding: 28px 32px;
-        background-color: #F3FAFF;
-        max-width: 380px;
-        border-radius: 5px;
-        display: flex;
-        flex-direction: column;
-        h4 {
-          color: #0C758A;
-          padding: 0;
-          margin-bottom: 8px;
-        }
-        div {
-          display: flex;
-          flex-direction: row;
-          img {
-            margin-left: 16px;
-            width: 20px;
-          }
-          p {
-            width: calc(100% - 36px);
-            color: #0C758A;
-            padding: 6px 0;
-          }
-        }
-      }
+     }
 
       #finalpreview {
-        background-color: #F6F6F6;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 32px 32px 8px 32px;
-        video {
-          padding: 0;
-          max-width: 820px;
-        }
+         background-color: #F6F6F6;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         padding: 32px 32px 8px 32px;
+         video {
+            padding: 0;
+            max-width: 820px;
+         }
       }
 
-      .caption {
-        color: #4b4b4b;
-        font-size: 14px;
-      }
-
-      #header {
-        height: 438px;
-        background-color: #00abcc;
-        background-repeat: no-repeat;
-        background-position: 50% 50%;
-        background-image: url('/images/squidbigbanner2.svg');
-      }
-
-      .section {
-        margin: 0;
-        box-sizing: border-box;
-      }
-      .sectionContent {
-        padding: 60px 150px 60px 150px;
-        margin: auto;
-        max-width: 800px;
-      }
-      * {
-        margin: 0;
-      }
       h1 {
         color: #0C758A;
         padding-bottom: 12px;
@@ -140,126 +104,15 @@
           }
         }
       }
-
-      #dlButton {
-        display: inline-block;
-        color: white;
-        background-color: #0d71ff;
-        padding: 14px 20px;
-        border-radius: 5px;
-        line-height: 16px;
-        margin: 0 0 32px 0;
-        transition: all 0.25s;
-        font-weight: 700;
-        font-size: 16px;
-        font-family: "ProductSans";
-        box-shadow: 0px 6px 26px #ffffff00;
-        border: none;
-        img {
-          width: 16px;
-          border: none;
-          margin-left: 12px;
-          transform: translateY(1px);
-        }
-      }
-      #dlButton:hover {
-        transform: translateY(-6px);
-        cursor: pointer;
-        box-shadow: 0px 6px 26px #0d71ff75;
-      }
-      #dlButton:active {
-        transform: translateY(0px);
-        cursor: pointer;
-      }
-      #dlButton:focus {
-        outline: none;
-      }
-
-      .horizGallery {
-        background-color: #f7fafb;
-      }
-      #navbarImg {
-        background-color: #f3f3f3;
-        padding: 5px;
-        margin: 20px 0;
-        img {
-          width: 100%;
-        }
-      }
-
-
-      #finalSSF {
-        background-color: #F3FAFF;
-        #final {
-          justify-content: center;
-        }
-        video {
-          max-height: 505px;
-          min-width: 99px;
-          padding: 0px 40px;
-        }
-        p {
-          color: #0f3652;
-        }
-        h4 {
-          color: #0f3652;
-        }
-      }
-
-      .galleria {
-        width: 100%;
-        height: 480px;
-        margin: 20px 0;
-        .galleria-theme-twelve .galleria-stage {
-          background-color: #f3f3f3;
-        }
-        .galleria-theme-twelve .galleria-bar {
-          background-color: #313131;
-        }
-      }
-  }
-  .galleria-lightbox-box {
-    .galleria-lightbox-content {
-      top: 0;
-      right: 0;
-      left: 0;
-      bottom: 0;
-      background-color: #000;
-    }
-    .galleria-lightbox-info {
-      color: #fff;
-    }
-    .galleria-lightbox-close {
-      border-radius: 20px;
-      top: 3px;
-      right: 3px;
-    }
-  }
+   }
 }
 
 @media screen and (max-width: $breakMedium) {
-  .ebay {
-    .innerWrapper {
-      #lightbulbBanner {
-        transform: none;
-        width: 100%;
-        padding: 0;
-        img {
-          display: none;
-        }
-        p {
-          padding: 16px 24px;
-        }
-      }
-    }
+  .squid {
   }
 }
 @media screen and (max-width: $breakSmall) {
-  .ebay {
-    .innerWrapper {
-      #proconChart {
-        padding: 20px 28px;
-      }
-    }
+  .squid {
+
   }
 }

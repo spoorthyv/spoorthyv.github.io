@@ -125,6 +125,16 @@ body {
   flex-direction: column;
 }
 
+.section {
+   margin: 0;
+   box-sizing: border-box;
+}
+.sectionContent {
+   padding: 60px 150px 60px 150px;
+   margin: auto;
+   max-width: 800px;
+}
+
 //Gallery
 .horizGallery {
   display: flex;
