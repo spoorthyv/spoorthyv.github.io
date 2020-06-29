@@ -7,7 +7,7 @@
                   </svg>
             </a>
       </div>
-      <div class="section">
+      <div class="section" id="intro">
          <div class="sectionContent">
             <h1>Squid: Notes built for writing</h1>
             <div class="row" id="summary">
@@ -30,39 +30,115 @@
           </video>
           <p class="caption">The redesigned note editor.</p>
       </div>
-      <div class="section">
+      <div class="section" id="research">
             <div class="sectionContent">
                <h3>Research:</h3>
                <h2>Understanding big issues</h2>
                <div class="row" id="gatheringInfo">
                   <div class="col">
-                     <h4>Gathering Info</h4>
-                     <ul>
-                        <li>Set up Firebase Analytics</li>
-                        <li>Feature request website</li>
-                        <li>App Reviews</li>
-                        <li>Other Android apps</li>
-                     </ul>
+                     <h1 class="fancyNumber">01</h1>
+                  </div>
+                  <div class="col" id="feedbackSite">
+                     <h4>Gathering Information</h4>
+                     <p>First thing I did was set up Firebase Analytics to start collecting quantitave information about our users. I combined that info with opinions I got from our long running <a href="http://feedback.squidnotes.com/" target="_blank">feature request</a> website and app reviews. Below is one of the most upvoted comments on the site:</p>
+                     <h3 id="infoQuote"><i>“Why do I have to keep going back and forth through the menu when switching between colors, stroke size, etc?”</i></h3>
+                  </div>
+               </div>
+               <div class="row" id="usertesting">
+                  <div class="col">
+                     <h1 class="fancyNumber">02</h1>
+                  </div>
+                  <div class="col" id="feedbackSite">
+                     <h4>User-testing</h4>
+                     <p>I ran 5 simple usertests with students in our library. We told each student to take notes on a 5 minute Youtube video using Squid and ended up with a lot of notes that looked like this:</p>
+                  </div>
+               </div>
+               <div class="row" id="usertestingPic">
+                  <div class="row">
+                     <img src="images/squid/exampleNote.png">
+                     <div class="col">
+                        <h4>Notes tended to be:</h4>
+                        <h3>Monochromatic</h3>
+                        <h3>Light on media</h3>
+                        <h3>Detailed</h3>
+                     </div>
+                  </div>
+               </div>
+               <div class="row" id="why">
+                  <div class="col">
+                     <h1 class="fancyNumber">03</h1>
+                     <h3>WHY?</h3>
+                     <h4>Users run through 6 steps everytime they see important information.<br><br>
+
+                        Obviously underlining is easier</h4>
                   </div>
                   <div class="col">
-                     <a href="http://feedback.squidnotes.com/">
-                        <img src="images/squid/feedbackScreenshot.png">
-                     </a>
-                     <p class="caption">Squid has a long-running feature request site</p>
+                     <img src="images/squid/importantFlow.png">
                   </div>
                </div>
             </div>
       </div>
-      <script>
-            (function() {
-                  Galleria.loadTheme('/galleria/themes/twelve/galleria.twelve.min.js');
-                  Galleria.run('.galleria', {
-                        transition: 'fadeslide',
-                        imageCrop: false,
-                        lightbox: true,
-                        idleMode: false,
-                        carousel: false
-                  });
-            }());
-      </script>
+      <div class="section" id="problem">
+         <h3><i>“How might we enable students to take more <b>expressive</b> notes?”</i></h3>
+      </div>
+
+      <div class="section col" id="designsTitle">
+         <h1>The Final Design</h1>
+         <div id="littleUnderline"></div>
+      </div>
+      <div id="designs">
+         <div class="section" id="toolbox">
+            <div class="sectionContent">
+               <div class="imageWrapper">
+                  <img src="images/squid/Toolbox.svg">
+               </div>
+            </div>
+         </div>
+         <div class="section" id="toolboxExtras">
+            <div class="sectionContent twoImage">
+               <div class="imageWrapper">
+                  <img src="images/squid/Long Press.svg">
+               </div>
+               <div class="imageWrapper">
+                  <img src="images/squid/Reorder.svg">
+               </div>
+            </div>
+         </div>
+         <div class="section" id="penDetail">
+            <div class="sectionContent">
+               <div class="imageWrapper">
+                  <img src="images/squid/Pen Detail.svg">
+               </div>
+            </div>
+         </div>
+         <div class="section" id="toolbars">
+            <div class="sectionContent">
+               <div class="imageWrapper">
+                  <img src="images/squid/Toolbars.svg">
+               </div>
+            </div>
+         </div>
+         <div class="section" id="menus">
+            <div class="sectionContent twoImage">
+               <div class="imageWrapper">
+                  <img src="images/squid/Old menu.svg">
+               </div>
+               <div class="imageWrapper">
+                  <img src="images/squid/New Menu.svg">
+               </div>
+            </div>
+         </div>
+         <div class="section" id="pageSwitcher">
+            <div class="sectionContent">
+               <div class="imageWrapper">
+                  <img src="images/squid/Page Switcher.svg">
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="section" id="conclusion">
+         <div class="sectionContent">
+            <h4>I ended my 6 month contract by handing off the final designs with full design docs. The team is currently planning on implementing these designs after COVID slows down.</h4>
+         </div>
+      </div>
 </div>
