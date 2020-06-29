@@ -19,19 +19,19 @@ $(document).on('turbolinks:load', function () {
 
 function index() {
   if($('.index').length > 0 ){
-    var internLabel = $("<p></p>").text("Internship"); 
+    var internLabel = $("<p></p>").text("Internship");
     internLabel.addClass("label");
     internLabel.addClass("internship");
 
-    var projectLabel = $("<p></p>").text("Project"); 
+    var projectLabel = $("<p></p>").text("Project");
     projectLabel.addClass("label");
     projectLabel.addClass("project");
 
-    var miscLabel = $("<p></p>").text("Other"); 
+    var miscLabel = $("<p></p>").text("Other");
     miscLabel.addClass("label");
     miscLabel.addClass("other");
 
-    internLabel.prependTo("#jupyter, #zoomforth, #elliemae, #ebay");
+    internLabel.prependTo("#jupyter, #zoomforth, #elliemae, #ebay, #squid");
     projectLabel.prependTo("#polyplanner, #lane, #fiveMinShower, #uber");
     miscLabel.prependTo("#photography, #dribbble");
 
@@ -45,21 +45,21 @@ function index() {
         filterState = [false, false, !filterState[2]];
       }
       console.log(filterState);
-      if (filterState[0]){ 
+      if (filterState[0]){
         $(".card").has(".internship").show();
         $(".card").has(".project").hide();
         $(".card").has(".other").hide();
         $(filters[0]).addClass("filterSelected");
         $(filters[1]).removeClass("filterSelected");
         $(filters[2]).removeClass("filterSelected");
-      } else if (filterState[1]){ 
+      } else if (filterState[1]){
         $(".card").has(".internship").hide();
         $(".card").has(".project").show();
         $(".card").has(".other").hide();
         $(filters[0]).removeClass("filterSelected");
         $(filters[1]).addClass("filterSelected");
         $(filters[2]).removeClass("filterSelected");
-      } else if (filterState[2]){ 
+      } else if (filterState[2]){
         $(".card").has(".internship").hide();
         $(".card").has(".project").hide();
         $(".card").has(".other").show();
@@ -98,7 +98,7 @@ function uber() {
     var prot = $("video");
     for (var i = 0; i < prot.length; i++) {
       if (isElementPartiallyInViewportVertically(prot[i])) {
-        prot[i].play();  
+        prot[i].play();
         console.log("play");
       } else {
         prot[i].pause();
@@ -108,7 +108,7 @@ function uber() {
     $("#wrapper").scroll(function(){
       for (var i = 0; i < prot.length; i++) {
         if (isElementPartiallyInViewportVertically(prot[i])) {
-          prot[i].play();  
+          prot[i].play();
           console.log("play2");
         } else {
           prot[i].pause();
@@ -137,7 +137,7 @@ function ebay() {
     var prot = $("video");
     for (var i = 0; i < prot.length; i++) {
       if (isElementPartiallyInViewportVertically(prot[i])) {
-        prot[i].play();  
+        prot[i].play();
         console.log("play");
       } else {
         prot[i].pause();
@@ -147,7 +147,7 @@ function ebay() {
     $("#wrapper").scroll(function(){
       for (var i = 0; i < prot.length; i++) {
         if (isElementPartiallyInViewportVertically(prot[i])) {
-          prot[i].play();  
+          prot[i].play();
           console.log("play2");
         } else {
           prot[i].pause();
@@ -180,7 +180,7 @@ function photography() {
       var images = $("img");
       for (var i = 0; i < images.length; i++) {
         if (photoIsInViewport(images[i])) {
-          $(images[i]).addClass("currentPic");    
+          $(images[i]).addClass("currentPic");
         } else {
           $(images[i]).removeClass("currentPic");
         }
@@ -249,7 +249,7 @@ function photoIsInViewport(el) {
   return (
       rect.top + 300 >= 0 &&
       rect.left >= 0 &&
-      rect.bottom - 300<= (window.innerHeight || document.documentElement.clientHeight) && 
+      rect.bottom - 300<= (window.innerHeight || document.documentElement.clientHeight) &&
       rect.right <= (window.innerWidth || document.documentElement.clientWidth)
   );
 }
@@ -268,13 +268,13 @@ function addEventListeners() {
       wrapper.removeClass('fadeIn');
       wrapper.addClass('fadeOut');
     }, false);
-  
+
     document.addEventListener("turbolinks:load", function(e) {
       var wrapper = $('#wrapper');
       wrapper.removeClass('fadeOut');
       wrapper.addClass('fadeIn');
     }, false);
-  
+
     document.addEventListener("turbolinks:before-cache", function() {
       var wrapper = $('#wrapper');
       wrapper.removeClass('fadeOut');

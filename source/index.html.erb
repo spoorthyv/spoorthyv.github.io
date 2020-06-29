@@ -7,8 +7,8 @@
   </div>
   <%= partial(:card, :locals => { :cardColor => "#00abcc", :title => "Squid Notes", :description  => "Redesigning the best notes app on Android", :imageFile => "squid/squidlogo.svg", :tag => "squid"})%>
   <%= partial(:card, :locals => { :cardColor => "#0081F8", :title => "Ebay", :description  => "My work as a UX Design Systems Intern", :imageFile => "ebay/ebay.svg", :tag => "ebay"})%>
+  <%= partial(:card, :locals => { :cardColor => "#0A2F3C", :title => "Uber Case Study", :description => "Find your destination with the map", :imageFile => "uber/uberWhite.svg", :tag => "uber", :label => "Project" }) %>
   <%= partial(:card, :locals => { :cardColor => "#FF9445", :title => "Project Jupyter", :description  => "My work as a UI/UX Designer and Software Engineer", :imageFile => "jupyter/jupyter.svg", :tag => "jupyter"})%>
-  <%= partial(:card, :locals => { :cardColor => "#0A2F3C", :title => "Uber Feature Design", :description => "Find your destination with the map", :imageFile => "uber/uberWhite.svg", :tag => "uber", :label => "Project" }) %>
   <a class="card" href="https://dribbble.com/spoorthyv" id="dribbble" style="background-color: #EE5691;" target="_blank">
     <div class="imageWrapper">
         <img class="cardImage" src="<%= "./images/dribbble/dribbble.svg" %>" >
@@ -18,17 +18,19 @@
         <p>Take a look at some beautiful stuff I've made.</p>
     </div>
   </a>
+  <%= partial(:card, :locals => { :cardColor => "#9CCAE9", :title => "5 Min Shower", :description => "A musical shower timer with an attitude", :imageFile => "fiveMinShower/ShowerIcon.png", :tag => "fiveMinShower", :label => "Project" }) %>
   <%= partial(:card, :locals => { :cardColor => "#0071af", :title => "Zoomforth", :description => "UX and Visual Design internship", :imageFile => "zoomforth/zoomforth.svg", :tag => "zoomforth", :label => "Internship" }) %>
   <%= partial(:card, :locals => { :cardColor => "#0065AE", :title => "Ellie Mae", :description => "UI Engineering Intership with Angular JS", :imageFile => "elliemae/elliemae.png", :tag => "elliemae", :label => "Internship" }) %>
-  <%= partial(:card, :locals => { :cardColor => "#9CCAE9", :title => "5 Min Shower", :description => "A musical shower timer with an attitude", :imageFile => "fiveMinShower/ShowerIcon.png", :tag => "fiveMinShower", :label => "Project" }) %>
   <%= partial(:card, :locals => { :cardColor => "#b01398", :title => "Photography", :description => "", :imageFile => "photography/blank.png", :tag => "photography", :label => "Hobby" }) %>
 
 
 </div>
 <div id="footer">
-  <h4>This site was built from scratch with</h4>
-  <svg width="24" height="24" viewBox="0 0 24 24">
-    <path d="M0 0h24v24H0z" fill="none"/>
-    <path id="heart" fill="#ddd" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
-  </svg>
+   <a href="https://github.com/spoorthyv/spoorthyv.github.io" target="_blank">
+      <h4>This site was built from scratch with</h4>
+      <svg width="24" height="24" viewBox="0 0 24 24">
+         <path d="M0 0h24v24H0z" fill="none"/>
+         <path id="heart" fill="#ddd" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+      </svg>
+   </a>
 </div>
