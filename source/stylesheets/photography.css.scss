@@ -1,4 +1,4 @@
-@import "variables.scss";
+@import "variables";
 
 .photography {
   background-color: #181818;
@@ -11,7 +11,7 @@
         background-color: rgba(255,255,255,0.1);
         color: white;
       }
-    }   
+    }
     #logoWrapper {
       #logo {
         filter: grayscale(1) brightness(3);
@@ -21,7 +21,7 @@
         filter: grayscale(1) brightness(9);
       }
     }
-    
+
   }
   #photography {
     text-align: center;
@@ -30,7 +30,7 @@
       filter: grayscale(100%);
       transition: filter 0.55s;
     }
-    * {    
+    * {
       max-width: calc(100% - 150px);
       max-height: calc(100vh - 150px);
       padding: 75px 75px 0 75px;
@@ -41,7 +41,7 @@
     .currentPic {
       filter: grayscale(0%) !important;
     }
-  } 
+  }
   @media screen and (max-width: $breakSmall) {
     #photography * {
       max-width: initial;
