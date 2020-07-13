@@ -1,0 +1,171 @@
+@import "./variables";
+
+* {
+  font-family: 'Graphik';
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+  font-family: 'Google Sans';
+  color: #3f3f3f;
+  font-size: 41.05px;
+  margin: 0;
+  padding: 24px 0;
+  line-height: 1.802;
+}
+
+h2 {
+  font-family: 'Google Sans';
+  color: #3f3f3f;
+  font-size: 32.4px;
+  padding: 32px 0 8px 0;
+  margin: 0;
+  line-height: 1.802;
+}
+
+h3 {
+  font-family: 'Google Sans';
+  color: #3f3f3f;
+  font-size: 25.6px;
+  padding: 24px 0 4px 0;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.802;
+}
+h4 {
+  font-family: 'Google Sans';
+  color: #3f3f3f;
+  padding: 16px 0 0px 0;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+  line-height: 1.802;
+}
+h5 {
+  font-family: 'Google Sans';
+  color: #3f3f3f;
+  padding: 16px 0 0px 0;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+  line-height: 1.802;
+}
+
+p {
+  font-family: 'Graphik';
+  color: #3f3f3f;
+  font-size: 16px;
+  padding: 16px 0 16px 0;
+  margin: 0;
+  line-height: 1.802;
+}
+
+a {
+  font-family: 'Google Sans';
+  text-decoration: none;
+  color: #448ed2;
+  line-height: 1.802;
+}
+
+a:hover {
+  color: #0085ff;
+}
+
+b {
+  font-weight: 600;
+}
+
+body {
+  margin: 0;
+  background-color: #fff;
+}
+
+
+.backArrow {
+  background-image: url('../images/backArrow.svg');
+  display: inline-block;
+  position: relative;
+  top: 50px;
+  left: 50px;
+  svg {
+    height: 50px;
+    width: 50px;
+  }
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+.section {
+   margin: 0;
+   box-sizing: border-box;
+}
+.sectionContent {
+   padding: 60px 150px 60px 150px;
+   margin: auto;
+   max-width: 800px;
+}
+
+
+@media screen and (max-width: $breakSmall) {
+  html body #wrapper .innerWrapper #header .headerImage {
+    margin-top: 0 !important;
+    background-size: 300%;
+  }
+  #wrapper .innerWrapper #header {
+    height: 272px !important;
+  }
+  .horizGallery .imgWrapper img:nth-child(1) {
+    margin-left: 0;
+  }
+  .horizGallery .imgWrapper img {
+    height: 386px;
+  }
+  body {
+    #wrapper {
+      top: $navbarMobileHeight;
+      width: 100%;
+      left: 0;
+      height: calc(100% - #{$navbarMobileHeight});
+      .sectionContent {
+        padding: 32px !important;
+      }
+      h1 {
+        font-size: 36px;
+      }
+      h2 {
+        font-size: 28.4px;
+      }
+      h3 {
+        font-size: 22.4px;
+      }
+      h4 {
+        font-size: 16.1px;
+      }
+      h5 {
+        font-size: 14px;
+      }
+      p {
+        font-size: 14px;
+      }
+      .backArrow {
+        display: none;
+      }
+    }
+  }
+
+  .row {
+    display: block;
+  }
+  .col {
+    padding-right: 0;
+  }
+}

@@ -1,0 +1,172 @@
+@import "./variables";
+
+#navbar {
+   #navBackground {
+      height: 100vh;
+      width: $navbarWidth;
+      background-color: #f8f8f8;
+   }
+   #titles {
+      top: calc(50% - 182px - 28px);
+      position: fixed;
+      left: 32px;
+      h2 {
+         font-weight: 500;
+         color: #5a5a5a;
+         padding: 12px 0;
+         font-size: 37.2px;
+      }
+      h3 {
+         color: #939393;
+         padding: 0;
+         font-weight: 400;
+      }
+   }
+   #linkWrapper {
+      position: fixed;
+      top: calc(50% + 8px);
+      display: flex;
+      flex-direction: column;
+      left: 32px;
+      a {
+         color: #939393;
+         padding: 4px 8px 3px 8px;
+         transition: all 0.2s;
+         border: 1px solid #00000000;
+         margin-bottom: 16px;
+      }
+      a:hover {
+         color: #474747;
+         background-color: rgb(238, 238, 238);
+      }
+      .active {
+         color: #fff;
+         font-weight: 600;
+         background-color: #6F73FF;
+      }
+      .active:hover {
+         color: #fff;
+         font-weight: 600;
+         background-color: #6F73FF;
+      }
+   }
+   #logoWrapper {
+      position: fixed;
+      bottom: 24px;
+      left: 24px;
+      #logo {
+         background-image: url('../images/logo.svg');
+         background-size: contain;
+         background-repeat: no-repeat;
+         background-position: 50%;
+         height: 50px;
+         width: 50px;
+         display: inline-block;
+         filter: grayscale(0.8);
+         transition: all 0.15s;
+      }
+      #logo:hover {
+         filter: grayscale(0);
+         transition: all 0.3s;
+      }
+   }
+}
+@media screen and (max-width: $breakSmall) {
+  #navbar {
+    #navBackground {
+      height: $navbarMobileHeight;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.027);
+    }
+    #linkWrapper {
+      flex-direction: row;
+      left: calc(50% - 124px);
+      top: 24px;
+      a {
+        margin: 0 8px 0 0;
+      }
+    }
+    #titles {
+      display: none;
+    }
+    #logoWrapper {
+      display: none;
+    }
+  }
+}
+
+@media screen and (min-width: $breakSmall) {
+  .expandNav {
+    #navBackground {
+      animation-name: expandNav;
+    }
+    #linkWrapper {
+      animation-name: moveLinksDown;
+    }
+    #titles {
+      animation-name: showTitles;
+    }
+  }
+  .shrinkNav {
+    #navBackground {
+      animation-name: shrinkNav;
+    }
+    #linkWrapper {
+      animation-name: moveLinksUp;
+    }
+    #titles {
+      animation-name: hideTitles;
+    }
+  }
+}
+
+@keyframes expandNav {
+  from {
+    width: $navbarWidthSmall;
+  }
+  to {
+    width: $navbarWidth;
+  }
+}
+@keyframes shrinkNav {
+  from {
+    width: $navbarWidth;
+  }
+  to {
+    width: $navbarWidthSmall;
+  }
+}
+
+@keyframes hideTitles {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes showTitles {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes moveLinksUp {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-65px);
+  }
+}
+@keyframes moveLinksDown {
+  0% {
+    transform: translateY(-65px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}

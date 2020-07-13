@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="426px" height="240px" viewBox="0 0 426 240" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 4</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Artboard-4" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-681.000000, -834.000000)">
+        <g id="Group" transform="translate(151.000000, 324.000000)">
+            <g id="Group-4" transform="translate(528.000000, 510.000000)">
+                <path d="M156,25.7088284 C156,11.5102367 167.515332,0 181.720209,0 L250.912263,0 C265.11702,0 276.6323,11.5102367 276.6323,25.7088284 L276.6323,133.122144 C276.6323,147.320615 265.11702,158.830972 250.912091,158.830972 L181.720209,158.830972 C167.515297,158.830972 156,147.320615 156,133.122144 L156,25.7088284 Z" id="path1_fill" fill-opacity="0.804913949" fill="#FFFFFF" fill-rule="nonzero" style="mix-blend-mode: screen;"></path>
+                <g id="P" transform="translate(183.000000, 28.000000)" fill="#04522B" fill-rule="nonzero">
+                    <g id="path5_fill-link">
+                        <path d="M0,0 L0,105 L22.6002105,105 L22.6002105,71.98968 L43.2452632,71.98968 C66.784,71.98968 80,56.54103 80,36.15171 C80,15.997737 66.9404211,0 43.48,0 L0,0 Z" id="path5_fill"></path>
+                    </g>
+                </g>
+                <text id="Reimagining-PolyPlan" font-family="Graphik-Medium, Graphik" font-size="36" font-weight="400" fill="#FFFFFF">
+                    <tspan x="0.066" y="233">Reimagining PolyPlanner</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>
