@@ -4,7 +4,6 @@ import { withRouter } from 'react-router';
 
 import '../stylesheets/Navbar.scss';
 
-
 class Navbar extends React.Component {
 
    isMainPage(currentRoute) {
@@ -13,7 +12,7 @@ class Navbar extends React.Component {
 
    render() {
       return (
-         <div id="navbar" className={this.isMainPage() ? 'expandNav' : 'shrinkNav'}>
+         <div id="navbar" className={this.isMainPage() ? 'bigNav' : 'smallNav'}>
             <div id="navBackground"></div>
             <div id="titles">
                <h3>Hi, I'm</h3>

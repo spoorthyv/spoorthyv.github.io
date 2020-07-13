@@ -3,8 +3,6 @@ import React from 'react';
 import Card from './Card';
 import FilterPill from './FilterPill';
 
-import '../stylesheets/portfolio.scss';
-
 class Squid extends React.Component {
    render() {
       return (

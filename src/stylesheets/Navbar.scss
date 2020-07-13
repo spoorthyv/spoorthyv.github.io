@@ -1,13 +1,14 @@
-@import "./variables";
+@import "variables";
 
 #navbar {
    #navBackground {
-      transition: all 0.3s;
+      transition: 0.3s all;
       height: 100vh;
       background-color: #f8f8f8;
    }
    #titles {
-      transition: all 0.3s;
+      transition: 0.3s all;
+      top: calc(50% - 182px - 28px);
       position: fixed;
       left: 32px;
       h2 {
@@ -23,7 +24,7 @@
       }
    }
    #linkWrapper {
-      transition: all 0.3s;
+      transition: 0.3s all;
       position: fixed;
       display: flex;
       flex-direction: column;
@@ -63,42 +64,37 @@
          width: 50px;
          display: inline-block;
          filter: grayscale(0.8);
-         transition: all 0.15s;
+         transition: all 0.4s;
       }
       #logo:hover {
-         filter: grayscale(0);
-         transition: all 0.3s;
+         filter: grayscale(0.3);
       }
    }
 }
-.expandNav {
+
+#navbar.bigNav {
    #navBackground {
       width: $navbarWidth;
    }
    #titles {
-      top: calc(50% - 182px - 28px);
+      opacity: 1;
    }
    #linkWrapper {
-      top: calc(50% + 8px);
+     top: calc(50% + 8px);
    }
 }
 
-.shrinkNav {
+#navbar.smallNav {
    #navBackground {
       width: $navbarWidthSmall;
    }
    #titles {
-      top: calc(50% - 182px - 28px);
       opacity: 0;
    }
    #linkWrapper {
-      top: calc(50% + 8px - 65px);
+     top: calc(50% + 8px - 65px);
    }
 }
-
-
-
-
 
 @media screen and (max-width: $breakSmall) {
   #navbar {
@@ -121,81 +117,5 @@
     #logoWrapper {
       display: none;
     }
-  }
-}
-
-@media screen and (min-width: $breakSmall) {
-  .expandNav {
-    #navBackground {
-      animation-name: expandNav;
-    }
-    #linkWrapper {
-      animation-name: moveLinksDown;
-    }
-    #titles {
-      animation-name: showTitles;
-    }
-  }
-  .shrinkNav {
-    #navBackground {
-      animation-name: shrinkNav;
-    }
-    #linkWrapper {
-      animation-name: moveLinksUp;
-    }
-    #titles {
-      animation-name: hideTitles;
-    }
-  }
-}
-
-@keyframes expandNav {
-  from {
-    width: $navbarWidthSmall;
-  }
-  to {
-    width: $navbarWidth;
-  }
-}
-@keyframes shrinkNav {
-  from {
-    width: $navbarWidth;
-  }
-  to {
-    width: $navbarWidthSmall;
-  }
-}
-
-@keyframes hideTitles {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-@keyframes showTitles {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes moveLinksUp {
-  0% {
-    transform: translateY(0px);
-  }
-  100% {
-    transform: translateY(-65px);
-  }
-}
-@keyframes moveLinksDown {
-  0% {
-    transform: translateY(-65px);
-  }
-  100% {
-    transform: translateY(0px);
   }
 }
