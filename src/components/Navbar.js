@@ -2,7 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { withRouter } from 'react-router';
 
-import '../stylesheets/Navbar.scss';
+import '../stylesheets/navbar.scss';
 
 class Navbar extends React.Component {
 
@@ -12,7 +12,7 @@ class Navbar extends React.Component {
 
    render() {
       return (
-         <div id="navbar" className={this.isMainPage() ? 'bigNav' : 'smallNav'}>
+         <div id="navbar" className={this.isMainPage() ? '' : 'smallNav'}>
             <div id="navBackground"></div>
             <div id="titles">
                <h3>Hi, I'm</h3>

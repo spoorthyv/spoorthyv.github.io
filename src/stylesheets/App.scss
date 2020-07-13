@@ -1,37 +1,24 @@
 @import "./variables";
 
-#App {
-   display: flex;
-}
-
-#PageContent {
-   display: flex;
-}
-
 #wrapper {
+   left: $navbarWidth;
+   width: calc(100% - #{$navbarWidth});
    height: 100%;
    overflow-y: auto;
    position: fixed;
    top: 0;
    transition: all 0.3s;
+   &.smallNav {
+      left: $navbarWidthSmall;
+      width: calc(100% - #{$navbarWidthSmall});
+   }
 }
 
 .route-wrapper {
   position: relative;
-}
-
-.route-wrapper > div {
-  position: absolute;
-}
-
-#wrapper.smallNav {
-   left: $navbarWidthSmall;
-   width: calc(100% - #{$navbarWidthSmall});
-}
-
-#wrapper.bigNav {
-   left: $navbarWidth;
-   width: calc(100% - #{$navbarWidth});
+  > div {
+    position: absolute;
+  }
 }
 
 @media screen and (min-width: $breakSmall) {

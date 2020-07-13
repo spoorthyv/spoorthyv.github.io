@@ -2,12 +2,14 @@
 
 #navbar {
    #navBackground {
-      transition: 0.3s all;
+      width: $navbarWidth;
+      transition: 0.3s width;
       height: 100vh;
       background-color: #f8f8f8;
    }
    #titles {
-      transition: 0.3s all;
+      opacity: 1;
+      transition: 0.3s opacity;
       top: calc(50% - 182px - 28px);
       position: fixed;
       left: 32px;
@@ -24,7 +26,8 @@
       }
    }
    #linkWrapper {
-      transition: 0.3s all;
+      top: calc(50% + 8px);
+      transition: 0.3s top;
       position: fixed;
       display: flex;
       flex-direction: column;
@@ -35,20 +38,20 @@
          transition: all 0.2s;
          border: 1px solid #00000000;
          margin-bottom: 16px;
-      }
-      a:hover {
-         color: #474747;
-         background-color: rgb(238, 238, 238);
+         &:hover {
+            color: #474747;
+            background-color: rgb(238, 238, 238);
+         }
       }
       .active {
          color: #fff;
          font-weight: 600;
          background-color: #6F73FF;
-      }
-      .active:hover {
-         color: #fff;
-         font-weight: 600;
-         background-color: #6F73FF;
+         &:hover {
+            color: #fff;
+            font-weight: 600;
+            background-color: #6F73FF;
+         }
       }
    }
    #logoWrapper {
@@ -70,52 +73,52 @@
          filter: grayscale(0.3);
       }
    }
+   &.smallNav {
+      #navBackground {
+         width: $navbarWidthSmall;
+      }
+      #titles {
+         opacity: 0;
+      }
+      #linkWrapper {
+        top: calc(50% + 8px - 65px);
+      }
+   }
 }
 
-#navbar.bigNav {
-   #navBackground {
-      width: $navbarWidth;
-   }
-   #titles {
-      opacity: 1;
-   }
-   #linkWrapper {
-     top: calc(50% + 8px);
-   }
-}
 
-#navbar.smallNav {
-   #navBackground {
-      width: $navbarWidthSmall;
-   }
-   #titles {
-      opacity: 0;
-   }
-   #linkWrapper {
-     top: calc(50% + 8px - 65px);
-   }
-}
 
 @media screen and (max-width: $breakSmall) {
-  #navbar {
-    #navBackground {
-      height: $navbarMobileHeight;
-      width: 100%;
-      background-color: rgba(0, 0, 0, 0.027);
-    }
-    #linkWrapper {
-      flex-direction: row;
-      left: calc(50% - 124px);
-      top: 24px;
-      a {
-        margin: 0 8px 0 0;
+   #navbar {
+      #navBackground {
+         height: $navbarMobileHeight;
+         width: 100%;
+         background-color: #f8f8f8;
       }
-    }
-    #titles {
-      display: none;
-    }
-    #logoWrapper {
-      display: none;
-    }
-  }
+      #linkWrapper {
+         flex-direction: row;
+         left: calc(50% - 124px);
+         top: 21px;
+         a {
+            margin: 0;
+         }
+         a:nth-child(2) {
+            margin: 0 8px;
+         }
+      }
+      #titles {
+         display: none;
+      }
+      #logoWrapper {
+         display: none;
+      }
+      &.smallNav {
+         #navBackground {
+            width: 100%;
+         }
+         #linkWrapper {
+           top: 21px;
+         }
+      }
+   }
 }

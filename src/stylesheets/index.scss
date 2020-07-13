@@ -67,41 +67,40 @@ a {
   text-decoration: none;
   color: #448ed2;
   line-height: 1.802;
-}
-
-a:hover {
-  color: #0085ff;
+  &:hover {
+     color: #0085ff;
+  }
 }
 
 b {
-  font-weight: 600;
+   font-weight: 600;
 }
 
 body {
-  margin: 0;
-  background-color: #fff;
+   margin: 0;
+   background-color: #fff;
 }
 
 
 .backArrow {
-  background-image: url('../images/backArrow.svg');
-  display: inline-block;
-  position: relative;
-  top: 50px;
-  left: 50px;
-  svg {
-    height: 50px;
-    width: 50px;
-  }
+   background-image: url('../images/backArrow.svg');
+   display: inline-block;
+   position: relative;
+   top: 50px;
+   left: 50px;
+   svg {
+      height: 50px;
+      width: 50px;
+   }
 }
 
 .row {
-  display: flex;
-  flex-direction: row;
+   display: flex;
+   flex-direction: row;
 }
 .col {
-  display: flex;
-  flex-direction: column;
+   display: flex;
+   flex-direction: column;
 }
 
 .section {
@@ -134,8 +133,12 @@ body {
       width: 100%;
       left: 0;
       height: calc(100% - #{$navbarMobileHeight});
+      &.smallNav {
+         left: 0;
+         width: 100%;
+      }
       .sectionContent {
-        padding: 32px !important;
+         padding: 32px !important;
       }
       h1 {
         font-size: 36px;
