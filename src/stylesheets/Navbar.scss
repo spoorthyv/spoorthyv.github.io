@@ -2,12 +2,12 @@
 
 #navbar {
    #navBackground {
+      transition: all 0.3s;
       height: 100vh;
-      width: $navbarWidth;
       background-color: #f8f8f8;
    }
    #titles {
-      top: calc(50% - 182px - 28px);
+      transition: all 0.3s;
       position: fixed;
       left: 32px;
       h2 {
@@ -23,8 +23,8 @@
       }
    }
    #linkWrapper {
+      transition: all 0.3s;
       position: fixed;
-      top: calc(50% + 8px);
       display: flex;
       flex-direction: column;
       left: 32px;
@@ -71,6 +71,35 @@
       }
    }
 }
+.expandNav {
+   #navBackground {
+      width: $navbarWidth;
+   }
+   #titles {
+      top: calc(50% - 182px - 28px);
+   }
+   #linkWrapper {
+      top: calc(50% + 8px);
+   }
+}
+
+.shrinkNav {
+   #navBackground {
+      width: $navbarWidthSmall;
+   }
+   #titles {
+      top: calc(50% - 182px - 28px);
+      opacity: 0;
+   }
+   #linkWrapper {
+      top: calc(50% + 8px - 65px);
+   }
+}
+
+
+
+
+
 @media screen and (max-width: $breakSmall) {
   #navbar {
     #navBackground {
