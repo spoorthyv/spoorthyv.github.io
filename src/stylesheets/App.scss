@@ -14,11 +14,12 @@
    }
 }
 
-.route-wrapper {
+.switch-wrapper {
   position: relative;
-  > div {
-    position: absolute;
-  }
+}
+
+.switch-wrapper > div {
+  position: absolute;
 }
 
 @media screen and (min-width: $breakSmall) {
