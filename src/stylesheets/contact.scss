@@ -1,17 +1,9 @@
-
-
-#contact {
-   height: 100%;
-   width: 100%;
+#wrapper > div > div > #contact {
    overflow: hidden;
    display: flex;
    justify-content: center;
    align-items: center;
-   position: relative;
-
    #contentWrapper {
-      overflow: hidden;
-
       #content {
          padding: 32px;
          display: flex;
@@ -24,7 +16,6 @@
             margin-top: 16px;
             display: flex;
             justify-content: space-between;
-
             a {
                max-width: calc(25vw - 24px);
                max-height: calc(25vw - 24px);
