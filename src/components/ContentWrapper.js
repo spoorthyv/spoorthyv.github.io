@@ -15,19 +15,21 @@ class ContentWrapper extends React.Component {
 
    render() {
       return (
-         <AnimatedSwitch
-            atEnter={{ opacity: 0 }}
-            atLeave={{ opacity: 0 }}
-            atActive={{ opacity: 1 }}
-            className="switch-wrapper"
-         >
-            <div id="wrapper" className={this.isMainPage() ? 'bigNav' : 'smallNav'}>
+
+         <div id="wrapper" className={this.isMainPage() ? 'bigNav' : 'smallNav'}>
+            <AnimatedSwitch
+               atEnter={{ opacity: 0 }}
+               atLeave={{ opacity: 0 }}
+               atActive={{ opacity: 1 }}
+               className="switch-wrapper"
+            >
                <Route path="/" exact component={Portfolio} />
                <Route path="/resume" exact component={Resume} />
                <Route path="/contact" exact component={Contact} />
                <Route path="/squid" exact component={Squid} />
-            </div>
-         </AnimatedSwitch>
+            </AnimatedSwitch>
+         </div>
+
       );
    }
 }

@@ -1,7 +1,6 @@
 ToDo
 
 - Resume
-- Contact Page
 - Cards
 - 5 Main Pages
 - Deploy
