@@ -97,7 +97,8 @@
       }
       #linkWrapper {
          flex-direction: row;
-         left: calc(50% - 124px);
+         left: calc(50%);
+         transform: translateX(-50%);
          top: 21px;
          a {
             margin: 0;

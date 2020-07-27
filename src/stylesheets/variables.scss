@@ -1,6 +1,11 @@
+$cardWidth: 276px;
+$cardGap: 20px;
+$portfolioPadding: 100px;
+
 $navbarWidth: 446px;
 $navbarWidthSmall: 146px;
 $navbarMobileHeight: 80px;
-$breakLarge: 1580px;
-$breakMedium: 1200px;
-$breakSmall: 830px;
+
+$breakLarge: 3*($cardWidth + $cardGap) + $navbarWidth + 2*$portfolioPadding;
+$breakMedium: 2*($cardWidth + $cardGap) + $navbarWidth + 2*$portfolioPadding;
+$breakSmall: 1*($cardWidth + $cardGap) + $navbarWidth + 2*$portfolioPadding;

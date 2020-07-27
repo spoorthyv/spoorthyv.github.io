@@ -16,7 +16,6 @@ import { ReactComponent as BlueTri} from '../images/contact/bluetriangle.svg';
 import { ReactComponent as Send} from '../images/contact/send.svg';
 import { ReactComponent as Copy} from '../images/contact/copy.svg';
 
-
 import '../stylesheets/contact.scss';
 
 class Contact extends React.Component {
@@ -79,17 +78,17 @@ class Contact extends React.Component {
                         </a>
                      </div>
                      <div>
-                        <a href='http://www.linkedin.com' target="_blank">
+                        <a href='https://www.linkedin.com/in/spoorthy-vemula-7412b5a7/' target="_blank" rel="noopener noreferrer">
                            <Linkedin/>
                         </a>
                      </div>
                      <div>
-                        <a href='https://github.com/spoorthyv' target="_blank">
+                        <a href='https://github.com/spoorthyv' target="_blank" rel="noopener noreferrer">
                            <Github/>
                         </a>
                      </div>
                      <div>
-                        <a href='https://twitter.com/spoorthyvemula' target="_blank">
+                        <a href='https://twitter.com/spoorthyvemula' target="_blank" rel="noopener noreferrer">
                            <Twitter/>
                         </a>
                      </div>

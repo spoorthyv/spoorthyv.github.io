@@ -1,17 +1,22 @@
 import React from 'react';
-import { pdfjs, Document, Page } from 'react-pdf';
 
-import samplePDF from '../files/resume.pdf';
+import resumePDF from '../files/resume.pdf';
+import resumeIMG from '../images/resume/resume.png';
+import downloadCloud from '../images/resume/downloadCloud.svg';
 
-pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
+import '../stylesheets/resume.scss';
 
 class Resume extends React.Component {
    render() {
       return (
          <div id="resume">
-            <Document file={samplePDF}>
-               <Page pageNumber={1} />
-            </Document>
+            <div className="contentWrapper">
+               <img src={resumeIMG}/>
+               <a id="dlResumeButton" href={resumePDF}download>
+                  Download Resume
+                  <img src={downloadCloud}/>
+               </a>
+            </div>
          </div>
       );
    }

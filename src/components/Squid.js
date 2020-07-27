@@ -1,8 +1,5 @@
 import React from 'react';
 
-import Card from './Card';
-import FilterPill from './FilterPill';
-
 class Squid extends React.Component {
    render() {
       return (

@@ -1,0 +1,58 @@
+@import "./variables";
+
+#wrapper > div > div > #resume {
+   .contentWrapper {
+      padding: 32px;
+      box-sizing: border-box;
+      display: flex;
+      img {
+         width: 100%;
+         max-width: 870px;
+         margin: auto;
+         border: 1px solid #e8e8e8;
+         border-radius: 4px;
+      }
+      #dlResumeButton {
+         width: 182px;
+         color: white;
+         background-color: #0d71ff;
+         padding: 14px 18px 14px 24px;
+         border-radius: 30px;
+         display: flex;
+         line-height: 22px;
+         transition: all 0.25s;
+         box-shadow: 0px 3px 8px #00000042;
+         position: fixed;
+         bottom: 24px;
+         left: calc(#{$navbarWidth}/2 + 50%);
+         transform: translateX(-50%);
+         img {
+            width: 30px;
+            border: none;
+            margin-left: 14px;
+         }
+         &:hover {
+            transform: translateX(-50%) translateY(-4px);
+            box-shadow: 0px 7px 10px #00000042;
+         }
+         &:active {
+            transform: translateX(-50%);
+         }
+      }
+   }
+}
+
+
+#wrapper {
+
+}
+
+@media screen and (max-width: $breakSmall)  {
+   #wrapper > div > div > #resume {
+      .contentWrapper {
+         #dlResumeButton {
+            left: 50%;
+         }
+      }
+   }
+}

@@ -1,0 +1,193 @@
+@import "./variables";
+
+#portfolio {
+   #portfolioBody {
+      display: grid;
+      justify-content: center;
+      padding: 120px;
+      grid-gap: 32px;
+
+      #header {
+         padding: 0;
+         width: 100%;
+         font-weight: 400;
+         letter-spacing: -0.1px;
+      }
+
+      #cardGrid {
+         display: grid;
+         grid-template-columns: repeat(3, $cardWidth);
+         grid-auto-rows: 324px;
+         justify-content: center;
+         grid-gap: $cardGap;
+
+         .card {
+            display: flex;
+            overflow: hidden;
+            position: relative;
+            flex-direction: column;
+            border-radius: 5px;
+            box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.14);
+            transition: box-shadow 0.3s, transform 0.3s;
+            cursor: pointer;
+            text-decoration: none;
+            .imageWrapper {
+               display: flex;
+               justify-content: center;
+               flex: 1;
+               padding: 60px 40px 40px 40px;
+               img {
+                  max-width: 100px;
+                  max-height: 100px;
+                  align-self: center;
+               }
+            }
+            .textWrapper {
+               display: block;
+               background-color: rgba(0,0,0,0.05);
+               padding: 14px 24px 16px 24px;
+               h4 {
+                  padding: 0;
+                  color: white;
+               }
+               p {
+                  line-height: 20px;
+                  font-size: 14px;
+                  color: white;
+                  padding: 0;
+               }
+            }
+            .label {
+               font-family: "Product Sans";
+               font-weight: 600;
+               letter-spacing: 0.2px;
+               position: absolute;
+               right: 17px;
+               top: 15px;
+               background-color: #fff;
+               font-size: 12px;
+               border-radius: 2px;
+               opacity: 0;
+               transition: 0.4s all;
+               padding: 2px 8px 1px 8px;
+               margin: 0;
+               z-index: 2;
+            }
+            .Work {
+               color: #4676fd;
+            }
+            .Project {
+               color: #20b376;
+            }
+            .Other {
+               color: #f78f40;
+            }
+            &.card:hover {
+               transform: translateY(-7px);
+               box-shadow: 0px 7px 26px 0px rgba(0,0,0,.24);
+               .label {
+                  opacity: 1;
+               }
+            }
+            &.card:active {
+               transform: translateY(-4px);
+            }
+         }
+         #photography {
+            background-image: url("../images/photography/kina.jpg");
+            background-size: cover;
+            background-position-x: 53%;
+            .textWrapper {
+               background-color: rgba(0,0,0,0.15);
+            }
+         }
+         #ellieMae {
+            .imageWrapper {
+               img {
+                  max-width: 158px;
+               }
+            }
+         }
+         #ebay {
+            .imageWrapper {
+               img {
+                  max-width: 158px;
+               }
+            }
+         }
+         #squid {
+            .imageWrapper {
+               img {
+                  max-height: 120px;
+                  max-width: 120px;
+               }
+            }
+         }
+         #jupyter {
+            .imageWrapper {
+               img {
+                  max-height: 120px;
+                  width: 120px;
+               }
+            }
+         }
+         #fiveMinShower {
+            .imageWrapper {
+               img {
+                  max-height: 128px;
+               }
+            }
+         }
+         #dribbble {
+            .imageWrapper {
+               img {
+                  max-height: 120px;
+                  max-width: 120px;
+               }
+            }
+         }
+      }
+   }
+}
+
+@media screen and (max-width: $breakLarge) {
+   #portfolio {
+      #portfolioBody {
+         #cardGrid {
+            grid-template-columns: repeat(2, $cardWidth);
+         }
+      }
+   }
+}
+
+@media screen and (max-width: $breakMedium) {
+   #portfolio {
+      #portfolioBody {
+         #header {
+            width: 276px;
+         }
+         #cardGrid {
+            grid-template-columns: repeat(1, $cardWidth);
+         }
+      }
+   }
+}
+
+@media screen and (max-width: $breakSmall) {
+   #portfolio {
+      #portfolioBody {
+         padding: 40px 0;
+         grid-gap: 24px;
+         #header {
+            width: calc(100vw - 80px);
+         }
+         #cardGrid {
+            grid-template-columns: repeat(1, max-content);
+
+            .card {
+               width: calc(100vw - 80px);
+            }
+         }
+      }
+   }
+}
