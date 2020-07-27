@@ -2,6 +2,9 @@ import React from 'react';
 
 import { Link } from 'react-router-dom';
 
+import Card from './Card';
+import FilterBar from './FilterBar';
+
 import squidLogo from '../images/squid/squidlogo.svg';
 import ebayLogo from '../images/ebay/ebay.svg';
 import uberLogo from '../images/uber/uberWhite.svg';
@@ -81,29 +84,35 @@ const projects = [
 ];
 
 class Portfolio extends React.Component {
-   renderList() {
-      return projects.map(project => {
+   state = { filter: "" };
+
+   setFilter = (term) => {
+      if (this.state.filter == term) {
+         this.setState({ filter: "" });
+      } else {
+         this.setState({ filter: term });
+      }
+   }
+
+   renderCards() {
+      return projects.filter(project => {
+         return project.type.includes(this.state.filter)
+      })
+      .map(project => {
          return (
-            <Link className="card" to={`/${project.id}`} style={{backgroundColor: project.color}} id={project.id} key={project.id} >
-               <p className={`label ${project.type}`}>{project.type}</p>
-               <div className="imageWrapper">
-                  <img className="cardImage" src={project.logo} />
-               </div>
-               <div className="textWrapper">
-                  <h4>{project.title}</h4>
-                  <p>{project.description}</p>
-               </div>
-            </Link>
+            <Card project={project}/>
          );
       });
    }
+
    render() {
       return (
          <div id="portfolio">
             <div id="portfolioBody">
                <h3 id="header">Here's what I've been working on:</h3>
+               <FilterBar clickHandler={this.setFilter} currFilter={this.state.filter}/>
                <div id="cardGrid">
-                  {this.renderList()}
+                  {this.renderCards()}
                </div>
             </div>
          </div>

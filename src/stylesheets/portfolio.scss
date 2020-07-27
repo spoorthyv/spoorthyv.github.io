@@ -5,13 +5,62 @@
       display: grid;
       justify-content: center;
       padding: 120px;
-      grid-gap: 32px;
+      grid-gap: 8px;
 
       #header {
          padding: 0;
          width: 100%;
          font-weight: 400;
          letter-spacing: -0.1px;
+      }
+
+      #filterBar {
+         display: flex;
+         margin-bottom: 28px;
+         .filter {
+            font-family: "Google Sans";
+            padding: 12px 20px;
+            line-height: 1;
+            border-radius: 52px;
+            margin-left: 12px;
+            background-color: #f7f7f7;
+            color: #919196;
+            transition: 0.3s all;
+            font-weight: 600;
+            &:nth-child(1) {
+               margin-left: 0;
+            }
+            &:hover {
+               cursor: pointer;
+               &:nth-child(1) {
+                color: #4676fd;
+                background-color: #eef3ff;
+               }
+               &:nth-child(2) {
+                color: #1ea96f;
+                background-color: #e8f9f0;
+               }
+               &:nth-child(3) {
+                color: #ef8739;
+                background-color: #fff3eb;
+               }
+            }
+            &.selected {
+               color: #fff;
+               &:nth-child(1) {
+                background-color: #4676fd;
+               }
+               &:nth-child(2) {
+                background-color: #20b376;
+               }
+               &:nth-child(3) {
+                background-color: #f78f40;
+               }
+               &:hover {
+                color: #fff;
+               }
+            }
+         }
       }
 
       #cardGrid {
@@ -167,7 +216,7 @@
             width: 276px;
          }
          #cardGrid {
-            grid-template-columns: repeat(1, $cardWidth);
+            grid-template-columns: repeat(1, max-content);
          }
       }
    }
@@ -178,14 +227,16 @@
       #portfolioBody {
          padding: 40px 0;
          grid-gap: 24px;
+         #filterBar {
+            display: none;
+         }
          #header {
-            width: calc(100vw - 80px);
+            width: calc(100vw - 64px);
          }
          #cardGrid {
-            grid-template-columns: repeat(1, max-content);
-
+            grid-gap: 18px;
             .card {
-               width: calc(100vw - 80px);
+               width: calc(100vw - 64px);
             }
          }
       }

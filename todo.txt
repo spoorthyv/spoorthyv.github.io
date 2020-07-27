@@ -1,7 +1,7 @@
 ToDo
 
-- Resume
-- Cards
+- Filter bar
+- made with react
 - 5 Main Pages
 - Deploy
 - Import web font
