@@ -3,13 +3,13 @@
 #navbar {
    #navBackground {
       width: $navbarWidth;
-      transition: 0.3s width;
+      transition: 0.35s width;
       height: 100vh;
       background-color: #f8f8f8;
    }
    #titles {
       opacity: 1;
-      transition: 0.3s opacity;
+      transition: 0.35s opacity;
       top: calc(50% - 182px - 28px);
       position: fixed;
       left: 32px;
@@ -27,7 +27,7 @@
    }
    #linkWrapper {
       top: calc(50% + 8px);
-      transition: 0.3s top;
+      transition: 0.35s top;
       position: fixed;
       display: flex;
       flex-direction: column;

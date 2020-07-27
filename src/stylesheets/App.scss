@@ -6,44 +6,57 @@
    overflow: hidden;
 }
 
-#wrapper {
-   width: 100%;
-   height: 100%;
+.route-section {
+   animation-duration: 0.6s;
+   animation-fill-mode: both;
 }
 
-#wrapper > div > div > div {
+#wrapper {
    left: $navbarWidth;
    width: calc(100% - #{$navbarWidth});
    height: 100%;
    overflow-y: auto;
    position: fixed;
    top: 0;
-   transition: all 0.3s;
 }
 
-#wrapper.smallNav > div > div > div {
+#wrapper.smallNav {
    left: $navbarWidthSmall;
    width: calc(100% - #{$navbarWidthSmall});
 }
 
-.switch-wrapper {
-  position: relative;
-}
-
-.switch-wrapper > div {
-  position: absolute;
-}
-
 @media screen and (max-width: $breakSmall)  {
-  #wrapper > div > div > div {
+  #wrapper {
      top: $navbarMobileHeight;
      width: 100%;
      left: 0;
      height: calc(100% - #{$navbarMobileHeight});
   }
 
-  #wrapper.smallNav > div > div > div {
+  #wrapper.smallNav {
      left: 0;
      width: 100%;
+  }
+}
+
+.fade-enter {
+   opacity: 0;
+   animation-name: fadeIn;
+}
+
+.fade-enter.fade-enter-active {
+   opacity: 1;
+   animation-name: fadeIn;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }

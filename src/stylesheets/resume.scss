@@ -1,6 +1,6 @@
 @import "./variables";
 
-#wrapper > div > div > #resume {
+#resume {
    .contentWrapper {
       padding: 32px;
       box-sizing: border-box;
@@ -48,7 +48,7 @@
 }
 
 @media screen and (max-width: $breakSmall)  {
-   #wrapper > div > div > #resume {
+   #resume {
       .contentWrapper {
          #dlResumeButton {
             left: 50%;

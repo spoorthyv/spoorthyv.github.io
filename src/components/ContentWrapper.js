@@ -1,12 +1,20 @@
 import React from 'react';
-import { Route } from 'react-router-dom';
-import { withRouter } from 'react-router';
+import { Switch, Route, withRouter } from "react-router-dom";
 import { AnimatedSwitch } from 'react-router-transition';
+import { TransitionGroup, CSSTransition } from 'react-transition-group'
+
 
 import Portfolio from './Portfolio';
 import Resume from './Resume';
 import Contact from './Contact';
 import Squid from './Squid';
+
+const routes = [
+  { path: '/', name: 'Portfolio', Component: Portfolio },
+  { path: '/about', name: 'Resume', Component: Resume },
+  { path: '/contact', name: 'Contact', Component: Contact },
+  { path: '/squid', name: 'Squid', Component: Squid },
+]
 
 class ContentWrapper extends React.Component {
    isMainPage(currentRoute) {
@@ -15,21 +23,24 @@ class ContentWrapper extends React.Component {
 
    render() {
       return (
-
          <div id="wrapper" className={this.isMainPage() ? 'bigNav' : 'smallNav'}>
-            <AnimatedSwitch
-               atEnter={{ opacity: 0 }}
-               atLeave={{ opacity: 0 }}
-               atActive={{ opacity: 1 }}
-               className="switch-wrapper"
-            >
-               <Route path="/" exact component={Portfolio} />
-               <Route path="/resume" exact component={Resume} />
-               <Route path="/contact" exact component={Contact} />
-               <Route path="/squid" exact component={Squid} />
-            </AnimatedSwitch>
+            <TransitionGroup className="transition-group">
+               <CSSTransition
+               key={this.props.location.key}
+               timeout={{ enter: 600 }}
+               classNames="fade"
+               >
+                  <section className="route-section">
+                     <Switch location={this.props.location}>
+                        <Route exact path="/" component={Portfolio} />
+                        <Route path="/resume" component={Resume} />
+                        <Route path="/contact" component={Contact} />
+                        <Route path="/squid" component={Squid} />
+                     </Switch>
+                  </section>
+               </CSSTransition>
+            </TransitionGroup>
          </div>
-
       );
    }
 }

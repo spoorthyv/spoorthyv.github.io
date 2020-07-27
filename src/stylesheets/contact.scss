@@ -1,10 +1,12 @@
 @import "./variables";
 
-#wrapper > div > div > #contact {
+#contact {
    overflow: hidden;
    display: flex;
    justify-content: center;
    align-items: center;
+   position: relative;
+   height: 100vh;
    #contentWrapper {
       #content {
          padding: 32px;
@@ -53,7 +55,7 @@
            transform: translateY(-180px);
          }
 
-         #popup.popup-leave-active {
+         #popup.popup-exit-active {
            opacity: 0;
            transform: translateY(-180px);
          }
@@ -131,7 +133,7 @@
 }
 
 @media screen and (max-width: $breakSmall)  {
-  #wrapper > div > div > #contact {
+  #contact {
      #contentWrapper {
         #content {
           #links {

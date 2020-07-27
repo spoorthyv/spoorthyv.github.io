@@ -1,5 +1,5 @@
 import React from 'react';
-import { CSSTransitionGroup } from 'react-transition-group'
+import { CSSTransition } from 'react-transition-group'
 
 import { ReactComponent as SayHi} from '../images/contact/comesayhi.svg';
 import { ReactComponent as Email} from '../images/contact/email.svg';
@@ -55,12 +55,24 @@ class Contact extends React.Component {
          ]
       }
       return (
-         <CSSTransitionGroup
-          transitionName="popup"
-          transitionEnterTimeout={90}
-          transitionLeaveTimeout={90}>
-            {popup}
-          </CSSTransitionGroup>
+         <CSSTransition
+            in={this.state.popupIsShown}
+            timeout={90}
+            classNames="popup"
+            unmountOnExit
+         >
+             <div id="popup" key={0}>
+                <h5 className="menuItem">spoorthyvemula@gmail.com</h5>
+                <div className="menuItem" onClick={() => this.clickCopy()}>
+                   <Copy/>
+                   <p>{this.state.emailIsCopied ? 'Copied!' : 'Copy Email Address'}</p>
+                </div>
+                <div className="menuItem" onClick={() => this.openInNewTab("mailto:spoorthyvemula@gmail.com")}>
+                   <Send/>
+                   <p>Send Email</p>
+                </div>
+             </div>
+          </CSSTransition>
       );
    }
 

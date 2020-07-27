@@ -100,7 +100,7 @@ class Portfolio extends React.Component {
       })
       .map(project => {
          return (
-            <Card project={project}/>
+            <Card project={project} key={project.id}/>
          );
       });
    }
