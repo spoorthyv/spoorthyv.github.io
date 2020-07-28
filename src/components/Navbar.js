@@ -5,14 +5,27 @@ import { withRouter } from 'react-router';
 import '../stylesheets/navbar.scss';
 
 class Navbar extends React.Component {
-
-   isMainPage(currentRoute) {
+   isMainPage() {
       return ['/', '/contact', '/resume'].includes(this.props.location.pathname);
+   }
+
+   getNavbarClass() {
+      var classStr = "";
+
+      if (!['/', '/contact', '/resume'].includes(this.props.location.pathname)) {
+         classStr = classStr.concat("smallNav");
+      }
+
+      if (['/photography'].includes(this.props.location.pathname)) {
+         classStr = classStr.concat(" darkNav");
+      }
+
+      return classStr;
    }
 
    render() {
       return (
-         <div id="navbar" className={this.isMainPage() ? '' : 'smallNav'}>
+         <div id="navbar" className={this.getNavbarClass()}>
             <div id="navBackground"></div>
             <div id="titles">
                <h3>Hi, I'm</h3>

@@ -1,7 +1,5 @@
 import React from 'react';
 
-import { Link } from 'react-router-dom';
-
 import Card from './Card';
 import FilterBar from './FilterBar';
 
@@ -88,7 +86,7 @@ class Portfolio extends React.Component {
    state = { filter: "" };
 
    setFilter = (term) => {
-      if (this.state.filter == term) {
+      if (this.state.filter === term) {
          this.setState({ filter: "" });
       } else {
          this.setState({ filter: term });

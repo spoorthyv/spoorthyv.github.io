@@ -1,0 +1,93 @@
+@import "./variables";
+
+.fiveMinShower {
+   .backArrow {
+      svg {
+         fill: #d8edf7;
+         filter: brightness(1);
+         transition: filter 0.2s;
+      }
+      svg:hover {
+        filter: brightness(1.4);
+      }
+   }
+   .innerWrapper {
+     padding-bottom: 90px;
+     #header {
+       height: 325px;
+       background: radial-gradient(circle farthest-side at 50% 50%,#DAEEF8, #A8D6ED);
+
+       .headerImage {
+         background-repeat: no-repeat;
+         background-position: 50% 50%;
+         background-image: url('../images/fiveMinShower/headerImage.svg');
+         height: 100%;
+         width: 100%;
+         margin-top: -55px;
+       }
+     }
+     h1 {
+       color: #5F8DA5;
+       padding-bottom: 0;
+     }
+     p {
+       line-height: 26px;
+       margin-bottom: 4px;
+     }
+     h3 {
+       color: #5F8DA5;
+       margin: 0;
+     }
+
+     .sectionContent {
+       padding: 50px 120px 0 120px;
+       margin: auto;
+       max-width: 900px;
+       .galleryHeader {
+         margin-bottom: 0;
+       }
+     }
+
+     #finalProduct {
+       p {
+         margin-bottom: 28px;
+       }
+     }
+
+     .githubButton {
+       height: 51px;
+       width: 170px;
+       background-image: url('../images/fiveMinShower/githubButton.png');
+       background-size: cover;
+       display: inline-block;
+       border-radius: 4px;
+       transition: all 0.25s;
+       box-shadow: 0px 0px 0px #8a5085;
+     }
+     .githubButton:hover {
+       box-shadow: 0px 4px 0px #8a5085;
+       transform: translateY(-4px);
+     }
+     .githubButton:active {
+       box-shadow: 0px 0px 0px #8a5085;
+       transform: translateY(0);
+     }
+   }
+   .mockImage {
+     display: block;
+     width: 100%;
+   }
+   .mockDescription {
+     margin-top: 40px;
+     h3 {
+       color: #666c79;
+     }
+     background-color: #F0F2F8;
+   }
+}
+
+@media screen and (max-width: $breakSmall) {
+   #wrapper .innerWrapper #header .headerImage {
+      background-size: 200%;
+   }
+}

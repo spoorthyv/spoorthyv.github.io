@@ -3,7 +3,7 @@
 #navbar {
    #navBackground {
       width: $navbarWidth;
-      transition: 0.35s width;
+      transition: 0.4s width, 0.5s background-color;
       height: 100vh;
       background-color: #f8f8f8;
    }
@@ -27,7 +27,7 @@
    }
    #linkWrapper {
       top: calc(50% + 8px);
-      transition: 0.35s top;
+      transition: 0.4s top;
       position: fixed;
       display: flex;
       flex-direction: column;
@@ -35,7 +35,7 @@
       a {
          color: #939393;
          padding: 4px 8px 3px 8px;
-         transition: all 0.2s;
+         transition: all 0.4s;
          border: 1px solid #00000000;
          margin-bottom: 16px;
          &:hover {
@@ -83,6 +83,26 @@
       #linkWrapper {
         top: calc(50% + 8px - 65px);
       }
+   }
+   &.darkNav {
+     #navBackground {
+      background-color: #131313;
+     }
+     #linkWrapper {
+      a:hover {
+         background-color: rgba(255,255,255,0.1);
+         color: white;
+      }
+     }
+     #logoWrapper {
+      #logo {
+         filter: grayscale(1) brightness(3);
+         transition: 0.3s filter;
+      }
+      #logo:hover {
+         filter: grayscale(1) brightness(9);
+      }
+     }
    }
 }
 

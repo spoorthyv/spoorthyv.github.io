@@ -1,20 +1,18 @@
 import React from 'react';
 import { Switch, Route, withRouter } from "react-router-dom";
-import { AnimatedSwitch } from 'react-router-transition';
 import { TransitionGroup, CSSTransition } from 'react-transition-group'
-
 
 import Portfolio from './Portfolio';
 import Resume from './Resume';
 import Contact from './Contact';
 import Squid from './Squid';
+import Ebay from './Ebay';
+import Uber from './Uber';
+import Jupyter from './Jupyter';
+import FiveMinShower from './FiveMinShower';
+import EllieMae from './EllieMae';
+import Photography from './Photography';
 
-const routes = [
-  { path: '/', name: 'Portfolio', Component: Portfolio },
-  { path: '/about', name: 'Resume', Component: Resume },
-  { path: '/contact', name: 'Contact', Component: Contact },
-  { path: '/squid', name: 'Squid', Component: Squid },
-]
 
 class ContentWrapper extends React.Component {
    isMainPage(currentRoute) {
@@ -36,6 +34,12 @@ class ContentWrapper extends React.Component {
                         <Route path="/resume" component={Resume} />
                         <Route path="/contact" component={Contact} />
                         <Route path="/squid" component={Squid} />
+                        <Route path="/ebay" component={Ebay} />
+                        <Route path="/uber" component={Uber} />
+                        <Route path="/jupyter" component={Jupyter} />
+                        <Route path="/fiveMinShower" component={FiveMinShower} />
+                        <Route path="/elliemae" component={EllieMae} />
+                        <Route path="/photography" component={Photography} />
                      </Switch>
                   </section>
                </CSSTransition>

@@ -1,0 +1,130 @@
+@import "./variables";
+
+.uber {
+   .backArrow {
+      svg {
+         fill: #e8feff;
+         filter: brightness(1);
+         transition: filter 0.2s;
+      }
+      svg:hover {
+        filter: brightness(1.4);
+      }
+   }
+   .innerWrapper {
+      #header {
+       height: 388px;
+       background-color: #0A2F3C;
+       background-repeat: no-repeat;
+       background-position: 50% 50%;
+       background-image: url('../images/uber/uberBackgroundGraphic.svg');
+      }
+      h1 {
+       color: #1D3839;
+      }
+      h4 {
+       color: #1D3839;
+      }
+      .horizGallery {
+       background-color: #f7fafb;
+      }
+      #step4 {
+       justify-content: center;
+      }
+      #uberFooter {
+       background-color: #F2F3F3;
+       display: flex;
+       border-top: solid 2px #e6e6e6;
+       > div {
+         display: flex;
+         align-items: center;
+         padding: 40px 120px;
+         overflow-x: auto;
+         * {
+           display: flex;
+           white-space: nowrap;
+         }
+         h3 {
+           margin-right: 10px;
+         }
+         a {
+           margin-left: 24px;
+           padding: 16px 28px;
+           color: #fff;
+           border-radius: 100px;
+           transition: all 0.25s;
+           box-shadow: 0px 6px 0px #ffffff00;
+         }
+         a:hover {
+           transform: translateY(-6px);
+           cursor: pointer;
+         }
+         a:active {
+           transform: translateY(0px);
+           cursor: pointer;
+         }
+         #principleUber {
+           background-color: #00d1e8;
+         }
+         #principleUber:hover {
+           box-shadow: 0px 6px 26px #00d1e875;
+         }
+         #macUber {
+           background-color: #654BDB;
+         }
+         #macUber:hover {
+           box-shadow: 0px 6px 26px #654BDB75;
+         }
+         #movieUber {
+           background-color: #F86D6D;
+           margin-right: 55px;
+         }
+         #movieUber:hover {
+           box-shadow: 0px 6px 26px #F86D6D75;
+         }
+       }
+      }
+      .sectionContent {
+       img {
+         width: calc(100%);
+         margin-bottom: 40px;
+       }
+       .highlightedText {
+         background-color: #F1F5F7;
+         padding: 20px 32px;
+         width: calc(100% + 66px);
+         transform: translateX(-32px);
+         border-radius: 6px;
+         color: #0A2F3C;
+         font-style: italic;
+         margin: 0 0 12px 0;
+         box-sizing: border-box;
+       }
+
+       #dragDown {
+         .col:nth-child(1) {
+           padding-right: 75px;
+         }
+         #oldUber {
+           width: 260px;
+           margin-top: 40px;
+         }
+       }
+
+       #uberPrototype {
+         max-height: 696px;
+         width: 100%;
+         margin: 10px 0;
+       }
+       #uberPrototypePara {
+         margin-bottom: 50px;
+       }
+      }
+   }
+   @media screen and (max-width: $breakSmall) {
+    #wrapper .innerWrapper .sectionContent #uberPrototype {
+      height: initial;
+      margin: 0;
+    }
+  }
+}

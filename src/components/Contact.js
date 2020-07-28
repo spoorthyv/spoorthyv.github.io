@@ -34,26 +34,6 @@ class Contact extends React.Component {
    }
 
    renderPopup() {
-      var popup = []
-
-      if (this.state.popupIsShown) {
-         popup = [
-            (<div id="popup" key={0}>
-               <h5 className="menuItem">spoorthyvemula@gmail.com</h5>
-               <div className="menuItem" onClick={() => this.clickCopy()}>
-                  <Copy/>
-                  <p>{this.state.emailIsCopied ? 'Copied!' : 'Copy Email Address'}</p>
-               </div>
-               <div className="menuItem" onClick={() => this.openInNewTab("mailto:spoorthyvemula@gmail.com")}>
-                  <Send/>
-                  <p>Send Email</p>
-               </div>
-            </div>),
-            (
-               <div id="background" key={1} onClick={() => this.setState({ popupIsShown: false })}></div>
-            )
-         ]
-      }
       return (
          <CSSTransition
             in={this.state.popupIsShown}

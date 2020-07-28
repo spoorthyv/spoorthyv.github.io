@@ -1,7 +1,12 @@
 ToDo
 
-- Filter bar
+- uber and jupyter image gallery with react
 - made with react
-- 5 Main Pages
+- photography js
+
 - Deploy
 - Import web font
+
+- email button background click dismiss
+- lightbox images
+- 5minshower Github button
