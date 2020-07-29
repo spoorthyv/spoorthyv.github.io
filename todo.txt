@@ -1,7 +1,6 @@
 ToDo
 
 - made with react
-- photography js
 
 - Deploy
 - Import web font

@@ -7,14 +7,9 @@
    img {
       filter: grayscale(100%);
       transition: filter 0.55s;
-   }
-   * {
       max-width: calc(100% - 150px);
       max-height: calc(100vh - 150px);
-      padding: 75px 75px 0 75px;
-   }
-   iframe {
-      width: 100%;
+      margin: 75px 75px 0 75px;
    }
    .currentPic {
       filter: grayscale(0%) !important;
@@ -22,10 +17,9 @@
 
    @media screen and (max-width: $breakSmall) {
       img {
-         max-width: initial;
-         max-height: initial;
-         padding: 10px;
-         width: calc(100% - 20px);
+         margin: 32px 0 0 0;
+         max-width: calc(100% - 64px);
+         max-height: calc(100vh - 64px);
       }
    }
 }
