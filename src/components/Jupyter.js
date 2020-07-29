@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 import TopBanner from './TopBanner';
 
@@ -13,8 +12,7 @@ import image from "../images/jupyter/image.png";
 import terminal from "../images/jupyter/terminal.png";
 import navbars from "../images/jupyter/navbars.png";
 import jupyterHeader from '../images/jupyter/jupyterBackground.svg';
-
-import { ReactComponent as BackArrow} from "../images/backArrow.svg";
+import brandGuide from "../files/jupyter_brand_guide.pdf";
 
 import '../stylesheets/jupyter.scss';
 
@@ -77,8 +75,8 @@ class Jupyter extends React.Component {
                   <p>
                     First we created a new version of the logo that consolidated the best parts of all the logos in circulation. Then we created the brand book below that lays out rules for the entire project on how to use the brand and logo in an official and beautiful document. Finally, I went through all our projects assets and fixed violations of these guidelines across all of Jupyter's products.
                   </p>
-                  <object data="/files/jupyter_brand_guide.pdf" type="application/pdf" width="100%" height="460px" internalinstanceid={3} title>
-                    <p id="none" />
+                  <object data={brandGuide} type="application/pdf" width="100%" height="460px" internalinstanceid="3" title="">
+                      <p id="none"></p>
                   </object>
                </div>
              </div>

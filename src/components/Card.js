@@ -11,7 +11,7 @@ class Card extends React.Component {
             to={link ? {pathname : link} : id}
             style={{backgroundColor: color}}
             id={id} key={id}
-            target={link ? "_blank" : false}
+            target={link ? "_blank" : null}
          >
             <p className={`label ${type}`}>{type}</p>
             <div className="imageWrapper">

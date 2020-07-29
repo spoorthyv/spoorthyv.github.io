@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 import finishedVideo from "../files/FinishedDribbble.mp4";
 import exampleNote from "../images/squid/exampleNote.png";

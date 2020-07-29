@@ -19,9 +19,20 @@ class ContentWrapper extends React.Component {
       return ['/', '/contact', '/resume'].includes(this.props.location.pathname);
    }
 
+   constructor(props) {
+        super(props)
+        this.myRef = React.createRef()
+   }
+
+   componentDidUpdate(prevProps) {
+      if (this.props.location !== prevProps.location) {
+         this.myRef.current.scrollTop = 0;
+      }
+   }
+
    render() {
       return (
-         <div id="wrapper" className={this.isMainPage() ? 'bigNav' : 'smallNav'}>
+         <div id="wrapper" className={this.isMainPage() ? 'bigNav' : 'smallNav'} ref={this.myRef}>
             <TransitionGroup className="transition-group">
                <CSSTransition
                key={this.props.location.key}
