@@ -2,24 +2,7 @@
 
 .jupyter {
   overflow-x: hidden;
-  .backArrow {
-    svg {
-        fill: #fff4ec;
-        filter: brightness(1);
-        transition: filter 0.25s;
-    }
-    svg:hover {
-      filter: brightness(1.5);
-    }
-  }
   .innerWrapper {
-      #header {
-        height: 388px;
-        background-color: #FF9445;
-        background-repeat: no-repeat;
-        background-position: 50% 49%;
-        background-image: url('../images/jupyter/jupyterBackground.svg');
-      }
 
       .section {
         margin: 0;
@@ -68,33 +51,6 @@
         width: 100%;
       }
 
-      #headerImage {
-        display: flex;
-        padding-top: 20px;
-        margin-bottom: 30px;
-        img {
-          width: initial;
-          margin: 14px 0 10px 0;
-          height: 75px;
-        }
-        #headerDetails {
-          display: flex;
-          flex-direction: column;
-          h5 {
-            line-height: 2;
-            margin-left: 32px;
-            color: #2a2a2a;
-            border-left: 2px solid #f37727;
-            padding-left: 30px;
-            padding-top: 2px;
-          }
-        }
-      }
-
-      .horizGallery {
-        background-color: #f7fafb;
-      }
-
       #navbarImg {
         background-color: #f3f3f3;
         padding: 5px;
@@ -103,34 +59,5 @@
           width: 100%;
         }
       }
-
-      .galleria {
-        width: 100%;
-        height: 480px;
-        margin: 20px 0;
-        .galleria-theme-twelve .galleria-stage {
-          background-color: #f3f3f3;
-        }
-        .galleria-theme-twelve .galleria-bar {
-          background-color: #313131;
-        }
-      }
-  }
-  .galleria-lightbox-box {
-    .galleria-lightbox-content {
-      top: 0;
-      right: 0;
-      left: 0;
-      bottom: 0;
-      background-color: #000;
-    }
-    .galleria-lightbox-info {
-      color: #fff;
-    }
-    .galleria-lightbox-close {
-      border-radius: 20px;
-      top: 3px;
-      right: 3px;
-    }
   }
 }

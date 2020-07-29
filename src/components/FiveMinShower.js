@@ -1,9 +1,9 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+
+import TopBanner from './TopBanner';
 
 import showerMocks from "../images/fiveMinShower/showerMocks.jpg";
-
-import { ReactComponent as BackArrow} from "../images/backArrow.svg";
+import showerBanner from '../images/fiveMinShower/headerImage.svg';
 
 import '../stylesheets/fiveMinShower.scss';
 
@@ -12,13 +12,7 @@ class FiveMinShower extends React.Component {
       return (
          <div className="fiveMinShower">
             <div className="innerWrapper">
-             <div className="section" id="header">
-               <Link className="backArrow" to="/">
-                  <BackArrow/>
-               </Link>
-               <div className="headerImage">
-               </div>
-             </div>
+             <TopBanner image={showerBanner} bgColor="#cfecfb" arrowColor="#a7d1e6"/>
              <div className="section" id="main">
                <div className="sectionContent">
                   <h1>5 Min Shower</h1>

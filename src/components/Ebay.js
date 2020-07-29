@@ -1,6 +1,6 @@
 import React from 'react';
 
-import '../stylesheets/ebay.scss';
+import TopBanner from './TopBanner';
 
 import lightBulb from "../images/ebay/lightbulb.svg";
 import rightArrow from "../images/rightArrow.svg";
@@ -8,7 +8,9 @@ import mehIcon from "../images/ebay/mehIcon.svg";
 import goodIcon from "../images/ebay/goodIcon.svg";
 import badIcon from "../images/ebay/badIcon.svg";
 import fullProto from "../files/SSFFullProto.mp4";
-import { ReactComponent as BackArrow} from "../images/backArrow.svg";
+import ebayHeader from '../images/ebay/ebayBanner.svg';
+
+import '../stylesheets/ebay.scss';
 
 
 class Ebay extends React.Component {
@@ -16,11 +18,7 @@ class Ebay extends React.Component {
       return (
          <div className="ebay">
            <div className="innerWrapper">
-             <div className="section" id="header">
-               <a className="backArrow" href="/">
-                  <BackArrow/>
-               </a>
-             </div>
+             <TopBanner image={ebayHeader} bgColor="#0081F8" arrowColor="#C8FFE7"/>
              <div className="section">
                <div className="sectionContent">
                  <h2>Overview</h2>

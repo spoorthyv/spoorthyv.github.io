@@ -15,7 +15,7 @@
    left: $navbarWidth;
    width: calc(100% - #{$navbarWidth});
    height: 100%;
-   overflow-y: auto;
+   overflow-y: overlay;
    position: fixed;
    top: 0;
 }
@@ -23,6 +23,22 @@
 #wrapper.smallNav {
    left: $navbarWidthSmall;
    width: calc(100% - #{$navbarWidthSmall});
+}
+
+.topBanner {
+   height: 388px;
+   background-repeat: no-repeat;
+   background-position: 50% 50%;
+
+   .backArrow {
+      svg {
+         filter: brightness(1);
+         transition: filter 0.25s;
+      }
+      svg:hover {
+         filter: brightness(1.3);
+      }
+   }
 }
 
 @media screen and (max-width: $breakSmall)  {
@@ -53,7 +69,7 @@
   0% {
     opacity: 0;
   }
-  50% {
+  55% {
     opacity: 0;
   }
   100% {

@@ -1,8 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import '../stylesheets/squid.scss';
-
 import finishedVideo from "../files/FinishedDribbble.mp4";
 import exampleNote from "../images/squid/exampleNote.png";
 import importantFlow from "../images/squid/importantFlow.png";
@@ -14,18 +12,19 @@ import toolbars from "../images/squid/Toolbars.svg";
 import oldMenu from '../images/squid/Old menu.svg';
 import newMenu from '../images/squid/New Menu.svg';
 import pageSwitcher from '../images/squid/Page Switcher.svg';
-import { ReactComponent as BackArrow} from "../images/backArrow.svg";
+import squidHeader from '../images/squid/squidbigbanner.svg';
+
+import TopBanner from './TopBanner';
+
+import '../stylesheets/squid.scss';
+
 
 class Squid extends React.Component {
    render() {
       return (
          <div className="squid">
             <div className="innerWrapper">
-               <div className="section" id="header">
-                     <Link className="backArrow" to="/">
-                           <BackArrow/>
-                     </Link>
-               </div>
+               <TopBanner image={squidHeader} bgColor="#00abcc" arrowColor="#b2f3ff"/>
                <div className="section" id="intro">
                   <div className="sectionContent">
                      <h1>Squid: Notes built for writing</h1>

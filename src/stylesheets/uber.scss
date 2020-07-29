@@ -1,24 +1,7 @@
 @import "./variables";
 
 .uber {
-   .backArrow {
-      svg {
-         fill: #e8feff;
-         filter: brightness(1);
-         transition: filter 0.2s;
-      }
-      svg:hover {
-        filter: brightness(1.4);
-      }
-   }
    .innerWrapper {
-      #header {
-       height: 388px;
-       background-color: #0A2F3C;
-       background-repeat: no-repeat;
-       background-position: 50% 50%;
-       background-image: url('../images/uber/uberBackgroundGraphic.svg');
-      }
       h1 {
        color: #1D3839;
       }

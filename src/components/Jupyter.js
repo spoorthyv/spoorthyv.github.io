@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+import TopBanner from './TopBanner';
+
 import JupyterTeam from "../images/jupyter/jupyterTeam.jpg";
 import old from "../images/jupyter/old.png";
 import newJ from "../images/jupyter/new.png";
@@ -10,6 +12,7 @@ import files from "../images/jupyter/files.png";
 import image from "../images/jupyter/image.png";
 import terminal from "../images/jupyter/terminal.png";
 import navbars from "../images/jupyter/navbars.png";
+import jupyterHeader from '../images/jupyter/jupyterBackground.svg';
 
 import { ReactComponent as BackArrow} from "../images/backArrow.svg";
 
@@ -20,11 +23,7 @@ class Jupyter extends React.Component {
       return (
          <div className="jupyter">
             <div className="innerWrapper">
-             <div className="section" id="header">
-               <Link className="backArrow" to="/">
-                  <BackArrow/>
-               </Link>
-             </div>
+             <TopBanner image={jupyterHeader} bgColor="#FF9445" arrowColor="#fff4ec"/>
              <div className="section">
                <div className="sectionContent">
                   <h1>Project Jupyter</h1>

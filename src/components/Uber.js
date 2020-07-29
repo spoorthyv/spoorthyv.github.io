@@ -1,5 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+
+import TopBanner from './TopBanner';
 
 import uber1 from "../images/uber/uber1.mp4";
 import option1 from "../images/uber/option1.png";
@@ -11,9 +12,7 @@ import uberPrinciple from "../files/uber/uberPrinciple.prd";
 import uberMac from "../files/uber/uberMac.zip";
 import uberVideo from "../files/uber/uberVideo.mov";
 import uberFlowDiagram from "../images/uber/uberFlowDiagram.png";
-
-
-import { ReactComponent as BackArrow} from "../images/backArrow.svg";
+import uberHeader from '../images/uber/uberBackgroundGraphic.svg';
 
 import '../stylesheets/uber.scss';
 
@@ -22,11 +21,7 @@ class Uber extends React.Component {
       return (
          <div className="uber">
             <div className="innerWrapper">
-             <div className="section" id="header">
-                <Link className="backArrow" to="/">
-                     <BackArrow/>
-               </Link>
-             </div>
+             <TopBanner image={uberHeader} bgColor="#0A2F3C" arrowColor="#e8feff"/>
              <div className="section" id="main">
                <div className="sectionContent">
                   <h1>Uber: Navigating with the Map</h1>
