@@ -59,5 +59,15 @@
           width: 100%;
         }
       }
+
+      #jupyterLab {
+         padding-bottom: 20px;
+      }
+
+      .horizGallery {
+         > div {
+            padding: 0 120px 68px 0;
+         }
+      }
   }
 }

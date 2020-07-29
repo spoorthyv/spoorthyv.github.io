@@ -1,6 +1,5 @@
 ToDo
 
-- uber and jupyter image gallery with react
 - made with react
 - photography js
 

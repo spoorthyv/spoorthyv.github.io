@@ -1,4 +1,5 @@
 import React from 'react';
+import { SRLWrapper } from "simple-react-lightbox";
 
 import TopBanner from './TopBanner';
 
@@ -74,13 +75,12 @@ class Uber extends React.Component {
                   <p>Because I didnt want to redesign the entire app, most of the design work happened on the second screen. I created a bunch of low fidelity mocks and analyzed the pros and cons of each. These were the designs that stood out:</p>
                </div>
                <div className="horizGallery">
-                  <div className="imgWrapper">
+                  <SRLWrapper>
                     <img src={option1} />
                     <img src={option2} />
                     <img src={option3} />
                     <img src={option4} />
-                  </div>
-                  <div className="close">x</div>
+                 </SRLWrapper>
                </div>
                <div className="sectionContent">
                   <div className="row">

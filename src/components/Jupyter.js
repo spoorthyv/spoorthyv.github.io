@@ -1,4 +1,5 @@
 import React from 'react';
+import { SRLWrapper } from "simple-react-lightbox";
 
 import TopBanner from './TopBanner';
 
@@ -38,7 +39,7 @@ class Jupyter extends React.Component {
              </div>
              <img src={JupyterTeam} />
              <div className="section">
-               <div className="sectionContent">
+               <div className="sectionContent" id="jupyterLab">
                   <h2>JupyterLab</h2>
                   <h4>The Project</h4>
                   <p>
@@ -51,15 +52,17 @@ class Jupyter extends React.Component {
                     - Redid File Browser <br />
                     - Notebook widget toolbar <br />
                   </p>
-                  <div className="galleria">
-                    <img src={old} />
+               </div>
+               <div className="horizGallery">
+                  <SRLWrapper>
+                     <img src={old} />
                     <img src={newJ} />
                     <img src={nbtoolbar} />
                     <img src={top_nav} />
                     <img src={files} />
                     <img src={image} />
                     <img src={terminal} />
-                  </div>
+                 </SRLWrapper>
                </div>
              </div>
              <div className="section">

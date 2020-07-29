@@ -1,6 +1,7 @@
 import React from 'react';
 import { Switch, Route, withRouter } from "react-router-dom";
 import { TransitionGroup, CSSTransition } from 'react-transition-group'
+import SimpleReactLightbox from "simple-react-lightbox";
 
 import Portfolio from './Portfolio';
 import Resume from './Resume';
@@ -32,30 +33,32 @@ class ContentWrapper extends React.Component {
 
    render() {
       return (
-         <div id="wrapper" className={this.isMainPage() ? 'bigNav' : 'smallNav'} ref={this.myRef}>
-            <TransitionGroup className="transition-group">
-               <CSSTransition
-               key={this.props.location.key}
-               timeout={{ enter: 600 }}
-               classNames="fade"
-               >
-                  <section className="route-section">
-                     <Switch location={this.props.location}>
-                        <Route exact path="/" component={Portfolio} />
-                        <Route path="/resume" component={Resume} />
-                        <Route path="/contact" component={Contact} />
-                        <Route path="/squid" component={Squid} />
-                        <Route path="/ebay" component={Ebay} />
-                        <Route path="/uber" component={Uber} />
-                        <Route path="/jupyter" component={Jupyter} />
-                        <Route path="/fiveMinShower" component={FiveMinShower} />
-                        <Route path="/elliemae" component={EllieMae} />
-                        <Route path="/photography" component={Photography} />
-                     </Switch>
-                  </section>
-               </CSSTransition>
-            </TransitionGroup>
-         </div>
+         <SimpleReactLightbox>      
+            <div id="wrapper" className={this.isMainPage() ? 'bigNav' : 'smallNav'} ref={this.myRef}>
+               <TransitionGroup className="transition-group">
+                  <CSSTransition
+                  key={this.props.location.key}
+                  timeout={{ enter: 600 }}
+                  classNames="fade"
+                  >
+                     <section className="route-section">
+                        <Switch location={this.props.location}>
+                           <Route exact path="/" component={Portfolio} />
+                           <Route path="/resume" component={Resume} />
+                           <Route path="/contact" component={Contact} />
+                           <Route path="/squid" component={Squid} />
+                           <Route path="/ebay" component={Ebay} />
+                           <Route path="/uber" component={Uber} />
+                           <Route path="/jupyter" component={Jupyter} />
+                           <Route path="/fiveMinShower" component={FiveMinShower} />
+                           <Route path="/elliemae" component={EllieMae} />
+                           <Route path="/photography" component={Photography} />
+                        </Switch>
+                     </section>
+                  </CSSTransition>
+               </TransitionGroup>
+            </div>
+         </SimpleReactLightbox>
       );
    }
 }
