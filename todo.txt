@@ -4,7 +4,7 @@ ToDo
 
 - Deploy
 - Import web font
+- favicon/header
 
 - email button background click dismiss (or on hover)
-- lightbox images
 - 5minshower Github button

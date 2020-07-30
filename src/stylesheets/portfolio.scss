@@ -4,7 +4,7 @@
    #portfolioBody {
       display: grid;
       justify-content: center;
-      padding: 120px;
+      padding: $portfolioPadding;
       grid-gap: 8px;
 
       #header {
@@ -18,7 +18,7 @@
          display: flex;
          margin-bottom: 28px;
          .filter {
-            font-family: "Google Sans";
+            font-family: $headerFontFamily;
             padding: 12px 20px;
             line-height: 1;
             border-radius: 52px;
@@ -107,7 +107,7 @@
                }
             }
             .label {
-               font-family: "Product Sans";
+               font-family: $headerFontFamily;
                font-weight: 600;
                letter-spacing: 0.2px;
                position: absolute;
@@ -197,6 +197,52 @@
          }
       }
    }
+
+   #footer {
+      a {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         padding: 16px;
+         border-top: 2px solid #f8f8f8;
+         h4 {
+            transition: 0.3s color;
+            font-size: 15px;
+            line-height: 15px;
+            letter-spacing: 0.5px;
+            display: flex;
+            align-items: center;
+            padding: 0;
+            color: #a5a5a5;
+            font-weight: 400;
+            white-space: nowrap;
+         }
+         svg {
+            transition: 0.3s fill;
+         }
+         #reactIcon {
+            width: 29px;
+            fill: #53d4f7;
+            padding-bottom: 2px;
+         }
+         #heartIcon {
+            width: 15px;
+            padding: 0 4px 1px 4px;
+            fill: #6F73FF;
+         }
+      }
+      a:hover {
+        h4 {
+          color: rgb(109, 109, 109);
+        }
+        #reactIcon {
+           fill: #61DAFB;
+        }
+        #heartIcon {
+           fill: #6F73FF;
+        }
+      }
+   }
 }
 
 @media screen and (max-width: $breakLarge) {
@@ -237,6 +283,22 @@
             grid-gap: 18px;
             .card {
                width: calc(100vw - 64px);
+            }
+         }
+      }
+      #footer {
+         a {
+            padding: 12px;
+            h4 {
+               font-size: 13px;
+               #heartIcon {
+                  width: 13px;
+                  fill: #6F73FF;
+               }
+               #reactIcon {
+                  width: 25px;
+                  fill: #61DAFB;
+               }
             }
          }
       }

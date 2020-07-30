@@ -11,6 +11,8 @@ import dribbbleLogo from '../images/dribbble/dribbble.svg';
 import showerLogo from '../images/fiveMinShower/ShowerIcon.png';
 import ellieMaeLogo from '../images/elliemae/elliemae.png';
 import blank from '../images/photography/blank.png';
+import { ReactComponent as Heart} from '../images/portfolio/heart.svg';
+import { ReactComponent as ReactIcon} from '../images/portfolio/React-icon.svg';
 
 import '../stylesheets/portfolio.scss';
 
@@ -113,6 +115,11 @@ class Portfolio extends React.Component {
                <div id="cardGrid">
                   {this.renderCards()}
                </div>
+            </div>
+            <div id="footer">
+               <a href="https://github.com/spoorthyv/spoorthyv.github.io" target="_blank">
+                  <h4>This site was built with <Heart id="heartIcon"/> from scratch using <ReactIcon id='reactIcon'/></h4>
+               </a>
             </div>
          </div>
       );

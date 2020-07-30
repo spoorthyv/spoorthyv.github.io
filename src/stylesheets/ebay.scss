@@ -42,7 +42,7 @@
           transform: translateY(-4px);
         }
         p {
-          font-family: "Google Sans";
+          font-family: $headerFontFamily;
           font-weight: 700;
           color: #956C00;
         }
@@ -86,7 +86,7 @@
         transition: all 0.25s;
         font-weight: 700;
         font-size: 16px;
-        font-family: "Google Sans";
+        font-family: $headerFontFamily;
         box-shadow: 0px 6px 26px #ffffff00;
         border: none;
         img {
