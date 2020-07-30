@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a01379296bdb5d4dbbeeda868ab6ada7",
+    "revision": "edab0fa432fa987b024eebb4b0ae0139",
     "url": "/index.html"
   },
   {
-    "revision": "a543fd5834c9150c5601",
-    "url": "/static/css/main.4440f153.chunk.css"
+    "revision": "6d932a5cf9b64c395c8a",
+    "url": "/static/css/main.612c0c92.chunk.css"
   },
   {
     "revision": "bdcdca931f644a25fde4",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.fb03d29a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "a543fd5834c9150c5601",
+    "revision": "6d932a5cf9b64c395c8a",
     "url": "/static/js/main.8634b381.chunk.js"
   },
   {
@@ -36,6 +36,54 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/FinishedDribbble.70b6a460.mp4"
   },
   {
+    "revision": "a900d62f5f7ec3359327c942745d1f57",
+    "url": "/static/media/GoogleSans-Bold.a900d62f.woff2"
+  },
+  {
+    "revision": "d9d177382f15bfd6ec45f0b21703af01",
+    "url": "/static/media/GoogleSans-Bold.d9d17738.woff"
+  },
+  {
+    "revision": "6ff2fa7f086fe97e364278128e5c14a4",
+    "url": "/static/media/GoogleSans-BoldItalic.6ff2fa7f.woff"
+  },
+  {
+    "revision": "aa4929df9f2b22e13e82b3cb90bf6652",
+    "url": "/static/media/GoogleSans-BoldItalic.aa4929df.woff2"
+  },
+  {
+    "revision": "48bcde2e113d0529713fe2aa9b1a6922",
+    "url": "/static/media/GoogleSans-Italic.48bcde2e.woff2"
+  },
+  {
+    "revision": "db64d0823e61734a0439a78dea461ccb",
+    "url": "/static/media/GoogleSans-Italic.db64d082.woff"
+  },
+  {
+    "revision": "00edbcf22188ce19b4f7b026955ea6bd",
+    "url": "/static/media/GoogleSans-Medium.00edbcf2.woff2"
+  },
+  {
+    "revision": "391fe8489466e14cd40e205082d91b19",
+    "url": "/static/media/GoogleSans-Medium.391fe848.woff"
+  },
+  {
+    "revision": "7520e175afd98d8be5c13f093612cd07",
+    "url": "/static/media/GoogleSans-MediumItalic.7520e175.woff2"
+  },
+  {
+    "revision": "c74746fa08876f19d44a8068004a2732",
+    "url": "/static/media/GoogleSans-MediumItalic.c74746fa.woff"
+  },
+  {
+    "revision": "1d58c608b0bd0e8f8485ad30d654246b",
+    "url": "/static/media/GoogleSans-Regular.1d58c608.woff2"
+  },
+  {
+    "revision": "4eaa38107262312b45315e51c91f804f",
+    "url": "/static/media/GoogleSans-Regular.4eaa3810.woff"
+  },
+  {
     "revision": "344446044ac8968d3e04c8f937b3234e",
     "url": "/static/media/IMGP6915-1405412511-O.8c288840.jpg"
   },
@@ -46,6 +94,54 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "766eb482a78559e6f0ae62d971f7d6a3",
     "url": "/static/media/IMGP7718.345af917.jpg"
+  },
+  {
+    "revision": "adb95dbee274a038f0599512c6c64331",
+    "url": "/static/media/InterUI-Bold.adb95dbe.woff2"
+  },
+  {
+    "revision": "dbe7d4f0c2a07dd59d4a8b1a504de0a2",
+    "url": "/static/media/InterUI-Bold.dbe7d4f0.woff"
+  },
+  {
+    "revision": "9d7d2e71e055ec2b0c9b622fd847739c",
+    "url": "/static/media/InterUI-BoldItalic.9d7d2e71.woff"
+  },
+  {
+    "revision": "ae8d20b97fce0ba0496cfea3acc731bd",
+    "url": "/static/media/InterUI-BoldItalic.ae8d20b9.woff2"
+  },
+  {
+    "revision": "507dfd8c37aa793fa0ab1dd070d1914a",
+    "url": "/static/media/InterUI-Italic.507dfd8c.woff2"
+  },
+  {
+    "revision": "c996c2775381af85bbf36190ae180701",
+    "url": "/static/media/InterUI-Italic.c996c277.woff"
+  },
+  {
+    "revision": "f8d00835290a434405ee79d2105b33a0",
+    "url": "/static/media/InterUI-Medium.f8d00835.woff2"
+  },
+  {
+    "revision": "fb39473e1576b7ef22940f91157a2ec1",
+    "url": "/static/media/InterUI-Medium.fb39473e.woff"
+  },
+  {
+    "revision": "0de1c2a53a412db8d243706f5cee6b19",
+    "url": "/static/media/InterUI-MediumItalic.0de1c2a5.woff2"
+  },
+  {
+    "revision": "42c5072f70bf1ff9f03f3c77ffaf438d",
+    "url": "/static/media/InterUI-MediumItalic.42c5072f.woff"
+  },
+  {
+    "revision": "6c465444fd0a813cf9f0f0b1b2d953a6",
+    "url": "/static/media/InterUI-Regular.6c465444.woff"
+  },
+  {
+    "revision": "f8b1caaa7c06ed7b27cba3d02b691d27",
+    "url": "/static/media/InterUI-Regular.f8b1caaa.woff2"
   },
   {
     "revision": "84df023385dd4241cb9edd55ac74a0c6",
