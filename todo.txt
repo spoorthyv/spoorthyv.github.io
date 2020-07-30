@@ -1,10 +1,5 @@
 ToDo
-
-- made with react
-
-- Deploy
 - Import web font
-- favicon/header
 
 - email button background click dismiss (or on hover)
 - 5minshower Github button
