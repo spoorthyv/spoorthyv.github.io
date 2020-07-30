@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52 (66869) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD-Copy-8" transform="translate(-701.000000, -2057.000000)" fill="#43B150" fill-rule="nonzero">
+            <path d="M711,2057 C705.48,2057 701,2061.48 701,2067 C701,2072.52 705.48,2077 711,2077 C716.52,2077 721,2072.52 721,2067 C721,2061.48 716.52,2057 711,2057 Z M708.29,2071.29 L704.7,2067.7 C704.31,2067.31 704.31,2066.68 704.7,2066.29 C705.09,2065.9 705.72,2065.9 706.11,2066.29 L709,2069.17 L715.88,2062.29 C716.27,2061.9 716.9,2061.9 717.29,2062.29 C717.68,2062.68 717.68,2063.31 717.29,2063.7 L709.7,2071.29 C709.32,2071.68 708.68,2071.68 708.29,2071.29 Z" id="Shape"></path>
+        </g>
+    </g>
+</svg>
