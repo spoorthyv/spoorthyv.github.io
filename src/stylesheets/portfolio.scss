@@ -4,7 +4,7 @@
    #portfolioBody {
       display: grid;
       justify-content: center;
-      padding: $portfolioPadding;
+      padding: 150px $portfolioPadding 75px $portfolioPadding;
       grid-gap: 8px;
 
       #header {
@@ -222,13 +222,13 @@
          }
          #reactIcon {
             width: 29px;
-            fill: #53d4f7;
+            fill: #8ddcf1;
             padding-bottom: 2px;
          }
          #heartIcon {
             width: 15px;
             padding: 0 4px 1px 4px;
-            fill: #6F73FF;
+            fill: #ef8e90;
          }
       }
       a:hover {
@@ -236,10 +236,10 @@
           color: rgb(109, 109, 109);
         }
         #reactIcon {
-           fill: #61DAFB;
+           fill: #3ccff7;
         }
         #heartIcon {
-           fill: #6F73FF;
+           fill: #f55f62;
         }
       }
    }
