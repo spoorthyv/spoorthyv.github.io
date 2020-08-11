@@ -33,7 +33,7 @@ class EllieMae extends React.Component {
                  </p>
                  <h4>My Role</h4>
                  <p>
-                   For the first 9 weeks of my internship I worked as a UI Engineering Intern helping build the frontend of our web app in Angular JS. I helped build a feature called task inbox
+                   For the first 9 weeks of my internship I worked as a UI Engineering Intern helping build the frontend of our web app in React JS. I helped build a feature called task inbox
                    which notifies users of any issues with their loans. <br /><br />
                    For the last 3 weeks of my internship I worked with the UX Design team to better integrate our style guide into our frontend development teams workflow.
                    I built a web version of our sketch style guide that any developer could access.

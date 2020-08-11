@@ -70,7 +70,7 @@ class Contact extends React.Component {
                         </a>
                      </div>
                      <div>
-                        <a href='https://www.linkedin.com/in/spoorthy-vemula-7412b5a7/' target="_blank" rel="noopener noreferrer">
+                        <a href='https://www.linkedin.com/in/spoorthyv/' target="_blank" rel="noopener noreferrer">
                            <Linkedin/>
                         </a>
                      </div>
