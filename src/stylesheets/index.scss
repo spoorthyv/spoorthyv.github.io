@@ -1,5 +1,6 @@
+@import "./fonts.css";
 @import "./variables";
-@import "./fonts";
+
 
 * {
   font-family: $bodyFontFamily;
@@ -55,7 +56,7 @@ h5 {
 }
 
 p {
-  font-family: $bodyFontFamily;
+  font-family: 'Inter UI';
   color: #3f3f3f;
   font-size: 16px;
   padding: 16px 0 16px 0;

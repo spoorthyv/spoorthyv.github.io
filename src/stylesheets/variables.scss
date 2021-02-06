@@ -10,5 +10,5 @@ $breakLarge: 3*$cardWidth + 2*$cardGap + $navbarWidth + 2*$portfolioPadding;
 $breakMedium: 2*$cardWidth + 1*$cardGap + $navbarWidth + 2*$portfolioPadding;
 $breakSmall: 1*$cardWidth + 0*$cardGap + $navbarWidth + 2*$portfolioPadding;
 
-$headerFontFamily: "Google Sans";
-$bodyFontFamily: "Inter UI";
+$headerFontFamily: 'Google Sans', system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+$bodyFontFamily: 'Inter UI', system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
