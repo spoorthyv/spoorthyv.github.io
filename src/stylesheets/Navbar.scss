@@ -7,57 +7,94 @@
       height: 100vh;
       background-color: #f8f8f8;
    }
+
    #titles {
       opacity: 1;
       transition: 0.4s opacity ease-in-out;
-      top: calc(50% - 182px - 28px);
+      top: calc(50% - 180px - 28px);
       position: fixed;
-      left: 32px;
+      left: 36px;
+      padding-left: 6px;
+
       h2 {
          font-weight: 500;
          color: #5a5a5a;
-         padding: 12px 0;
+         padding: 10px 0;
          font-size: 37.2px;
       }
+
       h3 {
          color: #939393;
          padding: 0;
          font-weight: 400;
       }
    }
+
    #linkWrapper {
       top: calc(50% + 8px);
       transition: 0.35s top ease-in-out;
       position: fixed;
       display: flex;
       flex-direction: column;
-      left: 32px;
+      align-items: flex-start;
+      left: 36px;
+
       a {
          color: #939393;
-         padding: 4px 8px 3px 8px;
+         padding: 4.5px 12px 4px 12px;
          transition: 0.35s all;
          border: 1px solid #00000000;
+         border-radius: 20px;
          margin-bottom: 16px;
+         font-weight: 500;
+
          &:hover {
-            color: #474747;
+            color: #4e4e4e;
             background-color: rgb(238, 238, 238);
          }
       }
-      .active {
+
+      a.active {
          color: #fff;
-         font-weight: 600;
-         background-color: #6F73FF;
+
+         &:nth-child(1) {
+            background-color: #6F73FF;
+         }
+
+         &:nth-child(2) {
+            background-color: #4676fd;
+         }
+
+         &:nth-child(3) {
+            background-color: #20b376;
+         }
+
          &:hover {
             color: #fff;
-            font-weight: 600;
-            background-color: #6F73FF;
+
+            &:nth-child(1) {
+               color: #fff;
+               background-color: #6F73FF;
+            }
+
+            &:nth-child(2) {
+               color: #fff;
+               background-color: #4676fd;
+            }
+
+            &:nth-child(3) {
+               color: #fff;
+               background-color: #20b376;
+            }
          }
       }
    }
+
    #logoWrapper {
       position: fixed;
       bottom: 24px;
       left: 24px;
+
       #logo {
          background-image: url('../images/logo.svg');
          background-size: contain;
@@ -69,40 +106,48 @@
          filter: grayscale(0.8);
          transition: all 0.4s;
       }
+
       #logo:hover {
          filter: grayscale(0.3);
       }
    }
+
    &.smallNav {
       #navBackground {
          width: $navbarWidthSmall;
       }
+
       #titles {
          opacity: 0;
       }
+
       #linkWrapper {
-        top: calc(50% + 8px - 65px);
+         top: calc(50% + 8px - 65px);
       }
    }
+
    &.darkNav {
-     #navBackground {
-      background-color: #131313;
-     }
-     #linkWrapper {
-      a:hover {
-         background-color: rgba(255,255,255,0.1);
-         color: white;
+      #navBackground {
+         background-color: #131313;
       }
-     }
-     #logoWrapper {
-      #logo {
-         filter: grayscale(1) brightness(3);
-         transition: 0.3s filter;
+
+      #linkWrapper {
+         a:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            color: white;
+         }
       }
-      #logo:hover {
-         filter: grayscale(1) brightness(9);
+
+      #logoWrapper {
+         #logo {
+            filter: grayscale(1) brightness(3);
+            transition: 0.3s filter;
+         }
+
+         #logo:hover {
+            filter: grayscale(1) brightness(9);
+         }
       }
-     }
    }
 }
 
@@ -115,30 +160,37 @@
          width: 100%;
          background-color: #f8f8f8;
       }
+
       #linkWrapper {
          flex-direction: row;
          left: calc(50%);
          transform: translateX(-50%);
          top: 21px;
+
          a {
             margin: 0;
          }
+
          a:nth-child(2) {
             margin: 0 8px;
          }
       }
+
       #titles {
          display: none;
       }
+
       #logoWrapper {
          display: none;
       }
+
       &.smallNav {
          #navBackground {
             width: 100%;
          }
+
          #linkWrapper {
-           top: 21px;
+            top: 21px;
          }
       }
    }

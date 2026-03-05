@@ -30,7 +30,7 @@ class Navbar extends React.Component {
             <div id="titles">
                <h3>Hi, I'm</h3>
                <h2>Spoorthy Vemula</h2>
-               <h3>I'm a UI/UX Designer & Developer</h3>
+               <h3>I'm A Product & UX Designer</h3>
             </div>
             <div id="linkWrapper">
                <NavLink to="/" activeClassName="active" exact>Portfolio</NavLink>

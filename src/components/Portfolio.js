@@ -9,10 +9,9 @@ import uberLogo from '../images/uber/uberWhite.svg';
 import jupyterLogo from '../images/jupyter/jupyter.svg';
 import dribbbleLogo from '../images/dribbble/dribbble.svg';
 import showerLogo from '../images/fiveMinShower/ShowerIcon.png';
-import ellieMaeLogo from '../images/elliemae/elliemae.png';
 import blank from '../images/photography/blank.png';
-import { ReactComponent as Heart} from '../images/portfolio/heart.svg';
-import { ReactComponent as ReactIcon} from '../images/portfolio/React-icon.svg';
+import { ReactComponent as Heart } from '../images/portfolio/heart.svg';
+import { ReactComponent as ReactIcon } from '../images/portfolio/React-icon.svg';
 
 import '../stylesheets/portfolio.scss';
 
@@ -67,14 +66,6 @@ const projects = [
       logo: showerLogo
    },
    {
-      id: "ellieMae",
-      title: 'Ellie Mae',
-      description: "UI Engineering Intership with React JS",
-      color: "#0065AE",
-      type: "Work",
-      logo: ellieMaeLogo
-   },
-   {
       id: "photography",
       title: 'Photography',
       description: "",
@@ -99,11 +90,11 @@ class Portfolio extends React.Component {
       return projects.filter(project => {
          return project.type.includes(this.state.filter)
       })
-      .map(project => {
-         return (
-            <Card project={project} key={project.id}/>
-         );
-      });
+         .map(project => {
+            return (
+               <Card project={project} key={project.id} />
+            );
+         });
    }
 
    render() {
@@ -111,14 +102,14 @@ class Portfolio extends React.Component {
          <div id="portfolio">
             <div id="portfolioBody">
                <h3 id="header">Here's what I've been working on:</h3>
-               <FilterBar clickHandler={this.setFilter} currFilter={this.state.filter}/>
+               <FilterBar clickHandler={this.setFilter} currFilter={this.state.filter} />
                <div id="cardGrid">
                   {this.renderCards()}
                </div>
             </div>
             <div id="footer">
                <a href="https://github.com/spoorthyv/spoorthyv.github.io" target="_blank">
-                  <h4>This site was built with <Heart id="heartIcon"/> from scratch using <ReactIcon id='reactIcon'/></h4>
+                  <h4>This site was built with <Heart id="heartIcon" /> from scratch using <ReactIcon id='reactIcon' /></h4>
                </a>
             </div>
          </div>

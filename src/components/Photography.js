@@ -1,5 +1,5 @@
 import React from 'react';
-import VisibilitySensor from 'react-visibility-sensor';
+import { InView } from 'react-intersection-observer';
 
 import Eagle from '../images/photography/IMGP6915-1405412511-O.jpg';
 import Kina from '../images/photography/kina.jpg';
@@ -14,13 +14,13 @@ var images = [Eagle, Kina, BigSurWaterfall, BigSurBridge, Cereal, MtDiablo];
 
 class Photography extends React.Component {
    renderImageList() {
-      return images.map(image => {
+      return images.map((image, index) => {
          return (
-            <VisibilitySensor offset={{top:300, bottom: 300}} partialVisibility={true}>
-               {({isVisible}) =>
-                  <img src={image} className={isVisible ? 'currentPic' : ''}/>
-               }
-            </VisibilitySensor>
+            <InView rootMargin="-300px 0px" key={index}>
+               {({ inView, ref }) => (
+                  <img ref={ref} src={image} className={inView ? 'currentPic' : ''} />
+               )}
+            </InView>
          );
       });
    }
