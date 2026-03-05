@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1491px" height="1258px" viewBox="0 0 1491 1258" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 3 (1)</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Artboard-4" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-151.000000, -324.000000)">
+        <g id="Group-3-(1)" transform="translate(151.000000, 324.000000)">
+            <g id="Rectangle" fill="#FFBE7D" fill-rule="nonzero">
+                <g id="path0_fill-link">
+                    <path d="M0,131.612903 C0,58.9251148 58.6615221,0 131.024152,0 L1359.97585,0 C1432.33874,0 1491,58.9251148 1491,131.612903 L1491,834.387097 C1491,907.075148 1432.33874,966 1359.97585,966 L131.024152,966 C58.6615221,966 0,907.075148 0,834.387097 L0,131.612903 Z" id="path0_fill"></path>
+                </g>
+            </g>
+            <g id="Rectangle" transform="translate(619.000000, 378.000000)" fill="#FFEB57" fill-rule="nonzero">
+                <g id="path1_fill-link">
+                    <path d="M0,142.287855 C0,63.7044546 63.6953542,0 142.267529,0 L729.653167,0 C808.224678,0 871.919748,63.7044546 871.919748,142.287855 L871.919748,736.776645 C871.919748,815.359381 808.224678,879.0645 729.652219,879.0645 L142.267529,879.0645 C63.6951645,879.0645 0,815.359381 0,736.776645 L0,142.287855 Z" id="path1_fill"></path>
+                </g>
+            </g>
+            <g id="Intersect" transform="translate(680.000000, 501.000000)">
+                <g id="path2_fill-link" transform="translate(1.411034, 6.485700) rotate(-180.000000) translate(-1.411034, -6.485700) translate(0.411034, 0.985700)"></g>
+            </g>
+            <g id="Rectangle" transform="translate(0.000000, 576.000000)" fill="#16AC61" fill-rule="nonzero">
+                <g id="path3_fill-link">
+                    <path d="M0,124.103545 C0,55.5631426 53.8819091,0 120.34859,0 L1005.65221,0 C1072.11833,0 1126,55.5630599 1126,124.103545 L1126,556.896455 C1126,625.437188 1072.11833,681 1005.65141,681 L120.34859,681 C53.8817487,681 0,625.437188 0,556.896455 L0,124.103545 Z" id="path3_fill"></path>
+                </g>
+            </g>
+            <g id="Group-4" transform="translate(685.000000, 534.000000)" fill-rule="nonzero">
+                <g id="Intersect" transform="translate(0.000000, 41.000000)" fill="#29D07C">
+                    <g id="path4_fill-link" transform="translate(0.147241, 0.447647)">
+                        <path d="M85.4435414,116.165624 L33.7277414,116.165624 C15.1006131,116.165624 7.531753e-13,102.842025 7.531753e-13,86.4064059 L0,0.552352941 L119.171283,0.552352941 L119.171283,86.4064059 C119.171283,102.842025 104.070628,116.165624 85.4435414,116.165624 Z" id="path4_fill"></path>
+                    </g>
+                </g>
+                <g id="Intersect" transform="translate(60.500000, 21.500000) scale(1, -1) translate(-60.500000, -21.500000) " fill="#FFF6A4">
+                    <g id="path4_fill-link" transform="translate(0.147241, 0.447647)">
+                        <path d="M85.4435414,41.1656235 L33.7277414,41.1656235 C15.1006131,41.1656235 0,27.8420255 0,11.4064059 L0,0.552352941 L119.171283,0.552352941 L119.171283,11.4064059 C119.171283,27.8420255 104.070628,41.1656235 85.4435414,41.1656235 Z" id="path4_fill"></path>
+                    </g>
+                </g>
+                <g id="P" transform="translate(26.000000, 30.000000)" fill="#04522B">
+                    <g id="path5_fill-link">
+                        <path d="M0,0 L0,105 L22.6002105,105 L22.6002105,71.98968 L43.2452632,71.98968 C66.784,71.98968 80,56.54103 80,36.15171 C80,15.997737 66.9404211,0 43.48,0 L0,0 Z" id="path5_fill"></path>
+                    </g>
+                </g>
+            </g>
+            <text id="Reimagining-PolyPlan" font-family="Graphik-Medium, Graphik" font-size="36" font-weight="400" fill="#FFFFFF">
+                <tspan x="528.066" y="769">Reimagining PolyPlanner</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

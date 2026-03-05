@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1492px" height="1257px" viewBox="0 0 1492 1257" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>polyplannerBannerBackground</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Artboard-4" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-151.000000, -324.000000)">
+        <g id="Group" transform="translate(151.000000, 324.000000)" fill-rule="nonzero">
+            <g id="polyplannerBannerBackground">
+                <path d="M1359.97585,0 L1491,0 L1491,131.612903 L1491,834.387097 C1491,907.075148 1432.33874,966 1359.97585,966 L131.024152,966 C58.6615221,966 0,907.075148 0,834.387097 L0,131.612903 L0,0 L131.024152,0 L1359.97585,0 Z" id="Combined-Shape" fill="#FFBE7D"></path>
+                <path d="M1352.97736,1256.93551 C1351.54089,1256.9784 1350.09908,1257 1348.65222,1257 L761.267529,1257 C682.695165,1257 619,1193.29984 619,1114.72321 L619,570.276786 C619,491.699499 682.695354,428 761.267529,428 L1348.65317,428 L1492,428 L1492,604.98623 L1490.91975,604.98623 L1490.91975,958.958689 L1491,958.958689 L1491,1256.93551 L1352.97736,1256.93551 Z" id="Combined-Shape" fill="#FFEB57"></path>
+                <path d="M120.34859,1257 L0,1257 L0,1132.89646 L0,700.103545 C0,631.563143 53.8819091,576 120.34859,576 L1005.65221,576 C1072.11833,576 1126,631.56306 1126,700.103545 L1126,1132.89646 C1126,1201.43719 1072.11833,1257 1005.65141,1257 L120.34859,1257 Z" id="Combined-Shape" fill="#16AC61"></path>
+            </g>
+        </g>
+    </g>
+</svg>

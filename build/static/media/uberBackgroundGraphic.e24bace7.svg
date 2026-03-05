@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1499px" height="1608px" viewBox="0 0 1499 1608" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 5</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-5" transform="translate(2.000000, 2.000000)">
+            <g id="Group">
+                <g id="Group-7" transform="translate(589.000000, 0.000000)" stroke="#11949C" stroke-width="4">
+                    <circle id="Oval-2" transform="translate(453.000000, 453.000000) scale(1, -1) translate(-453.000000, -453.000000) " cx="453" cy="453" r="453"></circle>
+                    <circle id="Oval-2" cx="453" cy="1151" r="453"></circle>
+                </g>
+                <g id="Group-6" transform="translate(0.000000, 11.000000)" stroke="#11949C" stroke-width="4">
+                    <circle id="Oval-2" cx="453" cy="453" r="453"></circle>
+                    <circle id="Oval-2" transform="translate(454.000000, 1130.000000) scale(1, -1) translate(-454.000000, -1130.000000) " cx="454" cy="1130" r="453"></circle>
+                </g>
+                <g id="Group-9" transform="translate(393.000000, 455.000000)" stroke="#11949C" stroke-width="2">
+                    <circle id="Oval-2" transform="translate(177.500000, 177.500000) scale(-1, 1) translate(-177.500000, -177.500000) " cx="177.5" cy="177.5" r="177.5"></circle>
+                    <circle id="Oval-2" cx="177.5" cy="517.5" r="177.5"></circle>
+                </g>
+                <g id="Group-8" transform="translate(748.000000, 455.000000)" stroke="#11949C" stroke-width="2">
+                    <circle id="Oval-2" cx="177.5" cy="177.5" r="177.5"></circle>
+                    <circle id="Oval-2" transform="translate(177.500000, 517.500000) scale(-1, 1) translate(-177.500000, -517.500000) " cx="177.5" cy="517.5" r="177.5"></circle>
+                </g>
+                <g id="Group-10" transform="translate(671.000000, 725.000000)">
+                    <rect id="Rectangle-15" fill="#0A2F3C" x="54" y="49" width="55" height="58"></rect>
+                    <path d="M55.6579693,73.2439024 L2.22044605e-16,73.2439024 C1.95998729,32.4625176 35.6642478,0 76.9549696,0 C119.505765,0 154,34.4740743 154,77 C154,119.525926 119.505765,154 76.9549696,154 C35.8757335,154 2.30544392,121.869168 0.0326135319,81.3821138 L55.6579693,81.3821138 L55.6579693,94.5365854 C55.6579693,97.2980091 57.8965456,99.5365854 60.6579693,99.5365854 L94.5047346,99.5365854 C97.2661583,99.5365854 99.5047346,97.2980091 99.5047346,94.5365854 L99.5047346,60.7154472 C99.5047346,57.9540234 97.2661583,55.7154472 94.5047346,55.7154472 L60.6579693,55.7154472 C57.8965456,55.7154472 55.6579693,57.9540234 55.6579693,60.7154472 L55.6579693,73.2439024 Z" id="Combined-Shape" fill="#FFFFFF"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

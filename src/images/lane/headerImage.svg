@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="669px" height="261px" viewBox="0 0 669 261" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 6</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="0%" y1="0%" x2="100%" y2="83.3126688%" id="linearGradient-1">
+            <stop stop-color="#949494" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="90.0623514%" y1="39.8846465%" x2="44.1023464%" y2="31.7751921%" id="linearGradient-2">
+            <stop stop-color="#F3F2F2" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="UI" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-5" transform="translate(-141.000000, 0.000000)">
+            <g id="Group-6" transform="translate(141.000000, -108.000000)">
+                <circle id="Oval-5" fill-opacity="0.170827672" fill="#FFFFFF" cx="338" cy="269" r="269"></circle>
+                <circle id="Oval-7" fill-opacity="0.17" fill="#FFFFFF" cx="22.5" cy="326.5" r="22.5"></circle>
+                <circle id="Oval-7" fill-opacity="0.17" fill="#FFFFFF" cx="657" cy="200" r="12"></circle>
+                <g id="Group-4" transform="translate(288.000000, 200.000000)">
+                    <g id="-layered-logo-white">
+                        <g id="Logo">
+                            <g id="Rectangle-5">
+                                <path d="M33.6666943,0 L66.6732303,0 C66.6732303,0 66.6732303,22.5489632 75.7628099,43.6461909 C84.8523894,64.7434186 100.504204,80.3094621 100.504204,80.3094621 L77.2259906,103.551597 C77.2259906,103.551597 58.2498505,86.1333897 45.8935823,57.2248845 C33.5373141,28.3163794 33.6666943,0 33.6666943,0 Z" fill="url(#linearGradient-1)"></path>
+                                <path d="M66.7029929,5.68434189e-14 L33.7245818,5.68434189e-14 C33.7245818,5.68434189e-14 33.7526104,22.5489632 24.6937497,43.6461909 C15.6317466,64.7434186 -2.27373675e-13,80.3094621 -2.27373675e-13,80.3094621 L23.3005761,103.551597 C23.3005761,103.551597 42.2537933,86.1333897 54.5673973,57.2248845 C66.8751481,28.3163794 66.7029929,5.68434189e-14 66.7029929,5.68434189e-14 Z" fill="url(#linearGradient-2)"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

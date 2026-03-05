@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52 (66869) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD-Copy-8" transform="translate(-838.000000, -2090.000000)" fill="#EF6868" fill-rule="nonzero">
+            <path d="M848,2090 C842.47,2090 838,2094.47 838,2100 C838,2105.53 842.47,2110 848,2110 C853.53,2110 858,2105.53 858,2100 C858,2094.47 853.53,2090 848,2090 Z M852.3,2104.3 C851.91,2104.69 851.28,2104.69 850.89,2104.3 L848,2101.41 L845.11,2104.3 C844.72,2104.69 844.09,2104.69 843.7,2104.3 C843.31,2103.91 843.31,2103.28 843.7,2102.89 L846.59,2100 L843.7,2097.11 C843.31,2096.72 843.31,2096.09 843.7,2095.7 C844.09,2095.31 844.72,2095.31 845.11,2095.7 L848,2098.59 L850.89,2095.7 C851.28,2095.31 851.91,2095.31 852.3,2095.7 C852.69,2096.09 852.69,2096.72 852.3,2097.11 L849.41,2100 L852.3,2102.89 C852.68,2103.27 852.68,2103.91 852.3,2104.3 Z" id="Shape"></path>
+        </g>
+    </g>
+</svg>

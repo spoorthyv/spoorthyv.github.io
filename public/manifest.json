@@ -1,0 +1,35 @@
+{
+  "short_name": "Spoorthy Vemula",
+  "name": "Spoorthy Vemula Design Portfolio",
+  "icons": [
+     {
+      "src": "favicon-16x16.ico",
+      "sizes": "16x16",
+      "type": "image/x-icon"
+     },
+     {
+       "src": "favicon-32x32.ico",
+       "sizes": "32x32",
+       "type": "image/x-icon"
+     },
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "android-chrome-96x96.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "mstile-150x150.png",
+      "type": "image/png",
+      "sizes": "150x150"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
