@@ -20,6 +20,8 @@
          padding: 13px 24px 14px 24px;
          border-radius: 30px;
          display: flex;
+         align-items: center;
+         gap: 12px;
          line-height: 22px;
          transition: all 0.25s;
          box-shadow: 0px 3px 8px #00000042;
@@ -28,12 +30,6 @@
          left: calc(#{420px}/2 + 50%);
          transform: translateX(-50%);
          font-weight: 500;
-
-         img {
-            width: 30px;
-            border: none;
-            margin-left: 12px;
-         }
 
          &:hover {
             transform: translateX(-50%) translateY(-4px);

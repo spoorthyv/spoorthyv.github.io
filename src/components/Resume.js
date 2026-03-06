@@ -49,7 +49,7 @@ const Resume = () => {
             </div>
             <a id="dlResumeButton" href={resumePDF} download>
                Download Resume
-               <IconCloudDownload size={24} style={{ marginLeft: 8 }} />
+               <IconCloudDownload size={24} />
             </a>
          </div>
       </div>

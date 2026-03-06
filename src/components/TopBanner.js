@@ -14,7 +14,7 @@ class TopBanner extends React.Component {
       return (
          <div className="topBanner" style={style}>
             <Link className="backArrow" to="/">
-               <IconArrowLeft color={arrowColor} size={28} stroke={2} />
+               <IconArrowLeft color={arrowColor} size={60} stroke={2} />
             </Link>
          </div>
       );

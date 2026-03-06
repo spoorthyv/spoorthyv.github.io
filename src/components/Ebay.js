@@ -1,7 +1,7 @@
 import React from 'react';
 
 import TopBanner from './TopBanner';
-import { IconBulb, IconArrowRight, IconMoodEmpty, IconMoodSmile, IconMoodSad } from '@tabler/icons-react';
+import { IconBulb, IconLink, IconCircleMinus, IconCircleCheckFilled, IconCircleX } from '@tabler/icons-react';
 
 import fullProto from "../files/SSFFullProto.mp4";
 import ebayHeader from '../images/ebay/ebayBanner.svg';
@@ -35,7 +35,7 @@ class Ebay extends React.Component {
               </p>
               <h4>Step 1A: Internal Research</h4>
               <div id="lightbulbBanner">
-                <IconBulb size={24} stroke={1.5} />
+                <IconBulb size={72} stroke={1.5} color="#d49e15ff" />
                 <p>
                   For me, understanding the current state of your own product is the
                   most important step to designing a pattern that scales across every
@@ -71,7 +71,7 @@ class Ebay extends React.Component {
                 target="_blank"
               >
                 View Research Presentation
-                <IconArrowRight size={20} stroke={1.5} />
+                <IconLink size={28} stroke={2} />
               </a>
               <h4>Step 2: Design Exploration</h4>
               <p>
@@ -83,31 +83,29 @@ class Ebay extends React.Component {
                 First I weighed the pros and cons of every type of filtering UI that I
                 saw in my external research and tried to understand how they would
                 affect our 2 main goals. I decided that a{" "}
-                <b>pill-based filtering UI</b>
-                {"{"}" "{"}"}
-                would be the way to go.
+                <b>pill-based filtering UI</b> would be the way to go.
               </p>
               <div id="proconChart">
                 <h4>A pill filtering system would:</h4>
                 <div>
                   <p>Find a filter you already have in mind</p>
-                  <IconMoodEmpty size={24} stroke={1.5} color="#8a8a8a" />
+                  <IconCircleMinus size={32} stroke={2} color="#F5A623" />
                 </div>
                 <div>
                   <p>Discover what you should filter by</p>
-                  <IconMoodSmile size={24} stroke={1.5} color="#0081F8" />
+                  <IconCircleCheckFilled size={32} color="#28A745" />
                 </div>
                 <div>
                   <p>Remove filters you have applied</p>
-                  <IconMoodSmile size={24} stroke={1.5} color="#0081F8" />
+                  <IconCircleCheckFilled size={32} color="#28A745" />
                 </div>
                 <div>
                   <p>Edit filters you have applied</p>
-                  <IconMoodSmile size={24} stroke={1.5} color="#0081F8" />
+                  <IconCircleCheckFilled size={32} color="#28A745" />
                 </div>
                 <div>
                   <p>Dont add visual clutter &amp; distract from listings</p>
-                  <IconMoodSad size={24} stroke={1.5} color="#E53258" />
+                  <IconCircleX size={32} stroke={2} color="#E53258" />
                 </div>
               </div>
               <p>

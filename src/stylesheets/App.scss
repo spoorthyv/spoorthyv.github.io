@@ -1,4 +1,3 @@
-
 #App {
    width: 100vw;
    height: 100vh;
@@ -15,7 +14,7 @@
    width: calc(100% - #{420px});
    height: 100%;
    overflow-y: overlay;
-   overflow-x: hidden; 
+   overflow-x: hidden;
    position: fixed;
    top: 0;
 }
@@ -35,6 +34,7 @@
          filter: brightness(1);
          transition: filter 0.25s;
       }
+
       svg:hover {
          filter: brightness(1.3);
       }
@@ -47,59 +47,60 @@
    display: flex;
    width: 100%;
    overflow-x: auto;
-   > div {
+
+   >div {
       padding: 20px 120px 20px 0;
       display: flex;
+      gap: 35px;
+
       img {
          height: 486px;
-         box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.07);
-         margin-right: 35px;
+         box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.07);
          cursor: pointer;
-      }
-      img:nth-child(1) {
-         margin-left: 35px;
       }
    }
 }
+
 .horizGallery::-webkit-scrollbar {
-  height: 10px;
-  display: none;
+   height: 10px;
+   display: none;
 }
+
 .fullScreen::-webkit-scrollbar {
-  display: block;
+   display: block;
 }
+
 .horizGallery::-webkit-scrollbar-track {
-  background-color: rgba(0, 0, 0, 0.88);
+   background-color: rgba(0, 0, 0, 0.88);
 }
+
 .horizGallery::-webkit-scrollbar-thumb {
-  background-color: rgb(255, 255, 255);
-  border-radius: 20px;
+   background-color: rgb(255, 255, 255);
+   border-radius: 20px;
 }
 
-@media screen and (max-width: 1002px)  {
-  #wrapper {
-     top: 80px;
-     width: 100%;
-     left: 0;
-     height: calc(100% - #{80px});
-  }
+@media screen and (max-width: 1002px) {
+   #wrapper {
+      top: 80px;
+      width: 100%;
+      left: 0;
+      height: calc(100% - #{80px});
+   }
 
-  #wrapper.smallNav {
-     left: 0;
-     width: 100%;
-  }
+   #wrapper.smallNav {
+      left: 0;
+      width: 100%;
+   }
 
-  .horizGallery {
-     > div {
-        img {
-           height: 300px;
-           margin-right: 20px;
-        }
-        img:nth-child(1) {
-           margin-left: 20px;
-        }
-     }
-  }
+   .horizGallery {
+      >div {
+         gap: 20px;
+
+         img {
+            height: 300px;
+         }
+      }
+   }
 }
 
 .fade-enter {
@@ -113,13 +114,15 @@
 }
 
 @keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  55% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+   0% {
+      opacity: 0;
+   }
+
+   55% {
+      opacity: 0;
+   }
+
+   100% {
+      opacity: 1;
+   }
 }
