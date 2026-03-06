@@ -1,87 +1,105 @@
 @import "./variables";
 
 #portfolio {
+   display: flex;
+   flex-direction: column;
+   min-height: 100vh;
+
    #portfolioBody {
-      display: grid;
-      justify-content: center;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
       padding: 150px $portfolioPadding 75px $portfolioPadding;
-      grid-gap: 8px;
-
-      #header {
-         padding: 0;
-         width: 100%;
-         font-weight: 400;
-         letter-spacing: -0.1px;
-      }
-
-      #filterBar {
-         display: flex;
-         margin-bottom: 28px;
-
-         .filter {
-            font-family: $headerFontFamily;
-            padding: 12px 20px;
-            line-height: 1;
-            border-radius: 52px;
-            margin-left: 12px;
-            background-color: #f7f7f7;
-            color: #919196;
-            transition: 0.3s all;
-            font-weight: 600;
-
-            &:nth-child(1) {
-               margin-left: 0;
-            }
-
-            &:hover {
-               cursor: pointer;
-
-               &:nth-child(1) {
-                  color: #4676fd;
-                  background-color: #eef3ff;
-               }
-
-               &:nth-child(2) {
-                  color: #1ea96f;
-                  background-color: #e8f9f0;
-               }
-
-               &:nth-child(3) {
-                  color: #ef8739;
-                  background-color: #fff3eb;
-               }
-            }
-
-            &.selected {
-               color: #fff;
-
-               &:nth-child(1) {
-                  background-color: #4676fd;
-               }
-
-               &:nth-child(2) {
-                  background-color: #20b376;
-               }
-
-               &:nth-child(3) {
-                  background-color: #f78f40;
-               }
-
-               &:hover {
-                  color: #fff;
-               }
-            }
-         }
-      }
+      gap: 8px;
+      width: 100%;
+      box-sizing: border-box;
 
       #cardGrid {
          display: grid;
-         grid-template-columns: repeat(3, $cardWidth);
-         grid-auto-rows: 338px;
+         grid-template-columns: repeat(auto-fit, $cardWidth);
          justify-content: center;
          grid-gap: $cardGap;
+         width: 100%;
+         max-width: 4 * $cardWidth + 3 * $cardGap;
+         margin: 0 auto;
+
+         #headerWrapper {
+            grid-column: 1 / -1;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+
+            #header {
+               padding: 0;
+               width: 100%;
+               font-weight: 400;
+               letter-spacing: -0.1px;
+            }
+
+            #filterBar {
+               display: flex;
+               margin-bottom: 8px;
+               width: 100%;
+
+               .filter {
+                  font-family: $headerFontFamily;
+                  padding: 12px 20px;
+                  line-height: 1;
+                  border-radius: 52px;
+                  margin-left: 12px;
+                  background-color: #f7f7f7;
+                  color: #919196;
+                  transition: 0.3s all;
+                  font-weight: 600;
+
+                  &:nth-child(1) {
+                     margin-left: 0;
+                  }
+
+                  &:hover {
+                     cursor: pointer;
+
+                     &:nth-child(1) {
+                        color: #4676fd;
+                        background-color: #eef3ff;
+                     }
+
+                     &:nth-child(2) {
+                        color: #1ea96f;
+                        background-color: #e8f9f0;
+                     }
+
+                     &:nth-child(3) {
+                        color: #ef8739;
+                        background-color: #fff3eb;
+                     }
+                  }
+
+                  &.selected {
+                     color: #fff;
+
+                     &:nth-child(1) {
+                        background-color: #4676fd;
+                     }
+
+                     &:nth-child(2) {
+                        background-color: #20b376;
+                     }
+
+                     &:nth-child(3) {
+                        background-color: #f78f40;
+                     }
+
+                     &:hover {
+                        color: #fff;
+                     }
+                  }
+               }
+            }
+         }
 
          .card {
+            height: 338px;
             display: flex;
             overflow: hidden;
             position: relative;
@@ -277,50 +295,21 @@
    }
 }
 
-@media screen and (max-width: $breakLarge) {
-   #portfolio {
-      #portfolioBody {
-         #cardGrid {
-            grid-template-columns: repeat(2, $cardWidth);
-         }
-      }
-   }
-}
 
-@media screen and (max-width: $breakMedium) {
-   #portfolio {
-      #portfolioBody {
-         #header {
-            width: 276px;
-         }
-
-         #cardGrid {
-            grid-template-columns: repeat(1, max-content);
-         }
-      }
-   }
-}
 
 @media screen and (max-width: $breakSmall) {
    #portfolio {
       #portfolioBody {
-         padding: 40px 0;
-         grid-gap: 24px;
+         padding: 32px;
+         gap: 24px;
 
          #filterBar {
             display: none;
          }
 
-         #header {
-            width: calc(100vw - 64px);
-         }
-
          #cardGrid {
-            grid-gap: 18px;
-
-            .card {
-               width: calc(100vw - 64px);
-            }
+            gap: 18px;
+            grid-template-columns: 1fr;
          }
       }
 

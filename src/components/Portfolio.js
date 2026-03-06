@@ -101,9 +101,11 @@ class Portfolio extends React.Component {
       return (
          <div id="portfolio">
             <div id="portfolioBody">
-               <h3 id="header">Here's what I've been working on:</h3>
-               <FilterBar clickHandler={this.setFilter} currFilter={this.state.filter} />
                <div id="cardGrid">
+                  <div id="headerWrapper">
+                     <h3 id="header">Here's what I've been working on:</h3>
+                     <FilterBar clickHandler={this.setFilter} currFilter={this.state.filter} />
+                  </div>
                   {this.renderCards()}
                </div>
             </div>
