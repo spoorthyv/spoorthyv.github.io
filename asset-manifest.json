@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.6138a92d.css",
+    "main.css": "/static/css/main.62a3c2a3.css",
     "main.js": "/static/js/main.aaac0b45.js",
     "static/media/uberVideo.mov": "/static/media/uberVideo.291486316393211e10dd.mov",
     "static/media/uberMac.zip": "/static/media/uberMac.bf144fb64260cb4e9f24.zip",
@@ -89,11 +89,11 @@
     "static/media/copy.svg": "/static/media/copy.da99eeace9776228363b3bb3213f9c3a.svg",
     "static/media/skewedrect.svg": "/static/media/skewedrect.d5521a17db02f43a1f67c09d4c43d384.svg",
     "static/media/triangle.svg": "/static/media/triangle.4bbab2a8f3c6b8a44857d8b0534d62fd.svg",
-    "main.6138a92d.css.map": "/static/css/main.6138a92d.css.map",
+    "main.62a3c2a3.css.map": "/static/css/main.62a3c2a3.css.map",
     "main.aaac0b45.js.map": "/static/js/main.aaac0b45.js.map"
   },
   "entrypoints": [
-    "static/css/main.6138a92d.css",
+    "static/css/main.62a3c2a3.css",
     "static/js/main.aaac0b45.js"
   ]
 }
