@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
-import { ReactComponent as BackArrow} from "../images/backArrow.svg";
+import { IconArrowLeft } from '@tabler/icons-react';
 
 class TopBanner extends React.Component {
    render(props) {
@@ -13,10 +12,10 @@ class TopBanner extends React.Component {
       };
 
       return (
-         <div className="topBanner" style={ style }>
-           <Link className="backArrow" to="/">
-              <BackArrow fill={arrowColor} />
-           </Link>
+         <div className="topBanner" style={style}>
+            <Link className="backArrow" to="/">
+               <IconArrowLeft color={arrowColor} size={28} stroke={2} />
+            </Link>
          </div>
       );
    }

@@ -1,10 +1,10 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Document, Page, pdfjs } from 'react-pdf';
+import { IconCloudDownload } from '@tabler/icons-react';
 import 'react-pdf/dist/Page/AnnotationLayer.css';
 import 'react-pdf/dist/Page/TextLayer.css';
 
 import resumePDF from '../files/resume.pdf';
-import downloadCloud from '../images/resume/downloadCloud.svg';
 
 import '../stylesheets/resume.scss';
 
@@ -49,7 +49,7 @@ const Resume = () => {
             </div>
             <a id="dlResumeButton" href={resumePDF} download>
                Download Resume
-               <img src={downloadCloud} alt="Download" />
+               <IconCloudDownload size={24} style={{ marginLeft: 8 }} />
             </a>
          </div>
       </div>

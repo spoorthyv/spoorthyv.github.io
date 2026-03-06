@@ -2,6 +2,7 @@ import React from 'react';
 
 import Card from './Card';
 import FilterBar from './FilterBar';
+import { IconHeartFilled, IconBrandReact } from '@tabler/icons-react';
 
 import squidLogo from '../images/squid/squidlogo.svg';
 import ebayLogo from '../images/ebay/ebay.svg';
@@ -10,8 +11,6 @@ import jupyterLogo from '../images/jupyter/jupyter.svg';
 import dribbbleLogo from '../images/dribbble/dribbble.svg';
 import showerLogo from '../images/fiveMinShower/ShowerIcon.png';
 import blank from '../images/photography/blank.png';
-import { ReactComponent as Heart } from '../images/portfolio/heart.svg';
-import { ReactComponent as ReactIcon } from '../images/portfolio/React-icon.svg';
 
 import '../stylesheets/portfolio.scss';
 
@@ -110,8 +109,8 @@ class Portfolio extends React.Component {
                </div>
             </div>
             <div id="footer">
-               <a href="https://github.com/spoorthyv/spoorthyv.github.io" target="_blank">
-                  <h4>This site was built with <Heart id="heartIcon" /> from scratch using <ReactIcon id='reactIcon' /></h4>
+               <a href="https://github.com/spoorthyv/spoorthyv.github.io" target="_blank" rel="noopener noreferrer">
+                  <h4>This site was built with <IconHeartFilled id="heartIcon" size={16} /> from scratch using <IconBrandReact id='reactIcon' size={18} /></h4>
                </a>
             </div>
          </div>

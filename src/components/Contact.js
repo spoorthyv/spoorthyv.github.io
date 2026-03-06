@@ -1,20 +1,14 @@
 import React from 'react';
-import { CSSTransition } from 'react-transition-group'
+import { CSSTransition } from 'react-transition-group';
+import { IconMail, IconBrandGithub, IconBrandLinkedin, IconBrandInstagram, IconCopy } from '@tabler/icons-react';
 
 import { ReactComponent as SayHi } from '../images/contact/comesayhi.svg';
-import { ReactComponent as Email } from '../images/contact/email.svg';
-import { ReactComponent as Github } from '../images/contact/github.svg';
-import { ReactComponent as Linkedin } from '../images/contact/linkedin.svg';
-import { ReactComponent as Instagram } from '../images/contact/instagram.svg';
 
 import { ReactComponent as GreenRect } from '../images/contact/greenskewedrect.svg';
 import { ReactComponent as GreyCirc } from '../images/contact/greycircle.svg';
 import { ReactComponent as OrangeCirc } from '../images/contact/orangecircle.svg';
 import { ReactComponent as RedCirc } from '../images/contact/redcircle.svg';
 import { ReactComponent as BlueTri } from '../images/contact/bluetriangle.svg';
-
-
-import { ReactComponent as Copy } from '../images/contact/copy.svg';
 
 import '../stylesheets/contact.scss';
 
@@ -41,7 +35,7 @@ class Contact extends React.Component {
             <div id="popup" key={0} ref={this.popupRef}>
                <h5 className="menuItem">spoorthyvemula@gmail.com</h5>
                <div className="menuItem" onClick={() => this.clickCopy()}>
-                  <Copy />
+                  <IconCopy size={24} stroke={1.5} />
                   <p>{this.state.emailIsCopied ? 'Copied!' : 'Copy Email Address'}</p>
                </div>
 
@@ -63,22 +57,22 @@ class Contact extends React.Component {
                      <div>
                         {this.renderPopup()}
                         <a onClick={() => this.setState({ popupIsShown: !this.state.popupIsShown })}>
-                           <Email />
+                           <IconMail size={28} stroke={1.5} />
                         </a>
                      </div>
                      <div>
                         <a href='https://www.linkedin.com/in/spoorthyv/' target="_blank" rel="noopener noreferrer">
-                           <Linkedin />
+                           <IconBrandLinkedin size={28} stroke={1.5} />
                         </a>
                      </div>
                      <div>
                         <a href='https://github.com/spoorthyv' target="_blank" rel="noopener noreferrer">
-                           <Github />
+                           <IconBrandGithub size={28} stroke={1.5} />
                         </a>
                      </div>
                      <div>
                         <a href='https://www.instagram.com/spoorthyv/' target="_blank" rel="noopener noreferrer">
-                           <Instagram />
+                           <IconBrandInstagram size={28} stroke={1.5} />
                         </a>
                      </div>
                   </div>
