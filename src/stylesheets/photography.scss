@@ -1,4 +1,3 @@
-@import "./variables";
 
 .photography {
    text-align: center;
@@ -15,7 +14,7 @@
       filter: grayscale(0%) !important;
    }
 
-   @media screen and (max-width: $breakSmall) {
+   @media screen and (max-width: 1002px) {
       img {
          margin: 32px 0 0 0;
          max-width: calc(100% - 64px);

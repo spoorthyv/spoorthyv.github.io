@@ -1,8 +1,6 @@
-@import "variables";
-
 #navbar {
    #navBackground {
-      width: $navbarWidth;
+      width: 420px;
       transition: 0.3s width ease-in-out, 0.4s background-color;
       height: 100vh;
       background-color: #f8f8f8;
@@ -114,7 +112,7 @@
 
    &.smallNav {
       #navBackground {
-         width: $navbarWidthSmall;
+         width: 146px;
       }
 
       #titles {
@@ -153,10 +151,10 @@
 
 
 
-@media screen and (max-width: $breakSmall) {
+@media screen and (max-width: 1002px) {
    #navbar {
       #navBackground {
-         height: $navbarMobileHeight;
+         height: 80px;
          width: 100%;
          background-color: #f8f8f8;
       }

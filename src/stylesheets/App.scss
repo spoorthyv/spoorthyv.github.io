@@ -1,4 +1,3 @@
-@import "./variables";
 
 #App {
    width: 100vw;
@@ -12,8 +11,8 @@
 }
 
 #wrapper {
-   left: $navbarWidth;
-   width: calc(100% - #{$navbarWidth});
+   left: 420px;
+   width: calc(100% - #{420px});
    height: 100%;
    overflow-y: overlay;
    overflow-x: hidden; 
@@ -22,8 +21,8 @@
 }
 
 #wrapper.smallNav {
-   left: $navbarWidthSmall;
-   width: calc(100% - #{$navbarWidthSmall});
+   left: 146px;
+   width: calc(100% - #{146px});
 }
 
 .topBanner {
@@ -77,12 +76,12 @@
   border-radius: 20px;
 }
 
-@media screen and (max-width: $breakSmall)  {
+@media screen and (max-width: 1002px)  {
   #wrapper {
-     top: $navbarMobileHeight;
+     top: 80px;
      width: 100%;
      left: 0;
-     height: calc(100% - #{$navbarMobileHeight});
+     height: calc(100% - #{80px});
   }
 
   #wrapper.smallNav {

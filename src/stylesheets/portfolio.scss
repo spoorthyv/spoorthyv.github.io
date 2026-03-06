@@ -1,4 +1,3 @@
-@import "./variables";
 
 #portfolio {
    display: flex;
@@ -9,18 +8,18 @@
       display: flex;
       flex-direction: column;
       flex-grow: 1;
-      padding: 150px $portfolioPadding 75px $portfolioPadding;
+      padding: 150px 98px;
       gap: 8px;
       width: 100%;
       box-sizing: border-box;
 
       #cardGrid {
          display: grid;
-         grid-template-columns: repeat(auto-fit, $cardWidth);
+         grid-template-columns: repeat(auto-fit, 282px);
          justify-content: center;
-         grid-gap: $cardGap;
+         grid-gap: 40px;
          width: 100%;
-         max-width: 4 * $cardWidth + 3 * $cardGap;
+         max-width: 4 * 282px + 3 * 40px;
          margin: 0 auto;
 
          #headerWrapper {
@@ -42,7 +41,7 @@
                width: 100%;
 
                .filter {
-                  font-family: $headerFontFamily;
+                  font-family:  'Google Sans', system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
                   padding: 12px 20px;
                   line-height: 1;
                   border-radius: 52px;
@@ -142,7 +141,7 @@
             }
 
             .label {
-               font-family: $headerFontFamily;
+               font-family:  'Google Sans', system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
                font-weight: 600;
                letter-spacing: 0.2px;
                position: absolute;
@@ -297,7 +296,7 @@
 
 
 
-@media screen and (max-width: $breakSmall) {
+@media screen and (max-width: 1002px) {
    #portfolio {
       #portfolioBody {
          padding: 32px;

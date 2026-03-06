@@ -1,4 +1,3 @@
-@import "./variables";
 
 #contact {
    overflow: hidden;
@@ -192,7 +191,7 @@
    }
 }
 
-@media screen and (max-width: $breakSmall) {
+@media screen and (max-width: 1002px) {
    #contact {
       #contentWrapper {
          #content {

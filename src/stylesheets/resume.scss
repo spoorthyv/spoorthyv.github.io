@@ -1,17 +1,18 @@
-@import "./variables";
 
 #resume {
    .contentWrapper {
-      padding: 32px;
+      padding: 40px;
       box-sizing: border-box;
       display: flex;
 
-      img {
+      .resumePdf {
          width: 100%;
          max-width: 870px;
+         aspect-ratio: 8.5 / 11;
          margin: auto;
          border: 1px solid #e8e8e8;
-         border-radius: 4px;
+         background-color: #fff;
+         display: block;
       }
 
       #dlResumeButton {
@@ -25,7 +26,7 @@
          box-shadow: 0px 3px 8px #00000042;
          position: fixed;
          bottom: 24px;
-         left: calc(#{$navbarWidth}/2 + 50%);
+         left: calc(#{420px}/2 + 50%);
          transform: translateX(-50%);
          font-weight: 500;
 
@@ -48,9 +49,8 @@
 }
 
 
-#wrapper {}
 
-@media screen and (max-width: $breakSmall) {
+@media screen and (max-width: 1002px) {
    #resume {
       .contentWrapper {
          #dlResumeButton {
