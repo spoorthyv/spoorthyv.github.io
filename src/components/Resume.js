@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Document, Page, pdfjs } from 'react-pdf';
 import 'react-pdf/dist/Page/AnnotationLayer.css';
 import 'react-pdf/dist/Page/TextLayer.css';
@@ -14,24 +14,46 @@ pdfjs.GlobalWorkerOptions.workerSrc = new URL(
    import.meta.url,
 ).toString();
 
-class Resume extends React.Component {
-   render() {
-      return (
-         <div id="resume">
-            <div className="contentWrapper">
-               <div className="resumePdf">
-                  <Document file={resumePDF}>
-                     <Page pageNumber={1} width={870} renderTextLayer={false} renderAnnotationLayer={false} />
-                  </Document>
-               </div>
-               <a id="dlResumeButton" href={resumePDF} download>
-                  Download Resume
-                  <img src={downloadCloud} alt="Download" />
-               </a>
+const Resume = () => {
+   const [width, setWidth] = useState(870);
+   const pdfWrapperRef = useRef(null);
+
+   useEffect(() => {
+      const resizeObserver = new ResizeObserver((entries) => {
+         for (let entry of entries) {
+            setWidth(entry.contentRect.width);
+         }
+      });
+
+      if (pdfWrapperRef.current) {
+         resizeObserver.observe(pdfWrapperRef.current);
+      }
+
+      return () => {
+         resizeObserver.disconnect();
+      };
+   }, []);
+
+   return (
+      <div id="resume">
+         <div className="contentWrapper">
+            <div className="resumePdf" ref={pdfWrapperRef}>
+               <Document file={resumePDF}>
+                  <Page
+                     pageNumber={1}
+                     width={width}
+                     renderTextLayer={false}
+                     renderAnnotationLayer={false}
+                  />
+               </Document>
             </div>
+            <a id="dlResumeButton" href={resumePDF} download>
+               Download Resume
+               <img src={downloadCloud} alt="Download" />
+            </a>
          </div>
-      );
-   }
-}
+      </div>
+   );
+};
 
 export default Resume;
