@@ -2,6 +2,7 @@
    display: flex;
    flex-direction: column;
    min-height: 100vh;
+   position: relative;
 
    #portfolioBody {
       display: flex;
@@ -236,6 +237,9 @@
    }
 
    #footer {
+      position: relative;
+      z-index: -2;
+
       a {
          display: flex;
          align-items: center;
@@ -244,7 +248,6 @@
          border-top: 2px solid #f8f8f8;
 
          h4 {
-            transition: 0.3s color;
             font-size: 15px;
             line-height: 15px;
             letter-spacing: 0.5px;
@@ -257,7 +260,7 @@
          }
 
          svg {
-            transition: 0.3s fill;
+            transition: 0.3s fill, 0.3s color;
          }
 
          #reactIcon {
@@ -271,21 +274,120 @@
             padding: 0 4px 1px 4px;
             fill: #ef8e90;
          }
+
+         #sparklesIcon {
+            color: #a78bca;
+            margin-left: 4px;
+         }
+
+         .iconTooltip {
+            position: relative;
+            display: inline-flex;
+            align-items: center;
+
+            &::after {
+               content: attr(data-tooltip);
+               position: absolute;
+               bottom: calc(100% + 6px);
+               left: 50%;
+               transform: translateX(-50%);
+               background-color: #3f3f3f;
+               color: #fff;
+               font-size: 11px;
+               font-weight: 500;
+               white-space: nowrap;
+               padding: 4px 8px;
+               border-radius: 4px;
+               pointer-events: none;
+               opacity: 0;
+               transition: opacity 0.2s;
+               font-family: 'Google Sans', system-ui, sans-serif;
+               letter-spacing: 0.2px;
+            }
+
+            &:hover::after {
+               opacity: 1;
+            }
+
+            &:hover #heartIcon {
+               fill: #f55f62;
+            }
+
+            &:hover #reactIcon {
+               fill: #3ccff7;
+            }
+
+            &:hover #sparklesIcon {
+               color: #8a5cc7;
+            }
+         }
       }
+   }
+}
 
-      a:hover {
-         h4 {
-            color: rgb(109, 109, 109);
-         }
+#portfolio #SkewedRect {
+   position: absolute;
+   right: -8px;
+   top: -40px;
+   pointer-events: none;
+   z-index: -1;
 
-         #reactIcon {
-            fill: #3ccff7;
-         }
+   path {
+      fill: #5FD58E;
+   }
+}
 
-         #heartIcon {
-            fill: #f55f62;
-         }
-      }
+#portfolio #Circle1 {
+   position: absolute;
+   top: 21%;
+   right: 8%;
+   pointer-events: none;
+   opacity: 0.6;
+   z-index: -1;
+
+   path {
+      fill: #D9D9D9;
+   }
+}
+
+#portfolio #Triangle {
+   position: absolute;
+   left: -43px;
+   height: 170px !important;
+   width: 170px !important;
+   top: 45vw;
+   pointer-events: none;
+   z-index: -1;
+   transform: rotate(60deg);
+
+   path {
+      fill: #789EFF;
+   }
+}
+
+#portfolio #Circle2 {
+   position: absolute;
+   left: 35%;
+   bottom: 24%;
+   pointer-events: none;
+   z-index: -1;
+
+   path {
+      fill: #FAB752;
+   }
+}
+
+#portfolio #Circle3 {
+   position: absolute;
+   right: -44px;
+   bottom: 6%;
+   height: 190px !important;
+   width: 190px !important;
+   pointer-events: none;
+   z-index: -1;
+
+   path {
+      fill: #F75129;
    }
 }
 
@@ -293,8 +395,17 @@
 
 @media screen and (max-width: 1002px) {
    #portfolio {
+
+      #SkewedRect,
+      #Circle1,
+      #Circle2,
+      #Circle3,
+      #Triangle {
+         display: none;
+      }
+
       #portfolioBody {
-         padding: 32px;
+         padding: 28px 20px;
          gap: 24px;
 
          #filterBar {
@@ -302,17 +413,22 @@
          }
 
          #cardGrid {
-            gap: 18px;
+            gap: 20px;
             grid-template-columns: 1fr;
          }
       }
 
       #footer {
          a {
-            padding: 12px;
+            padding: 6px 16px;
+            text-align: center;
 
             h4 {
                font-size: 13px;
+               line-height: inherit;
+               white-space: normal;
+               flex-wrap: wrap;
+               justify-content: center;
 
                #heartIcon {
                   width: 13px;

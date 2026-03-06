@@ -1,4 +1,8 @@
 #resume {
+   position: relative;
+   overflow: hidden;
+   min-height: 100vh;
+
    .contentWrapper {
       padding: 64px;
       box-sizing: border-box;
@@ -30,6 +34,7 @@
          left: calc(#{420px}/2 + 50%);
          transform: translateX(-50%);
          font-weight: 500;
+         white-space: nowrap;
 
          &:hover {
             transform: translateX(-50%) translateY(-4px);
@@ -41,14 +46,97 @@
          }
       }
    }
+
+   #SkewedRect {
+      position: absolute;
+      top: 12%;
+      left: 18%;
+      width: 15vw !important;
+      height: 15vw !important;
+      pointer-events: none;
+      z-index: -1;
+      transform: rotate(-15deg);
+
+      path {
+         fill: #5FD58E;
+      }
+   }
+
+   #Circle1 {
+      position: absolute;
+      bottom: 18%;
+      left: 8%;
+      pointer-events: none;
+      opacity: 0.6;
+      z-index: -1;
+      transform: rotate(45deg);
+
+      path {
+         fill: #D9D9D9;
+      }
+   }
+
+   #Triangle {
+      position: absolute;
+      top: 25%;
+      right: 12%;
+      height: 170px !important;
+      width: 170px !important;
+      pointer-events: none;
+      z-index: -1;
+      transform: rotate(115deg);
+
+      path {
+         fill: #789EFF;
+      }
+   }
+
+   #Circle2 {
+      position: absolute;
+      top: 55%;
+      right: 22%;
+      pointer-events: none;
+      z-index: -1;
+      transform: rotate(-75deg);
+
+      path {
+         fill: #FAB752;
+      }
+   }
+
+   #Circle3 {
+      position: absolute;
+      bottom: 25%;
+      left: 35%;
+      height: 190px !important;
+      width: 190px !important;
+      pointer-events: none;
+      z-index: -1;
+      transform: rotate(200deg);
+
+      path {
+         fill: #F75129;
+      }
+   }
 }
 
 
 
 @media screen and (max-width: 1002px) {
    #resume {
+      height: calc(100vh - 80px);
+      min-height: unset;
+
+      #SkewedRect,
+      #Circle1,
+      #Circle2,
+      #Circle3,
+      #Triangle {
+         display: none;
+      }
+
       .contentWrapper {
-         padding: 24px;
+         padding: 8px;
 
          #dlResumeButton {
             left: 50%;

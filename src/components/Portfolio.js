@@ -2,7 +2,7 @@ import React from 'react';
 
 import Card from './Card';
 import FilterBar from './FilterBar';
-import { IconHeartFilled, IconBrandReact } from '@tabler/icons-react';
+import { IconHeartFilled, IconBrandReact, IconSparklesFilled } from '@tabler/icons-react';
 
 import squidLogo from '../images/squid/squidlogo.svg';
 import ebayLogo from '../images/ebay/ebay.svg';
@@ -11,6 +11,10 @@ import jupyterLogo from '../images/jupyter/jupyter.svg';
 import dribbbleLogo from '../images/dribbble/dribbble.svg';
 import showerLogo from '../images/fiveMinShower/ShowerIcon.png';
 import blank from '../images/photography/blank.png';
+
+import { ReactComponent as SkewedRect } from '../images/shapes/skewedrect.svg';
+import { ReactComponent as Circle } from '../images/shapes/circle.svg';
+import { ReactComponent as Triangle } from '../images/shapes/triangle.svg';
 
 import '../stylesheets/portfolio.scss';
 
@@ -110,9 +114,14 @@ class Portfolio extends React.Component {
             </div>
             <div id="footer">
                <a href="https://github.com/spoorthyv/spoorthyv.github.io" target="_blank" rel="noopener noreferrer">
-                  <h4>This site was built with <IconHeartFilled id="heartIcon" size={16} /> from scratch using <IconBrandReact id='reactIcon' size={18} /></h4>
+                  <h4>Built with <span className="iconTooltip" data-tooltip="Love"><IconHeartFilled id="heartIcon" size={16} /></span> from scratch using <span className="iconTooltip" data-tooltip="React"><IconBrandReact id='reactIcon' size={18} /></span> with the help of a little <span className="iconTooltip" data-tooltip="AI"><IconSparklesFilled id='sparklesIcon' size={18} /></span></h4>
                </a>
             </div>
+            <SkewedRect id="SkewedRect" />
+            <Circle id="Circle1" />
+            <Circle id="Circle2" />
+            <Circle id="Circle3" />
+            <Triangle id="Triangle" />
          </div>
       );
    }

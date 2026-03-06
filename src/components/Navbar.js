@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom';
 import { withRouter } from 'react-router';
 
 import '../stylesheets/Navbar.scss';
+import { ReactComponent as Logo } from '../images/logo.svg';
 
 class Navbar extends React.Component {
    isMainPage() {
@@ -38,7 +39,7 @@ class Navbar extends React.Component {
                <NavLink to="/contact" activeClassName="active" exact>Contact</NavLink>
             </div>
             <div id="logoWrapper">
-               <a id="logo" href="/"></a>
+               <a id="logo" href="/"><Logo /></a>
             </div>
          </div>
       );

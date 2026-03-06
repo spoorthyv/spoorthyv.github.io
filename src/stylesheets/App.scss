@@ -10,18 +10,21 @@
 }
 
 #wrapper {
-   left: 420px;
-   width: calc(100% - #{420px});
+   left: 0;
+   width: 100%;
    height: 100%;
-   overflow-y: overlay;
+   overflow-y: auto;
    overflow-x: hidden;
    position: fixed;
    top: 0;
+   padding-left: 420px;
+   box-sizing: border-box;
 }
 
 #wrapper.smallNav {
-   left: 146px;
-   width: calc(100% - #{146px});
+   left: 0;
+   width: 100%;
+   padding-left: 146px;
 }
 
 .topBanner {
@@ -81,15 +84,18 @@
 
 @media screen and (max-width: 1002px) {
    #wrapper {
-      top: 80px;
+      top: 0;
       width: 100%;
       left: 0;
-      height: calc(100% - #{80px});
+      height: 100%;
+      padding-left: 0;
+      padding-top: 80px;
    }
 
    #wrapper.smallNav {
       left: 0;
       width: 100%;
+      padding-left: 0;
    }
 
    .horizGallery {

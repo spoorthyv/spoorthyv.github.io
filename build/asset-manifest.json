@@ -1,12 +1,11 @@
 {
   "files": {
-    "main.css": "/static/css/main.6d0cfea3.css",
-    "main.js": "/static/js/main.41a671d8.js",
+    "main.css": "/static/css/main.a75e8f1c.css",
+    "main.js": "/static/js/main.54a4ebbe.js",
     "static/media/uberVideo.mov": "/static/media/uberVideo.291486316393211e10dd.mov",
     "static/media/uberMac.zip": "/static/media/uberMac.bf144fb64260cb4e9f24.zip",
     "static/media/uberPrinciple.prd": "/static/media/uberPrinciple.ad9e6ee917e43f1b9393.prd",
     "static/media/jupyter_brand_guide.pdf": "/static/media/jupyter_brand_guide.1734a733c6962c688ac0.pdf",
-    "static/media/pdf.worker.min.mjs": "/static/media/pdf.worker.min.a2d98ae8b2460f4eb506.mjs",
     "static/media/FinishedDribbble.mp4": "/static/media/FinishedDribbble.7c77b7eb214e74c3ab48.mp4",
     "static/media/UberPrototypeSmall.mp4": "/static/media/UberPrototypeSmall.0baac410f5275c304c07.mp4",
     "static/media/exampleNote.png": "/static/media/exampleNote.16f7055601d8cbd92aaf.png",
@@ -92,11 +91,11 @@
     "static/media/copy.svg": "/static/media/copy.da99eeace9776228363b3bb3213f9c3a.svg",
     "static/media/greenskewedrect.svg": "/static/media/greenskewedrect.3f793462cba391e68a76134ffd21c96c.svg",
     "static/media/bluetriangle.svg": "/static/media/bluetriangle.92c888c2b6d115c51726af4f75eb0153.svg",
-    "main.6d0cfea3.css.map": "/static/css/main.6d0cfea3.css.map",
-    "main.41a671d8.js.map": "/static/js/main.41a671d8.js.map"
+    "main.a75e8f1c.css.map": "/static/css/main.a75e8f1c.css.map",
+    "main.54a4ebbe.js.map": "/static/js/main.54a4ebbe.js.map"
   },
   "entrypoints": [
-    "static/css/main.6d0cfea3.css",
-    "static/js/main.41a671d8.js"
+    "static/css/main.a75e8f1c.css",
+    "static/js/main.54a4ebbe.js"
   ]
 }

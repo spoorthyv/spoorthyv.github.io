@@ -6,13 +6,14 @@ import 'react-pdf/dist/Page/TextLayer.css';
 
 import resumePDF from '../files/resume.pdf';
 
+import { ReactComponent as SkewedRect } from '../images/shapes/skewedrect.svg';
+import { ReactComponent as Circle } from '../images/shapes/circle.svg';
+import { ReactComponent as Triangle } from '../images/shapes/triangle.svg';
+
 import '../stylesheets/resume.scss';
 
-// Configure the worker for react-pdf to use local bundle instead of CDN
-pdfjs.GlobalWorkerOptions.workerSrc = new URL(
-   'pdfjs-dist/build/pdf.worker.min.mjs',
-   import.meta.url,
-).toString();
+// Configure PDF.js worker via CDN (import.meta.url breaks in CRA production builds)
+pdfjs.GlobalWorkerOptions.workerSrc = `https://unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.mjs`;
 
 const Resume = () => {
    const [width, setWidth] = useState(870);
@@ -52,6 +53,11 @@ const Resume = () => {
                <IconCloudDownload size={24} />
             </a>
          </div>
+         <SkewedRect id="SkewedRect" />
+         <Circle id="Circle1" />
+         <Circle id="Circle2" />
+         <Circle id="Circle3" />
+         <Triangle id="Triangle" />
       </div>
    );
 };

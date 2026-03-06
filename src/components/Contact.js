@@ -7,11 +7,9 @@ import { ReactComponent as Github } from '../images/contact/github.svg';
 import { ReactComponent as Linkedin } from '../images/contact/linkedin.svg';
 import { ReactComponent as Instagram } from '../images/contact/instagram.svg';
 
-import { ReactComponent as GreenRect } from '../images/contact/greenskewedrect.svg';
-import { ReactComponent as GreyCirc } from '../images/contact/greycircle.svg';
-import { ReactComponent as OrangeCirc } from '../images/contact/orangecircle.svg';
-import { ReactComponent as RedCirc } from '../images/contact/redcircle.svg';
-import { ReactComponent as BlueTri } from '../images/contact/bluetriangle.svg';
+import { ReactComponent as SkewedRect } from '../images/shapes/skewedrect.svg';
+import { ReactComponent as Circle } from '../images/shapes/circle.svg';
+import { ReactComponent as Triangle } from '../images/shapes/triangle.svg';
 
 
 import { ReactComponent as Copy } from '../images/contact/copy.svg';
@@ -84,11 +82,11 @@ class Contact extends React.Component {
                   </div>
                </div>
 
-               <GreenRect />
-               <GreyCirc />
-               <OrangeCirc />
-               <RedCirc />
-               <BlueTri />
+               <SkewedRect id="SkewedRect" />
+               <Circle id="Circle1" />
+               <Circle id="Circle2" />
+               <Circle id="Circle3" />
+               <Triangle id="Triangle" />
             </div>
          </div>
       );

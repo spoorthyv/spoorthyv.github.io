@@ -1,9 +1,25 @@
 #navbar {
+   position: fixed;
+   top: 0;
+   left: 0;
+   height: 100vh;
+   z-index: 10;
+   pointer-events: none;
+
+   #navBackground,
+   #titles,
+   #linkWrapper,
+   #logoWrapper {
+      pointer-events: auto;
+   }
+
    #navBackground {
       width: 420px;
       transition: 0.3s width ease-in-out, 0.4s background-color;
       height: 100vh;
-      background-color: #f8f8f8;
+      background-color: rgba(239, 239, 239, 0.5);
+      backdrop-filter: blur(19px);
+      -webkit-backdrop-filter: blur(19px);
    }
 
    #titles {
@@ -94,19 +110,24 @@
       left: 24px;
 
       #logo {
-         background-image: url('../images/logo.svg');
-         background-size: contain;
-         background-repeat: no-repeat;
-         background-position: 50%;
+         display: inline-flex;
          height: 50px;
          width: 50px;
-         display: inline-block;
-         filter: grayscale(0.8);
-         transition: all 0.4s;
-      }
+         transition: filter 0.4s;
 
-      #logo:hover {
-         filter: grayscale(0.3);
+         svg {
+            width: 100%;
+            height: 100%;
+
+            path {
+               fill: #22222279;
+               transition: fill 0.4s;
+            }
+         }
+
+         &:hover svg path {
+            fill: #453bfff7;
+         }
       }
    }
 
@@ -155,8 +176,8 @@
    #navbar {
       #navBackground {
          height: 80px;
-         width: 100%;
-         background-color: #f8f8f8;
+         width: 100vw;
+         background-color: #f7f7f7cc;
       }
 
       #linkWrapper {
@@ -182,7 +203,7 @@
 
       &.smallNav {
          #navBackground {
-            width: 100%;
+            width: 100vw;
          }
 
          #linkWrapper {
