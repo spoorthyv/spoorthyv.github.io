@@ -7,9 +7,11 @@ class TopBanner extends React.Component {
       const { bgColor, image, arrowColor } = this.props;
 
       var style = {
-         backgroundColor: bgColor,
-         backgroundImage: `url(${image})`
+         backgroundColor: bgColor
       };
+      if (image) {
+         style.backgroundImage = `url(${image})`;
+      }
 
       return (
          <div className="topBanner" style={style}>

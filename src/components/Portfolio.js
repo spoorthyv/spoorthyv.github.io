@@ -10,6 +10,7 @@ import uberLogo from '../images/uber/uberWhite.svg';
 import jupyterLogo from '../images/jupyter/jupyter.svg';
 import dribbbleLogo from '../images/dribbble/dribbble.svg';
 import showerLogo from '../images/fiveMinShower/ShowerIcon.png';
+import pelotonLogo from '../images/peloton/peloton.svg';
 import blank from '../images/photography/blank.png';
 
 import { ReactComponent as SkewedRect } from '../images/shapes/skewedrect.svg';
@@ -19,6 +20,14 @@ import { ReactComponent as Triangle } from '../images/shapes/triangle.svg';
 import '../stylesheets/portfolio.scss';
 
 const projects = [
+   {
+      id: "peloton",
+      title: 'Peloton, Music',
+      description: "My work as a Product Designer for 6 years",
+      color: "#181a1d",
+      type: "Work",
+      logo: pelotonLogo
+   },
    {
       id: "squid",
       title: 'Squid Notes',
@@ -36,20 +45,20 @@ const projects = [
       logo: ebayLogo
    },
    {
-      id: "uber",
-      title: 'Uber Case Study',
-      description: "Find your destination with the map",
-      color: "#0A2F3C",
-      type: "Project",
-      logo: uberLogo
-   },
-   {
       id: "jupyter",
       title: 'Project Jupyter',
       description: "My work as a UI/UX Designer and Software Engineer",
       color: "#FF9445",
       type: "Work",
       logo: jupyterLogo
+   },
+   {
+      id: "uber",
+      title: 'Uber Case Study',
+      description: "Find your destination with the map",
+      color: "#0A2F3C",
+      type: "Project",
+      logo: uberLogo
    },
    {
       id: "dribbble",

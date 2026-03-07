@@ -47,8 +47,7 @@ class Ebay extends React.Component {
                 apps and the mobile website, collecting screenshots, and talking to
                 designers in every design team that I could think of that may get
                 effected/benefit from my work on the filtering pattern. I came out of
-                the internal research with 2 goals: <b>increase consistency</b> and
-                <b>filter usage</b>.
+                the internal research with 2 goals: <b>increase consistency and filter usage</b>.
               </p>
               <h4>Step 1B: External Research</h4>
               <p>

@@ -1,72 +1,82 @@
-
 .jupyter {
   overflow-x: hidden;
+
   .innerWrapper {
 
-      .section {
-        margin: 0;
-        box-sizing: border-box;
-      }
+    .section {
+      margin: 0;
+      box-sizing: border-box;
+    }
 
-      .section:nth-child(2n+1) {
-        background-color: #f8f8f8;
-      }
+    .section:nth-child(2n+1) {
+      background-color: #f8f8f8;
+    }
 
-      .sectionContent {
-        padding: 52px 150px 68px 150px;
-        margin: auto;
-        max-width: 900px;
-      }
-      h1 {
-        color: #f37727;
-        padding: 24px 0 16px 0;
-      }
-      h2 {
-        line-height: 1.5;
-        color: #f37727;
-      }
-      h3 {
-        line-height: 2;
-      }
-      p {
-        line-height: 26px;;
-      }
-      b {
-        font-weight: 500;
-      }
-      ol {
-        margin: 5px 0 0 0;
-        padding-left: 17px;
-      }
-      li {
-        line-height: 1.5;
-      }
-      object {
-        margin-top: 20px;
-      }
+    .sectionContent {
+      padding: 52px 150px 68px 150px;
+      margin: auto;
+      max-width: 900px;
+    }
 
-      > img {
-        max-width: 100%;
+    h1 {
+      color: #f37727;
+      padding: 24px 0 16px 0;
+    }
+
+    h2 {
+      line-height: 1.5;
+      color: #f37727;
+    }
+
+    h3 {
+      line-height: 2;
+    }
+
+    p {
+      line-height: 26px;
+      ;
+    }
+
+    b {
+      font-weight: 500;
+    }
+
+    ol {
+      margin: 5px 0 0 0;
+      padding-left: 17px;
+    }
+
+    li {
+      line-height: 1.5;
+    }
+
+    object {
+      margin-top: 20px;
+    }
+
+    >img {
+      max-width: 100%;
+      width: 100%;
+    }
+
+    #navbarImg {
+      background-color: #f3f3f3;
+      padding: 5px;
+      margin: 20px 0;
+
+      img {
         width: 100%;
       }
+    }
 
-      #navbarImg {
-        background-color: #f3f3f3;
-        padding: 5px;
-        margin: 20px 0;
-        img {
-          width: 100%;
-        }
-      }
+    #jupyterLab {
+      padding-bottom: 20px;
+    }
 
-      #jupyterLab {
-         padding-bottom: 20px;
+    .horizGallery {
+      >div {
+        padding: 0 120px 68px 0;
       }
-
-      .horizGallery {
-         > div {
-            padding: 0 120px 68px 0;
-         }
-      }
+    }
   }
 }

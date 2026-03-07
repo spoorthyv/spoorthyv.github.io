@@ -11,6 +11,7 @@ import Uber from './Uber';
 import Jupyter from './Jupyter';
 import FiveMinShower from './FiveMinShower';
 import Photography from './Photography';
+import Peloton from './Peloton';
 
 const FadeTransition = ({ children, ...props }) => {
    const nodeRef = React.useRef(null);
@@ -58,6 +59,7 @@ class ContentWrapper extends React.Component {
                      <Route path="/jupyter" component={Jupyter} />
                      <Route path="/fiveMinShower" component={FiveMinShower} />
                      <Route path="/photography" component={Photography} />
+                     <Route path="/peloton" component={Peloton} />
                   </Switch>
                </FadeTransition>
             </TransitionGroup>
