@@ -1,3 +1,5 @@
+@import './variables.scss';
+
 #App {
    width: 100vw;
    height: 100vh;
@@ -17,14 +19,14 @@
    overflow-x: hidden;
    position: fixed;
    top: 0;
-   padding-left: 420px;
+   padding-left: $nav-width;
    box-sizing: border-box;
 }
 
 #wrapper.smallNav {
    left: 0;
    width: 100%;
-   padding-left: 146px;
+   padding-left: $nav-compact-width;
 }
 
 .topBanner {
@@ -82,14 +84,14 @@
    border-radius: 20px;
 }
 
-@media screen and (max-width: 1002px) {
+@media screen and (max-width: $breakpoint-mobile) {
    #wrapper {
       top: 0;
       width: 100%;
       left: 0;
       height: 100%;
       padding-left: 0;
-      padding-top: 76px;
+      padding-top: $nav-mobile-height;
    }
 
    #wrapper.smallNav {

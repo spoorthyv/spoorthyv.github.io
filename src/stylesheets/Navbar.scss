@@ -1,3 +1,5 @@
+@import './variables.scss';
+
 #navbar {
    position: fixed;
    top: 0;
@@ -14,32 +16,32 @@
    }
 
    #navBackground {
-      width: 420px;
+      width: $nav-width;
       transition: 0.3s width ease-in-out, 0.4s background-color;
       height: 100vh;
       background-color: rgb(0 0 0 / 2%);
-      backdrop-filter: blur(19px);
-      -webkit-backdrop-filter: blur(19px);
+      backdrop-filter: blur($nav-blur);
+      -webkit-backdrop-filter: blur($nav-blur);
    }
 
    #titles {
       opacity: 1;
       transition: 0.4s opacity ease-in-out;
-      top: calc(50% - 180px - 28px);
+      top: calc(50% - #{$nav-title-offset} - #{$nav-padding-x});
       position: fixed;
-      left: 28px;
+      left: $nav-padding-x;
       padding-left: 4px;
 
       h2 {
          font-weight: 500;
-         color: rgba(0, 0, 0, 0.65);
+         color: $color-nav-title;
          mix-blend-mode: overlay;
          padding: 8px 0;
          font-size: 39px;
       }
 
       h3 {
-         color: rgba(0, 0, 0, 0.42);
+         color: $color-nav-subtitle;
          mix-blend-mode: overlay;
          padding: 0;
          font-weight: 400;
@@ -47,17 +49,17 @@
    }
 
    #linkWrapper {
-      top: calc(50% + 12px);
+      top: calc(50% + #{$nav-link-offset});
       transition: 0.35s top ease-in-out;
       position: fixed;
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-      left: 28px;
+      left: $nav-padding-x;
       gap: 16px;
 
       a {
-         color: rgba(0, 0, 0, 0.47);
+         color: $color-interactive-text;
          mix-blend-mode: overlay;
          padding: 8px 14px;
          transition: 0.35s all;
@@ -67,8 +69,8 @@
 
          @media (hover: hover) {
             &:hover {
-               color: rgba(0, 0, 0, 0.7);
-               background-color: rgba(0, 0, 0, 0.05);
+               color: $color-interactive-text-hover;
+               background-color: $color-interactive-bg;
             }
          }
       }
@@ -78,15 +80,15 @@
          mix-blend-mode: normal;
 
          &:nth-child(1) {
-            background-color: #6f74ff;
+            background-color: $color-purple;
          }
 
          &:nth-child(2) {
-            background-color: #4676fd;
+            background-color: $color-blue;
          }
 
          &:nth-child(3) {
-            background-color: #20b376;
+            background-color: $color-green;
          }
 
          @media (hover: hover) {
@@ -95,17 +97,17 @@
 
                &:nth-child(1) {
                   color: #fff;
-                  background-color: #6F73FF;
+                  background-color: $color-purple;
                }
 
                &:nth-child(2) {
                   color: #fff;
-                  background-color: #4676fd;
+                  background-color: $color-blue;
                }
 
                &:nth-child(3) {
                   color: #fff;
-                  background-color: #20b376;
+                  background-color: $color-green;
                }
             }
          }
@@ -114,13 +116,13 @@
 
    #logoWrapper {
       position: fixed;
-      bottom: 24px;
-      left: 24px;
+      bottom: $nav-logo-bottom;
+      left: $nav-logo-left;
 
       #logo {
          display: inline-flex;
-         height: 50px;
-         width: 50px;
+         height: $nav-logo-size;
+         width: $nav-logo-size;
          transition: filter 0.4s;
 
          svg {
@@ -141,7 +143,7 @@
 
    &.smallNav {
       #navBackground {
-         width: 146px;
+         width: $nav-compact-width;
       }
 
       #titles {
@@ -149,18 +151,18 @@
       }
 
       #linkWrapper {
-         top: calc(50% - 88px);
+         top: calc(50% - #{$nav-link-compact-offset});
       }
    }
 
    &.darkNav {
       #navBackground {
-         background-color: #131313;
+         background-color: $color-nav-dark-bg;
       }
 
       #linkWrapper {
          a:hover {
-            background-color: rgba(255, 255, 255, 0.1);
+            background-color: $color-nav-dark-hover-bg;
             color: white;
          }
       }
@@ -180,13 +182,13 @@
 
 
 
-@media screen and (max-width: 1002px) {
+@media screen and (max-width: $breakpoint-mobile) {
    #navbar {
-      height: 72px;
+      height: $nav-mobile-height;
       border-bottom: 1px solid #0000000a;
 
       #navBackground {
-         height: 72px;
+         height: $nav-mobile-height;
          width: 100vw;
          background-color: rgba(255, 255, 255, 0.66);
       }
@@ -195,11 +197,11 @@
          flex-direction: row;
          left: 0;
          width: 100%;
-         height: 72px;
+         height: $nav-mobile-height;
          top: 0;
          justify-content: center;
          align-items: center;
-         gap: 4px;
+         gap: $nav-mobile-gap;
          padding: 10px;
          box-sizing: border-box;
 
@@ -214,7 +216,7 @@
             text-align: center;
             box-sizing: border-box;
             border-radius: 10px;
-            color: rgba(0, 0, 0, 0.65);
+            color: $color-nav-title;
             mix-blend-mode: overlay;
             -webkit-tap-highlight-color: transparent;
          }

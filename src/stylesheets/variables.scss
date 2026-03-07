@@ -1,0 +1,107 @@
+// ==========================================================================
+// variables.scss — Global Design Tokens
+// ==========================================================================
+// Import this file at the top of any SCSS file that needs shared values.
+// Usage: @import './variables.scss';
+//
+// Goals:
+//   1. Single source of truth for dimensions, colors, and calculations
+//   2. Change one value here and it propagates everywhere
+//   3. Make navbar math readable and self-documenting
+
+
+// --------------------------------------------------------------------------
+// Breakpoints
+// --------------------------------------------------------------------------
+// The single responsive breakpoint for switching between desktop and mobile
+$breakpoint-mobile: 1002px;
+
+
+// --------------------------------------------------------------------------
+// Navbar — Layout Dimensions
+// --------------------------------------------------------------------------
+// Desktop sidebar widths
+$nav-width: 420px; // Full navbar width (titles + links visible)
+$nav-compact-width: 159px; // Compact navbar width (links only)
+
+// Mobile top bar
+$nav-mobile-height: 72px; // Height of the horizontal mobile navbar
+$nav-mobile-gap: 4px; // Gap between mobile nav links
+$nav-mobile-padding: 10px; // Inner padding of mobile nav link area
+
+// Shared
+$nav-padding-x: 28px; // Left padding for titles & links from the edge
+$nav-blur: 19px; // Backdrop blur intensity for frosted glass
+
+
+// --------------------------------------------------------------------------
+// Navbar — Vertical Centering Math
+// --------------------------------------------------------------------------
+// On desktop the titles and links are vertically centered in the viewport.
+// These offsets control their position relative to 50vh.
+//
+// Title block:  top: calc(50% - $nav-title-offset - $nav-padding-x)
+//   → Sits above center by (title-offset + padding) pixels
+//
+// Link block (full nav):  top: calc(50% + $nav-link-offset)
+//   → Sits below center by link-offset pixels
+//
+// Link block (compact):   top: calc(50% - $nav-link-compact-offset)
+//   → When titles hide, links shift upward to re-center
+//
+$nav-title-offset: 180px;
+$nav-link-offset: 12px;
+$nav-link-compact-offset: 88px;
+
+// Logo
+$nav-logo-size: 50px;
+$nav-logo-bottom: 24px;
+$nav-logo-left: 24px;
+
+
+// --------------------------------------------------------------------------
+// Brand Colors — Active Tabs & Filter Pills
+// --------------------------------------------------------------------------
+// These are used for navbar active states AND portfolio filter pill fills.
+// Changing a color here updates it in both places.
+$color-purple: #6f74ff; // Nav tab 1 (Portfolio) active
+$color-blue: #4676fd; // Nav tab 2 (Resume) active / filter pill 1
+$color-green: #20b376; // Nav tab 3 (Contact) active / filter pill 2
+$color-orange: #f78f40; // Filter pill 3
+
+
+// --------------------------------------------------------------------------
+// Decorative Shape Colors
+// --------------------------------------------------------------------------
+// The floating SVG shapes reused across portfolio, resume, and contact pages
+$shape-green: #5FD58E; // SkewedRect
+$shape-grey: #D9D9D9; // Circle1
+$shape-blue: #789EFF; // Triangle
+$shape-yellow: #FAB752; // Circle2
+$shape-red: #f76845; // Circle3
+
+
+// --------------------------------------------------------------------------
+// Typography Colors
+// --------------------------------------------------------------------------
+$color-text: #3f3f3f; // Default text color for h1–h5 and p
+
+
+// --------------------------------------------------------------------------
+// Transparent Black Interaction Tokens
+// --------------------------------------------------------------------------
+// Shared between navbar links, filter pills, and other interactive elements.
+// Using transparent black (instead of solid grey) allows mix-blend-mode: overlay
+// to render cleanly over colored backgrounds on mobile.
+$color-interactive-text: rgba(0, 0, 0, 0.47); // Default link / pill text
+$color-interactive-text-hover: rgba(0, 0, 0, 0.7); // Hovered link / pill text
+$color-interactive-bg: rgba(0, 0, 0, 0.05); // Default pill bg / hover bg
+$color-interactive-bg-hover: rgba(0, 0, 0, 0.10); // Hovered pill bg
+
+// Navbar-specific transparent overlays
+$color-nav-title: rgba(0, 0, 0, 0.65); // Name heading
+$color-nav-subtitle: rgba(0, 0, 0, 0.42); // Role / subtitle
+
+// Dark mode navbar overrides (e.g. Peloton page)
+$color-nav-dark-bg: #131313;
+$color-nav-dark-hover-bg: rgba(255, 255, 255, 0.1);

@@ -1,3 +1,5 @@
+@import './variables.scss';
+
 #portfolio {
    display: flex;
    flex-direction: column;
@@ -47,14 +49,14 @@
                   line-height: 1;
                   border-radius: 10px;
                   color: #7a7a82;
-                  background-color: rgba(0, 0, 0, 0.05);
+                  background-color: $color-interactive-bg;
                   transition: 0.3s all;
                   font-weight: 600;
 
                   &:hover {
                      cursor: pointer;
                      color: #424242;
-                     background-color: rgba(0, 0, 0, 0.10);
+                     background-color: $color-interactive-bg-hover;
                   }
 
 
@@ -63,15 +65,15 @@
                      border-color: transparent;
 
                      &:nth-child(1) {
-                        background-color: #4676fd;
+                        background-color: $color-blue;
                      }
 
                      &:nth-child(2) {
-                        background-color: #20b376;
+                        background-color: $color-green;
                      }
 
                      &:nth-child(3) {
-                        background-color: #f78f40;
+                        background-color: $color-orange;
                      }
 
                      &:hover {

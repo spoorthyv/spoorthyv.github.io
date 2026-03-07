@@ -1,3 +1,5 @@
+@import './variables.scss';
+
 #resume {
    position: relative;
    min-height: 100vh;
@@ -32,7 +34,7 @@
          box-shadow: 0px 3px 8px #00000042;
          position: fixed;
          bottom: 24px;
-         left: calc(#{420px}/2 + 50%);
+         left: calc(#{$nav-width}/2 + 50%);
          transform: translateX(-50%);
          font-weight: 500;
          white-space: nowrap;
