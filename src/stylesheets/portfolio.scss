@@ -26,7 +26,7 @@
             grid-column: 1 / -1;
             display: flex;
             flex-direction: column;
-            gap: 8px;
+            gap: 4px;
 
             #header {
                padding: 0;
@@ -109,11 +109,10 @@
                display: flex;
                justify-content: center;
                flex: 1;
-               padding: 60px 40px 40px 40px;
 
                img {
-                  max-width: 100px;
-                  max-height: 100px;
+                  max-width: 120px;
+                  max-height: 120px;
                   align-self: center;
                }
             }
@@ -199,24 +198,6 @@
             }
          }
 
-         #squid {
-            .imageWrapper {
-               img {
-                  max-height: 120px;
-                  max-width: 120px;
-               }
-            }
-         }
-
-         #jupyter {
-            .imageWrapper {
-               img {
-                  max-height: 120px;
-                  width: 120px;
-               }
-            }
-         }
-
          #fiveMinShower {
             .imageWrapper {
                img {
@@ -225,11 +206,18 @@
             }
          }
 
-         #dribbble {
+         #uber {
             .imageWrapper {
                img {
-                  max-height: 120px;
-                  max-width: 120px;
+                  max-height: 100px;
+               }
+            }
+         }
+
+         #jupyter {
+            .imageWrapper {
+               img {
+                  width: 120px;
                }
             }
          }
@@ -238,14 +226,14 @@
 
    #footer {
       position: relative;
-      z-index: -2;
+      z-index: 1;
 
       a {
          display: flex;
          align-items: center;
          justify-content: center;
          padding: 16px;
-         border-top: 2px solid #f8f8f8;
+         border-top: 1px solid #0000000a;
 
          h4 {
             font-size: 15px;
@@ -284,6 +272,7 @@
             position: relative;
             display: inline-flex;
             align-items: center;
+            vertical-align: middle;
 
             &::after {
                content: attr(data-tooltip);
@@ -410,6 +399,8 @@
          align-items: center;
 
          #headerWrapper {
+            padding: 16px 0;
+
             #header {
                text-align: center;
                margin-top: -12px;
@@ -424,20 +415,48 @@
          #cardGrid {
             gap: 12px;
             grid-template-columns: 1fr;
+
+            .card {
+               height: 248px;
+
+               .imageWrapper {
+                  img {
+                     max-height: 100px;
+                     max-width: 100px;
+                  }
+               }
+            }
+
+            #fiveMinShower .imageWrapper img {
+               max-height: 108px;
+            }
+
+            #uber .imageWrapper img {
+               max-height: 80px;
+            }
+
+            #jupyter .imageWrapper img {
+               width: 100px;
+            }
+
+            #ebay .imageWrapper img {
+               max-width: 138px;
+            }
          }
       }
 
       #footer {
+         z-index: 5;
+
          a {
             padding: 6px 16px;
             text-align: center;
 
             h4 {
+               display: inline-block;
                font-size: 13px;
-               line-height: inherit;
+               line-height: 1.5;
                white-space: normal;
-               flex-wrap: wrap;
-               justify-content: center;
 
                #heartIcon {
                   width: 13px;

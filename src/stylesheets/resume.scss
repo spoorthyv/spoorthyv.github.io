@@ -13,7 +13,7 @@
          max-width: 870px;
          aspect-ratio: 8.5 / 11;
          margin: auto;
-         border: 1px solid #e8e8e8;
+         border: 1px solid #f0f0f0;
          background-color: #fff;
          display: block;
       }
@@ -124,7 +124,7 @@
 
 @media screen and (max-width: 1002px) {
    #resume {
-      height: calc(100vh - 80px);
+      height: calc(100vh - 76px);
       min-height: unset;
 
       #SkewedRect,
