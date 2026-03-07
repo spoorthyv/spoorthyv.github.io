@@ -65,7 +65,7 @@ const projects = [
       title: 'Dribbble',
       description: "Some quick shots I've made",
       color: "#EE5691",
-      type: "Other",
+      type: "Project",
       logo: dribbbleLogo,
       link: "https://dribbble.com/spoorthyv"
    },

@@ -1,12 +1,13 @@
 #resume {
    position: relative;
-   overflow: hidden;
    min-height: 100vh;
 
    .contentWrapper {
       padding: 64px 64px 100px 64px;
       box-sizing: border-box;
       display: flex;
+      position: relative;
+      z-index: 2;
 
       .resumePdf {
          width: 100%;
@@ -54,7 +55,7 @@
       width: 15vw !important;
       height: 15vw !important;
       pointer-events: none;
-      z-index: -1;
+      z-index: 1;
       transform: rotate(-15deg);
 
       path {
@@ -65,10 +66,10 @@
    #Circle1 {
       position: absolute;
       bottom: 18%;
-      left: 8%;
+      left: 11%;
       pointer-events: none;
       opacity: 0.6;
-      z-index: -1;
+      z-index: 1;
       transform: rotate(45deg);
 
       path {
@@ -78,12 +79,12 @@
 
    #Triangle {
       position: absolute;
-      top: 25%;
-      right: 12%;
+      top: 50%;
+      right: 10%;
       height: 170px !important;
       width: 170px !important;
       pointer-events: none;
-      z-index: -1;
+      z-index: 1;
       transform: rotate(115deg);
 
       path {
@@ -93,10 +94,10 @@
 
    #Circle2 {
       position: absolute;
-      top: 55%;
-      right: 22%;
+      top: 14%;
+      left: -15px;
       pointer-events: none;
-      z-index: -1;
+      z-index: 1;
       transform: rotate(-75deg);
 
       path {
@@ -111,7 +112,7 @@
       height: 190px !important;
       width: 190px !important;
       pointer-events: none;
-      z-index: -1;
+      z-index: 1;
       transform: rotate(200deg);
 
       path {

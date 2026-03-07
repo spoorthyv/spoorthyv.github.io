@@ -26,7 +26,7 @@
             grid-column: 1 / -1;
             display: flex;
             flex-direction: column;
-            gap: 4px;
+            gap: 6px;
 
             #header {
                padding: 0;
@@ -43,35 +43,24 @@
 
                .filter {
                   font-family: 'Google Sans', system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
-                  padding: 12px 20px;
+                  padding: 11px 18px;
                   line-height: 1;
-                  border-radius: 52px;
-                  background-color: #f7f7f7;
-                  color: #919196;
+                  border-radius: 10px;
+                  color: #7a7a82;
+                  background-color: rgba(0, 0, 0, 0.05);
                   transition: 0.3s all;
                   font-weight: 600;
 
                   &:hover {
                      cursor: pointer;
-
-                     &:nth-child(1) {
-                        color: #4676fd;
-                        background-color: #eef3ff;
-                     }
-
-                     &:nth-child(2) {
-                        color: #1ea96f;
-                        background-color: #e8f9f0;
-                     }
-
-                     &:nth-child(3) {
-                        color: #ef8739;
-                        background-color: #fff3eb;
-                     }
+                     color: #424242;
+                     background-color: rgba(0, 0, 0, 0.10);
                   }
+
 
                   &.selected {
                      color: #fff;
+                     border-color: transparent;
 
                      &:nth-child(1) {
                         background-color: #4676fd;
@@ -98,9 +87,10 @@
             display: flex;
             overflow: hidden;
             position: relative;
+            z-index: 1;
             flex-direction: column;
             border-radius: 12px;
-            box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.14);
+            box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.15);
             transition: box-shadow 0.3s, transform 0.3s;
             cursor: pointer;
             text-decoration: none;
@@ -111,6 +101,7 @@
                flex: 1;
 
                img {
+                  width: 100%;
                   max-width: 120px;
                   max-height: 120px;
                   align-self: center;
@@ -119,12 +110,26 @@
 
             .textWrapper {
                display: block;
-               background-color: rgba(0, 0, 0, 0.05);
+               position: relative;
                padding: 14px 24px 16px 24px;
+
+               &::before {
+                  content: '';
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  right: 0;
+                  bottom: 0;
+                  background-color: rgba(0, 0, 0, 0.18);
+                  mix-blend-mode: overlay;
+                  pointer-events: none;
+               }
 
                h4 {
                   padding: 0;
                   color: white;
+                  position: relative;
+                  z-index: 1;
                }
 
                p {
@@ -132,6 +137,8 @@
                   font-size: 14px;
                   color: white;
                   padding: 0;
+                  position: relative;
+                  z-index: 1;
                }
             }
 
@@ -182,13 +189,17 @@
             background-image: url("../images/photography/kina.jpg");
             background-size: cover;
             background-position-x: 57%;
-
-            .textWrapper {
-               background-color: rgba(0, 0, 0, 0.15);
-            }
          }
 
+         #peloton {
+            .imageWrapper {
+               padding-top: 4px;
 
+               img {
+                  max-width: 85px;
+               }
+            }
+         }
 
          #ebay {
             .imageWrapper {
@@ -202,6 +213,7 @@
             .imageWrapper {
                img {
                   max-height: 128px;
+                  width: auto;
                }
             }
          }
@@ -213,20 +225,12 @@
                }
             }
          }
-
-         #jupyter {
-            .imageWrapper {
-               img {
-                  width: 120px;
-               }
-            }
-         }
       }
    }
 
    #footer {
       position: relative;
-      z-index: 1;
+      z-index: 10;
 
       a {
          display: flex;
@@ -375,7 +379,7 @@
    height: 186px !important;
    width: 186px !important;
    pointer-events: none;
-   z-index: -1;
+   z-index: 0;
 
    path {
       fill: #F75129;
@@ -419,7 +423,7 @@
             grid-template-columns: 1fr;
 
             .card {
-               height: 248px;
+               height: 246px;
 
                .imageWrapper {
                   img {
