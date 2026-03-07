@@ -62,9 +62,11 @@
          border-radius: 20px;
          font-weight: 500;
 
-         &:hover {
-            color: #4e4e4e;
-            background-color: rgb(238, 238, 238);
+         @media (hover: hover) {
+            &:hover {
+               color: #4e4e4e;
+               background-color: rgb(238, 238, 238);
+            }
          }
       }
 
@@ -83,22 +85,24 @@
             background-color: #20b376;
          }
 
-         &:hover {
-            color: #fff;
-
-            &:nth-child(1) {
+         @media (hover: hover) {
+            &:hover {
                color: #fff;
-               background-color: #6F73FF;
-            }
 
-            &:nth-child(2) {
-               color: #fff;
-               background-color: #4676fd;
-            }
+               &:nth-child(1) {
+                  color: #fff;
+                  background-color: #6F73FF;
+               }
 
-            &:nth-child(3) {
-               color: #fff;
-               background-color: #20b376;
+               &:nth-child(2) {
+                  color: #fff;
+                  background-color: #4676fd;
+               }
+
+               &:nth-child(3) {
+                  color: #fff;
+                  background-color: #20b376;
+               }
             }
          }
       }
