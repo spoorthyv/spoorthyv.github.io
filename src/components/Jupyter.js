@@ -38,7 +38,7 @@ class Jupyter extends React.Component {
               </p>
             </div>
           </div>
-          <img src={JupyterTeam} />
+          <img src={JupyterTeam} alt="Project Jupyter team" />
           <div className="section">
             <div className="sectionContent" id="jupyterLab">
               <h2>JupyterLab</h2>
@@ -55,13 +55,13 @@ class Jupyter extends React.Component {
               </p>
             </div>
             <div className="horizGallery">
-              <Zoom><img src={old} /></Zoom>
-              <Zoom><img src={newJ} /></Zoom>
-              <Zoom><img src={nbtoolbar} /></Zoom>
-              <Zoom><img src={top_nav} /></Zoom>
-              <Zoom><img src={files} /></Zoom>
-              <Zoom><img src={image} /></Zoom>
-              <Zoom><img src={terminal} /></Zoom>
+              <Zoom><img src={old} alt="Old JupyterLab interface" /></Zoom>
+              <Zoom><img src={newJ} alt="New JupyterLab interface" /></Zoom>
+              <Zoom><img src={nbtoolbar} alt="Notebook toolbar" /></Zoom>
+              <Zoom><img src={top_nav} alt="Top navigation bar" /></Zoom>
+              <Zoom><img src={files} alt="File browser" /></Zoom>
+              <Zoom><img src={image} alt="Viewer widget" /></Zoom>
+              <Zoom><img src={terminal} alt="Terminal" /></Zoom>
             </div>
           </div>
           <div className="section">
@@ -100,7 +100,7 @@ class Jupyter extends React.Component {
                 <li> Implement  design</li>
               </ol>
               <div id="navbarImg">
-                <img src={navbars} />
+                <img src={navbars} alt="Navbar redesign comparison" />
               </div>
             </div>
           </div>

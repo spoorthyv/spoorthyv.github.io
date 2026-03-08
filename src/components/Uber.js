@@ -71,15 +71,15 @@ class Uber extends React.Component {
               <p>Through usertesting, I realized that a most people’s instict was to just try clicking a spot on the map to navigate there. This made a ton of sense to me and became the premise of my redesign.</p>
               <h4 className="galleryHeader">Step 1: “Wireframe” basic flow</h4>
               <p>Normally I would NEVER wireframe the entire flow this early. However, after usertesting, this basic flow felt very obvious and there was no point in putting this off.</p>
-              <img src={uberFlowDiagram} />
+              <img src={uberFlowDiagram} alt="Uber navigation flow diagram" />
               <h4 className="galleryHeader">Step 2: Explore Options</h4>
               <p>Because I didnt want to redesign the entire app, most of the design work happened on the second screen. I created a bunch of low fidelity mocks and analyzed the pros and cons of each. These were the designs that stood out:</p>
             </div>
             <div className="horizGallery">
-              <Zoom><img src={option1} /></Zoom>
-              <Zoom><img src={option2} /></Zoom>
-              <Zoom><img src={option3} /></Zoom>
-              <Zoom><img src={option4} /></Zoom>
+              <Zoom><img src={option1} alt="Design option 1" /></Zoom>
+              <Zoom><img src={option2} alt="Design option 2" /></Zoom>
+              <Zoom><img src={option3} alt="Design option 3" /></Zoom>
+              <Zoom><img src={option4} alt="Design option 4" /></Zoom>
             </div>
             <div className="sectionContent">
               <div className="row">

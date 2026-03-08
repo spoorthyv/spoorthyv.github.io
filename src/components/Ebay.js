@@ -68,6 +68,7 @@ class Ebay extends React.Component {
                 id="dlButton"
                 href="https://docs.google.com/presentation/d/1XJZuMjVv4DdViZdE-ye7nTdZLT1YTYIO6qy0q1ZyRFA/edit?usp=sharing"
                 target="_blank"
+                rel="noreferrer"
               >
                 View Research Presentation
                 <IconLink size={28} stroke={2} />

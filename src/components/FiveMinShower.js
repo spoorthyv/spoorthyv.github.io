@@ -28,12 +28,12 @@ class FiveMinShower extends React.Component {
                      <div className="sectionContent">
                         <h3 className="galleryHeader">Mockups</h3>
                      </div>
-                     <img className="mockImage" src={showerMocks} />
+                     <img className="mockImage" src={showerMocks} alt="5 Min Shower app mockups" />
                   </div>
                   <div className="sectionContent" id="finalProduct">
                      <h3 className="galleryHeader">Final Product</h3>
                      <p>After the hackathon, we released a <b>finished iOS app</b> to the app store. We had over 10,000 downloads after 12 months. Although its not on the app store anymore, here is a link to our code:</p>
-                     <a href="https://github.com/SaagarGodithi/5minShower" target="_blank" className="githubButton" />
+                     <a href="https://github.com/SaagarGodithi/5minShower" target="_blank" rel="noreferrer" className="githubButton">View on GitHub</a>
                   </div>
                </div>
             </div>

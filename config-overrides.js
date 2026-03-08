@@ -26,5 +26,27 @@ module.exports = function override(config, env) {
         },
     });
 
+    // Use the modern Dart Sass JS API to silence the legacy-js-api deprecation warning
+    config.module.rules.forEach(rule => {
+        if (rule.oneOf) {
+            rule.oneOf.forEach(oneOfRule => {
+                if (oneOfRule.use) {
+                    oneOfRule.use.forEach(loader => {
+                        if (loader.loader && loader.loader.includes('sass-loader')) {
+                            loader.options = {
+                                ...loader.options,
+                                api: 'modern',
+                                sassOptions: {
+                                    ...(loader.options && loader.options.sassOptions),
+                                    silenceDeprecations: ['import'],
+                                },
+                            };
+                        }
+                    });
+                }
+            });
+        }
+    });
+
     return config;
 };

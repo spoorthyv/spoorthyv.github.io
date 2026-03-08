@@ -22,7 +22,7 @@ $breakpoint-mobile: 1002px;
 // --------------------------------------------------------------------------
 // Desktop sidebar widths
 $nav-width: 420px; // Full navbar width (titles + links visible)
-$nav-compact-width: 159px; // Compact navbar width (links only)
+$nav-compact-width: 157px; // Compact navbar width (links only)
 
 // Mobile top bar
 $nav-mobile-height: 72px; // Height of the horizontal mobile navbar
@@ -99,9 +99,13 @@ $color-interactive-bg: rgba(0, 0, 0, 0.05); // Default pill bg / hover bg
 $color-interactive-bg-hover: rgba(0, 0, 0, 0.10); // Hovered pill bg
 
 // Navbar-specific transparent overlays
-$color-nav-title: rgba(0, 0, 0, 0.65); // Name heading
+$color-nav-title: rgba(0, 0, 0, 0.7); // Name heading
 $color-nav-subtitle: rgba(0, 0, 0, 0.42); // Role / subtitle
 
 // Dark mode navbar overrides (e.g. Peloton page)
 $color-nav-dark-bg: #131313;
 $color-nav-dark-hover-bg: rgba(255, 255, 255, 0.1);
+$color-nav-dark-title: rgba(255, 255, 255, 0.85); // h2 name heading
+$color-nav-dark-subtitle: rgba(255, 255, 255, 0.5); // h3 role / subtitle
+$color-nav-dark-link: rgba(255, 255, 255, 0.6); // default link text
+$color-nav-dark-link-hover: rgba(255, 255, 255, 0.9); // hovered link text

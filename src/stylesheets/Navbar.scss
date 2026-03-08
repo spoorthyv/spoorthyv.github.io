@@ -61,7 +61,7 @@
       a {
          color: $color-interactive-text;
          mix-blend-mode: overlay;
-         padding: 8px 14px;
+         padding: 7px 13px;
          transition: 0.35s all;
          border-radius: 10px;
          font-weight: 600;
@@ -160,16 +160,30 @@
          background-color: $color-nav-dark-bg;
       }
 
+      #titles {
+         h2 {
+            color: $color-nav-dark-title;
+         }
+
+         h3 {
+            color: $color-nav-dark-subtitle;
+         }
+      }
+
       #linkWrapper {
+         a {
+            color: $color-nav-dark-link;
+         }
+
          a:hover {
             background-color: $color-nav-dark-hover-bg;
-            color: white;
+            color: $color-nav-dark-link-hover;
          }
       }
 
       #logoWrapper {
          #logo {
-            filter: grayscale(1) brightness(3);
+            filter: grayscale(1) brightness(6);
             transition: 0.3s filter;
          }
 
@@ -202,7 +216,7 @@
          justify-content: center;
          align-items: center;
          gap: $nav-mobile-gap;
-         padding: 10px;
+         padding: 10px 12px;
          box-sizing: border-box;
 
          a {

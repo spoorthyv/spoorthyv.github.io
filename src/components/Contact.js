@@ -60,7 +60,7 @@ class Contact extends React.Component {
                   <div id="links">
                      <div>
                         {this.renderPopup()}
-                        <a onClick={() => this.setState({ popupIsShown: !this.state.popupIsShown })}>
+                        <a href="#email" onClick={(e) => { e.preventDefault(); this.setState({ popupIsShown: !this.state.popupIsShown }); }}>
                            <Email />
                         </a>
                      </div>

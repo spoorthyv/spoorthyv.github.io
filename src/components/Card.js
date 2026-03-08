@@ -15,7 +15,7 @@ class Card extends React.Component {
          >
             <p className={`label ${type}`}>{type}</p>
             <div className="imageWrapper">
-               <img className="cardImage" src={logo} />
+               <img className="cardImage" src={logo} alt={title} />
             </div>
             <div className="textWrapper">
                <h4>{title}</h4>

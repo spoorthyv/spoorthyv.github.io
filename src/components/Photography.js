@@ -18,7 +18,7 @@ class Photography extends React.Component {
          return (
             <InView rootMargin="-300px 0px" key={index}>
                {({ inView, ref }) => (
-                  <img ref={ref} src={image} className={inView ? 'currentPic' : ''} />
+                  <img ref={ref} src={image} className={inView ? 'currentPic' : ''} alt={"Photography " + (index + 1)} />
                )}
             </InView>
          );

@@ -23,7 +23,7 @@ class Squid extends React.Component {
       return (
          <div className="squid">
             <div className="innerWrapper">
-               <TopBanner image={squidHeader} bgColor="#00abcc" arrowColor="#b2f3ff"/>
+               <TopBanner image={squidHeader} bgColor="#00abcc" arrowColor="#b2f3ff" />
                <div className="section" id="intro">
                   <div className="sectionContent">
                      <h1>Squid: Notes built for writing</h1>
@@ -42,59 +42,59 @@ class Squid extends React.Component {
                </div>
                <div className="section" id="finalpreview">
                   <video autoPlay loop muted playsInline>
-                       <source src={finishedVideo} type="video/mp4"/>
-                       Your browser does not support videos :(
+                     <source src={finishedVideo} type="video/mp4" />
+                     Your browser does not support videos :(
                   </video>
                   <p className="caption">The redesigned note editor.</p>
                </div>
                <div className="section" id="research">
-                     <div className="sectionContent">
-                        <h3>Research:</h3>
-                        <h2>Understanding big issues</h2>
-                        <div className="row" id="gatheringInfo">
-                           <div className="col">
-                              <h1 className="fancyNumber">01</h1>
-                           </div>
-                           <div className="col" id="feedbackSite">
-                              <h4>Gathering Information</h4>
-                              <p>First thing I did was set up Firebase Analytics to start collecting quantitave information about our users. I combined that info with opinions I got from our long running <a href="http://feedback.squidnotes.com/" target="_blank">feature request</a> website and app reviews. Below is one of the most upvoted comments on the site:</p>
-                              <h3 id="infoQuote"><i>“Why do I have to keep going back and forth through the menu when switching between colors, stroke size, etc?”</i></h3>
-                           </div>
+                  <div className="sectionContent">
+                     <h3>Research:</h3>
+                     <h2>Understanding big issues</h2>
+                     <div className="row" id="gatheringInfo">
+                        <div className="col">
+                           <h1 className="fancyNumber">01</h1>
                         </div>
-                        <div className="row" id="usertesting">
-                           <div className="col">
-                              <h1 className="fancyNumber">02</h1>
-                           </div>
-                           <div className="col" id="feedbackSite">
-                              <h4>User-testing</h4>
-                              <p>I ran 5 simple usertests with students in our library. We told each student to take notes on a 5 minute Youtube video using Squid and ended up with a lot of notes that looked like this:</p>
-                           </div>
+                        <div className="col" id="feedbackSite">
+                           <h4>Gathering Information</h4>
+                           <p>First thing I did was set up Firebase Analytics to start collecting quantitave information about our users. I combined that info with opinions I got from our long running <a href="http://feedback.squidnotes.com/" target="_blank" rel="noreferrer">feature request</a> website and app reviews. Below is one of the most upvoted comments on the site:</p>
+                           <h3 id="infoQuote"><i>“Why do I have to keep going back and forth through the menu when switching between colors, stroke size, etc?”</i></h3>
                         </div>
-                        <div className="row" id="usertestingPic">
-                           <div className="row">
-                              <img src={exampleNote}/>
-                              <div className="col">
-                                 <h4>Notes tended to be:</h4>
-                                 <h3>Monochromatic</h3>
-                                 <h3>Light on media</h3>
-                                 <h3>Detailed</h3>
-                              </div>
-                           </div>
+                     </div>
+                     <div className="row" id="usertesting">
+                        <div className="col">
+                           <h1 className="fancyNumber">02</h1>
                         </div>
-                        <div className="row" id="why">
+                        <div className="col" id="feedbackSite">
+                           <h4>User-testing</h4>
+                           <p>I ran 5 simple usertests with students in our library. We told each student to take notes on a 5 minute Youtube video using Squid and ended up with a lot of notes that looked like this:</p>
+                        </div>
+                     </div>
+                     <div className="row" id="usertestingPic">
+                        <div className="row">
+                           <img src={exampleNote} alt="Example handwritten note from usertesting" />
                            <div className="col">
-                              <h1 className="fancyNumber">03</h1>
-                              <h3>WHY?</h3>
-                              <h4>
-                                 Users run through 6 steps everytime they see important information.<br/><br/>
-                                 Obviously underlining is easier.
-                              </h4>
-                           </div>
-                           <div className="col">
-                              <img src={importantFlow}/>
+                              <h4>Notes tended to be:</h4>
+                              <h3>Monochromatic</h3>
+                              <h3>Light on media</h3>
+                              <h3>Detailed</h3>
                            </div>
                         </div>
                      </div>
+                     <div className="row" id="why">
+                        <div className="col">
+                           <h1 className="fancyNumber">03</h1>
+                           <h3>WHY?</h3>
+                           <h4>
+                              Users run through 6 steps everytime they see important information.<br /><br />
+                              Obviously underlining is easier.
+                           </h4>
+                        </div>
+                        <div className="col">
+                           <img src={importantFlow} alt="Flow diagram showing steps to highlight important information" />
+                        </div>
+                     </div>
+                  </div>
                </div>
                <div className="section" id="problem">
                   <h3><i>“How might we enable students to take more <b>expressive</b> notes?”</i></h3>
@@ -108,48 +108,48 @@ class Squid extends React.Component {
                   <div className="section" id="toolbox">
                      <div className="sectionContent">
                         <div className="imageWrapper">
-                           <img src={toolbox}/>
+                           <img src={toolbox} alt="Squid toolbox design" />
                         </div>
                      </div>
                   </div>
                   <div className="section" id="toolboxExtras">
                      <div className="sectionContent twoImage">
                         <div className="imageWrapper">
-                           <img src={longPress}/>
+                           <img src={longPress} alt="Long press interaction" />
                         </div>
                         <div className="imageWrapper">
-                           <img src={reorder}/>
+                           <img src={reorder} alt="Reorder interaction" />
                         </div>
                      </div>
                   </div>
                   <div className="section" id="penDetail">
                      <div className="sectionContent">
                         <div className="imageWrapper">
-                           <img src={penDetail}/>
+                           <img src={penDetail} alt="Pen detail design" />
                         </div>
                      </div>
                   </div>
                   <div className="section" id="toolbars">
                      <div className="sectionContent">
                         <div className="imageWrapper">
-                           <img src={toolbars}/>
+                           <img src={toolbars} alt="Toolbars design" />
                         </div>
                      </div>
                   </div>
                   <div className="section" id="menus">
                      <div className="sectionContent twoImage">
                         <div className="imageWrapper">
-                           <img src={oldMenu}/>
+                           <img src={oldMenu} alt="Old menu design" />
                         </div>
                         <div className="imageWrapper">
-                           <img src={newMenu}/>
+                           <img src={newMenu} alt="New menu design" />
                         </div>
                      </div>
                   </div>
                   <div className="section" id="pageSwitcher">
                      <div className="sectionContent">
                         <div className="imageWrapper">
-                           <img src={pageSwitcher}/>
+                           <img src={pageSwitcher} alt="Page switcher design" />
                         </div>
                      </div>
                   </div>
