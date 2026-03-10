@@ -1,3 +1,5 @@
+@import './variables.scss';
+
 #contact {
    display: flex;
    justify-content: center;
@@ -216,8 +218,12 @@
 @media screen and (max-width: 1002px) {
    #contact {
       height: calc(100vh - 76px);
+      overflow-x: clip;
+      overflow-y: visible;
 
       #contentWrapper {
+         padding-bottom: calc($nav-mobile-height/2);
+
          #content {
             #links {
                margin-top: 12px;
@@ -236,6 +242,11 @@
                }
             }
          }
+      }
+
+      #Circle3 {
+         left: -73px;
+         bottom: 0px;
       }
    }
 }

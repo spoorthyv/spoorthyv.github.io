@@ -45,9 +45,10 @@
 
                .filter {
                   font-family: 'Google Sans', system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
-                  padding: 11px 18px;
+                  font-size: 15px;
+                  padding: 10px 16px;
                   line-height: 1;
-                  border-radius: 10px;
+                  border-radius: 9px;
                   color: #7a7a82;
                   background-color: $color-interactive-bg;
                   transition: 0.3s all;
@@ -240,8 +241,8 @@
          justify-content: center;
          padding: 16px;
          background-color: rgb(255 255 255 / 0%);
-         backdrop-filter: blur(18px);
-         -webkit-backdrop-filter: blur(18px);
+         backdrop-filter: blur(8px);
+         -webkit-backdrop-filter: blur(8px);
 
          h4 {
             font-size: 15px;
@@ -336,8 +337,8 @@
 
 #portfolio #Circle1 {
    position: absolute;
-   top: 21%;
-   right: 8%;
+   top: 32vh;
+   right: 7vw;
    pointer-events: none;
    opacity: 0.6;
    z-index: -1;
@@ -349,10 +350,10 @@
 
 #portfolio #Triangle {
    position: absolute;
-   left: -50px;
+   left: -56px;
    height: 180px !important;
    width: 180px !important;
-   top: 45vw;
+   top: 68vh;
    pointer-events: none;
    z-index: -1;
    transform: rotate(60deg);
@@ -364,8 +365,8 @@
 
 #portfolio #Circle2 {
    position: absolute;
-   left: 35%;
-   bottom: 24%;
+   right: 37%;
+   bottom: 45vh;
    pointer-events: none;
    z-index: -1;
 
@@ -376,8 +377,8 @@
 
 #portfolio #Circle3 {
    position: absolute;
-   right: 36px;
-   bottom: 40px;
+   right: 44px;
+   bottom: 32px;
    height: 186px !important;
    width: 186px !important;
    pointer-events: none;
@@ -385,6 +386,20 @@
 
    path {
       fill: #F75129;
+   }
+}
+
+#portfolio #Circle4 {
+   position: absolute;
+   left: -120px;
+   top: 16.5vh;
+   pointer-events: none;
+   z-index: -1;
+   height: 26px !important;
+   width: 26px !important;
+
+   path {
+      fill: #db68f8;
    }
 }
 

@@ -21,6 +21,12 @@
    top: 0;
    padding-left: $nav-width;
    box-sizing: border-box;
+   background-color: #ffffff;
+   transition: background-color 0.4s;
+}
+
+#wrapper.darkPage {
+   background-color: $color-page-dark-bg;
 }
 
 #wrapper.smallNav {

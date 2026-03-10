@@ -31,7 +31,7 @@ $nav-mobile-padding: 10px; // Inner padding of mobile nav link area
 
 // Shared
 $nav-padding-x: 28px; // Left padding for titles & links from the edge
-$nav-blur: 19px; // Backdrop blur intensity for frosted glass
+$nav-blur: 18px; // Backdrop blur intensity for frosted glass
 
 
 // --------------------------------------------------------------------------
@@ -102,8 +102,13 @@ $color-interactive-bg-hover: rgba(0, 0, 0, 0.10); // Hovered pill bg
 $color-nav-title: rgba(0, 0, 0, 0.7); // Name heading
 $color-nav-subtitle: rgba(0, 0, 0, 0.42); // Role / subtitle
 
-// Dark mode navbar overrides (e.g. Peloton page)
-$color-nav-dark-bg: #131313;
+// Navbar background
+$color-nav-bg: rgba(0, 0, 0, 0.025);
+$color-nav-bg-mobile: rgba(0, 0, 0, 0);
+
+// Dark mode navbar overrides
+$color-page-dark-bg: #111111;
+$color-nav-dark-bg: rgba(0, 0, 0, 0.25);
 $color-nav-dark-hover-bg: rgba(255, 255, 255, 0.1);
 $color-nav-dark-title: rgba(255, 255, 255, 0.85); // h2 name heading
 $color-nav-dark-subtitle: rgba(255, 255, 255, 0.5); // h3 role / subtitle

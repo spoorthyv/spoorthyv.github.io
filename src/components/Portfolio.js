@@ -130,6 +130,7 @@ class Portfolio extends React.Component {
             <Circle id="Circle1" />
             <Circle id="Circle2" />
             <Circle id="Circle3" />
+            <Circle id="Circle4" />
             <Triangle id="Triangle" />
          </div>
       );

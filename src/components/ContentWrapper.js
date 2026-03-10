@@ -40,9 +40,18 @@ class ContentWrapper extends React.Component {
       }
    }
 
+   isDarkPage() {
+      return ['/photography'].includes(this.props.location.pathname);
+   }
+
    render() {
+      const classes = [
+         this.isMainPage() ? 'bigNav' : 'smallNav',
+         this.isDarkPage() ? 'darkPage' : ''
+      ].join(' ').trim();
+
       return (
-         <div id="wrapper" className={this.isMainPage() ? 'bigNav' : 'smallNav'} ref={this.myRef}>
+         <div id="wrapper" className={classes} ref={this.myRef}>
             <TransitionGroup className="transition-group">
                <FadeTransition
                   key={this.props.location.key}
