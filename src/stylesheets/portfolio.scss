@@ -46,9 +46,9 @@
                .filter {
                   font-family: 'Google Sans', system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
                   font-size: 15px;
-                  padding: 10px 16px;
+                  padding: 10px 14px;
                   line-height: 1;
-                  border-radius: 9px;
+                  border-radius: 8px;
                   color: #7a7a82;
                   background-color: $color-interactive-bg;
                   transition: 0.3s all;
@@ -337,13 +337,12 @@
 
 #portfolio #Triangle {
    position: absolute;
-   left: -56px;
-   height: 180px !important;
-   width: 180px !important;
+   left: -60px;
+   height: 170px !important;
+   width: 170px !important;
    top: 68vh;
    pointer-events: none;
    z-index: -1;
-   transform: rotate(60deg);
 
    path {
       fill: #789EFF;
