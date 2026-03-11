@@ -16,6 +16,7 @@ import blank from '../images/photography/blank.png';
 import { ReactComponent as SkewedRect } from '../images/shapes/skewedrect.svg';
 import { ReactComponent as Circle } from '../images/shapes/circle.svg';
 import { ReactComponent as Triangle } from '../images/shapes/triangle.svg';
+import { ReactComponent as Square } from '../images/shapes/square.svg';
 
 import '../stylesheets/portfolio.scss';
 
@@ -129,13 +130,15 @@ class Portfolio extends React.Component {
          const circle3 = document.getElementById('Circle3');
          const circle4 = document.getElementById('Circle4');
          const triangle = document.getElementById('Triangle');
+         const square = document.getElementById('Square');
 
          if (skewedRect) skewedRect.style.transform = `translateY(${scrollY * -0.1}px)`;
          if (circle1) circle1.style.transform = `translateY(${scrollY * 0.1}px)`;
-         if (circle2) circle2.style.transform = `translateY(${scrollY * -0.1}px)`;
+         if (circle2) circle2.style.transform = `translateY(${scrollY * 0.05}px)`;
          if (circle3) circle3.style.transform = `translateY(${scrollY * -0.075}px)`;
          if (circle4) circle4.style.transform = `translateY(${scrollY * 0.5}px)`;
-         if (triangle) triangle.style.transform = `translateY(${scrollY * -0.22}px) rotate(60deg)`;
+         if (triangle) triangle.style.transform = `translateY(${scrollY * -0.18}px) rotate(60deg)`;
+         if (square) square.style.transform = `translateY(${scrollY * -0.04}px)`;
 
          this.ticking = false;
       });
@@ -175,6 +178,7 @@ class Portfolio extends React.Component {
             <Circle id="Circle3" />
             <Circle id="Circle4" />
             <Triangle id="Triangle" />
+            <Square id="Square" />
          </div>
       );
    }

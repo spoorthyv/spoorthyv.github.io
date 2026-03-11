@@ -20,8 +20,8 @@
       transition: 0.3s width ease-in-out, 0.4s background-color;
       height: 100vh;
       background-color: $color-nav-bg;
-      backdrop-filter: blur($nav-blur);
-      -webkit-backdrop-filter: blur($nav-blur);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
    }
 
    #titles {

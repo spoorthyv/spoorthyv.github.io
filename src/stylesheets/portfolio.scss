@@ -405,6 +405,18 @@
    }
 }
 
+#portfolio #Square {
+   position: absolute;
+   left: 4vw;
+   bottom: 15vh;
+   pointer-events: none;
+   z-index: -1;
+
+   rect {
+      fill: #64e86f;
+   }
+}
+
 
 
 @media screen and (max-width: 1002px) {
@@ -414,6 +426,8 @@
       #Circle1,
       #Circle2,
       #Circle3,
+      #Circle4,
+      #Square,
       #Triangle {
          display: none;
       }
