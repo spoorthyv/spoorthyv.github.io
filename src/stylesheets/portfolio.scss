@@ -335,19 +335,6 @@
    }
 }
 
-#portfolio #Circle1 {
-   position: absolute;
-   top: 32vh;
-   right: 7vw;
-   pointer-events: none;
-   opacity: 0.6;
-   z-index: -1;
-
-   path {
-      fill: #D9D9D9;
-   }
-}
-
 #portfolio #Triangle {
    position: absolute;
    left: -56px;
@@ -363,10 +350,25 @@
    }
 }
 
+#portfolio #Circle1 {
+   position: absolute;
+   top: 32vh;
+   right: 7vw;
+   pointer-events: none;
+   opacity: 0.6;
+   z-index: -1;
+
+   path {
+      fill: #D9D9D9;
+   }
+}
+
 #portfolio #Circle2 {
    position: absolute;
    right: 37%;
    bottom: 45vh;
+   height: 28px !important;
+   width: 28px !important;
    pointer-events: none;
    z-index: -1;
 
@@ -378,7 +380,7 @@
 #portfolio #Circle3 {
    position: absolute;
    right: 44px;
-   bottom: 32px;
+   bottom: -32px;
    height: 186px !important;
    width: 186px !important;
    pointer-events: none;

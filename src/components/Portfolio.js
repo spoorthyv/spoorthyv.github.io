@@ -98,6 +98,49 @@ class Portfolio extends React.Component {
       }
    }
 
+   componentDidMount() {
+      const wrapper = document.getElementById('wrapper');
+      if (wrapper) {
+         wrapper.addEventListener('scroll', this.handleScroll);
+      }
+   }
+
+   componentWillUnmount() {
+      const wrapper = document.getElementById('wrapper');
+      if (wrapper) {
+         wrapper.removeEventListener('scroll', this.handleScroll);
+      }
+   }
+
+   handleScroll = () => {
+      if (this.ticking) return;
+      this.ticking = true;
+      requestAnimationFrame(() => {
+         const wrapper = document.getElementById('wrapper');
+         if (!wrapper) {
+            this.ticking = false;
+            return;
+         }
+
+         const scrollY = wrapper.scrollTop;
+         const skewedRect = document.getElementById('SkewedRect');
+         const circle1 = document.getElementById('Circle1');
+         const circle2 = document.getElementById('Circle2');
+         const circle3 = document.getElementById('Circle3');
+         const circle4 = document.getElementById('Circle4');
+         const triangle = document.getElementById('Triangle');
+
+         if (skewedRect) skewedRect.style.transform = `translateY(${scrollY * -0.1}px)`;
+         if (circle1) circle1.style.transform = `translateY(${scrollY * 0.1}px)`;
+         if (circle2) circle2.style.transform = `translateY(${scrollY * -0.1}px)`;
+         if (circle3) circle3.style.transform = `translateY(${scrollY * -0.075}px)`;
+         if (circle4) circle4.style.transform = `translateY(${scrollY * 0.5}px)`;
+         if (triangle) triangle.style.transform = `translateY(${scrollY * -0.22}px) rotate(60deg)`;
+
+         this.ticking = false;
+      });
+   }
+
    renderCards() {
       return projects.filter(project => {
          return project.type.includes(this.state.filter)
