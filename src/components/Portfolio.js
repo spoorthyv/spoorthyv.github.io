@@ -133,12 +133,12 @@ class Portfolio extends React.Component {
          const square = document.getElementById('Square');
 
          if (skewedRect) skewedRect.style.transform = `translateY(${scrollY * -0.1}px) rotate(${scrollY * 0.1}deg`;
-         if (circle1) circle1.style.transform = `translateY(${scrollY * 0.1}px)`;
+         if (circle1) circle1.style.transform = `translateY(${scrollY * 0.15}px)`;
          if (circle2) circle2.style.transform = `translateY(${scrollY * 0.05}px)`;
          if (circle3) circle3.style.transform = `translateY(${scrollY * -0.075}px)`;
          if (circle4) circle4.style.transform = `translateY(${scrollY * 0.5}px)`;
-         if (triangle) triangle.style.transform = `translateY(${scrollY * -0.13}px) rotate(${60 + scrollY * -0.005}deg)`;
-         if (square) square.style.transform = `translateY(${scrollY * -0.04}px) rotate(${scrollY * -0.18}deg)`;
+         if (triangle) triangle.style.transform = `translateY(${scrollY * -0.13}px) rotate(${60 + (scrollY * -0.005)}deg)`;
+         if (square) square.style.transform = `translateY(${scrollY * -0.07}px) rotate(${scrollY * -0.18}deg)`;
 
          this.ticking = false;
       });

@@ -5,6 +5,7 @@
    flex-direction: column;
    min-height: 100vh;
    position: relative;
+   overflow-y: clip;
 
    #portfolioBody {
       display: flex;
@@ -343,6 +344,7 @@
    top: 68vh;
    pointer-events: none;
    z-index: -1;
+   transform: rotate(60deg);
 
    path {
       fill: #789EFF;
@@ -407,12 +409,12 @@
 #portfolio #Square {
    position: absolute;
    left: 4vw;
-   bottom: 15vh;
+   bottom: 10%;
    pointer-events: none;
    z-index: -1;
 
    rect {
-      fill: #64e86f;
+      fill: #c5e864;
    }
 }
 
