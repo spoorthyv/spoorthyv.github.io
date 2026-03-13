@@ -298,6 +298,12 @@
 @media screen and (max-width: 1002px) {
    .squid {
       .innerWrapper {
+         #intro {
+            #summary {
+               gap: 16px;
+            }
+         }
+
          #research {
             #why {
                img {

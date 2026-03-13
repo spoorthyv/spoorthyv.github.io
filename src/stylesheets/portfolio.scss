@@ -374,7 +374,7 @@
    z-index: -1;
 
    path {
-      fill: #FAB752;
+      fill: #fad352;
    }
 }
 
@@ -408,7 +408,7 @@
 
 #portfolio #Square {
    position: absolute;
-   left: 4vw;
+   left: 4%;
    bottom: 10%;
    pointer-events: none;
    z-index: -1;
@@ -458,6 +458,17 @@
 
             .card {
                height: 246px;
+
+               &.card:hover {
+                  transform: none;
+                  box-shadow: none;
+               }
+
+               &.card:active {
+                  transform: translateY(6px);
+                  box-shadow: none;
+                  transition: transform 0.15s, box-shadow 0.15s;
+               }
 
                .imageWrapper {
                   img {
