@@ -2,7 +2,6 @@
 
 #navbar {
    position: fixed;
-   top: 4px;
    left: 0;
    height: 100vh;
    z-index: 10;
@@ -200,23 +199,12 @@
    #navbar {
       height: $nav-mobile-height;
       width: 100vw;
-      padding: 0px 8px 8px 8px;
+      padding: 6px 8px 8px 8px;
       box-sizing: border-box;
       display: flex;
 
       #navBackground {
-         position: absolute;
-         top: 0px;
-         left: 8px;
-         right: 8px;
-         bottom: 8px;
-         height: auto;
-         width: auto;
-         background-color: $color-nav-bg-mobile;
-         border-radius: 16px;
-         border: 1px solid rgba(128, 128, 128, 0.1);
-         backdrop-filter: blur(10px);
-         -webkit-backdrop-filter: blur(10px);
+         display: none;
       }
 
       #linkWrapper {
@@ -229,8 +217,13 @@
          justify-content: center;
          align-items: center;
          gap: $nav-mobile-gap;
-         padding: 8px;
+         padding: 6px;
          box-sizing: border-box;
+         background-color: $color-nav-bg-mobile;
+         border-radius: 15px;
+         border: 1px solid rgba(128, 128, 128, 0.1);
+         backdrop-filter: blur(8px);
+         -webkit-backdrop-filter: blur(8px);
 
          a {
             margin: 0;
