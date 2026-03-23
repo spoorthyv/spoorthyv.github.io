@@ -237,7 +237,7 @@
             box-sizing: border-box;
             border-radius: 9px;
             color: $color-nav-title;
-            mix-blend-mode: overlay;
+            mix-blend-mode: difference;
             -webkit-tap-highlight-color: transparent;
          }
       }
