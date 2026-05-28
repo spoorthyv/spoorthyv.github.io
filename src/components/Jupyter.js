@@ -77,7 +77,7 @@ class Jupyter extends React.Component {
               <p>
                 First we created a new version of the logo that consolidated the best parts of all the logos in circulation. Then we created the brand book below that lays out rules for the entire project on how to use the brand and logo in an official and beautiful document. Finally, I went through all our projects assets and fixed violations of these guidelines across all of Jupyter's products.
               </p>
-              <object data={brandGuide} type="application/pdf" width="100%" height="460px" internalinstanceid="3" title="">
+              <object data={brandGuide + "#toolbar=0&navpanes=0"} type="application/pdf" width="100%" height="620px" internalinstanceid="3" title="">
                 <p id="none"></p>
               </object>
             </div>

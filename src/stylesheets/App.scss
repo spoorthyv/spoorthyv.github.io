@@ -65,36 +65,40 @@
    display: flex;
    width: 100%;
    overflow-x: auto;
+   padding: 52px 64px;
+   box-sizing: border-box;
+   gap: 52px;
 
-   >div {
-      padding: 20px 120px 20px 0;
-      display: flex;
-      gap: 35px;
+   &::-webkit-scrollbar {
+      height: 10px;
+      display: none;
+   }
+
+   &::-webkit-scrollbar-track {
+      background-color: rgba(0, 0, 0, 0.88);
+   }
+
+   &::-webkit-scrollbar-thumb {
+      background-color: rgb(255, 255, 255);
+      border-radius: 20px;
+   }
+
+   >* {
+      flex: 0 0 auto;
+      display: block;
 
       img {
-         height: 486px;
-         box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.07);
+         box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.08);
+         border-radius: 8px;
          cursor: pointer;
+         transition: transform 0.25s ease, box-shadow 0.25s ease;
+
+         &:hover {
+            transform: translateY(-4px);
+            box-shadow: 0px 12px 32px rgba(0, 0, 0, 0.12);
+         }
       }
    }
-}
-
-.horizGallery::-webkit-scrollbar {
-   height: 10px;
-   display: none;
-}
-
-.fullScreen::-webkit-scrollbar {
-   display: block;
-}
-
-.horizGallery::-webkit-scrollbar-track {
-   background-color: rgba(0, 0, 0, 0.88);
-}
-
-.horizGallery::-webkit-scrollbar-thumb {
-   background-color: rgb(255, 255, 255);
-   border-radius: 20px;
 }
 
 @media screen and (max-width: $breakpoint-mobile) {
@@ -125,13 +129,8 @@
    }
 
    .horizGallery {
-      >div {
-         gap: 20px;
-
-         img {
-            height: 300px;
-         }
-      }
+      padding: 32px;
+      gap: 32px;
    }
 }
 

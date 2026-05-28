@@ -2,7 +2,7 @@ import React from 'react';
 
 import Card from './Card';
 import FilterBar from './FilterBar';
-import { IconHeartFilled, IconBrandReact, IconSparklesFilled } from '@tabler/icons-react';
+import { IconBrandReact, IconSparklesFilled } from '@tabler/icons-react';
 
 import squidLogo from '../images/squid/squidlogo.svg';
 import ebayLogo from '../images/ebay/ebay.svg';
@@ -169,12 +169,11 @@ class Portfolio extends React.Component {
             </div>
             <div id="footer">
                <a href="https://github.com/spoorthyv/spoorthyv.github.io" target="_blank" rel="noopener noreferrer">
-                  <h4>Built with <span className="iconTooltip" data-tooltip="Love"><IconHeartFilled id="heartIcon" size={16} /></span> from scratch using <span className="iconTooltip" data-tooltip="React"><IconBrandReact id='reactIcon' size={18} /></span> with the help of a little <span className="iconTooltip" data-tooltip="AI"><IconSparklesFilled id='sparklesIcon' size={18} /></span></h4>
+                  <h4>Built from scratch using <span className="iconTooltip" data-tooltip="React"><IconBrandReact id='reactIcon' size={18} /></span> with the help of a little <span className="iconTooltip" data-tooltip="AI"><IconSparklesFilled id='sparklesIcon' size={18} /></span></h4>
                </a>
             </div>
             <SkewedRect id="SkewedRect" />
             <Circle id="Circle1" />
-            <Circle id="Circle2" />
             <Circle id="Circle3" />
             <Circle id="Circle4" />
             <Triangle id="Triangle" />

@@ -364,26 +364,12 @@
    }
 }
 
-#portfolio #Circle2 {
-   position: absolute;
-   right: 37%;
-   bottom: 19%;
-   height: 20px !important;
-   width: 20px !important;
-   pointer-events: none;
-   z-index: -1;
-
-   path {
-      fill: #fad352;
-   }
-}
-
 #portfolio #Circle3 {
    position: absolute;
    right: 44px;
-   bottom: -32px;
-   height: 186px !important;
-   width: 186px !important;
+   bottom: -24px;
+   height: 164px !important;
+   width: 164px !important;
    pointer-events: none;
    z-index: 0;
 
@@ -425,7 +411,6 @@
 
       #SkewedRect,
       #Circle1,
-      #Circle2,
       #Circle3,
       #Circle4,
       #Square,

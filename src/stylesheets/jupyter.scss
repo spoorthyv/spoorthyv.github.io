@@ -52,6 +52,8 @@
 
     object {
       margin-top: 20px;
+      border-radius: 6px;
+      box-sizing: border-box;
     }
 
     >img {
@@ -70,12 +72,19 @@
     }
 
     #jupyterLab {
-      padding-bottom: 20px;
+      padding-bottom: 0px;
     }
 
     .horizGallery {
-      >div {
-        padding: 0 120px 68px 0;
+      >* img {
+        height: 532px;
+        width: auto;
+      }
+
+      @media screen and (max-width: 1002px) {
+        >* img {
+          height: 300px;
+        }
       }
     }
   }

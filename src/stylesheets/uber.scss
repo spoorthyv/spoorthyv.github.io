@@ -10,6 +10,17 @@
 
     .horizGallery {
       background-color: #f7fafb;
+
+      > * img {
+        height: 486px;
+        width: auto;
+      }
+
+      @media screen and (max-width: 1002px) {
+        > * img {
+          height: 300px;
+        }
+      }
     }
 
     #step4 {
