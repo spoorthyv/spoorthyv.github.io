@@ -17,7 +17,7 @@ class Navbar extends React.Component {
          classStr = classStr.concat("smallNav");
       }
 
-      if (['/photography'].includes(this.props.location.pathname)) {
+      if (['/photography', '/peloton'].includes(this.props.location.pathname)) {
          classStr = classStr.concat(" darkNav");
       }
 

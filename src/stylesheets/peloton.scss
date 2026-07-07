@@ -1,6 +1,1171 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+@import './variables.scss';
+
+// Peloton case study — dark page. Colors come from the Figma design
+// (Crescendo purple #b394ff, Maestro pink #ff8ef6) rather than the
+// light-page brand tokens in variables.scss.
+
+$peloton-bg: #0c0c0d;
+$peloton-crescendo: #b394ff;
+$peloton-maestro: #ff8ef6;
+$peloton-text-dim: #e6e6e6;
+$peloton-card-bg: #131314;
+$peloton-card-border: rgba(255, 255, 255, 0.05);
+$peloton-frame-border: rgba(255, 255, 255, 0.1);
+$peloton-control-bg: rgba(255, 255, 255, 0.14);
+$peloton-control-border: rgba(255, 255, 255, 0.14);
+
+// Type scale — every font-size/line-height pair on this page comes from one
+// of these four styles (plus the 16px captions and 14px pills, used once each)
+@mixin type-title {
+    // Section titles
+    font-size: 33px;
+    line-height: 43px;
+    font-weight: 500;
+    letter-spacing: 0.33px;
+}
+
+@mixin type-subtitle {
+    // Section subtitles, statements, and quote cards
+    font-size: 26px;
+    line-height: 43px;
+    letter-spacing: 0.78px;
+}
+
+@mixin type-body-lg {
+    // Hero body text and picker option titles
+    font-size: 22px;
+    line-height: 36px;
+    letter-spacing: 0.72px;
+}
+
+@mixin type-control {
+    // Nav buttons, picker descriptions, small card titles, research text
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.54px;
+}
+
 .peloton {
-    h1 {
-        padding: 0;
+    background-color: $peloton-bg;
+    font-family: 'Inter UI', sans-serif;
+    color: white;
+    overflow-x: hidden;
+
+    h3,
+    h4,
+    p,
+    ol {
         margin: 0;
+        padding: 0;
+        color: inherit;
+        font-family: 'Inter UI', sans-serif;
+    }
+
+    h3 {
+        @include type-title;
+    }
+
+    // ------------------------------------------------------------------
+    // Hero
+    // ------------------------------------------------------------------
+    .hero {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 106px;
+        padding: 120px 100px;
+        background-color: black;
+        overflow: hidden;
+
+
+        &::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(80% 120% at 50% 100%, rgb(12, 12, 13, 1) 30%, rgb(0, 0, 0, 0.8) 55%, rgba(0, 0, 0, 0.0) 100%);
+            pointer-events: none;
+            z-index: 2;
+        }
+
+        >* {
+            position: relative;
+            z-index: 4;
+        }
+
+        .staticNoise {
+            position: absolute;
+            inset: 0;
+            background-size: 1200px 900px;
+            background-repeat: repeat;
+            background-position: top left;
+            opacity: 0.18;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .blurredLogos {
+            position: absolute;
+            top: 108.5px;
+            left: 50%;
+            transform: translate(calc(-50% + var(--glow-x, 0px)), var(--glow-y, 0px));
+            transition: transform 0.4s ease-out;
+            filter: blur(142px);
+            opacity: 0.75;
+            pointer-events: none;
+            z-index: 3 !important;
+
+            .logoWrapper::before {
+                display: none !important;
+            }
+        }
+
+        .backArrow {
+            position: absolute;
+            top: 40px;
+            left: 48px;
+            z-index: 5;
+
+            svg {
+                transition: filter 0.25s;
+            }
+
+            svg:hover {
+                filter: brightness(1.3);
+            }
+        }
+    }
+
+    .logos {
+        display: flex;
+        align-items: center;
+        gap: 204px;
+
+        .logoWrapper {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 60px;
+            padding-top: 24px;
+        }
+
+        .logoIcon,
+        .wordmark {
+            position: relative;
+        }
+
+        .logoIcon {
+            width: 240px;
+            height: 240px;
+            object-fit: cover;
+        }
+
+        // The exported SVG wordmarks have no intrinsic size
+        // (preserveAspectRatio="none"), so both dimensions must be explicit
+        .wordmark {
+            height: 21.5px;
+            width: 233.6px;
+
+            &.maestroWordmark {
+                width: 177px;
+            }
+        }
+    }
+
+    .summary {
+        display: flex;
+        align-items: center;
+        gap: 88px;
+        max-width: 1080px;
+        width: 100%;
+    }
+
+    .summaryText {
+        flex: 1;
+        min-width: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 34px;
+
+        p {
+            @include type-body-lg;
+        }
+
+        .apps {
+            font-size: 33px;
+            line-height: 53px;
+            letter-spacing: 0.33px;
+
+            .crescendo {
+                font-weight: 500;
+                color: $peloton-crescendo;
+            }
+
+            .maestro {
+                font-weight: 500;
+                color: $peloton-maestro;
+            }
+        }
+    }
+
+    .pills {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        padding: 8px 0;
+        flex-shrink: 0;
+
+        .pill {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            height: 36px;
+            padding: 0 14px;
+            background-color: #1e1e1e;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 999px;
+            font-size: 15px;
+            font-weight: 500;
+            white-space: nowrap;
+
+            svg {
+                flex-shrink: 0;
+                height: 18px;
+                width: 18px;
+            }
+        }
+    }
+
+    // ------------------------------------------------------------------
+    // Shared section layout
+    // ------------------------------------------------------------------
+    .macbookMockup {
+        display: block;
+        width: 100%;
+        aspect-ratio: 1213 / 682;
+        object-fit: cover;
+        object-position: 50% 32%;
+    }
+
+    .section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 72px 80px;
+        background-color: black;
+
+        &.alt {
+            background-color: rgba(255, 255, 255, 0.03);
+        }
+    }
+
+    .sectionInner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 28px;
+        max-width: 1080px;
+        width: 100%;
+
+        &.wide {
+            max-width: 1280px;
+        }
+
+        &.row {
+            flex-direction: row;
+            gap: 56px;
+        }
+    }
+
+    .sectionTitleGroup {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        text-align: center;
+
+        p {
+            @include type-subtitle;
+        }
+
+        &.left {
+            align-items: flex-start;
+            text-align: left;
+        }
+    }
+
+    .screenshot {
+        display: block;
+        flex: 1;
+        min-width: 0;
+        width: 100%;
+        height: auto;
+
+        &.rounded {
+            border-radius: 21px;
+        }
+
+        &.framed {
+            border: 1px solid $peloton-frame-border;
+            border-radius: 6px;
+            box-sizing: border-box;
+        }
+    }
+
+    .sideText {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 320px;
+        flex-shrink: 0;
+
+        p,
+        ol {
+            font-size: 18px;
+            line-height: 28px;
+            color: $peloton-text-dim;
+        }
+
+        ol {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            padding-left: 27px;
+        }
+
+        &.narrow {
+            width: 302px;
+        }
+    }
+
+    // ------------------------------------------------------------------
+    // Research
+    // ------------------------------------------------------------------
+    .research {
+        padding: 96px 100px 16px;
+    }
+
+    // ------------------------------------------------------------------
+    // Pain point carousel
+    // ------------------------------------------------------------------
+    .painCarousel {
+        display: flex;
+        gap: 28px;
+        padding: 64px 100px;
+        background-color: black;
+        overflow-x: auto;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        .painCard {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 260px;
+            height: 288px;
+            padding: 24px;
+            box-sizing: border-box;
+            flex-shrink: 0;
+            background-color: $peloton-card-bg;
+            border: 1px solid $peloton-card-border;
+            border-radius: 21px;
+
+            // Centers the row when it fits, scrolls without clipping when it doesn't
+            &:first-child {
+                margin-left: auto;
+            }
+
+            &:last-child {
+                margin-right: auto;
+            }
+
+            p {
+                @include type-subtitle;
+                font-style: italic;
+                font-weight: 500;
+                letter-spacing: 0.26px;
+                color: rgba(255, 255, 255, 0.7);
+
+                b {
+                    font-weight: 600;
+                    color: white;
+                }
+            }
+        }
+    }
+
+    // ------------------------------------------------------------------
+    // Design system
+    // ------------------------------------------------------------------
+    .designSystem {
+        padding: 52px 0;
+
+        .sectionInner {
+            padding: 32px 100px;
+            box-sizing: border-box;
+        }
+
+        .bigStatement {
+            @include type-subtitle;
+            text-align: center;
+            color: $peloton-text-dim;
+
+            i {
+                font-weight: 500;
+                color: white;
+            }
+        }
+    }
+
+    .bentoScroll {
+        display: flex;
+        width: 100%;
+        overflow-x: auto;
+        padding: 20px 0;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+
+    .bento {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        width: max-content;
+        flex-shrink: 0;
+        // Centers when it fits; safely collapses to 0 (flush start, fully
+        // scrollable) instead of going negative when it overflows — a
+        // negative offset here would push content past scrollLeft: 0,
+        // making it permanently unreachable. Same pattern as .painCard below.
+        margin: 0 auto;
+        padding: 0 20px;
+
+        img {
+            display: block;
+        }
+
+        .bentoCard {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: black;
+            border-radius: 21px;
+            padding: 32px;
+            box-sizing: border-box;
+        }
+
+        .bentoCol {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            &.tall {
+                align-self: stretch;
+                justify-content: center;
+
+                .bentoCard {
+                    height: 100%;
+
+                    img {
+                        width: 163px;
+                        height: 384px;
+                        object-fit: contain;
+                    }
+                }
+            }
+
+            &.middle {
+                width: 687px;
+            }
+
+            &.right {
+                width: 342px;
+
+                // Same right-edge bleed treatment as .bentoCard.grow
+                .bentoCard:first-child {
+                    justify-content: flex-start;
+                    overflow: hidden;
+                    padding: 32px 26px;
+
+                    img {
+                        width: 292px;
+                        max-width: none;
+                        height: auto;
+                        flex-shrink: 0;
+                    }
+                }
+
+                .bentoCard:last-child {
+                    img {
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+            }
+        }
+
+        .bentoRow {
+            display: flex;
+            gap: 20px;
+            width: 100%;
+
+            &:nth-child(1) {
+                height: 196px;
+
+                .bentoCard:nth-child(1) img {
+                    width: 224px;
+                    height: 144px;
+                    object-fit: contain;
+                }
+
+                .bentoCard:nth-child(2) {
+                    padding: 26px 32px;
+
+                    img {
+                        width: 91px;
+                        height: 146px;
+                        object-fit: contain;
+                    }
+                }
+
+                .bentoCard:nth-child(3) {
+                    padding: 12px 32px;
+
+                    img {
+                        width: 140px;
+                        height: 100px;
+                        object-fit: contain;
+                    }
+                }
+            }
+
+            &:nth-child(2) {
+                height: 216px;
+
+                // Image is fixed-size and left-anchored per the design — it
+                // bleeds off the card's right edge and gets clipped
+                .bentoCard.grow {
+                    flex: 1;
+                    min-width: 0;
+                    justify-content: flex-start;
+                    overflow: hidden;
+                    padding: 24px 20px;
+
+                    img {
+                        width: 401px;
+                        max-width: none;
+                        height: auto;
+                        flex-shrink: 0;
+                    }
+                }
+
+                .bentoCard:last-child {
+                    padding: 11px 22px;
+
+                    img {
+                        width: 202px;
+                        height: 171px;
+                        object-fit: contain;
+                    }
+                }
+            }
+
+            .bentoCard {
+                height: 100%;
+            }
+
+            &:nth-child(3) {
+                height: auto;
+
+                .bentoCard.toolbar {
+                    justify-content: flex-end;
+                    padding: 24px 15px;
+                    overflow: hidden;
+
+                    img {
+                        height: 56px;
+                        width: auto;
+                        max-width: none;
+                    }
+                }
+            }
+        }
+    }
+
+    // ------------------------------------------------------------------
+    // Classes Dashboard
+    // ------------------------------------------------------------------
+    .dashboard {
+        .sectionTitleGroup p {
+            @include type-body-lg;
+            max-width: 880px;
+        }
+    }
+
+    // ------------------------------------------------------------------
+    // Interactive controls
+    // ------------------------------------------------------------------
+    .segmentedNav {
+        display: flex;
+        gap: 4px;
+        padding: 6px;
+        background-color: black;
+        border: 1px solid $peloton-control-border;
+        border-radius: 85px;
+
+        button {
+            padding: 8px 20px;
+            border: none;
+            border-radius: 69px;
+            background: transparent;
+            color: $peloton-text-dim;
+            @include type-control;
+            font-family: inherit;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.2s, color 0.2s;
+
+            &:hover {
+                background-color: rgba(255, 255, 255, 0.1);
+                color: white;
+            }
+
+            &.selected {
+                background-color: $peloton-control-bg;
+                color: white;
+
+                &:hover {
+                    background-color: rgba(255, 255, 255, 0.18);
+                }
+            }
+        }
+    }
+
+    .bigPicker {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        padding: 8px;
+        width: 100%;
+        box-sizing: border-box;
+        background-color: black;
+        border: 1px solid $peloton-control-border;
+        border-radius: 21px;
+
+        button {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+            padding: 12px 14px;
+            border: none;
+            border-radius: 13px;
+            background: transparent;
+            color: $peloton-text-dim;
+            font-family: inherit;
+            text-align: left;
+            cursor: pointer;
+            transition: background-color 0.2s, color 0.2s;
+
+            &:hover {
+                background-color: rgba(255, 255, 255, 0.1);
+                color: white;
+            }
+
+            &.selected {
+                background-color: $peloton-control-bg;
+                color: white;
+
+                &:hover {
+                    background-color: rgba(255, 255, 255, 0.18);
+                }
+            }
+
+            .pickerTitle {
+                @include type-body-lg;
+                line-height: 32px;
+                font-weight: 600;
+            }
+
+            .pickerDesc {
+                @include type-control;
+            }
+        }
+    }
+
+    // ------------------------------------------------------------------
+    // Dual planning / sidebar / curation / maestro sections
+    // ------------------------------------------------------------------
+    .dualPlanning {
+        .sectionInner {
+            gap: 28px;
+        }
+
+        // Fixed-size screenshot per the design (1237x800): it bleeds off the
+        // right edge of the 1280px container — clipped by .peloton's
+        // overflow-x — while the left side of the UI stays in view
+        .screenshot {
+            flex: 0 0 auto;
+            width: 1237px;
+            height: 800px;
+            object-fit: cover;
+            object-position: left center;
+        }
+    }
+
+    .sidebarSection {
+        .sectionInner {
+            max-width: 1400px;
+            gap: 16px;
+            align-items: stretch;
+        }
+
+        // The prototype window is fixed at its design size and anchored to
+        // the right of this flexible column, so it bleeds off the left edge
+        // of the screen (clipped by .peloton's overflow-x)
+        .prototypeWrapper {
+            flex: 1;
+            min-width: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            justify-content: center;
+        }
+
+        .crescendoPrototype {
+            width: 1280px;
+            max-width: none;
+            flex-shrink: 0;
+        }
+    }
+
+    .sidebarNotes {
+        display: flex;
+        flex-direction: column;
+        width: 468px;
+        flex-shrink: 0;
+
+        .sectionTitleGroup p {
+            @include type-body-lg;
+        }
+
+        .notesBody {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 40px;
+            padding: 0 40px 0 16px;
+        }
+
+        .cardGroup {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 13px;
+            width: 100%;
+        }
+
+        .hintPill {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            padding: 6px 12px 6px 10px;
+            background-color: #002b00;
+            border: 1px solid rgba(212, 255, 212, 0.08);
+            border-radius: 19px;
+            color: #d4ffd4;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 0.42px;
+
+            svg {
+                flex-shrink: 0;
+                transform: rotate(-16deg);
+            }
+        }
+
+        .pickerCard {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+            padding: 18px 20px;
+            background-color: #131314;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 5px;
+            width: 100%;
+            box-sizing: border-box;
+
+            h4 {
+                @include type-body-lg;
+                line-height: 32px;
+                font-weight: 600;
+            }
+
+            p {
+                @include type-control;
+            }
+        }
+    }
+
+    // ------------------------------------------------------------------
+    // Clickable sidebar prototype
+    // ------------------------------------------------------------------
+    // A 1280x800 app window: chrome strip, 940px timeline screenshot, and a
+    // 340px interactive sidebar (44px tab selector + 728px panel image).
+    // Everything except icon/selector sizing scales as a percentage of the
+    // window so the design proportions hold at any width.
+    .crescendoPrototype {
+        width: 100%;
+        max-width: 1280px;
+        border: 1px solid $peloton-frame-border;
+        border-radius: 6px;
+        overflow: hidden;
+        background-color: black;
+        box-sizing: border-box;
+
+        .windowChrome {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .prototypeBody {
+            display: flex;
+            align-items: flex-start;
+            position: relative;
+
+            &::after {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 0;
+                bottom: 0;
+                width: 73.4375%; // Matches .mainImage width
+                background: linear-gradient(to right, black 0%, transparent 100%);
+                pointer-events: none;
+                z-index: 1;
+            }
+        }
+
+        .mainImage {
+            display: block;
+            width: 73.4375%; // 940 / 1280
+            min-width: 0;
+            height: auto;
+        }
+
+        .clickableSidebar {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            min-width: 0;
+            border-left: 1px solid #242428;
+        }
+
+        .panelSelector {
+            display: flex;
+            width: 100%;
+            aspect-ratio: 340 / 44; // scales with the sidebar like the images do
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            box-sizing: border-box;
+
+            button {
+                flex: 1;
+                min-width: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 0;
+                background: transparent;
+                border: none;
+                cursor: pointer;
+                transition: background-color 0.15s;
+
+                img {
+                    width: 28.8%; // 14px icon in a 48.5px tab
+                    aspect-ratio: 1;
+                    height: auto;
+                }
+
+                &:hover {
+                    background-color: rgba(255, 255, 255, 0.1);
+                }
+
+                &.selected {
+                    background-color: #6d51fb;
+                }
+            }
+        }
+
+        .panelImage {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .musicCuration,
+    .maestroSection {
+        p {
+            @include type-body-lg;
+            text-align: center;
+            max-width: 880px;
+        }
+
+        // Nav, screenshot, and caption sit tighter together than the
+        // section's 28px gap, which is kept for the title above
+        .mediaGroup {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 16px;
+            width: 100%;
+        }
+    }
+
+    .maestroSection {
+        background: linear-gradient(180deg, rgba(206, 39, 179, 0.1) 0%, rgba(206, 39, 179, 0) 100%), black;
+        padding-bottom: 64px;
+
+        .maestroLockup {
+            width: 222px;
+            height: 43px;
+        }
+    }
+
+    .musicCuration {
+        padding-bottom: 64px;
+    }
+}
+
+// ==========================================================================
+// Mobile
+// ==========================================================================
+@media screen and (max-width: $breakpoint-mobile) {
+    .peloton {
+        h3 {
+            font-size: 26px;
+            line-height: 36px;
+        }
+
+        .hero {
+            gap: 56px;
+            padding: 88px 24px 64px;
+
+            .backArrow {
+                top: 24px;
+                left: 20px;
+            }
+        }
+
+        .logos {
+            gap: 48px;
+
+            .logoWrapper {
+                gap: 28px;
+                padding-top: 0;
+
+                &::before {
+                    width: 300px;
+                    height: 300px;
+                }
+            }
+
+            .logoIcon {
+                width: 128px;
+                height: 128px;
+            }
+
+            .wordmark {
+                height: 14px;
+                width: 152px;
+
+                &.maestroWordmark {
+                    width: 115px;
+                }
+            }
+        }
+
+        .summary {
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        .summaryText {
+            gap: 24px;
+            align-items: center;
+            text-align: center;
+
+            p {
+                font-size: 18px;
+                line-height: 30px;
+            }
+
+            .apps {
+                font-size: 24px;
+                line-height: 40px;
+            }
+        }
+
+        .pills {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .section {
+            padding: 48px 24px;
+        }
+
+        .sectionInner.row {
+            flex-direction: column;
+            gap: 32px;
+        }
+
+        .sideText {
+            width: 100%;
+
+            &.narrow {
+                width: 100%;
+            }
+        }
+
+        .research {
+            padding: 64px 24px 16px;
+
+            .sideText {
+                align-items: center;
+                text-align: center;
+            }
+        }
+
+        .painCarousel {
+            padding: 40px 24px;
+            gap: 20px;
+
+            .painCard {
+                width: 220px;
+                height: 220px;
+
+                p {
+                    font-size: 20px;
+                    line-height: 34px;
+                }
+            }
+        }
+
+        .designSystem {
+            padding: 40px 0;
+
+            .sectionInner {
+                padding: 16px 24px;
+            }
+
+            .bigStatement {
+                font-size: 20px;
+                line-height: 34px;
+            }
+        }
+
+        .sectionTitleGroup p,
+        .musicCuration p,
+        .maestroSection p {
+            font-size: 20px;
+            line-height: 34px;
+        }
+
+        .segmentedNav button {
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+        .dualPlanning .sideText h3 {
+            text-align: center;
+        }
+
+        .dualPlanning .screenshot {
+            width: 140%;
+            height: auto;
+            aspect-ratio: 1237 / 800;
+            align-self: flex-start;
+        }
+
+        .bigPicker {
+            flex-direction: row;
+
+            button {
+                flex: 1;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+
+                .pickerTitle {
+                    font-size: 20px;
+                    line-height: 34px;
+                }
+
+                .pickerDesc {
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+            }
+        }
+
+        .sidebarSection {
+            .sectionInner {
+                flex-direction: column-reverse;
+            }
+
+            .prototypeWrapper {
+                width: 100%;
+            }
+
+            // Keep the timeline + sidebar side by side, oversized and
+            // right-anchored so the window bleeds off the left edge while
+            // the clickable sidebar stays fully visible and tappable
+            .crescendoPrototype {
+                width: 245%;
+            }
+        }
+
+        .sidebarNotes {
+            width: 100%;
+
+            // Title and subtitle above the tab description card
+            .notesBody {
+                flex-direction: column-reverse;
+                justify-content: flex-end;
+                padding: 0 12px;
+            }
+
+            .cardGroup {
+                align-items: center;
+            }
+
+            .pickerCard {
+                text-align: center;
+            }
+
+            .sectionTitleGroup.left {
+                align-items: center;
+                text-align: center;
+            }
+        }
+    }
+}
+
+// ==========================================================================
+// Hero motion
+// ==========================================================================
+@media (prefers-reduced-motion: reduce) {
+    .peloton .logos .logoWrapper::before {
+        transition: none;
+        transform: translate(-50%, -50%);
     }
 }

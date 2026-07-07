@@ -41,7 +41,7 @@ class ContentWrapper extends React.Component {
    }
 
    isDarkPage() {
-      return ['/photography'].includes(this.props.location.pathname);
+      return ['/photography', '/peloton'].includes(this.props.location.pathname);
    }
 
    render() {
