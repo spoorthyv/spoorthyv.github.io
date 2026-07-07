@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.666abed1.css",
-    "main.js": "/static/js/main.97ca3a64.js",
+    "main.css": "/static/css/main.fabeb0c2.css",
+    "main.js": "/static/js/main.6167ca05.js",
     "static/media/uberVideo.mov": "/static/media/uberVideo.291486316393211e10dd.mov",
     "static/media/uberMac.zip": "/static/media/uberMac.bf144fb64260cb4e9f24.zip",
     "static/media/uberPrinciple.prd": "/static/media/uberPrinciple.ad9e6ee917e43f1b9393.prd",
@@ -15,10 +15,9 @@
     "static/media/FinishedDribbble.mp4": "/static/media/FinishedDribbble.7c77b7eb214e74c3ab48.mp4",
     "static/media/UberPrototypeSmall.mp4": "/static/media/UberPrototypeSmall.0baac410f5275c304c07.mp4",
     "static/media/exampleNote.png": "/static/media/exampleNote.16f7055601d8cbd92aaf.png",
-    "static/media/dualPlanning.png": "/static/media/dualPlanning.7c27d9faa60c307aa203.png",
     "static/media/SSFFullProto.mp4": "/static/media/SSFFullProto.ae450d1d7f761ced5574.mp4",
     "static/media/bannerIcons.png": "/static/media/bannerIcons.bdccad5be9e73ee4aab1.png",
-    "static/media/maestroPlayer.png": "/static/media/maestroPlayer.2581e4ad53612c61b6e2.png",
+    "static/media/maestroClassView.png": "/static/media/maestroClassView.2581e4ad53612c61b6e2.png",
     "static/media/image.png": "/static/media/image.72098b7cafddeb5d171d.png",
     "static/media/nbtoolbar.png": "/static/media/nbtoolbar.3ae16db6ff21625329cf.png",
     "static/media/terminal.png": "/static/media/terminal.9582ff2289c67f442f20.png",
@@ -27,11 +26,12 @@
     "static/media/uber1.mp4": "/static/media/uber1.54029431ca0cc6b005bd.mp4",
     "static/media/uberFlowDiagram.png": "/static/media/uberFlowDiagram.d264de0ba650293ceabe.png",
     "static/media/top_navbar.png": "/static/media/top_navbar.0e74daa94d9354901218.png",
-    "static/media/listView.png": "/static/media/listView.706b9ea349c5af3651e2.png",
+    "static/media/listView.png": "/static/media/listView.258bf3352f8c2df1770f.png",
     "static/media/importantFlow.png": "/static/media/importantFlow.0c34a179bf7f37996997.png",
     "static/media/Page Switcher.svg": "/static/media/Page Switcher.ab520dd0b4ebc6fd2bf533cf97540641.svg",
     "static/media/option3.png": "/static/media/option3.79ec81bd024c26837b7d.png",
     "static/media/option1.png": "/static/media/option1.1c0a9484e9e81802698e.png",
+    "static/media/dualPlanning.png": "/static/media/dualPlanning.0aca80a5bfab49c561fc.png",
     "static/media/option4.png": "/static/media/option4.40a240e98703165fca1c.png",
     "static/media/option2.png": "/static/media/option2.68adb5242ce3aecb17cd.png",
     "static/media/new.png": "/static/media/new.2caa4d4a9667d3fcb29b.png",
@@ -41,6 +41,7 @@
     "static/media/old.png": "/static/media/old.7f940adba6378345797f.png",
     "static/media/jupyterTeam.jpg": "/static/media/jupyterTeam.9d42dd634eeb8e2bb459.jpg",
     "static/media/classesDashboard.png": "/static/media/classesDashboard.9419481cfce0d116c9a4.png",
+    "static/media/maestroPlayer.png": "/static/media/maestroPlayer.3f945309d88197f43bc0.png",
     "static/media/InterUI-BoldItalic.woff": "/static/media/InterUI-BoldItalic.ba3772760b8df1c713a1.woff",
     "static/media/InterUI-MediumItalic.woff": "/static/media/InterUI-MediumItalic.3c4ee0bf233cf2dc5d53.woff",
     "static/media/IMGP7651.jpg": "/static/media/IMGP7651.31407b6754b801ffeb82.jpg",
@@ -135,11 +136,11 @@
     "static/media/skewedrect.svg": "/static/media/skewedrect.d5521a17db02f43a1f67c09d4c43d384.svg",
     "static/media/triangle.svg": "/static/media/triangle.4bbab2a8f3c6b8a44857d8b0534d62fd.svg",
     "static/media/square.svg": "/static/media/square.7401ef4de22cecd307233b9c9be4a191.svg",
-    "main.666abed1.css.map": "/static/css/main.666abed1.css.map",
-    "main.97ca3a64.js.map": "/static/js/main.97ca3a64.js.map"
+    "main.fabeb0c2.css.map": "/static/css/main.fabeb0c2.css.map",
+    "main.6167ca05.js.map": "/static/js/main.6167ca05.js.map"
   },
   "entrypoints": [
-    "static/css/main.666abed1.css",
-    "static/js/main.97ca3a64.js"
+    "static/css/main.fabeb0c2.css",
+    "static/js/main.6167ca05.js"
   ]
 }
