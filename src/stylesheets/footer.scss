@@ -1,0 +1,160 @@
+// ==========================================================================
+// footer.scss — Prev/next project navigation footer for project subpages
+// ==========================================================================
+@import './variables.scss';
+
+.projectFooter {
+   display: flex;
+   align-items: flex-start;
+   justify-content: space-between;
+   width: 100%;
+   padding: 18px 24px;
+   box-sizing: border-box;
+   border-top: 1px solid;
+
+   &.light {
+      background-color: $color-nav-bg;
+      border-top-color: rgba(0, 0, 0, 0.05);
+   }
+
+   &.dark {
+      background-color: $color-nav-dark-bg;
+      border-top-color: rgba(255, 255, 255, 0.05);
+   }
+
+   .footerButton {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 8px 16px;
+      border: 1px solid;
+      border-radius: 9px;
+      transition: border-color 0.2s, background-color 0.2s;
+
+      // Arrow hugs the outer edge; text padding is tighter on the arrow side
+      &.previous {
+         padding-left: 14px;
+         padding-right: 16px;
+      }
+
+      &.next {
+         padding-left: 16px;
+         padding-right: 14px;
+      }
+
+      .footerButtonText {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         white-space: nowrap;
+      }
+
+      &.previous .footerButtonText {
+         align-items: flex-end;
+         text-align: right;
+      }
+
+      &.next .footerButtonText {
+         align-items: flex-start;
+         text-align: left;
+      }
+
+      .direction {
+         font-family: 'Google Sans', system-ui, -apple-system, sans-serif;
+         font-weight: 600;
+         font-size: 18px;
+         line-height: 29px;
+      }
+
+      .projectName {
+         font-family: 'Google Sans', system-ui, -apple-system, sans-serif;
+         font-weight: 500;
+         font-size: 16px;
+         line-height: 24px;
+      }
+
+      svg {
+         flex-shrink: 0;
+      }
+   }
+
+   // ---- Light theme ----
+   &.light .footerButton {
+      border-color: #d9d9d9;
+
+      .direction {
+         color: #4d4d4d;
+      }
+
+      .projectName {
+         color: #6e6e6e;
+      }
+
+      svg {
+         color: #4d4d4d;
+      }
+
+      &:hover {
+         border-color: transparent;
+         background-color: #e8e8e8;
+      }
+   }
+
+   // ---- Dark theme ----
+   &.dark .footerButton {
+      border-color: #262626;
+
+      .direction {
+         color: #f6f6f6;
+      }
+
+      .projectName {
+         color: #b3b3b3;
+      }
+
+      svg {
+         color: #f6f6f6;
+      }
+
+      &:hover {
+         border-color: transparent;
+         background-color: #212121;
+      }
+   }
+}
+
+@media screen and (max-width: $breakpoint-mobile) {
+   .projectFooter {
+      padding: 16px;
+
+      .footerButton {
+         gap: 6px;
+         padding: 6px 12px;
+
+         &.previous {
+            padding-left: 10px;
+            padding-right: 12px;
+         }
+
+         &.next {
+            padding-left: 12px;
+            padding-right: 10px;
+         }
+
+         .direction {
+            font-size: 15px;
+            line-height: 22px;
+         }
+
+         .projectName {
+            font-size: 13px;
+            line-height: 18px;
+         }
+
+         svg {
+            width: 20px;
+            height: 20px;
+         }
+      }
+   }
+}

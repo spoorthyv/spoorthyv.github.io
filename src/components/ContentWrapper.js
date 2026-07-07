@@ -12,6 +12,7 @@ import Jupyter from './Jupyter';
 import FiveMinShower from './FiveMinShower';
 import Photography from './Photography';
 import Peloton from './Peloton';
+import Footer from './Footer';
 
 const FadeTransition = ({ children, ...props }) => {
    const nodeRef = React.useRef(null);
@@ -58,18 +59,24 @@ class ContentWrapper extends React.Component {
                   timeout={{ enter: 600 }}
                   classNames="fade"
                >
-                  <Switch location={this.props.location}>
-                     <Route exact path="/" component={Portfolio} />
-                     <Route path="/resume" component={Resume} />
-                     <Route path="/contact" component={Contact} />
-                     <Route path="/squid" component={Squid} />
-                     <Route path="/ebay" component={Ebay} />
-                     <Route path="/uber" component={Uber} />
-                     <Route path="/jupyter" component={Jupyter} />
-                     <Route path="/fiveMinShower" component={FiveMinShower} />
-                     <Route path="/photography" component={Photography} />
-                     <Route path="/peloton" component={Peloton} />
-                  </Switch>
+                  <>
+                     <Switch location={this.props.location}>
+                        <Route exact path="/" component={Portfolio} />
+                        <Route path="/resume" component={Resume} />
+                        <Route path="/contact" component={Contact} />
+                        <Route path="/squid" component={Squid} />
+                        <Route path="/ebay" component={Ebay} />
+                        <Route path="/uber" component={Uber} />
+                        <Route path="/jupyter" component={Jupyter} />
+                        <Route path="/fiveMinShower" component={FiveMinShower} />
+                        <Route path="/photography" component={Photography} />
+                        <Route path="/peloton" component={Peloton} />
+                     </Switch>
+                     <Footer
+                        pathname={this.props.location.pathname}
+                        theme={this.isDarkPage() ? 'dark' : 'light'}
+                     />
+                  </>
                </FadeTransition>
             </TransitionGroup>
          </div>

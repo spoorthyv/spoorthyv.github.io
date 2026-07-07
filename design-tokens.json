@@ -1,0 +1,591 @@
+{
+  "colors": {
+    "brand": {
+      "purple": {
+        "value": "#6f74ff",
+        "type": "color",
+        "description": "Portfolio nav tab active"
+      },
+      "blue": {
+        "value": "#4676fd",
+        "type": "color",
+        "description": "Resume nav tab active, filter pill 1"
+      },
+      "green": {
+        "value": "#20b376",
+        "type": "color",
+        "description": "Contact nav tab active, filter pill 2"
+      },
+      "orange": {
+        "value": "#f78f40",
+        "type": "color",
+        "description": "Filter pill 3"
+      }
+    },
+    "text": {
+      "default": {
+        "value": "#3f3f3f",
+        "type": "color",
+        "description": "All headings and body text"
+      },
+      "link": {
+        "value": "#448ed2",
+        "type": "color",
+        "description": "Default hyperlink"
+      },
+      "linkHover": {
+        "value": "#0085ff",
+        "type": "color",
+        "description": "Hovered hyperlink"
+      }
+    },
+    "interactive": {
+      "text": {
+        "value": "rgba(0, 0, 0, 0.47)",
+        "type": "color",
+        "description": "Nav links and filter pill text (default)"
+      },
+      "textHover": {
+        "value": "rgba(0, 0, 0, 0.70)",
+        "type": "color",
+        "description": "Nav links and filter pill text (hovered)"
+      },
+      "bg": {
+        "value": "rgba(0, 0, 0, 0.05)",
+        "type": "color",
+        "description": "Pill and link hover background (default)"
+      },
+      "bgHover": {
+        "value": "rgba(0, 0, 0, 0.10)",
+        "type": "color",
+        "description": "Pill and link hover background (hovered)"
+      }
+    },
+    "navbar": {
+      "bg": {
+        "value": "rgba(0, 0, 0, 0.025)",
+        "type": "color",
+        "description": "Desktop nav panel background"
+      },
+      "bgMobile": {
+        "value": "rgba(255, 255, 255, 0.08)",
+        "type": "color",
+        "description": "Mobile nav pill background"
+      },
+      "title": {
+        "value": "rgba(0, 0, 0, 0.70)",
+        "type": "color",
+        "description": "Name heading in nav"
+      },
+      "subtitle": {
+        "value": "rgba(0, 0, 0, 0.42)",
+        "type": "color",
+        "description": "Role/subtitle in nav"
+      }
+    },
+    "dark": {
+      "pageBg": {
+        "value": "#111111",
+        "type": "color",
+        "description": "Dark mode page background"
+      },
+      "navBg": {
+        "value": "rgba(0, 0, 0, 0.25)",
+        "type": "color",
+        "description": "Dark mode nav panel background"
+      },
+      "navHoverBg": {
+        "value": "rgba(255, 255, 255, 0.10)",
+        "type": "color",
+        "description": "Dark mode nav link hover background"
+      },
+      "title": {
+        "value": "rgba(255, 255, 255, 0.85)",
+        "type": "color",
+        "description": "Dark mode name heading"
+      },
+      "subtitle": {
+        "value": "rgba(255, 255, 255, 0.50)",
+        "type": "color",
+        "description": "Dark mode role/subtitle"
+      },
+      "link": {
+        "value": "rgba(255, 255, 255, 0.60)",
+        "type": "color",
+        "description": "Dark mode nav link text (default)"
+      },
+      "linkHover": {
+        "value": "rgba(255, 255, 255, 0.90)",
+        "type": "color",
+        "description": "Dark mode nav link text (hovered)"
+      }
+    },
+    "shapes": {
+      "green": {
+        "value": "#5FD58E",
+        "type": "color",
+        "description": "SkewedRect decorative shape"
+      },
+      "grey": {
+        "value": "#D9D9D9",
+        "type": "color",
+        "description": "Circle1 decorative shape"
+      },
+      "blue": {
+        "value": "#789EFF",
+        "type": "color",
+        "description": "Triangle decorative shape"
+      },
+      "yellow": {
+        "value": "#FAB752",
+        "type": "color",
+        "description": "Circle2 decorative shape"
+      },
+      "red": {
+        "value": "#ef6d4c",
+        "type": "color",
+        "description": "Circle3 decorative shape"
+      }
+    },
+    "surface": {
+      "page": {
+        "value": "#ffffff",
+        "type": "color",
+        "description": "Page background"
+      }
+    }
+  },
+  "typography": {
+    "fontFamilies": {
+      "heading": {
+        "value": "Google Sans",
+        "type": "fontFamilies",
+        "description": "Used for h1–h5, links, nav, filter pills"
+      },
+      "body": {
+        "value": "Inter UI",
+        "type": "fontFamilies",
+        "description": "Used for body text (p) and global default"
+      },
+      "stretch": {
+        "value": "Roboto Flex",
+        "type": "fontFamilies",
+        "description": "Variable font used for .title-stretch accent text"
+      }
+    },
+    "fontWeights": {
+      "regular": {
+        "value": "400",
+        "type": "fontWeights"
+      },
+      "medium": {
+        "value": "500",
+        "type": "fontWeights"
+      },
+      "semibold": {
+        "value": "600",
+        "type": "fontWeights"
+      },
+      "bold": {
+        "value": "700",
+        "type": "fontWeights"
+      },
+      "extrabold": {
+        "value": "800",
+        "type": "fontWeights",
+        "description": "Used with Roboto Flex title-stretch"
+      }
+    },
+    "lineHeight": {
+      "default": {
+        "value": "1.802",
+        "type": "lineHeights",
+        "description": "Applied globally to all text elements"
+      }
+    },
+    "letterSpacing": {
+      "body": {
+        "value": "0.13px",
+        "type": "letterSpacing",
+        "description": "Body paragraph text"
+      },
+      "label": {
+        "value": "0.5px",
+        "type": "letterSpacing",
+        "description": "Footer label text"
+      },
+      "pill": {
+        "value": "0.2px",
+        "type": "letterSpacing",
+        "description": "Card label badges"
+      }
+    },
+    "fontSize": {
+      "h1Desktop": {
+        "value": "41.05px",
+        "type": "fontSizes"
+      },
+      "h1Mobile": {
+        "value": "36px",
+        "type": "fontSizes"
+      },
+      "h2Desktop": {
+        "value": "32.4px",
+        "type": "fontSizes"
+      },
+      "h2Mobile": {
+        "value": "28.4px",
+        "type": "fontSizes"
+      },
+      "h3Desktop": {
+        "value": "25.6px",
+        "type": "fontSizes"
+      },
+      "h3Mobile": {
+        "value": "22.4px",
+        "type": "fontSizes"
+      },
+      "h4Desktop": {
+        "value": "18px",
+        "type": "fontSizes"
+      },
+      "h4Mobile": {
+        "value": "16.1px",
+        "type": "fontSizes"
+      },
+      "h5Desktop": {
+        "value": "16px",
+        "type": "fontSizes"
+      },
+      "h5Mobile": {
+        "value": "14px",
+        "type": "fontSizes"
+      },
+      "bodyDesktop": {
+        "value": "16px",
+        "type": "fontSizes"
+      },
+      "bodyMobile": {
+        "value": "14px",
+        "type": "fontSizes"
+      },
+      "navLink": {
+        "value": "18px",
+        "type": "fontSizes"
+      },
+      "navLinkMobile": {
+        "value": "16px",
+        "type": "fontSizes"
+      },
+      "filterPill": {
+        "value": "15px",
+        "type": "fontSizes"
+      },
+      "titleStretch": {
+        "value": "20px",
+        "type": "fontSizes"
+      }
+    },
+    "typeStyles": {
+      "h1": {
+        "value": {
+          "fontFamily": "{typography.fontFamilies.heading}",
+          "fontWeight": "{typography.fontWeights.regular}",
+          "fontSize": "{typography.fontSize.h1Desktop}",
+          "lineHeight": "{typography.lineHeight.default}"
+        },
+        "type": "typography"
+      },
+      "h2": {
+        "value": {
+          "fontFamily": "{typography.fontFamilies.heading}",
+          "fontWeight": "{typography.fontWeights.regular}",
+          "fontSize": "{typography.fontSize.h2Desktop}",
+          "lineHeight": "{typography.lineHeight.default}"
+        },
+        "type": "typography"
+      },
+      "h3": {
+        "value": {
+          "fontFamily": "{typography.fontFamilies.heading}",
+          "fontWeight": "{typography.fontWeights.bold}",
+          "fontSize": "{typography.fontSize.h3Desktop}",
+          "lineHeight": "{typography.lineHeight.default}"
+        },
+        "type": "typography"
+      },
+      "h4": {
+        "value": {
+          "fontFamily": "{typography.fontFamilies.heading}",
+          "fontWeight": "{typography.fontWeights.bold}",
+          "fontSize": "{typography.fontSize.h4Desktop}",
+          "lineHeight": "{typography.lineHeight.default}"
+        },
+        "type": "typography"
+      },
+      "h5": {
+        "value": {
+          "fontFamily": "{typography.fontFamilies.heading}",
+          "fontWeight": "{typography.fontWeights.bold}",
+          "fontSize": "{typography.fontSize.h5Desktop}",
+          "lineHeight": "{typography.lineHeight.default}"
+        },
+        "type": "typography"
+      },
+      "body": {
+        "value": {
+          "fontFamily": "{typography.fontFamilies.body}",
+          "fontWeight": "{typography.fontWeights.regular}",
+          "fontSize": "{typography.fontSize.bodyDesktop}",
+          "lineHeight": "{typography.lineHeight.default}",
+          "letterSpacing": "{typography.letterSpacing.body}"
+        },
+        "type": "typography"
+      },
+      "navLink": {
+        "value": {
+          "fontFamily": "{typography.fontFamilies.heading}",
+          "fontWeight": "{typography.fontWeights.semibold}",
+          "fontSize": "{typography.fontSize.navLink}",
+          "lineHeight": "{typography.lineHeight.default}"
+        },
+        "type": "typography"
+      },
+      "filterPill": {
+        "value": {
+          "fontFamily": "{typography.fontFamilies.heading}",
+          "fontWeight": "{typography.fontWeights.semibold}",
+          "fontSize": "{typography.fontSize.filterPill}",
+          "lineHeight": "1"
+        },
+        "type": "typography"
+      }
+    }
+  },
+  "spacing": {
+    "navbar": {
+      "widthFull": {
+        "value": "420px",
+        "type": "sizing",
+        "description": "Desktop nav full width (titles + links)"
+      },
+      "widthCompact": {
+        "value": "155px",
+        "type": "sizing",
+        "description": "Desktop nav compact width (links only)"
+      },
+      "mobileHeight": {
+        "value": "76px",
+        "type": "sizing",
+        "description": "Mobile horizontal nav bar height"
+      },
+      "paddingX": {
+        "value": "28px",
+        "type": "spacing",
+        "description": "Left padding for nav titles and links"
+      },
+      "linkGap": {
+        "value": "16px",
+        "type": "spacing",
+        "description": "Gap between nav links (desktop)"
+      },
+      "mobileLinkGap": {
+        "value": "4px",
+        "type": "spacing",
+        "description": "Gap between nav links (mobile)"
+      },
+      "logoSize": {
+        "value": "50px",
+        "type": "sizing",
+        "description": "Logo icon size"
+      },
+      "logoBottom": {
+        "value": "24px",
+        "type": "spacing"
+      },
+      "logoLeft": {
+        "value": "24px",
+        "type": "spacing"
+      }
+    },
+    "content": {
+      "sectionPaddingDesktop": {
+        "value": "60px 150px",
+        "type": "spacing",
+        "description": ".sectionContent padding on desktop"
+      },
+      "sectionPaddingMobile": {
+        "value": "32px",
+        "type": "spacing",
+        "description": ".sectionContent padding on mobile"
+      },
+      "maxWidth": {
+        "value": "800px",
+        "type": "sizing",
+        "description": "Max readable content width"
+      },
+      "topBannerHeight": {
+        "value": "388px",
+        "type": "sizing",
+        "description": "Hero/top banner height"
+      }
+    },
+    "portfolio": {
+      "bodyPaddingDesktop": {
+        "value": "150px 98px",
+        "type": "spacing"
+      },
+      "bodyPaddingMobile": {
+        "value": "28px 12px",
+        "type": "spacing"
+      },
+      "cardWidth": {
+        "value": "282px",
+        "type": "sizing"
+      },
+      "cardHeightDesktop": {
+        "value": "338px",
+        "type": "sizing"
+      },
+      "cardHeightMobile": {
+        "value": "246px",
+        "type": "sizing"
+      },
+      "cardGridGapDesktop": {
+        "value": "40px",
+        "type": "spacing"
+      },
+      "cardGridGapMobile": {
+        "value": "12px",
+        "type": "spacing"
+      },
+      "cardMaxColumns": {
+        "value": "4",
+        "type": "other",
+        "description": "Max columns before cards wrap in the grid"
+      }
+    },
+    "gallery": {
+      "paddingDesktop": {
+        "value": "52px 64px",
+        "type": "spacing"
+      },
+      "gapDesktop": {
+        "value": "52px",
+        "type": "spacing"
+      },
+      "paddingMobile": {
+        "value": "32px",
+        "type": "spacing"
+      },
+      "gapMobile": {
+        "value": "32px",
+        "type": "spacing"
+      }
+    }
+  },
+  "borderRadius": {
+    "card": {
+      "value": "12px",
+      "type": "borderRadius",
+      "description": "Portfolio cards"
+    },
+    "mobileNav": {
+      "value": "15px",
+      "type": "borderRadius",
+      "description": "Mobile nav container"
+    },
+    "navLink": {
+      "value": "9px",
+      "type": "borderRadius",
+      "description": "Nav links and filter pills"
+    },
+    "filterPill": {
+      "value": "8px",
+      "type": "borderRadius",
+      "description": "Portfolio filter pills"
+    },
+    "badge": {
+      "value": "4px",
+      "type": "borderRadius",
+      "description": "Card label badges and tooltips"
+    },
+    "image": {
+      "value": "8px",
+      "type": "borderRadius",
+      "description": "Gallery images"
+    }
+  },
+  "shadows": {
+    "cardHover": {
+      "value": {
+        "x": "0",
+        "y": "7px",
+        "blur": "26px",
+        "spread": "0",
+        "color": "rgba(0, 0, 0, 0.24)",
+        "type": "dropShadow"
+      },
+      "type": "boxShadow",
+      "description": "Portfolio card on hover"
+    },
+    "imageDefault": {
+      "value": {
+        "x": "0",
+        "y": "8px",
+        "blur": "24px",
+        "spread": "0",
+        "color": "rgba(0, 0, 0, 0.08)",
+        "type": "dropShadow"
+      },
+      "type": "boxShadow",
+      "description": "Gallery image default shadow"
+    },
+    "imageHover": {
+      "value": {
+        "x": "0",
+        "y": "12px",
+        "blur": "32px",
+        "spread": "0",
+        "color": "rgba(0, 0, 0, 0.12)",
+        "type": "dropShadow"
+      },
+      "type": "boxShadow",
+      "description": "Gallery image on hover"
+    }
+  },
+  "motion": {
+    "standard": {
+      "value": "0.3s",
+      "type": "other",
+      "description": "Standard transition — cards, filters, links"
+    },
+    "navWidth": {
+      "value": "0.3s ease-in-out",
+      "type": "other",
+      "description": "Nav compact/full toggle"
+    },
+    "navOpacity": {
+      "value": "0.4s ease-in-out",
+      "type": "other",
+      "description": "Nav title visibility toggle"
+    },
+    "pageTransition": {
+      "value": "0.6s",
+      "type": "other",
+      "description": "Route-level fade-in animation (55% delay)"
+    },
+    "imageHover": {
+      "value": "0.25s ease",
+      "type": "other",
+      "description": "Gallery image lift on hover"
+    }
+  },
+  "breakpoints": {
+    "mobile": {
+      "value": "1002px",
+      "type": "other",
+      "description": "Single responsive breakpoint — desktop switches to mobile layout below this"
+    }
+  }
+}

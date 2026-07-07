@@ -34,6 +34,7 @@ import listView from '../images/peloton/listView.png';
 import musicCuration from '../images/peloton/musicCuration.png';
 import playlistView from '../images/peloton/playlistView.png';
 import maestroPlayer from '../images/peloton/maestroPlayer.png';
+import maestroClassView from '../images/peloton/maestroClassView.png';
 import maestroPopout from '../images/peloton/maestroPopout.png';
 import bannerIcons from '../images/peloton/bannerIcons.png';
 
@@ -149,14 +150,12 @@ const maestroViews = [
     {
         label: 'Homepage',
         img: maestroPlayer,
-        alt: 'Maestro in-studio music player',
-        desc: 'Our in-studio music player. Built off the same architecture as Crescendo but with offline playback and bulletproof reliability'
+        alt: 'Maestro homepage'
     },
     {
-        label: 'Pop out player',
-        img: maestroPopout,
-        alt: 'Maestro pop out player',
-        desc: 'Played on a TV 32 feet from the instructor. Optimized for visibility.'
+        label: 'Class View',
+        img: maestroClassView,
+        alt: 'Maestro in-studio class view'
     }
 ];
 
@@ -383,8 +382,15 @@ class Peloton extends React.Component {
                                 selected={this.state.maestroView}
                                 onSelect={i => this.setState({ maestroView: i })}
                             />
-                            <p>{maestroView.desc}</p>
+                            <p>Our in-studio music player. Built off the same architecture as Crescendo but with offline playback and bulletproof reliability</p>
                             <img className="screenshot framed" src={maestroView.img} alt={maestroView.alt} />
+                        </div>
+                        <div className="maestroSubBlock">
+                            <div className="sectionTitleGroup">
+                                <h3>Pop Out Player</h3>
+                                <p>Played on a TV 32 feet from the instructor. Optimized for visibility.</p>
+                            </div>
+                            <img className="screenshot framed" src={maestroPopout} alt="Maestro pop out player" />
                         </div>
                     </div>
                 </div>
