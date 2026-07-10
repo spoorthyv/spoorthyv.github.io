@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.f88a9ce8.css",
-    "main.js": "/static/js/main.19d311b6.js",
+    "main.css": "/static/css/main.990b3b51.css",
+    "main.js": "/static/js/main.313d2a52.js",
     "static/media/uberVideo.mov": "/static/media/uberVideo.291486316393211e10dd.mov",
     "static/media/uberMac.zip": "/static/media/uberMac.bf144fb64260cb4e9f24.zip",
     "static/media/uberPrinciple.prd": "/static/media/uberPrinciple.ad9e6ee917e43f1b9393.prd",
@@ -138,11 +138,11 @@
     "static/media/skewedrect.svg": "/static/media/skewedrect.d5521a17db02f43a1f67c09d4c43d384.svg",
     "static/media/triangle.svg": "/static/media/triangle.4bbab2a8f3c6b8a44857d8b0534d62fd.svg",
     "static/media/square.svg": "/static/media/square.7401ef4de22cecd307233b9c9be4a191.svg",
-    "main.f88a9ce8.css.map": "/static/css/main.f88a9ce8.css.map",
-    "main.19d311b6.js.map": "/static/js/main.19d311b6.js.map"
+    "main.990b3b51.css.map": "/static/css/main.990b3b51.css.map",
+    "main.313d2a52.js.map": "/static/js/main.313d2a52.js.map"
   },
   "entrypoints": [
-    "static/css/main.f88a9ce8.css",
-    "static/js/main.19d311b6.js"
+    "static/css/main.990b3b51.css",
+    "static/js/main.313d2a52.js"
   ]
 }

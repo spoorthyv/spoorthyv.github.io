@@ -140,7 +140,7 @@ $content-wide: 1280px; // Wide sections (full screenshots, prototype)
             transform: translate(calc(-50% + var(--glow-x, 0px)), var(--glow-y, 0px));
             transition: transform 0.4s ease-out;
             filter: blur(142px);
-            opacity: 0.75;
+            opacity: 1;
             pointer-events: none;
             z-index: 3 !important;
 
@@ -226,7 +226,7 @@ $content-wide: 1280px; // Wide sections (full screenshots, prototype)
             @include type-title;
             display: flex;
             flex-direction: column;
-            gap: 4px;
+            gap: 5px;
 
             >span {
                 font-family: 'Instrument Serif', serif;
