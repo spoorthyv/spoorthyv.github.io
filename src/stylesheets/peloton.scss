@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Instrument+Serif:ital@0;1&display=swap');
 @import './variables.scss';
 
 // Peloton case study — dark page. Colors come from the Figma design
@@ -9,11 +9,23 @@ $peloton-bg: #0c0c0d;
 $peloton-crescendo: #b394ff;
 $peloton-maestro: #ff8ef6;
 $peloton-text-dim: #e6e6e6;
+$peloton-text-sub: rgba(255, 255, 255, 0.82); // body / description text across the page
 $peloton-card-bg: #131314;
 $peloton-card-border: rgba(255, 255, 255, 0.05);
 $peloton-frame-border: rgba(255, 255, 255, 0.1);
 $peloton-control-bg: rgba(255, 255, 255, 0.14);
 $peloton-control-border: rgba(255, 255, 255, 0.14);
+
+// Maestro section runs a pink-tinted variant of the shared split-header
+$maestro-title: #ffabf8;
+$maestro-desc: #ffd6fc;
+$maestro-frame-bg: #190e17;
+
+// The dark footer paints $color-nav-dark-bg (25% black) over #wrapper's
+// #111111, resolving to this. The credits section sits on the darker .peloton
+// surface, where the same overlay would land at rgb(9,9,10) — so it needs the
+// opaque equivalent instead to read as the same color as the footer.
+$peloton-footer-surface: #0d0d0d;
 
 // Content widths — every section content container caps at one of these.
 // (The 1400px sidebar-prototype section is an intentional one-off.)
@@ -24,15 +36,25 @@ $content-wide: 1280px; // Wide sections (full screenshots, prototype)
 // Type scale — every font-size/line-height pair on this page comes from one
 // of these four styles (plus the 16px captions and 14px pills, used once each)
 @mixin type-title {
-    // Section titles
-    font-size: 33px;
-    line-height: 43px;
-    font-weight: 500;
-    letter-spacing: 0.33px;
+    // Section titles — upright serif
+    font-family: 'Instrument Serif', serif;
+    font-size: 44px;
+    line-height: 52px;
+    font-weight: 400;
+    letter-spacing: 0.44px;
+}
+
+@mixin type-description {
+    // Section descriptions — the paragraph beside or beneath a title
+    font-family: 'Inter UI', sans-serif;
+    font-size: 20px;
+    line-height: 34px;
+    letter-spacing: 0.2px;
+    color: $peloton-text-sub;
 }
 
 @mixin type-subtitle {
-    // Section subtitles, statements, and quote cards
+    // Big centered statements and quote cards
     font-size: 26px;
     line-height: 43px;
     letter-spacing: 0.78px;
@@ -193,24 +215,33 @@ $content-wide: 1280px; // Wide sections (full screenshots, prototype)
         min-width: 0;
         display: flex;
         flex-direction: column;
-        gap: 32px;
+        gap: 28px;
 
         p {
             @include type-body-lg;
+            color: $peloton-text-sub;
         }
 
         .apps {
-            font-size: 33px;
-            line-height: 53px;
-            letter-spacing: 0.33px;
+            @include type-title;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+
+            >span {
+                font-family: 'Instrument Serif', serif;
+                color: white;
+            }
 
             .crescendo {
-                font-weight: 500;
+                font-family: 'Instrument Serif', serif;
+                font-style: italic;
                 color: $peloton-crescendo;
             }
 
             .maestro {
-                font-weight: 500;
+                font-family: 'Instrument Serif', serif;
+                font-style: italic;
                 color: $peloton-maestro;
             }
         }
@@ -294,7 +325,7 @@ $content-wide: 1280px; // Wide sections (full screenshots, prototype)
         text-align: center;
 
         p {
-            @include type-subtitle;
+            @include type-description;
         }
 
         &.left {
@@ -325,14 +356,14 @@ $content-wide: 1280px; // Wide sections (full screenshots, prototype)
         display: flex;
         flex-direction: column;
         gap: 20px;
-        width: 320px;
+        width: 336px;
         flex-shrink: 0;
 
         p,
         ol {
             font-size: 18px;
             line-height: 28px;
-            color: $peloton-text-dim;
+            color: $peloton-text-sub;
         }
 
         ol {
@@ -417,12 +448,17 @@ $content-wide: 1280px; // Wide sections (full screenshots, prototype)
         }
 
         .bigStatement {
-            @include type-subtitle;
+            font-family: 'Instrument Serif', serif;
+            font-size: 32px;
+            line-height: 50px;
+            font-weight: 400;
             text-align: center;
-            color: $peloton-text-dim;
+            max-width: $content-text;
+            color: $peloton-text-sub;
 
             i {
-                font-weight: 500;
+                font-family: 'Instrument Serif', serif;
+                font-style: italic;
                 color: white;
             }
         }
@@ -608,9 +644,8 @@ $content-wide: 1280px; // Wide sections (full screenshots, prototype)
     // Classes Dashboard
     // ------------------------------------------------------------------
     .dashboard {
-        .sectionTitleGroup p {
-            @include type-body-lg;
-            max-width: $content-text;
+        .sectionInner {
+            gap: 16px;
         }
     }
 
@@ -619,16 +654,16 @@ $content-wide: 1280px; // Wide sections (full screenshots, prototype)
     // ------------------------------------------------------------------
     .segmentedNav {
         display: flex;
-        gap: 4px;
+        gap: 6px;
         padding: 6px;
         background-color: black;
         border: 1px solid $peloton-control-border;
-        border-radius: 85px;
+        border-radius: 16px;
 
         button {
             padding: 8px 20px;
             border: none;
-            border-radius: 69px;
+            border-radius: 10px;
             background: transparent;
             color: $peloton-text-dim;
             @include type-control;
@@ -753,28 +788,33 @@ $content-wide: 1280px; // Wide sections (full screenshots, prototype)
     .sidebarNotes {
         display: flex;
         flex-direction: column;
-        width: 468px;
+        width: 424px;
         flex-shrink: 0;
-
-        .sectionTitleGroup p {
-            @include type-body-lg;
-        }
 
         .notesBody {
             flex: 1;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            gap: 40px;
-            padding: 0 40px 0 16px;
+            gap: 88px;
+            padding: 0 10px;
         }
 
-        .cardGroup {
+        // Groups title + desc + hintPill so they stay together at the bottom
+        .sidebarTitleGroup {
             display: flex;
             flex-direction: column;
-            align-items: flex-start;
-            gap: 13px;
-            width: 100%;
+            align-items: center;
+            gap: 24px;
+
+            .sectionTitleGroup {
+                align-items: center;
+                text-align: center;
+            }
+
+            .hintPill {
+                align-self: center;
+            }
         }
 
         .hintPill {
@@ -799,22 +839,26 @@ $content-wide: 1280px; // Wide sections (full screenshots, prototype)
         .pickerCard {
             display: flex;
             flex-direction: column;
-            gap: 2px;
-            padding: 18px 20px;
+            gap: 8px;
+            padding: 12px 16px;
             background-color: #131314;
-            border: 1px solid rgba(255, 255, 255, 0.05);
-            border-radius: 5px;
+            border: 1.5px solid #6d51fb;
+            border-radius: 3px;
             width: 100%;
             box-sizing: border-box;
 
             h4 {
-                @include type-body-lg;
-                line-height: 32px;
+                font-size: 18px;
+                line-height: 30px;
                 font-weight: 600;
+                letter-spacing: 0.54px;
             }
 
             p {
-                @include type-control;
+                font-size: 16px;
+                line-height: 26px;
+                letter-spacing: 0.48px;
+                color: $peloton-text-dim;
             }
         }
     }
@@ -916,49 +960,101 @@ $content-wide: 1280px; // Wide sections (full screenshots, prototype)
         }
     }
 
-    .musicCuration,
-    .maestroSection {
-        p {
-            @include type-body-lg;
-            text-align: center;
-            max-width: $content-text;
+    // ------------------------------------------------------------------
+    // Split header — title (or lockup) + nav on the left, description on the
+    // right sharing a baseline; the screenshot sits in a padded frame beneath.
+    // Shared by Music Curation and both Maestro blocks.
+    // ------------------------------------------------------------------
+    .splitHeader {
+        display: flex;
+        align-items: flex-end;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .splitHeaderLeft {
+        flex: 1;
+        min-width: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .splitHeaderDesc {
+        @include type-description;
+        flex: 1;
+        min-width: 0;
+        padding: 7px 0;
+        text-align: left;
+    }
+
+    .screenshotFrame {
+        width: 100%;
+        padding: 26px;
+        border-radius: 20px;
+        box-sizing: border-box;
+
+        // Three explicit colour variants — choose one per use-site
+        &--light {
+            background-color: rgba(255, 255, 255, 0.08);
         }
 
-        // Nav, screenshot, and caption sit tighter together than the
-        // section's 28px gap, which is kept for the title above
-        .mediaGroup {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+        // dark bg sections
+        &--dark {
+            background-color: black;
+        }
+
+        // alt/tinted bg sections
+        &--pink {
+            background-color: $maestro-frame-bg;
+        }
+
+        // maestro gradient section
+    }
+
+    .musicCuration {
+        padding-bottom: 64px;
+
+        .sectionInner {
             gap: 16px;
-            width: 100%;
         }
     }
 
     .maestroSection {
         background: linear-gradient(180deg, rgba(206, 39, 179, 0.1) 0%, rgba(206, 39, 179, 0) 100%), black;
-        padding-bottom: 64px;
+        gap: 104px;
+        padding-bottom: 80px;
+
+        .maestroBlock {
+            display: flex;
+            flex-direction: column;
+            gap: 28px;
+            max-width: $content-wide;
+            width: 100%;
+        }
 
         .maestroLockup {
             width: 222px;
             height: 43px;
         }
 
-        // Pop Out Player subsection: title group + screenshot, following the
-        // section's title/subtitle/image pattern, with extra breathing room
-        // above to separate it from the tabbed player views
-        .maestroSubBlock {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 28px;
-            width: 100%;
-            margin-top: 36px;
+        // The lockup already carries its own bottom spacing, so the nav sits
+        // slightly closer to it than a text title would
+        .splitHeaderLeft {
+            gap: 16px;
         }
-    }
 
-    .musicCuration {
-        padding-bottom: 64px;
+        h3 {
+            color: $maestro-title;
+        }
+
+        .splitHeaderDesc {
+            padding: 6px 0;
+            color: $maestro-desc;
+        }
+
+        // Frame background now handled by .screenshotFrame--pink modifier
     }
 
     // ------------------------------------------------------------------
@@ -967,8 +1063,7 @@ $content-wide: 1280px; // Wide sections (full screenshots, prototype)
     .section.creditsSection {
         padding: 20px 80px;
         border-top: 1px solid rgba(255, 255, 255, 0.05);
-        // Match the footer background (both composite over the #0c0c0d page)
-        background-color: $color-nav-dark-bg;
+        background-color: $peloton-footer-surface;
     }
 
     .creditsInner {
@@ -1147,32 +1242,120 @@ $content-wide: 1280px; // Wide sections (full screenshots, prototype)
     // ------------------------------------------------------------------
     // Impact summary
     // ------------------------------------------------------------------
-    .impactGrid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
+    // An editorial sentence: each bold phrase is hoverable and reveals its
+    // story below the rule. Serif italic carries the narration, Inter Bold
+    // the facts.
+    .impactSection .sectionInner {
+        gap: 0;
+    }
+
+    .impactBox {
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+        width: 100%;
+        max-width: $content-wide;
+        padding: 58px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        box-sizing: border-box;
+    }
+
+    .impactHead {
+        display: flex;
+        flex-direction: column;
+        gap: 52px;
         width: 100%;
     }
 
-    .impactCard {
+    .impactEyebrow {
+        font-size: 22px;
+        line-height: 32px;
+        font-weight: 600;
+        letter-spacing: 5.33px;
+        text-transform: uppercase;
+        color: white;
+    }
+
+    .impactSentence {
+        font-family: 'Instrument Serif', serif;
+        font-style: italic;
+        font-size: 34px;
+        line-height: 41px;
+        color: rgba(255, 255, 255, 0.7);
+        text-wrap: pretty;
+    }
+
+    // A <button> so the phrases are keyboard-reachable and tappable, but
+    // styled as inline text
+    .impactPhrase {
+        display: inline;
+        margin: 0;
+        padding: 0;
+        border: none;
+        background: transparent;
+        font-family: 'Inter UI', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 34px;
+        line-height: 62px;
+        color: white;
+        cursor: default;
+        transition: color 0.25s;
+    }
+
+    .impactDetail {
+        width: 100%;
+        min-height: 121px;
+        padding-top: 46px;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        box-sizing: content-box;
+    }
+
+    .impactDetailInner {
         display: flex;
         flex-direction: column;
-        gap: 8px;
-        padding: 28px 32px;
-        background-color: $peloton-card-bg;
-        border: 1px solid $peloton-card-border;
-        border-radius: 21px;
-        box-sizing: border-box;
+        gap: 12px;
+        max-width: $content-text;
+        animation: impactFade 0.35s ease both;
+    }
 
-        h4 {
-            @include type-body-lg;
-            font-weight: 600;
-        }
+    .impactLabel {
+        font-family: 'Instrument Serif', serif;
+        font-style: italic;
+        font-size: 34px;
+        line-height: 41px;
+    }
 
-        p {
-            @include type-control;
-            color: $peloton-text-dim;
-        }
+    .impactDesc {
+        font-size: 20px;
+        line-height: 34px;
+        letter-spacing: 0.2px;
+        color: $peloton-text-sub;
+    }
+
+    .impactIdle {
+        font-size: 17px;
+        line-height: 1.7;
+        letter-spacing: 0.02em;
+        color: rgba(255, 255, 255, 0.34);
+    }
+}
+
+@keyframes impactFade {
+    from {
+        opacity: 0;
+        transform: translateY(6px);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .peloton .impactDetailInner {
+        animation: none;
     }
 }
 
@@ -1182,8 +1365,8 @@ $content-wide: 1280px; // Wide sections (full screenshots, prototype)
 @media screen and (max-width: $breakpoint-mobile) {
     .peloton {
         h3 {
-            font-size: 26px;
-            line-height: 36px;
+            font-size: 34px;
+            line-height: 42px;
         }
 
         .hero {
@@ -1305,16 +1488,38 @@ $content-wide: 1280px; // Wide sections (full screenshots, prototype)
             }
         }
 
-        .sectionTitleGroup p,
-        .musicCuration p,
-        .maestroSection p {
-            font-size: 20px;
-            line-height: 34px;
-        }
-
         .segmentedNav button {
             font-size: 16px;
             line-height: 24px;
+        }
+
+        // Stack the split header and center it
+        .splitHeader {
+            flex-direction: column;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .splitHeaderLeft {
+            align-items: center;
+        }
+
+        .splitHeaderDesc {
+            text-align: center;
+            padding: 0;
+        }
+
+        .screenshotFrame {
+            padding: 12px;
+            border-radius: 14px;
+        }
+
+        .maestroSection {
+            gap: 64px;
+
+            .splitHeaderLeft {
+                align-items: center;
+            }
         }
 
         .dualPlanning .sideText h3 {
@@ -1395,12 +1600,39 @@ $content-wide: 1280px; // Wide sections (full screenshots, prototype)
             padding: 28px 24px;
         }
 
-        .impactGrid {
-            grid-template-columns: 1fr;
+        .impactSection .sectionInner {
+            gap: 40px;
         }
 
-        .impactCard {
-            padding: 22px 24px;
+        .impactHead {
+            gap: 32px;
+        }
+
+        .impactEyebrow {
+            font-size: 15px;
+            line-height: 24px;
+            letter-spacing: 3.6px;
+        }
+
+        .impactSentence,
+        .impactPhrase {
+            font-size: 24px;
+            line-height: 34px;
+        }
+
+        .impactDetail {
+            min-height: 150px;
+            padding-top: 28px;
+        }
+
+        .impactLabel {
+            font-size: 26px;
+            line-height: 32px;
+        }
+
+        .impactDesc {
+            font-size: 17px;
+            line-height: 28px;
         }
 
         .sidebarNotes {

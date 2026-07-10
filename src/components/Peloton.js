@@ -158,23 +158,47 @@ const recommendations = [
     }
 ];
 
-const impactCards = [
+// The impact sentence: bold phrases are hoverable and reveal their story
+// below the rule. Serif connectors are the plain strings between them.
+const impactPhrases = [
     {
-        title: '12x More Code Shipped',
-        body: 'Shared code between both apps and a design system light enough to actually maintain meant we were able to move from one big yearly update to monthly builds.'
+        text: '12x more code',
+        color: '#4CA6FF',
+        label: 'More Code Shipped',
+        desc: 'Our lightweight and scalable design system allowed us to share code across 2 apps and move from yearly to monthly releases.'
     },
     {
-        title: 'Internal tools that feel like real products',
-        body: 'We built for hundreds of instructors with the polish of products made for millions. Class planning went from an annoying, buggy mess to a joy.'
+        text: '$4M+ a year,',
+        color: '#4CFF4C',
+        label: 'Saved Every Year',
+        desc: 'Music recommendations were tuned to steer instructors toward tracks we already held rights to — cutting millions from our royalty bill.'
     },
     {
-        title: 'A feedback loop that never stops',
-        body: 'Continuous instructor interviews & in-app feedback combined with monthly builds meant instructors became active participants in product development and could see the changes they asked for.'
+        text: '30+ working days',
+        color: '#FF66F2',
+        label: 'Working Days Returned',
+        desc: 'We chipped away at manual checks and hand-offs until instructors and the production team got over 30 working days a year back.'
     },
     {
-        title: '30+ days and $4M+ annually saved',
-        body: 'We chipped away at manual checks and processes until instructors and the production team had over 30 working days a year returned to them. We also strategically leveraged music recommendations to save over $4M in music royalties.'
+        text: 'tools that feel like products,',
+        color: '#4CFFD2',
+        label: 'Tools, Not Toys',
+        desc: 'Built for hundreds of instructors with the polish of software made for millions. Planning went from a buggy chore to a joy.'
+    },
+    {
+        text: 'feedback loop that never closes',
+        color: '#FFA64D',
+        label: 'A Loop That Never Closes',
+        desc: 'Ongoing interviews plus in-app feedback and monthly builds made instructors active participants who saw their asks ship.'
     }
+];
+
+const impactConnectors = [
+    'We shipped ',
+    ', saved ',
+    ' & gave instructors ',
+    ' back — by building ',
+    ' on a '
 ];
 
 const curationViews = [
@@ -206,7 +230,7 @@ const maestroViews = [
 ];
 
 class Peloton extends React.Component {
-    state = { planningView: 0, sidebarTab: 0, curationView: 0, maestroView: 0, openRec: null };
+    state = { planningView: 0, sidebarTab: 0, curationView: 0, maestroView: 0, openRec: null, impactActive: 0 };
 
     heroRef = React.createRef();
 
@@ -249,6 +273,7 @@ class Peloton extends React.Component {
         const sidebarTab = sidebarTabs[this.state.sidebarTab];
         const curationView = curationViews[this.state.curationView];
         const maestroView = maestroViews[this.state.maestroView];
+        const impactActive = this.state.impactActive === null ? null : impactPhrases[this.state.impactActive];
 
         return (
             <div className="peloton">
@@ -286,8 +311,8 @@ class Peloton extends React.Component {
                         <div className="summaryText">
                             <p>1,000+ Peloton classes a month start somewhere off-camera — an instructor choosing the right songs, mapping moves to the beat, and planning a month of classes before a single one is filmed.</p>
                             <p className="apps">
-                                <span className="crescendo">Crescendo</span> is where classes are built.<br />
-                                <span className="maestro">Maestro</span> is where they’re filmed.
+                                <span><span className="crescendo">Crescendo</span> is where classes are built.</span>
+                                <span><span className="maestro">Maestro</span> is where they’re filmed.</span>
                             </p>
                             <p>I led a complete redesign of both applications with the help of one other designer.</p>
                         </div>
@@ -364,11 +389,15 @@ class Peloton extends React.Component {
 
                 <div className="section dashboard">
                     <div className="sectionInner wide">
-                        <div className="sectionTitleGroup">
-                            <h3>Classes Dashboard</h3>
-                            <p>The most important classes call for your attention. Find the rest with filters.</p>
+                        <div className="splitHeader">
+                            <div className="splitHeaderLeft">
+                                <h3>Classes Dashboard</h3>
+                            </div>
+                            <p className="splitHeaderDesc">The most important classes call for your attention. Find the rest with filters.</p>
                         </div>
-                        <img className="screenshot framed" src={classesDashboard} alt="Crescendo classes dashboard" />
+                        <div className="screenshotFrame screenshotFrame--light">
+                            <img className="screenshot framed" src={classesDashboard} alt="Crescendo classes dashboard" />
+                        </div>
                     </div>
                 </div>
 
@@ -396,72 +425,109 @@ class Peloton extends React.Component {
                         </div>
                         <div className="sidebarNotes">
                             <div className="notesBody">
-                                <div className="cardGroup">
-                                    <div className="pickerCard">
-                                        <h4>{sidebarTab.title}</h4>
-                                        <p>{sidebarTab.desc}</p>
+                                <div className="pickerCard">
+                                    <h4>{sidebarTab.title}</h4>
+                                    <p>{sidebarTab.desc}</p>
+                                </div>
+                                <div className="sidebarTitleGroup">
+                                    <div className="sectionTitleGroup">
+                                        <h3>Multi-Use Sidebar</h3>
+                                        <p>Keep context of your class no matter what you're doing.</p>
                                     </div>
                                     <div className="hintPill">
                                         <IconHandClick size={20} />
                                         <span>Try Clicking the Tabs!</span>
                                     </div>
                                 </div>
-                                <div className="sectionTitleGroup left">
-                                    <h3>Multi-Use Sidebar</h3>
-                                    <p>Keep context of your class no matter what you’re doing.</p>
-                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
+
                 <div className="section alt musicCuration">
                     <div className="sectionInner wide">
-                        <h3>Music Curation</h3>
-                        <div className="mediaGroup">
-                            <SegmentedNav
-                                items={curationViews.map(view => view.label)}
-                                selected={this.state.curationView}
-                                onSelect={i => this.setState({ curationView: i })}
-                            />
-                            <p>{curationView.desc}</p>
+                        <div className="splitHeader">
+                            <div className="splitHeaderLeft">
+                                <h3>Music Curation</h3>
+                                <SegmentedNav
+                                    items={curationViews.map(view => view.label)}
+                                    selected={this.state.curationView}
+                                    onSelect={i => this.setState({ curationView: i })}
+                                />
+                            </div>
+                            <p className="splitHeaderDesc">{curationView.desc}</p>
+                        </div>
+                        <div className="screenshotFrame screenshotFrame--dark">
                             <img className="screenshot framed" src={curationView.img} alt={curationView.alt} />
                         </div>
                     </div>
                 </div>
 
                 <div className="section maestroSection">
-                    <div className="sectionInner wide">
-                        <img className="maestroLockup" src={maestroLockup} alt="Maestro" />
-                        <div className="mediaGroup">
-                            <SegmentedNav
-                                items={maestroViews.map(view => view.label)}
-                                selected={this.state.maestroView}
-                                onSelect={i => this.setState({ maestroView: i })}
-                            />
-                            <p>Our in-studio music player. Built off the same architecture as Crescendo but with offline playback and bulletproof reliability</p>
+                    <div className="maestroBlock">
+                        <div className="splitHeader">
+                            <div className="splitHeaderLeft">
+                                <img className="maestroLockup" src={maestroLockup} alt="Maestro" />
+                                <SegmentedNav
+                                    items={maestroViews.map(view => view.label)}
+                                    selected={this.state.maestroView}
+                                    onSelect={i => this.setState({ maestroView: i })}
+                                />
+                            </div>
+                            <p className="splitHeaderDesc">Our in-studio music player. Built off the same architecture as Crescendo but with offline playback and bulletproof reliability</p>
+                        </div>
+                        <div className="screenshotFrame screenshotFrame--pink">
                             <img className="screenshot framed" src={maestroView.img} alt={maestroView.alt} />
                         </div>
-                        <div className="maestroSubBlock">
-                            <div className="sectionTitleGroup">
-                                <h3>Pop Out Player</h3>
-                                <p>Played on a TV 32 feet from the instructor. Optimized for visibility.</p>
+                    </div>
+                    <div className="maestroBlock">
+                        <div className="splitHeader">
+                            <div className="splitHeaderLeft">
+                                <h3>In-Studio “Big Clock”</h3>
                             </div>
-                            <img className="screenshot framed" src={maestroPopout} alt="Maestro pop out player" />
+                            <p className="splitHeaderDesc">Played on a TV 32 feet from the instructor. Optimized for visibility.</p>
+                        </div>
+                        <div className="screenshotFrame screenshotFrame--pink">
+                            <img className="screenshot framed" src={maestroPopout} alt="Maestro in-studio big clock" />
                         </div>
                     </div>
                 </div>
 
                 <div className="section alt impactSection">
                     <div className="sectionInner wide">
-                        <h3>The Impact</h3>
-                        <div className="impactGrid">
-                            {impactCards.map(card => (
-                                <div className="impactCard" key={card.title}>
-                                    <h4>{card.title}</h4>
-                                    <p>{card.body}</p>
-                                </div>
-                            ))}
+                        <div className="impactBox">
+                            <div className="impactHead">
+                                <p className="impactEyebrow">Final Impact</p>
+                                <p className="impactSentence">
+                                    {impactPhrases.map((phrase, i) => (
+                                        <React.Fragment key={phrase.text}>
+                                            {impactConnectors[i]}
+                                            <button
+                                                type="button"
+                                                className={`impactPhrase${this.state.impactActive === i ? ' active' : ''}`}
+                                                style={this.state.impactActive === i ? { color: phrase.color } : undefined}
+                                                onMouseEnter={() => this.setState({ impactActive: i })}
+                                                onFocus={() => this.setState({ impactActive: i })}
+                                            >
+                                                {phrase.text}
+                                            </button>
+                                        </React.Fragment>
+                                    ))}
+                                </p>
+                            </div>
+                            <div className="impactDetail">
+                                {impactActive ? (
+                                    <div className="impactDetailInner" key={impactActive.label}>
+                                        <span className="impactLabel" style={{ color: impactActive.color }}>
+                                            {impactActive.label}
+                                        </span>
+                                        <p className="impactDesc">{impactActive.desc}</p>
+                                    </div>
+                                ) : (
+                                    <p className="impactIdle">Hover any highlighted phrase to see how we got there.</p>
+                                )}
+                            </div>
                         </div>
                     </div>
                 </div>
