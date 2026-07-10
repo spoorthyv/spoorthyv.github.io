@@ -15,6 +15,12 @@ $peloton-frame-border: rgba(255, 255, 255, 0.1);
 $peloton-control-bg: rgba(255, 255, 255, 0.14);
 $peloton-control-border: rgba(255, 255, 255, 0.14);
 
+// Content widths — every section content container caps at one of these.
+// (The 1400px sidebar-prototype section is an intentional one-off.)
+$content-text: 880px; // Paragraph line-length cap
+$content-narrow: 1080px; // Standard section content
+$content-wide: 1280px; // Wide sections (full screenshots, prototype)
+
 // Type scale — every font-size/line-height pair on this page comes from one
 // of these four styles (plus the 16px captions and 14px pills, used once each)
 @mixin type-title {
@@ -178,7 +184,7 @@ $peloton-control-border: rgba(255, 255, 255, 0.14);
         display: flex;
         align-items: center;
         gap: 88px;
-        max-width: 1080px;
+        max-width: $content-narrow;
         width: 100%;
     }
 
@@ -187,7 +193,7 @@ $peloton-control-border: rgba(255, 255, 255, 0.14);
         min-width: 0;
         display: flex;
         flex-direction: column;
-        gap: 34px;
+        gap: 32px;
 
         p {
             @include type-body-lg;
@@ -267,11 +273,11 @@ $peloton-control-border: rgba(255, 255, 255, 0.14);
         flex-direction: column;
         align-items: center;
         gap: 28px;
-        max-width: 1080px;
+        max-width: $content-narrow;
         width: 100%;
 
         &.wide {
-            max-width: 1280px;
+            max-width: $content-wide;
         }
 
         &.row {
@@ -345,7 +351,7 @@ $peloton-control-border: rgba(255, 255, 255, 0.14);
     // Research
     // ------------------------------------------------------------------
     .research {
-        padding: 96px 100px 16px;
+        padding: 108px 100px 16px;
     }
 
     // ------------------------------------------------------------------
@@ -354,7 +360,7 @@ $peloton-control-border: rgba(255, 255, 255, 0.14);
     .painCarousel {
         display: flex;
         gap: 28px;
-        padding: 64px 100px;
+        padding: 72px 32px;
         background-color: black;
         overflow-x: auto;
 
@@ -604,7 +610,7 @@ $peloton-control-border: rgba(255, 255, 255, 0.14);
     .dashboard {
         .sectionTitleGroup p {
             @include type-body-lg;
-            max-width: 880px;
+            max-width: $content-text;
         }
     }
 
@@ -822,7 +828,7 @@ $peloton-control-border: rgba(255, 255, 255, 0.14);
     // window so the design proportions hold at any width.
     .crescendoPrototype {
         width: 100%;
-        max-width: 1280px;
+        max-width: $content-wide;
         border: 1px solid $peloton-frame-border;
         border-radius: 6px;
         overflow: hidden;
@@ -915,7 +921,7 @@ $peloton-control-border: rgba(255, 255, 255, 0.14);
         p {
             @include type-body-lg;
             text-align: center;
-            max-width: 880px;
+            max-width: $content-text;
         }
 
         // Nav, screenshot, and caption sit tighter together than the
@@ -953,6 +959,220 @@ $peloton-control-border: rgba(255, 255, 255, 0.14);
 
     .musicCuration {
         padding-bottom: 64px;
+    }
+
+    // ------------------------------------------------------------------
+    // Credits + recommendations
+    // ------------------------------------------------------------------
+    .section.creditsSection {
+        padding: 20px 80px;
+        border-top: 1px solid rgba(255, 255, 255, 0.05);
+        // Match the footer background (both composite over the #0c0c0d page)
+        background-color: $color-nav-dark-bg;
+    }
+
+    .creditsInner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: $content-wide;
+        width: 100%;
+    }
+
+    .creditsText {
+        padding: 0 28px;
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: 1.28px;
+        color: white;
+
+        .creditsHeader {
+            display: block;
+            font-weight: 600;
+            letter-spacing: 1.92px;
+        }
+    }
+
+    .recCards {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        flex-shrink: 0;
+    }
+
+    .recCard {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        gap: 12px;
+        width: 300px;
+        height: 308px;
+        padding: 20px;
+        box-sizing: border-box;
+        background-color: transparent;
+        border: 1px solid $peloton-card-border;
+        border-radius: 21px;
+        font-family: inherit;
+        text-align: left;
+        cursor: pointer;
+        transition: border-color 0.2s, transform 0.2s;
+
+        &:hover {
+            border-color: rgba(255, 255, 255, 0.15);
+            transform: translateY(-2px);
+        }
+
+        .recQuote {
+            flex: 1;
+            min-height: 0;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            font-size: 22px;
+            line-height: 36px;
+            font-style: italic;
+            font-weight: 500;
+            letter-spacing: 0.22px;
+            color: rgba(255, 255, 255, 0.7);
+
+            b {
+                font-weight: 600;
+                color: white;
+            }
+        }
+    }
+
+    .recAuthor {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+
+        .recName {
+            font-size: 16px;
+            line-height: 26px;
+            letter-spacing: 0.32px;
+            font-weight: 500;
+            color: #b8b8b8;
+        }
+    }
+
+    .recModalOverlay {
+        position: fixed;
+        inset: 0;
+        z-index: 1000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 24px;
+        background-color: rgba(0, 0, 0, 0.65);
+        backdrop-filter: blur(6px);
+    }
+
+    .recModal {
+        position: relative;
+        max-width: 660px;
+        max-height: 88vh;
+        overflow-y: auto;
+        overscroll-behavior: contain;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 36px 40px;
+        background-color: $peloton-card-bg;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 21px;
+
+        // Same voice as the teaser cards: italic quote at card styling
+        p {
+            font-size: 22px;
+            line-height: 36px;
+            font-style: italic;
+            font-weight: 500;
+            letter-spacing: 0.22px;
+            color: rgba(255, 255, 255, 0.87);
+        }
+
+        .recAuthor {
+            margin-top: 8px;
+
+            .authorMeta {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .recName {
+                font-size: 18px;
+                line-height: 26px;
+                color: white;
+            }
+
+            .recRole {
+                font-size: 15px;
+                line-height: 22px;
+                letter-spacing: 0.3px;
+                color: #b8b8b8;
+            }
+        }
+    }
+
+    .recModalClose {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 32px;
+        height: 32px;
+        padding: 0;
+        background: transparent;
+        border: none;
+        border-radius: 50%;
+        color: $peloton-text-dim;
+        cursor: pointer;
+        transition: background-color 0.2s, color 0.2s;
+
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            color: white;
+        }
+    }
+
+    // ------------------------------------------------------------------
+    // Impact summary
+    // ------------------------------------------------------------------
+    .impactGrid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        width: 100%;
+    }
+
+    .impactCard {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        padding: 28px 32px;
+        background-color: $peloton-card-bg;
+        border: 1px solid $peloton-card-border;
+        border-radius: 21px;
+        box-sizing: border-box;
+
+        h4 {
+            @include type-body-lg;
+            font-weight: 600;
+        }
+
+        p {
+            @include type-control;
+            color: $peloton-text-dim;
+        }
     }
 }
 
@@ -1144,6 +1364,43 @@ $peloton-control-border: rgba(255, 255, 255, 0.14);
             .crescendoPrototype {
                 width: 245%;
             }
+        }
+
+        .section.creditsSection {
+            padding: 24px 16px;
+        }
+
+        .creditsInner {
+            flex-direction: column;
+            gap: 32px;
+        }
+
+        .creditsText {
+            text-align: center;
+        }
+
+        .recCards {
+            flex-direction: column;
+            gap: 16px;
+            width: 100%;
+        }
+
+        .recCard {
+            width: 100%;
+            max-width: 340px;
+            margin: 0 auto;
+        }
+
+        .recModal {
+            padding: 28px 24px;
+        }
+
+        .impactGrid {
+            grid-template-columns: 1fr;
+        }
+
+        .impactCard {
+            padding: 22px 24px;
         }
 
         .sidebarNotes {

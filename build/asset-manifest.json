@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.fabeb0c2.css",
-    "main.js": "/static/js/main.6167ca05.js",
+    "main.css": "/static/css/main.f88a9ce8.css",
+    "main.js": "/static/js/main.19d311b6.js",
     "static/media/uberVideo.mov": "/static/media/uberVideo.291486316393211e10dd.mov",
     "static/media/uberMac.zip": "/static/media/uberMac.bf144fb64260cb4e9f24.zip",
     "static/media/uberPrinciple.prd": "/static/media/uberPrinciple.ad9e6ee917e43f1b9393.prd",
@@ -49,7 +49,6 @@
     "static/media/IMGP6915-1405412511-O.jpg": "/static/media/IMGP6915-1405412511-O.8c2888402c230053f779.jpg",
     "static/media/Toolbox.svg": "/static/media/Toolbox.9ef8289f582bdd066df3d91b1fc02eb9.svg",
     "static/media/Copy of IMGP8069.jpg": "/static/media/Copy of IMGP8069.ec45e3af861ec06a75a1.jpg",
-    "static/media/mainTimeline.png": "/static/media/mainTimeline.595604ab462c73d1071b.png",
     "static/media/InterUI-Medium.woff": "/static/media/InterUI-Medium.54761bb30580b7ee6bd0.woff",
     "static/media/InterUI-Bold.woff": "/static/media/InterUI-Bold.f65badd9369e1c0fc212.woff",
     "static/media/panelInspector.png": "/static/media/panelInspector.945834b244484111a54a.png",
@@ -68,6 +67,7 @@
     "static/media/Old menu.svg": "/static/media/Old menu.b5c96d717fb5b983c7a35c534c893028.svg",
     "static/media/InterUI-Regular.woff2": "/static/media/InterUI-Regular.3107fbabb6a168f8d279.woff2",
     "static/media/headerImage.svg": "/static/media/headerImage.76b73db865c58f75c1798f8d8729a8f4.svg",
+    "static/media/mainTimeline.png": "/static/media/mainTimeline.a5a6c13127a8085156cf.png",
     "static/media/panelMovements.png": "/static/media/panelMovements.e70b876c7a845e0342bc.png",
     "static/media/Long Press.svg": "/static/media/Long Press.499e4f5ae682aed441f64ea415a178d2.svg",
     "static/media/New Menu.svg": "/static/media/New Menu.a3bef25ef7950a375e5223a589a51226.svg",
@@ -97,7 +97,9 @@
     "static/media/ds6.png": "/static/media/ds6.855e08cad5592408219f.png",
     "static/media/ds1.png": "/static/media/ds1.17a43ec52e9d1169c317.png",
     "static/media/ds7.png": "/static/media/ds7.f7e48b89641644bead41.png",
+    "static/media/avatarKat.png": "/static/media/avatarKat.b769c0f08a3fc0cac3fc.png",
     "static/media/ds3.png": "/static/media/ds3.6ceecd34bea57486ec7f.png",
+    "static/media/avatarEvie.png": "/static/media/avatarEvie.7f6c6413e56daa1a14ca.png",
     "static/media/jupyterBackground.svg": "/static/media/jupyterBackground.70683be58adaaec160fc4f629e3c9247.svg",
     "static/media/comesayhi.svg": "/static/media/comesayhi.47d845504967205e02e741be101a9529.svg",
     "static/media/crescendoWordmark.svg": "/static/media/crescendoWordmark.067eadda33024db7e8c76670b47d5bd0.svg",
@@ -136,11 +138,11 @@
     "static/media/skewedrect.svg": "/static/media/skewedrect.d5521a17db02f43a1f67c09d4c43d384.svg",
     "static/media/triangle.svg": "/static/media/triangle.4bbab2a8f3c6b8a44857d8b0534d62fd.svg",
     "static/media/square.svg": "/static/media/square.7401ef4de22cecd307233b9c9be4a191.svg",
-    "main.fabeb0c2.css.map": "/static/css/main.fabeb0c2.css.map",
-    "main.6167ca05.js.map": "/static/js/main.6167ca05.js.map"
+    "main.f88a9ce8.css.map": "/static/css/main.f88a9ce8.css.map",
+    "main.19d311b6.js.map": "/static/js/main.19d311b6.js.map"
   },
   "entrypoints": [
-    "static/css/main.fabeb0c2.css",
-    "static/js/main.6167ca05.js"
+    "static/css/main.f88a9ce8.css",
+    "static/js/main.19d311b6.js"
   ]
 }

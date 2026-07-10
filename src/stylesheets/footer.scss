@@ -8,7 +8,7 @@
    align-items: flex-start;
    justify-content: space-between;
    width: 100%;
-   padding: 18px 24px;
+   padding: 16px 24px;
    box-sizing: border-box;
    border-top: 1px solid;
 
@@ -25,11 +25,11 @@
    .footerButton {
       display: flex;
       align-items: center;
-      gap: 10px;
+      gap: 12px;
       padding: 8px 16px;
-      border: 1px solid;
+      border: none;
       border-radius: 9px;
-      transition: border-color 0.2s, background-color 0.2s;
+      transition: background-color 0.2s;
 
       // Arrow hugs the outer edge; text padding is tighter on the arrow side
       &.previous {
@@ -74,14 +74,14 @@
       }
 
       svg {
+         width: 28px;
+         height: 28px;
          flex-shrink: 0;
       }
    }
 
    // ---- Light theme ----
    &.light .footerButton {
-      border-color: #d9d9d9;
-
       .direction {
          color: #4d4d4d;
       }
@@ -95,15 +95,12 @@
       }
 
       &:hover {
-         border-color: transparent;
          background-color: #e8e8e8;
       }
    }
 
    // ---- Dark theme ----
    &.dark .footerButton {
-      border-color: #262626;
-
       .direction {
          color: #f6f6f6;
       }
@@ -117,7 +114,6 @@
       }
 
       &:hover {
-         border-color: transparent;
          background-color: #212121;
       }
    }

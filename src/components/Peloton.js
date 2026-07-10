@@ -9,7 +9,8 @@ import {
     IconMapPin,
     IconCalendarEvent,
     IconUsers,
-    IconHandClick
+    IconHandClick,
+    IconX
 } from '@tabler/icons-react';
 
 import crescLogo from '../images/peloton/crescLogo.png';
@@ -36,6 +37,8 @@ import playlistView from '../images/peloton/playlistView.png';
 import maestroPlayer from '../images/peloton/maestroPlayer.png';
 import maestroClassView from '../images/peloton/maestroClassView.png';
 import maestroPopout from '../images/peloton/maestroPopout.png';
+import avatarEvie from '../images/peloton/avatarEvie.png';
+import avatarKat from '../images/peloton/avatarKat.png';
 import bannerIcons from '../images/peloton/bannerIcons.png';
 
 import '../stylesheets/App.scss';
@@ -131,6 +134,49 @@ const sidebarTabs = [
     { title: 'Errors', desc: 'Instead of receiving an email from a employee with corrections, we run checks and allow instructors to fix their class quickly.' }
 ];
 
+const recommendations = [
+    {
+        name: 'Evie McQuiston',
+        role: 'Product Manager, Peloton',
+        avatar: avatarEvie,
+        teaser: <>“He had a knack for asking the <b>right uncovering questions</b> early, the kind that surfaced the real problem...”</>,
+        quote: [
+            'I worked with Spoorthy as a PM on the same team, and he consistently impressed me with his product sense. He took point on multiple 0-1 rebuilds for critical applications with high-stakes UI, including a navigation overhaul that finally undid workarounds users had been living with for years. That kind of project takes someone who can hold a lot of complexity and still make confident calls, and he did.',
+            'He had a knack for asking the right uncovering questions early, the kind that surfaced the real problem before anyone jumped to solutions. His UX instincts were strong, and his visual design work felt current and sharp without sacrificing usability. Over the time I worked with him, his organizational skills and professional maturity grew noticeably, and he became someone unafraid to offer a contrary opinion in a room and back it up with solid reasoning. He consistently considered implementation complexity and worked closely with engineers, which made him an easy collaborator for dev teams and helped him design solutions that were both ambitious and buildable.',
+            'Spoorthy brings both craft and curiosity to his work. I’d recommend him to any team looking for a designer who can take ownership of complex, high-impact problems and see them through.'
+        ]
+    },
+    {
+        name: 'Kat Hollister',
+        role: 'Product Designer, Peloton',
+        avatar: avatarKat,
+        teaser: <>“He is phenomenal at taking the time to <b>align and collaborate</b> with other disciplines and teammates”</>,
+        quote: [
+            'Spoorthy and I partnered to lead Product Design for Peloton’s Content Platform over 3 years. Major achievements include a complete redesign of the process and interface for planning Peloton’s music and fitness content, the redesign of Peloton’s in-studio class manager for production, Design System management and product enhancements across core tools to adapt to business needs.',
+            'Spoorthy always brings great ideas and questions to the table. He is phenomenal at taking the time to align and collaborate with other disciplines and teammates, which makes his work strong and vetted. In addition to initiatives we partnered on, Spoorthy led Design on several large scale priorities from User Research to Prototype Testing and Delivery. Our team and partners were continuously impressed by the solutions Spoorthy produced. I highly recommend Spoorthy for any role he pursues. He’s a fantastic colleague to know in your career.'
+        ]
+    }
+];
+
+const impactCards = [
+    {
+        title: '12x More Code Shipped',
+        body: 'Shared code between both apps and a design system light enough to actually maintain meant we were able to move from one big yearly update to monthly builds.'
+    },
+    {
+        title: 'Internal tools that feel like real products',
+        body: 'We built for hundreds of instructors with the polish of products made for millions. Class planning went from an annoying, buggy mess to a joy.'
+    },
+    {
+        title: 'A feedback loop that never stops',
+        body: 'Continuous instructor interviews & in-app feedback combined with monthly builds meant instructors became active participants in product development and could see the changes they asked for.'
+    },
+    {
+        title: '30+ days and $4M+ annually saved',
+        body: 'We chipped away at manual checks and processes until instructors and the production team had over 30 working days a year returned to them. We also strategically leveraged music recommendations to save over $4M in music royalties.'
+    }
+];
+
 const curationViews = [
     {
         label: 'Homepage',
@@ -160,11 +206,22 @@ const maestroViews = [
 ];
 
 class Peloton extends React.Component {
-    state = { planningView: 0, sidebarTab: 0, curationView: 0, maestroView: 0 };
+    state = { planningView: 0, sidebarTab: 0, curationView: 0, maestroView: 0, openRec: null };
 
     heroRef = React.createRef();
 
+    handleKeyDown = (e) => {
+        if (e.key === 'Escape' && this.state.openRec !== null) {
+            this.setState({ openRec: null });
+        }
+    };
+
+    componentDidMount() {
+        document.addEventListener('keydown', this.handleKeyDown);
+    }
+
     componentWillUnmount() {
+        document.removeEventListener('keydown', this.handleKeyDown);
     }
 
     // Drives the logo glow parallax — writes CSS vars directly so mouse
@@ -394,6 +451,79 @@ class Peloton extends React.Component {
                         </div>
                     </div>
                 </div>
+
+                <div className="section alt impactSection">
+                    <div className="sectionInner wide">
+                        <h3>The Impact</h3>
+                        <div className="impactGrid">
+                            {impactCards.map(card => (
+                                <div className="impactCard" key={card.title}>
+                                    <h4>{card.title}</h4>
+                                    <p>{card.body}</p>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </div>
+
+                <div className="section alt creditsSection">
+                    <div className="creditsInner">
+                        <p className="creditsText">
+                            <span className="creditsHeader">CREDITS</span>
+                            Designed with Kat Hollister<br />
+                            Product: Sean Graham, Evie McQuiston, Jin Lee<br />
+                            Engineering: April Rogers-Kent<br />
+                            QA: Raji Gullapalli
+                        </p>
+                        <div className="recCards">
+                            {recommendations.map((rec, i) => (
+                                <button
+                                    className="recCard"
+                                    key={rec.name}
+                                    onClick={() => this.setState({ openRec: i })}
+                                >
+                                    <span className="recQuote"><span>{rec.teaser}</span></span>
+                                    <span className="recAuthor">
+                                        <img src={rec.avatar} alt="" />
+                                        <span className="recName">{rec.name}</span>
+                                    </span>
+                                </button>
+                            ))}
+                        </div>
+                    </div>
+                </div>
+
+                {this.state.openRec !== null && (
+                    <div className="recModalOverlay" onClick={() => this.setState({ openRec: null })}>
+                        <div className="recModal" role="dialog" aria-modal="true" onClick={e => e.stopPropagation()}>
+                            <button
+                                className="recModalClose"
+                                aria-label="Close"
+                                onClick={() => this.setState({ openRec: null })}
+                            >
+                                <IconX size={22} stroke={2} />
+                            </button>
+                            {recommendations[this.state.openRec].quote.map((para, i) => {
+                                const isFirst = i === 0;
+                                const isLast = i === recommendations[this.state.openRec].quote.length - 1;
+                                return (
+                                    <p key={i}>
+                                        {isFirst && '“'}
+                                        {para}
+                                        {isLast && '”'}
+                                    </p>
+                                );
+                            })}
+                            <div className="recAuthor">
+                                <img src={recommendations[this.state.openRec].avatar} alt="" />
+                                <div className="authorMeta">
+                                    <span className="recName">{recommendations[this.state.openRec].name}</span>
+                                    <span className="recRole">{recommendations[this.state.openRec].role}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                )}
             </div>
         );
     }

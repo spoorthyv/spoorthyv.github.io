@@ -31,7 +31,7 @@ class Footer extends React.Component {
          <div className={`projectFooter ${theme === 'dark' ? 'dark' : 'light'}`}>
             {prev ? (
                <Link className="footerButton previous" to={prev.path}>
-                  <IconArrowLeft size={24} stroke={2} />
+                  <IconArrowLeft size={28} stroke={2} />
                   <span className="footerButtonText">
                      <span className="direction">Previous Project</span>
                      <span className="projectName">{prev.name}</span>
@@ -45,7 +45,7 @@ class Footer extends React.Component {
                      <span className="direction">Next Project</span>
                      <span className="projectName">{next.name}</span>
                   </span>
-                  <IconArrowRight size={24} stroke={2} />
+                  <IconArrowRight size={28} stroke={2} />
                </Link>
             ) : <span className="footerSpacer" />}
          </div>
