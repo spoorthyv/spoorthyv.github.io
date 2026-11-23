@@ -138,6 +138,7 @@ const recommendations = [
     {
         name: 'Evie McQuiston',
         role: 'Product Manager, Peloton',
+        accent: 'crescendo',
         avatar: avatarEvie,
         teaser: <>“He had a knack for asking the <b>right uncovering questions</b> early, the kind that surfaced the real problem...”</>,
         quote: [
@@ -149,6 +150,7 @@ const recommendations = [
     {
         name: 'Kat Hollister',
         role: 'Product Designer, Peloton',
+        accent: 'maestro',
         avatar: avatarKat,
         teaser: <>“He is phenomenal at taking the time to <b>align and collaborate</b> with other disciplines and teammates”</>,
         quote: [
@@ -164,14 +166,14 @@ const impactPhrases = [
     {
         text: '12x more code',
         color: '#4CA6FF',
-        label: 'More Code Shipped',
+        label: 'Increased Product Velocity',
         desc: 'Our lightweight and scalable design system allowed us to share code across 2 apps and move from yearly to monthly releases.'
     },
     {
         text: '$4M+ a year,',
         color: '#4CFF4C',
-        label: 'Saved Every Year',
-        desc: 'Music recommendations were tuned to steer instructors toward tracks we already held rights to — cutting millions from our royalty bill.'
+        label: 'Intelligent Savings',
+        desc: 'We leveraged Music recommendations to steer instructors toward tracks that better leveraged our complex record deals — cutting millions from our royalty bill.'
     },
     {
         text: '30+ working days',
@@ -229,10 +231,32 @@ const maestroViews = [
     }
 ];
 
+// LinkedIn profiles for the credited collaborators. Keyed by the name as it
+// appears on the page; anyone missing here renders as plain text.
+const linkedinUrls = {
+    'Kat Hollister': 'https://www.linkedin.com/in/kat-hollister/',
+    'Sean Graham': 'https://www.linkedin.com/in/sean-graham-7a503622/',
+    'Evie McQuiston': 'https://www.linkedin.com/in/evie-mcquiston-2a417292/',
+    'Jin Lee': 'https://www.linkedin.com/in/seung-jin-lee-0983643a/',
+    'April Rogers-Kent': 'https://www.linkedin.com/in/april-rogers-6b945346/',
+    'Raji Gullapalli': 'https://www.linkedin.com/in/raji-gullapalli-2b7910190/'
+};
+
+const CreditName = ({ name }) => {
+    const url = linkedinUrls[name];
+    if (!url) return name;
+    return (
+        <a className="creditLink" href={url} target="_blank" rel="noopener noreferrer">
+            {name}
+        </a>
+    );
+};
+
 class Peloton extends React.Component {
     state = { planningView: 0, sidebarTab: 0, curationView: 0, maestroView: 0, openRec: null, impactActive: 0 };
 
     heroRef = React.createRef();
+    painCarouselRef = React.createRef();
 
     handleKeyDown = (e) => {
         if (e.key === 'Escape' && this.state.openRec !== null) {
@@ -242,7 +266,15 @@ class Peloton extends React.Component {
 
     componentDidMount() {
         document.addEventListener('keydown', this.handleKeyDown);
+        this.scrollToCenter();
     }
+
+    scrollToCenter = () => {
+        const el = this.painCarouselRef.current;
+        if (el) {
+            el.scrollLeft = (el.scrollWidth - el.clientWidth) / 2;
+        }
+    };
 
     componentWillUnmount() {
         document.removeEventListener('keydown', this.handleKeyDown);
@@ -343,7 +375,7 @@ class Peloton extends React.Component {
                     </div>
                 </div>
 
-                <div className="painCarousel">
+                <div className="painCarousel" ref={this.painCarouselRef}>
                     {painPoints.map((quote, i) => (
                         <div className="painCard" key={i}>
                             <p>{quote}</p>
@@ -535,11 +567,10 @@ class Peloton extends React.Component {
                 <div className="section alt creditsSection">
                     <div className="creditsInner">
                         <p className="creditsText">
-                            <span className="creditsHeader">CREDITS</span>
-                            Designed with Kat Hollister<br />
-                            Product: Sean Graham, Evie McQuiston, Jin Lee<br />
-                            Engineering: April Rogers-Kent<br />
-                            QA: Raji Gullapalli
+                            Designed with <CreditName name="Kat Hollister" /><br />
+                            Product: <CreditName name="Sean Graham" />, <CreditName name="Evie McQuiston" />, <CreditName name="Jin Lee" /><br />
+                            Engineering: <CreditName name="April Rogers-Kent" /><br />
+                            QA: <CreditName name="Raji Gullapalli" />
                         </p>
                         <div className="recCards">
                             {recommendations.map((rec, i) => (
@@ -561,7 +592,7 @@ class Peloton extends React.Component {
 
                 {this.state.openRec !== null && (
                     <div className="recModalOverlay" onClick={() => this.setState({ openRec: null })}>
-                        <div className="recModal" role="dialog" aria-modal="true" onClick={e => e.stopPropagation()}>
+                        <div className={`recModal accent-${recommendations[this.state.openRec].accent}`} role="dialog" aria-modal="true" onClick={e => e.stopPropagation()}>
                             <button
                                 className="recModalClose"
                                 aria-label="Close"
@@ -569,22 +600,17 @@ class Peloton extends React.Component {
                             >
                                 <IconX size={22} stroke={2} />
                             </button>
-                            {recommendations[this.state.openRec].quote.map((para, i) => {
-                                const isFirst = i === 0;
-                                const isLast = i === recommendations[this.state.openRec].quote.length - 1;
-                                return (
-                                    <p key={i}>
-                                        {isFirst && '“'}
-                                        {para}
-                                        {isLast && '”'}
-                                    </p>
-                                );
-                            })}
-                            <div className="recAuthor">
-                                <img src={recommendations[this.state.openRec].avatar} alt="" />
-                                <div className="authorMeta">
-                                    <span className="recName">{recommendations[this.state.openRec].name}</span>
-                                    <span className="recRole">{recommendations[this.state.openRec].role}</span>
+                            <span className="recModalQuoteMark" aria-hidden="true" />
+                            <div className="recModalBody">
+                                {recommendations[this.state.openRec].quote.map((para, i) => (
+                                    <p key={i}>{para}</p>
+                                ))}
+                                <div className="recAuthor">
+                                    <img src={recommendations[this.state.openRec].avatar} alt="" />
+                                    <div className="authorMeta">
+                                        <span className="recName"><CreditName name={recommendations[this.state.openRec].name} /></span>
+                                        <span className="recRole">{recommendations[this.state.openRec].role}</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>

@@ -1061,7 +1061,7 @@ $content-wide: 1280px; // Wide sections (full screenshots, prototype)
     // Credits + recommendations
     // ------------------------------------------------------------------
     .section.creditsSection {
-        padding: 20px 80px;
+        padding: 28px 80px;
         border-top: 1px solid rgba(255, 255, 255, 0.05);
         background-color: $peloton-footer-surface;
     }
@@ -1085,6 +1085,22 @@ $content-wide: 1280px; // Wide sections (full screenshots, prototype)
             display: block;
             font-weight: 600;
             letter-spacing: 1.92px;
+        }
+    }
+
+    // Credited-collaborator links (credits list + modal author). Inherit the
+    // surrounding text and underline subtly rather than take the global link blue.
+    .creditLink {
+        font: inherit;
+        color: inherit;
+        text-decoration: underline;
+        text-decoration-color: rgba(255, 255, 255, 0.3);
+        text-underline-offset: 2px;
+        transition: text-decoration-color 0.2s;
+
+        &:hover {
+            color: inherit;
+            text-decoration-color: currentColor;
         }
     }
 
@@ -1141,6 +1157,7 @@ $content-wide: 1280px; // Wide sections (full screenshots, prototype)
         display: flex;
         align-items: center;
         gap: 10px;
+        margin-top: 10px;
 
         img {
             width: 40px;
@@ -1171,19 +1188,52 @@ $content-wide: 1280px; // Wide sections (full screenshots, prototype)
 
     .recModal {
         position: relative;
-        max-width: 660px;
+        max-width: 720px;
         max-height: 88vh;
         overflow-y: auto;
         overscroll-behavior: contain;
         display: flex;
         flex-direction: column;
-        gap: 20px;
-        padding: 36px 40px;
+        gap: 24px;
+        padding: 72px 80px 48px;
         background-color: $peloton-card-bg;
         border: 1px solid rgba(255, 255, 255, 0.1);
         border-radius: 21px;
+        box-sizing: border-box;
 
-        // Same voice as the teaser cards: italic quote at card styling
+        // Rendered as a CSS mask (not an <img>) so background-color can
+        // recolor it per person — Crescendo purple by default, Maestro pink
+        // via .accent-maestro. The source SVG has no intrinsic size
+        // (preserveAspectRatio="none"), so height must be explicit on the
+        // mask box too — "auto" would collapse it to 0.
+        .recModalQuoteMark {
+            display: block;
+            width: 32px;
+            height: 24.5px;
+            flex-shrink: 0;
+            background-color: $peloton-crescendo;
+            -webkit-mask-image: url('../images/peloton/quoteMark.svg');
+            mask-image: url('../images/peloton/quoteMark.svg');
+            -webkit-mask-size: contain;
+            mask-size: contain;
+            -webkit-mask-repeat: no-repeat;
+            mask-repeat: no-repeat;
+            transition: background-color 0.2s;
+        }
+
+        &.accent-maestro .recModalQuoteMark {
+            background-color: $peloton-maestro;
+        }
+
+        .recModalBody {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 100%;
+        }
+
+        // Same voice as the teaser cards: italic quote at card styling.
+        // No literal quote characters — the mark above carries that now.
         p {
             font-size: 22px;
             line-height: 36px;
@@ -1194,8 +1244,6 @@ $content-wide: 1280px; // Wide sections (full screenshots, prototype)
         }
 
         .recAuthor {
-            margin-top: 8px;
-
             .authorMeta {
                 display: flex;
                 flex-direction: column;
@@ -1204,13 +1252,14 @@ $content-wide: 1280px; // Wide sections (full screenshots, prototype)
             .recName {
                 font-size: 18px;
                 line-height: 26px;
+                letter-spacing: -0.12px;
                 color: white;
             }
 
             .recRole {
                 font-size: 15px;
                 line-height: 22px;
-                letter-spacing: 0.3px;
+                letter-spacing: 0.07px;
                 color: #b8b8b8;
             }
         }
@@ -1283,6 +1332,11 @@ $content-wide: 1280px; // Wide sections (full screenshots, prototype)
         line-height: 41px;
         color: rgba(255, 255, 255, 0.7);
         text-wrap: pretty;
+        // The serif's space glyph is ~5.8px vs Inter Bold's ~9.4px at this
+        // size, so the gaps around the bold phrases read as missing. Widen
+        // the narration's spaces to match; .impactPhrase resets it so the
+        // spacing *inside* each bold phrase is untouched.
+        word-spacing: 0.105em;
     }
 
     // A <button> so the phrases are keyboard-reachable and tappable, but
@@ -1293,6 +1347,7 @@ $content-wide: 1280px; // Wide sections (full screenshots, prototype)
         padding: 0;
         border: none;
         background: transparent;
+        word-spacing: normal;
         font-family: 'Inter UI', sans-serif;
         font-style: normal;
         font-weight: 700;
